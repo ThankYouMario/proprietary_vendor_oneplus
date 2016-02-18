@@ -142,10 +142,13 @@ endif
 
 PRODUCT_COPY_FILES += \
     vendor/oneplus/bacon/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
-    vendor/oneplus/bacon/proprietary/lib/hw/camera.vendor.bacon.so:system/lib/hw/camera.vendor.bacon.so \
+    vendor/oneplus/bacon/proprietary/lib/hw/camera.msm8974.so:system/lib/hw/camera.msm8974.so \
     vendor/oneplus/bacon/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/oneplus/bacon/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/oneplus/bacon/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
+    vendor/oneplus/bacon/proprietary/vendor/lib/libactuator_dw9714.so:system/vendor/lib/libactuator_dw9714.so \
+    vendor/oneplus/bacon/proprietary/vendor/lib/libactuator_dw9714_camera.so:system/vendor/lib/libactuator_dw9714_camera.so \
+    vendor/oneplus/bacon/proprietary/vendor/lib/libactuator_dw9714_camcorder.so:system/vendor/lib/libactuator_dw9714_camcorder.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
@@ -153,19 +156,25 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera2_frame_algorithm.so:system/vendor/lib/libmmcamera2_frame_algorithm.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera2_iface_modules.so:system/vendor/lib/libmmcamera2_iface_modules.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:system/vendor/lib/libmmcamera2_imglib_modules.so \
+    vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera2_is.so:system/vendor/lib/libmmcamera2_is.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera2_isp_modules.so:system/vendor/lib/libmmcamera2_isp_modules.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera2_pproc_modules.so:system/vendor/lib/libmmcamera2_pproc_modules.so \
+    vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera2_q3a_core.so:system/vendor/lib/libmmcamera2_q3a_core.so \
+    vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera2_q3a_special.so:system/vendor/lib/libmmcamera2_q3a_special.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:system/vendor/lib/libmmcamera2_sensor_modules.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:system/vendor/lib/libmmcamera2_stats_algorithm.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera2_stats_modules.so:system/vendor/lib/libmmcamera2_stats_modules.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera2_vpe_module.so:system/vendor/lib/libmmcamera2_vpe_module.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera2_wnr_module.so:system/vendor/lib/libmmcamera2_wnr_module.so \
+    vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera_cac_lib.so:system/vendor/lib/libmmcamera_cac_lib.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera_hdr_lib.so:system/vendor/lib/libmmcamera_hdr_lib.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera_imx214.so:system/vendor/lib/libmmcamera_imx214.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera_ov5648.so:system/vendor/lib/libmmcamera_ov5648.so \
+    vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so \
+    vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera_pdafcamif.so:system/vendor/lib/libmmcamera_pdafcamif.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera_sony_imx214_eeprom.so:system/vendor/lib/libmmcamera_sony_imx214_eeprom.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
@@ -175,6 +184,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
+    vendor/oneplus/bacon/proprietary/lib/liboneplus_camera.so:system/lib/liboneplus_camera.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libchromatix_imx214_common.so:system/vendor/lib/libchromatix_imx214_common.so \
@@ -196,6 +206,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/bacon/proprietary/vendor/lib/libchromatix_ov5648_video_cmcc.so:system/vendor/lib/libchromatix_ov5648_video_cmcc.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libchromatix_ov5648_zsl.so:system/vendor/lib/libchromatix_ov5648_zsl.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libchromatix_ov5648_zsl_fb.so:system/vendor/lib/libchromatix_ov5648_zsl_fb.so \
+    vendor/oneplus/bacon/proprietary/vendor/lib/libchromatix_ov5648_preview.so:system/vendor/lib/libchromatix_ov5648_preview.so \
+    vendor/oneplus/bacon/proprietary/vendor/lib/libchromatix_ov5648_liveshot.so:system/vendor/lib/libchromatix_ov5648_liveshot.so \
+    vendor/oneplus/bacon/proprietary/lib/libFNVfbEngineLib.so:system/lib/libFNVfbEngineLib.so \
     vendor/oneplus/bacon/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
     vendor/oneplus/bacon/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
     vendor/oneplus/bacon/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
