@@ -66,9 +66,7 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/onyx/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:/system/vendor/lib/libmmcamera_hdr_gb_lib.so \
         vendor/oneplus/onyx/proprietary/vendor/lib/libmmcamera_hdr_lib.so:/system/vendor/lib/libmmcamera_hdr_lib.so \
         vendor/oneplus/onyx/proprietary/vendor/lib/libmmcamera_imglib.so:/system/vendor/lib/libmmcamera_imglib.so \
-        vendor/oneplus/onyx/proprietary/vendor/lib/libmmcamera_imx214.so:/system/vendor/lib/libmmcamera_imx214.so \
         vendor/oneplus/onyx/proprietary/vendor/lib/libmmcamera_ofilm_oty5f03_eeprom.so:/system/vendor/lib/libmmcamera_ofilm_oty5f03_eeprom.so \
-        vendor/oneplus/onyx/proprietary/vendor/lib/libmmcamera_ov5648.so:/system/vendor/lib/libmmcamera_ov5648.so \
         vendor/oneplus/onyx/proprietary/vendor/lib/libmmcamera_ov8858.so:/system/vendor/lib/libmmcamera_ov8858.so \
         vendor/oneplus/onyx/proprietary/vendor/lib/libmmcamera_pdaf.so:/system/vendor/lib/libmmcamera_pdaf.so \
         vendor/oneplus/onyx/proprietary/vendor/lib/libmmcamera_pdafcamif.so:/system/vendor/lib/libmmcamera_pdafcamif.so \
@@ -95,24 +93,6 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/onyx/proprietary/vendor/lib/libactuator_dw9800w.so:/system/vendor/lib/libactuator_dw9800w.so \
         vendor/oneplus/onyx/proprietary/vendor/lib/libactuator_dw9800w_camcorder.so:/system/vendor/lib/libactuator_dw9800w_camcorder.so \
         vendor/oneplus/onyx/proprietary/vendor/lib/libactuator_dw9800w_camera.so:/system/vendor/lib/libactuator_dw9800w_camera.so \
-        vendor/oneplus/onyx/proprietary/vendor/lib/libchromatix_imx214_common.so:/system/vendor/lib/libchromatix_imx214_common.so \
-        vendor/oneplus/onyx/proprietary/vendor/lib/libchromatix_imx214_default_video.so:/system/vendor/lib/libchromatix_imx214_default_video.so \
-        vendor/oneplus/onyx/proprietary/vendor/lib/libchromatix_imx214_hfr_120.so:/system/vendor/lib/libchromatix_imx214_hfr_120.so \
-        vendor/oneplus/onyx/proprietary/vendor/lib/libchromatix_imx214_hfr_60.so:/system/vendor/lib/libchromatix_imx214_hfr_60.so \
-        vendor/oneplus/onyx/proprietary/vendor/lib/libchromatix_imx214_liveshot.so:/system/vendor/lib/libchromatix_imx214_liveshot.so \
-        vendor/oneplus/onyx/proprietary/vendor/lib/libchromatix_imx214_preview.so:/system/vendor/lib/libchromatix_imx214_preview.so \
-        vendor/oneplus/onyx/proprietary/vendor/lib/libchromatix_imx214_preview_binning.so:/system/vendor/lib/libchromatix_imx214_preview_binning.so \
-        vendor/oneplus/onyx/proprietary/vendor/lib/libchromatix_imx214_snapshot.so:/system/vendor/lib/libchromatix_imx214_snapshot.so \
-        vendor/oneplus/onyx/proprietary/vendor/lib/libchromatix_imx214_snapshot_hdr.so:/system/vendor/lib/libchromatix_imx214_snapshot_hdr.so \
-        vendor/oneplus/onyx/proprietary/vendor/lib/libchromatix_imx214_video_binning.so:/system/vendor/lib/libchromatix_imx214_video_binning.so \
-        vendor/oneplus/onyx/proprietary/vendor/lib/libchromatix_ov5648_common.so:/system/vendor/lib/libchromatix_ov5648_common.so \
-        vendor/oneplus/onyx/proprietary/vendor/lib/libchromatix_ov5648_default_video.so:/system/vendor/lib/libchromatix_ov5648_default_video.so \
-        vendor/oneplus/onyx/proprietary/vendor/lib/libchromatix_ov5648_liveshot.so:/system/vendor/lib/libchromatix_ov5648_liveshot.so \
-        vendor/oneplus/onyx/proprietary/vendor/lib/libchromatix_ov5648_preview.so:/system/vendor/lib/libchromatix_ov5648_preview.so \
-        vendor/oneplus/onyx/proprietary/vendor/lib/libchromatix_ov5648_preview_fb.so:/system/vendor/lib/libchromatix_ov5648_preview_fb.so \
-        vendor/oneplus/onyx/proprietary/vendor/lib/libchromatix_ov5648_video_cmcc.so:/system/vendor/lib/libchromatix_ov5648_video_cmcc.so \
-        vendor/oneplus/onyx/proprietary/vendor/lib/libchromatix_ov5648_zsl.so:/system/vendor/lib/libchromatix_ov5648_zsl.so \
-        vendor/oneplus/onyx/proprietary/vendor/lib/libchromatix_ov5648_zsl_fb.so:/system/vendor/lib/libchromatix_ov5648_zsl_fb.so \
         vendor/oneplus/onyx/proprietary/vendor/lib/libchromatix_ov8858_common.so:/system/vendor/lib/libchromatix_ov8858_common.so \
         vendor/oneplus/onyx/proprietary/vendor/lib/libchromatix_ov8858_default_video.so:/system/vendor/lib/libchromatix_ov8858_default_video.so \
         vendor/oneplus/onyx/proprietary/vendor/lib/libchromatix_ov8858_liveshot.so:/system/vendor/lib/libchromatix_ov8858_liveshot.so \
