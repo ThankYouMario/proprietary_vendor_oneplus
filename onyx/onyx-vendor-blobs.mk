@@ -164,6 +164,7 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/onyx/proprietary/vendor/firmware/keymaster/keymaster.b02:/system/vendor/firmware/keymaster/keymaster.b02 \
         vendor/oneplus/onyx/proprietary/vendor/firmware/keymaster/keymaster.b03:/system/vendor/firmware/keymaster/keymaster.b03 \
         vendor/oneplus/onyx/proprietary/vendor/firmware/keymaster/keymaster.mdt:/system/vendor/firmware/keymaster/keymaster.mdt \
+        vendor/oneplus/onyx/proprietary/lib/hw/lights.msm8974.so:/system/lib/hw/lights.msm8974.so \
         vendor/oneplus/onyx/proprietary/vendor/lib/liblisten.so:/system/vendor/lib/liblisten.so \
         vendor/oneplus/onyx/proprietary/vendor/lib/liblistenhardware.so:/system/vendor/lib/liblistenhardware.so \
         vendor/oneplus/onyx/proprietary/vendor/lib/liblistenjni.so:/system/vendor/lib/liblistenjni.so \
