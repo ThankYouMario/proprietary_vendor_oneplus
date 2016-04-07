@@ -26,9 +26,6 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/onyx/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:/system/vendor/lib/rfsa/adsp/libfastcvadsp.so \
         vendor/oneplus/onyx/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so:/system/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so \
         vendor/oneplus/onyx/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:/system/vendor/lib/rfsa/adsp/libscveT2T_skel.so \
-        vendor/oneplus/onyx/proprietary/bin/btnvtool:/system/bin/btnvtool \
-        vendor/oneplus/onyx/proprietary/bin/hci_qcomm_init:/system/bin/hci_qcomm_init \
-        vendor/oneplus/onyx/proprietary/vendor/lib/libbtnv.so:/system/vendor/lib/libbtnv.so \
         vendor/oneplus/onyx/proprietary/etc/firmware/tfa98xx.cnt:/system/etc/firmware/tfa98xx.cnt \
         vendor/oneplus/onyx/proprietary/vendor/lib/libacdbloader.so:/system/vendor/lib/libacdbloader.so \
         vendor/oneplus/onyx/proprietary/vendor/lib/libacdbrtac.so:/system/vendor/lib/libacdbrtac.so \
@@ -37,6 +34,9 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/onyx/proprietary/vendor/lib/soundfx/libqcbassboost.so:/system/vendor/lib/soundfx/libqcbassboost.so \
         vendor/oneplus/onyx/proprietary/vendor/lib/soundfx/libqcreverb.so:/system/vendor/lib/soundfx/libqcreverb.so \
         vendor/oneplus/onyx/proprietary/vendor/lib/soundfx/libqcvirt.so:/system/vendor/lib/soundfx/libqcvirt.so \
+        vendor/oneplus/onyx/proprietary/bin/btnvtool:/system/bin/btnvtool \
+        vendor/oneplus/onyx/proprietary/bin/hci_qcomm_init:/system/bin/hci_qcomm_init \
+        vendor/oneplus/onyx/proprietary/vendor/lib/libbtnv.so:/system/vendor/lib/libbtnv.so \
         vendor/oneplus/onyx/proprietary/bin/mm-qcamera-daemon:/system/bin/mm-qcamera-daemon \
         vendor/oneplus/onyx/proprietary/lib/hw/camera.msm8974.so:/system/lib/hw/camera.msm8974.so \
         vendor/oneplus/onyx/proprietary/lib/libFNVfbEngineLib.so:/system/lib/libFNVfbEngineLib.so \
@@ -165,10 +165,6 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/onyx/proprietary/vendor/firmware/keymaster/keymaster.b03:/system/vendor/firmware/keymaster/keymaster.b03 \
         vendor/oneplus/onyx/proprietary/vendor/firmware/keymaster/keymaster.mdt:/system/vendor/firmware/keymaster/keymaster.mdt \
         vendor/oneplus/onyx/proprietary/lib/hw/lights.msm8974.so:/system/lib/hw/lights.msm8974.so \
-        vendor/oneplus/onyx/proprietary/vendor/lib/liblisten.so:/system/vendor/lib/liblisten.so \
-        vendor/oneplus/onyx/proprietary/vendor/lib/liblistenhardware.so:/system/vendor/lib/liblistenhardware.so \
-        vendor/oneplus/onyx/proprietary/vendor/lib/liblistenjni.so:/system/vendor/lib/liblistenjni.so \
-        vendor/oneplus/onyx/proprietary/vendor/lib/liblistensoundmodel.so:/system/vendor/lib/liblistensoundmodel.so \
         vendor/oneplus/onyx/proprietary/vendor/lib/libDivxDrm.so:/system/vendor/lib/libDivxDrm.so \
         vendor/oneplus/onyx/proprietary/vendor/lib/libExtendedExtractor.so:/system/vendor/lib/libExtendedExtractor.so \
         vendor/oneplus/onyx/proprietary/vendor/lib/libHevcSwDecoder.so:/system/vendor/lib/libHevcSwDecoder.so \
