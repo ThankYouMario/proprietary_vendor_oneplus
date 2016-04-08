@@ -54,9 +54,11 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus2/proprietary/bin/mm-qcamera-app:/system/bin/mm-qcamera-app \
         vendor/oneplus/oneplus2/proprietary/bin/mm-qcamera-daemon:/system/bin/mm-qcamera-daemon \
         vendor/oneplus/oneplus2/proprietary/lib64/hw/sensors.hal.tof.so:/system/lib64/hw/sensors.hal.tof.so \
+        vendor/oneplus/oneplus2/proprietary/lib64/hw/fingerprint.msm8994.so:/system/lib64/hw/fingerprint.msm8994.so \
         vendor/oneplus/oneplus2/proprietary/lib64/libopcamera.so:/system/lib64/libopcamera.so \
         vendor/oneplus/oneplus2/proprietary/lib64/libopcameralib.so:/system/lib64/libopcameralib.so \
         vendor/oneplus/oneplus2/proprietary/lib/hw/camera.msm8994.so:/system/lib/hw/camera.msm8994.so \
+        vendor/oneplus/oneplus2/proprietary/lib/hw/fingerprint.msm8994.so:/system/lib/hw/fingerprint.msm8994.so \
         vendor/oneplus/oneplus2/proprietary/lib/libFNVfbEngineLib.so:/system/lib/libFNVfbEngineLib.so \
         vendor/oneplus/oneplus2/proprietary/lib/libmm-qcamera.so:/system/lib/libmm-qcamera.so \
         vendor/oneplus/oneplus2/proprietary/lib/libmmcamera_interface.so:/system/lib/libmmcamera_interface.so \
@@ -385,6 +387,8 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus2/proprietary/bin/rmt_storage:/system/bin/rmt_storage \
         vendor/oneplus/oneplus2/proprietary/etc/permissions/qcnvitems.xml:/system/etc/permissions/qcnvitems.xml \
         vendor/oneplus/oneplus2/proprietary/etc/permissions/qcrilhook.xml:/system/etc/permissions/qcrilhook.xml \
+        vendor/oneplus/oneplus2/proprietary/lib/lib_fpc_tac_shared.so:/system/lib/lib_fpc_tac_shared.so \
+        vendor/oneplus/oneplus2/proprietary/lib64/lib_fpc_tac_shared.so:/system/lib64/lib_fpc_tac_shared.so \
         vendor/oneplus/oneplus2/proprietary/lib64/libparam.so:/system/lib64/libparam.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libconfigdb.so:/system/vendor/lib64/libconfigdb.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libnetmgr.so:/system/vendor/lib64/libnetmgr.so \
