@@ -342,6 +342,8 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus2/proprietary/bin/energy-awareness:/system/bin/energy-awareness \
         vendor/oneplus/oneplus2/proprietary/bin/msm_irqbalance:/system/bin/msm_irqbalance \
         vendor/oneplus/oneplus2/proprietary/vendor/bin/perfd:/system/vendor/bin/perfd \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib/libqti-iop-client.so:/system/vendor/lib/libqti-iop-client.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libqti-iop-client.so:/system/vendor/lib64/libqti-iop-client.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libqti-perfd-client.so:/system/vendor/lib64/libqti-perfd-client.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libqti-perfd-client.so:/system/vendor/lib/libqti-perfd-client.so \
         vendor/oneplus/oneplus2/proprietary/bin/pm-proxy:/system/bin/pm-proxy \
