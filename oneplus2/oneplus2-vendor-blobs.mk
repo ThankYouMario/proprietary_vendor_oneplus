@@ -394,6 +394,7 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libnetmgr.so:/system/vendor/lib64/libnetmgr.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/liblqe.so:/system/vendor/lib64/liblqe.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libril-qc-qmi-1.so:/system/vendor/lib64/libril-qc-qmi-1.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib/libril-qc-qmi-1.so:/system/vendor/lib/libril-qc-qmi-1.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libril-qc-radioconfig.so:/system/vendor/lib64/libril-qc-radioconfig.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libril-qcril-hook-oem.so:/system/vendor/lib64/libril-qcril-hook-oem.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libsystem_health_mon.so:/system/vendor/lib64/libsystem_health_mon.so \
