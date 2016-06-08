@@ -16,7 +16,9 @@
 
 # Pick up overlay for features that depend on non-open-source files
 PRODUCT_PACKAGES += \
-    CNEService
+    CNEService \
+    com.qti.dpmframework \
+    dpmapi
 
 PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
@@ -46,5 +48,8 @@ PRODUCT_PACKAGES += \
     libqmi_cci \
     libqmi_client_qmux \
     libqmiservices
+
+PRODUCT_PACKAGES += \
+    keystore.msm8994
 
 $(call inherit-product, vendor/oneplus/oneplus2/oneplus2-vendor-blobs.mk)
