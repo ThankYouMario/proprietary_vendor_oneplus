@@ -18,7 +18,8 @@
 PRODUCT_PACKAGES += \
     CNEService \
     com.qti.dpmframework \
-    dpmapi
+    dpmapi \
+    fastdormancy
 
 PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
