@@ -510,8 +510,6 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/etc/firmware/a530v3_gpmu.fw2:/system/etc/firmware/a530v3_gpmu.fw2 \
         vendor/oneplus/oneplus3/proprietary/etc/firmware/a530v3_seq.fw2:/system/etc/firmware/a530v3_seq.fw2 \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/hw/sound_trigger.primary.msm8996.so:/system/vendor/lib/hw/sound_trigger.primary.msm8996.so \
-        vendor/oneplus/oneplus3/proprietary/lib/libOmxVenc.so:/system/lib/libOmxVenc.so \
-        vendor/oneplus/oneplus3/proprietary/lib64/libOmxVenc.so:/system/lib64/libOmxVenc.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libFileMux.so:/system/vendor/lib/libFileMux.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libI420colorconvert.so:/system/vendor/lib/libI420colorconvert.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libOmxAacDec.so:/system/vendor/lib/libOmxAacDec.so \
