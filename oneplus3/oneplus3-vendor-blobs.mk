@@ -37,6 +37,9 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libadiertac.so:/system/vendor/lib64/libadiertac.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libaudcal.so:/system/vendor/lib64/libaudcal.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libaudiodevarb.so:/system/vendor/lib64/libaudiodevarb.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib64/soundfx/libqcbassboost.so:/system/vendor/lib64/soundfx/libqcbassboost.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib64/soundfx/libqcreverb.so:/system/vendor/lib64/soundfx/libqcreverb.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib64/soundfx/libqcvirt.so:/system/vendor/lib64/soundfx/libqcvirt.so \
         vendor/oneplus/oneplus3/proprietary/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:/system/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
         vendor/oneplus/oneplus3/proprietary/etc/acdbdata/MTP/MTP_General_cal.acdb:/system/etc/acdbdata/MTP/MTP_General_cal.acdb \
         vendor/oneplus/oneplus3/proprietary/etc/acdbdata/MTP/MTP_Global_cal.acdb:/system/etc/acdbdata/MTP/MTP_Global_cal.acdb \
