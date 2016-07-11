@@ -266,6 +266,7 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/etc/permissions/ConnectivityExt.xml:/system/etc/permissions/ConnectivityExt.xml \
         vendor/oneplus/oneplus3/proprietary/etc/permissions/cneapiclient.xml:/system/etc/permissions/cneapiclient.xml \
         vendor/oneplus/oneplus3/proprietary/etc/permissions/com.quicinc.cne.xml:/system/etc/permissions/com.quicinc.cne.xml \
+        vendor/oneplus/oneplus3/proprietary/etc/permissions/com.qualcomm.qti.Performance.xml:/system/etc/permissions/com.qualcomm.qti.Performance.xml \
         vendor/oneplus/oneplus3/proprietary/framework/ConnectivityExt.jar:/system/framework/ConnectivityExt.jar \
         vendor/oneplus/oneplus3/proprietary/framework/cneapiclient.jar:/system/framework/cneapiclient.jar \
         vendor/oneplus/oneplus3/proprietary/framework/com.quicinc.cne.jar:/system/framework/com.quicinc.cne.jar \
@@ -444,7 +445,10 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/bin/energy-awareness:/system/bin/energy-awareness \
         vendor/oneplus/oneplus3/proprietary/bin/iop:/system/bin/iop \
         vendor/oneplus/oneplus3/proprietary/bin/msm_irqbalance:/system/bin/msm_irqbalance \
+        vendor/oneplus/oneplus3/proprietary/lib/libqti-iop.so:/system/lib/libqti-iop.so \
         vendor/oneplus/oneplus3/proprietary/lib64/libqti-iop.so:/system/lib64/libqti-iop.so \
+        vendor/oneplus/oneplus3/proprietary/lib/libqti_performance.so:/system/lib/libqti_performance.so \
+        vendor/oneplus/oneplus3/proprietary/lib64/libqti_performance.so:/system/lib64/libqti_performance.so \
         vendor/oneplus/oneplus3/proprietary/vendor/bin/perfd:/system/vendor/bin/perfd \
         vendor/oneplus/oneplus3/proprietary/vendor/etc/perf-profile0.conf:/system/vendor/etc/perf-profile0.conf \
         vendor/oneplus/oneplus3/proprietary/vendor/etc/perf-profile1.conf:/system/vendor/etc/perf-profile1.conf \

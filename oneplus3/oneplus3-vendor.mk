@@ -33,7 +33,8 @@ PRODUCT_PACKAGES += \
     com.qti.dpmframework \
     com.qti.location.sdk \
     tcmclient \
-    dpmapi
+    dpmapi \
+    QPerformance
 
 PRODUCT_PACKAGES += \
     qcnvitems \
