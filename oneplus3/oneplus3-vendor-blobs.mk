@@ -290,9 +290,6 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:/system/etc/dpm/nsrm/NsrmConfiguration.xml \
         vendor/oneplus/oneplus3/proprietary/etc/permissions/com.qti.dpmframework.xml:/system/etc/permissions/com.qti.dpmframework.xml \
         vendor/oneplus/oneplus3/proprietary/etc/permissions/dpmapi.xml:/system/etc/permissions/dpmapi.xml \
-        vendor/oneplus/oneplus3/proprietary/framework/com.qti.dpmframework.jar:/system/framework/com.qti.dpmframework.jar \
-        vendor/oneplus/oneplus3/proprietary/framework/dpmapi.jar:/system/framework/dpmapi.jar \
-        vendor/oneplus/oneplus3/proprietary/framework/tcmclient.jar:/system/framework/tcmclient.jar \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libdpmctmgr.so:/system/vendor/lib/libdpmctmgr.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libdpmfdmgr.so:/system/vendor/lib/libdpmfdmgr.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libdpmframework.so:/system/vendor/lib/libdpmframework.so \
@@ -329,7 +326,6 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/bin/loc_launcher:/system/bin/loc_launcher \
         vendor/oneplus/oneplus3/proprietary/etc/permissions/com.qti.location.sdk.xml:/system/etc/permissions/com.qti.location.sdk.xml \
         vendor/oneplus/oneplus3/proprietary/etc/permissions/com.qualcomm.location.xml:/system/etc/permissions/com.qualcomm.location.xml \
-        vendor/oneplus/oneplus3/proprietary/framework/com.qti.location.sdk.jar:/system/framework/com.qti.location.sdk.jar \
         vendor/oneplus/oneplus3/proprietary/vendor/bin/slim_daemon:/system/vendor/bin/slim_daemon \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/hw/flp.default.so:/system/vendor/lib/hw/flp.default.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libalarmservice_jni.so:/system/vendor/lib/libalarmservice_jni.so \

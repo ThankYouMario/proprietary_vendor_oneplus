@@ -30,6 +30,12 @@ PRODUCT_PACKAGES += \
     TimeService
 
 PRODUCT_PACKAGES += \
+    com.qti.dpmframework \
+    com.qti.location.sdk \
+    tcmclient \
+    dpmapi
+
+PRODUCT_PACKAGES += \
     qcnvitems \
     qcrilhook \
     qcrilmsgtunnel
