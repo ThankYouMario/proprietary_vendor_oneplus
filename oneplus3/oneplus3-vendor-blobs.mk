@@ -344,6 +344,9 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libxtadapter.so:/system/vendor/lib/libxtadapter.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:/system/vendor/lib/libxtwifi_ulp_adaptor.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libxt_native.so:/system/vendor/lib/libxt_native.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib/libslimclient.so:/system/vendor/lib/libslimclient.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libslimclient.so:/system/vendor/lib64/libslimclient.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libxt_native.so:/system/vendor/lib64/libxt_native.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/hw/flp.default.so:/system/vendor/lib64/hw/flp.default.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libalarmservice_jni.so:/system/vendor/lib64/libalarmservice_jni.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdataitems.so:/system/vendor/lib64/libdataitems.so \
@@ -356,8 +359,6 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/liblocationservice.so:/system/vendor/lib64/liblocationservice.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/liblocationservice_glue.so:/system/vendor/lib64/liblocationservice_glue.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/liblowi_client.so:/system/vendor/lib64/liblowi_client.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib64/liblowi_wifihal.so:/system/vendor/lib64/liblowi_wifihal.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib64/liblowi_wifihal_nl.so:/system/vendor/lib64/liblowi_wifihal_nl.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libquipc_os_api.so:/system/vendor/lib64/libquipc_os_api.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libulp2.so:/system/vendor/lib64/libulp2.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libxtadapter.so:/system/vendor/lib64/libxtadapter.so \
