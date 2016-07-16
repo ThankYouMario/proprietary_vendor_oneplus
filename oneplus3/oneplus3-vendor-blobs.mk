@@ -442,12 +442,16 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libmm-color-convertor.so:/system/vendor/lib/libmm-color-convertor.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmosal.so:/system/vendor/lib/libmmosal.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libconnctrl.so:/system/vendor/lib/libconnctrl.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib/libFlacSwDec.so:/system/vendor/lib/libFlacSwDec.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libFlacSwDec.so:/system/vendor/lib64/libFlacSwDec.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libconnctrl.so:/system/vendor/lib64/libconnctrl.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libQtiTether.so:/system/vendor/lib64/libQtiTether.so \
         vendor/oneplus/oneplus3/proprietary/vendor/firmware/libpn548ad_fw.so:/system/vendor/firmware/libpn548ad_fw.so \
         vendor/oneplus/oneplus3/proprietary/bin/energy-awareness:/system/bin/energy-awareness \
         vendor/oneplus/oneplus3/proprietary/bin/iop:/system/bin/iop \
         vendor/oneplus/oneplus3/proprietary/bin/msm_irqbalance:/system/bin/msm_irqbalance \
+        vendor/oneplus/oneplus3/proprietary/lib/libstagefright_soft_flacdec.so:/system/lib/libstagefright_soft_flacdec.so \
+        vendor/oneplus/oneplus3/proprietary/lib64/libstagefright_soft_flacdec.so:/system/lib64/libstagefright_soft_flacdec.so \
         vendor/oneplus/oneplus3/proprietary/lib/libqti-iop.so:/system/lib/libqti-iop.so \
         vendor/oneplus/oneplus3/proprietary/lib64/libqti-iop.so:/system/lib64/libqti-iop.so \
         vendor/oneplus/oneplus3/proprietary/lib/libqti_performance.so:/system/lib/libqti_performance.so \
