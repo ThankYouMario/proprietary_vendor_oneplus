@@ -372,6 +372,7 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/egl/libq3dtools_esx.so:/system/vendor/lib/egl/libq3dtools_esx.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libC2D2.so:/system/vendor/lib/libC2D2.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libCB.so:/system/vendor/lib/libCB.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib/libEGL_adreno.so:/system/vendor/lib/libEGL_adreno.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libOpenCL.so:/system/vendor/lib/libOpenCL.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libRSDriver_adreno.so:/system/vendor/lib/libRSDriver_adreno.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libadreno_utils.so:/system/vendor/lib/libadreno_utils.so \
@@ -397,6 +398,7 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/egl/libq3dtools_esx.so:/system/vendor/lib64/egl/libq3dtools_esx.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libC2D2.so:/system/vendor/lib64/libC2D2.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libCB.so:/system/vendor/lib64/libCB.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libEGL_adreno.so:/system/vendor/lib64/libEGL_adreno.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libOpenCL.so:/system/vendor/lib64/libOpenCL.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libRSDriver_adreno.so:/system/vendor/lib64/libRSDriver_adreno.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libadreno_utils.so:/system/vendor/lib64/libadreno_utils.so \
