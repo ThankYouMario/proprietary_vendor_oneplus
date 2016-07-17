@@ -133,6 +133,7 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmqjpegdma.so:/system/vendor/lib/libmmqjpegdma.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libois_rohm_bu63165gwl.so:/system/vendor/lib/libois_rohm_bu63165gwl.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libqomx_jpegdec.so:/system/vendor/lib/libqomx_jpegdec.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib/libqomx_jpegenc.so:/system/vendor/lib/libqomx_jpegenc.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libqomx_jpegenc_pipe.so:/system/vendor/lib/libqomx_jpegenc_pipe.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libseemore.so:/system/vendor/lib/libseemore.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libactuator_rohm_bu63165gwl.so:/system/vendor/lib/libactuator_rohm_bu63165gwl.so \
