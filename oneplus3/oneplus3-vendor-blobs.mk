@@ -77,6 +77,7 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/lib/libopcamerahw_interface.so:/system/lib/libopcamerahw_interface.so \
         vendor/oneplus/oneplus3/proprietary/lib/libopcameralib.so:/system/lib/libopcameralib.so \
         vendor/oneplus/oneplus3/proprietary/lib/libqomx_core.so:/system/lib/libqomx_core.so \
+        vendor/oneplus/oneplus3/proprietary/lib/libOmxVpp.so:/system/lib/libOmxVpp.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libSonyIMX298PdafLibrary.so:/system/vendor/lib/libSonyIMX298PdafLibrary.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libfastcvadsp_stub.so:/system/vendor/lib/libfastcvadsp_stub.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libfastcvopt.so:/system/vendor/lib/libfastcvopt.so \
@@ -457,6 +458,7 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/lib64/libqti-iop.so:/system/lib64/libqti-iop.so \
         vendor/oneplus/oneplus3/proprietary/lib/libqti_performance.so:/system/lib/libqti_performance.so \
         vendor/oneplus/oneplus3/proprietary/lib64/libqti_performance.so:/system/lib64/libqti_performance.so \
+        vendor/oneplus/oneplus3/proprietary/lib64/libOmxVpp.so:/system/lib64/libOmxVpp.so \
         vendor/oneplus/oneplus3/proprietary/vendor/bin/perfd:/system/vendor/bin/perfd \
         vendor/oneplus/oneplus3/proprietary/vendor/etc/perf-profile0.conf:/system/vendor/etc/perf-profile0.conf \
         vendor/oneplus/oneplus3/proprietary/vendor/etc/perf-profile1.conf:/system/vendor/etc/perf-profile1.conf \
