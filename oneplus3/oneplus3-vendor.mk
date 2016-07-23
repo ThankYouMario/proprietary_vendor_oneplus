@@ -29,6 +29,12 @@ PRODUCT_PACKAGES += \
     shutdownlistener \
     TimeService
 
+# QC AV enhancements
+PRODUCT_PACKAGES += \
+    libavenhancements \
+    libmmparser \
+    libmmparser_lite
+
 PRODUCT_PACKAGES += \
     com.qti.dpmframework \
     com.qti.location.sdk \

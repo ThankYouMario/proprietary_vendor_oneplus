@@ -512,6 +512,7 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libqti-wl.so:/system/vendor/lib/libqti-wl.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libquipc_os_api.so:/system/vendor/lib/libquipc_os_api.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libsmemlog.so:/system/vendor/lib/libsmemlog.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib/libExtendedExtractor.so:/system/vendor/lib/libExtendedExtractor.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libvqzip.so:/system/vendor/lib/libvqzip.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdiag.so:/system/vendor/lib64/libdiag.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdsi_netctrl.so:/system/vendor/lib64/libdsi_netctrl.so \
@@ -532,6 +533,7 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqti-wl.so:/system/vendor/lib64/libqti-wl.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libquipc_os_api.so:/system/vendor/lib64/libquipc_os_api.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libsmemlog.so:/system/vendor/lib64/libsmemlog.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libExtendedExtractor.so:/system/vendor/lib64/libExtendedExtractor.so \
         vendor/oneplus/oneplus3/proprietary/bin/ipacm-diag:/system/bin/ipacm-diag \
         vendor/oneplus/oneplus3/proprietary/bin/netmgrd:/system/bin/netmgrd \
         vendor/oneplus/oneplus3/proprietary/bin/qmuxd:/system/bin/qmuxd \
