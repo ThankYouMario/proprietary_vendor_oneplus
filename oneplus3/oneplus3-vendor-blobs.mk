@@ -337,6 +337,12 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/hw/flp.default.so:/system/vendor/lib/hw/flp.default.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libalarmservice_jni.so:/system/vendor/lib/libalarmservice_jni.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libdataitems.so:/system/vendor/lib/libdataitems.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmhttpstack.so:/system/vendor/lib/libmmhttpstack.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmiipstreammmihttp.so:/system/vendor/lib/libmmiipstreammmihttp.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmipstreamaal.so:/system/vendor/lib/libmmipstreamaal.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmipstreamnetwork.so:/system/vendor/lib/libmmipstreamnetwork.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmipstreamsourcehttp.so:/system/vendor/lib/libmmipstreamsourcehttp.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmipstreamutils.so:/system/vendor/lib/libmmipstreamutils.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libflp.so:/system/vendor/lib/libflp.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libgeofence.so:/system/vendor/lib/libgeofence.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libizat_core.so:/system/vendor/lib/libizat_core.so \
@@ -537,6 +543,12 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqmiservices.so:/system/vendor/lib64/libqmiservices.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libquipc_os_api.so:/system/vendor/lib64/libquipc_os_api.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libsmemlog.so:/system/vendor/lib64/libsmemlog.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libmmhttpstack.so:/system/vendor/lib64/libmmhttpstack.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libmmiipstreammmihttp.so:/system/vendor/lib64/libmmiipstreammmihttp.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libmmipstreamaal.so:/system/vendor/lib64/libmmipstreamaal.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libmmipstreamnetwork.so:/system/vendor/lib64/libmmipstreamnetwork.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libmmipstreamsourcehttp.so:/system/vendor/lib64/libmmipstreamsourcehttp.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libmmipstreamutils.so:/system/vendor/lib64/libmmipstreamutils.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libExtendedExtractor.so:/system/vendor/lib64/libExtendedExtractor.so \
         vendor/oneplus/oneplus3/proprietary/bin/ipacm-diag:/system/bin/ipacm-diag \
         vendor/oneplus/oneplus3/proprietary/bin/netmgrd:/system/bin/netmgrd \
