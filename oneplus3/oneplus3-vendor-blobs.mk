@@ -306,6 +306,7 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/bin/qseecomd:/system/bin/qseecomd \
         vendor/oneplus/oneplus3/proprietary/vendor/bin/qseeproxydaemon:/system/vendor/bin/qseeproxydaemon \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libQSEEComAPI.so:/system/vendor/lib/libQSEEComAPI.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib/lib-sec-disp.so:/system/vendor/lib/lib-sec-disp.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/lib-sec-disp.so:/system/vendor/lib64/lib-sec-disp.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libGPreqcancel.so:/system/vendor/lib64/libGPreqcancel.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libGPreqcancel_svc.so:/system/vendor/lib64/libGPreqcancel_svc.so \
@@ -492,6 +493,7 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libmm-qdcm-diag.so:/system/vendor/lib64/libmm-qdcm-diag.so \
         vendor/oneplus/oneplus3/proprietary/bin/irsc_util:/system/bin/irsc_util \
         vendor/oneplus/oneplus3/proprietary/etc/permissions/qti_permissions.xml:/system/etc/permissions/qti_permissions.xml \
+        vendor/oneplus/oneplus3/proprietary/vendor/bin/mm-pp-dpps:system/vendor/bin/mm-pp-dpps \
         vendor/oneplus/oneplus3/proprietary/vendor/bin/pd-mapper:/system/vendor/bin/pd-mapper \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libdiag.so:/system/vendor/lib/libdiag.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libdsi_netctrl.so:/system/vendor/lib/libdsi_netctrl.so \
