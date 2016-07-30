@@ -78,6 +78,7 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/lib/libopcameralib.so:/system/lib/libopcameralib.so \
         vendor/oneplus/oneplus3/proprietary/lib/libqomx_core.so:/system/lib/libqomx_core.so \
         vendor/oneplus/oneplus3/proprietary/lib/libOmxVpp.so:/system/lib/libOmxVpp.so \
+        vendor/oneplus/oneplus3/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libSonyIMX298PdafLibrary.so:/system/vendor/lib/libSonyIMX298PdafLibrary.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libfastcvadsp_stub.so:/system/vendor/lib/libfastcvadsp_stub.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libfastcvopt.so:/system/vendor/lib/libfastcvopt.so \
@@ -278,6 +279,7 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libcneconn.so:/system/vendor/lib/libcneconn.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libcneqmiutils.so:/system/vendor/lib/libcneqmiutils.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libvendorconn.so:/system/vendor/lib/libvendorconn.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib/libvpphvx.so:system/vendor/lib/libvpphvx.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libwqe.so:/system/vendor/lib/libwqe.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libxml.so:/system/vendor/lib/libxml.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libNimsWrap.so:/system/vendor/lib64/libNimsWrap.so \
@@ -286,6 +288,7 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libcneconn.so:/system/vendor/lib64/libcneconn.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libcneqmiutils.so:/system/vendor/lib64/libcneqmiutils.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libvendorconn.so:/system/vendor/lib64/libvendorconn.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libvpphvx.so:system/vendor/lib64/libvpphvx.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libwqe.so:/system/vendor/lib64/libwqe.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libxml.so:/system/vendor/lib64/libxml.so \
         vendor/oneplus/oneplus3/proprietary/bin/dpmd:/system/bin/dpmd \
@@ -460,6 +463,7 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/lib/libqti_performance.so:/system/lib/libqti_performance.so \
         vendor/oneplus/oneplus3/proprietary/lib64/libqti_performance.so:/system/lib64/libqti_performance.so \
         vendor/oneplus/oneplus3/proprietary/lib64/libOmxVpp.so:/system/lib64/libOmxVpp.so \
+        vendor/oneplus/oneplus3/proprietary/lib64/libvpplibrary.so:system/lib64/libvpplibrary.so \
         vendor/oneplus/oneplus3/proprietary/vendor/bin/perfd:/system/vendor/bin/perfd \
         vendor/oneplus/oneplus3/proprietary/vendor/etc/perf-profile0.conf:/system/vendor/etc/perf-profile0.conf \
         vendor/oneplus/oneplus3/proprietary/vendor/etc/perf-profile1.conf:/system/vendor/etc/perf-profile1.conf \
