@@ -388,6 +388,8 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libOpenCL.so:/system/vendor/lib/libOpenCL.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libRSDriver_adreno.so:/system/vendor/lib/libRSDriver_adreno.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libadreno_utils.so:/system/vendor/lib/libadreno_utils.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib/libadsp_hvx_callback_skel.so:system/vendor/lib/libadsp_hvx_callback_skel.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib/libadsp_hvx_stub.so:system/vendor/lib/libadsp_hvx_stub.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libbccQTI.so:/system/vendor/lib/libbccQTI.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libc2d30-a5xx.so:/system/vendor/lib/libc2d30-a5xx.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libc2d30_bltlib.so:/system/vendor/lib/libc2d30_bltlib.so \
@@ -508,6 +510,7 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libdiag.so:/system/vendor/lib/libdiag.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libdsi_netctrl.so:/system/vendor/lib/libdsi_netctrl.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libdsutils.so:/system/vendor/lib/libdsutils.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib/libfastcvadsp_stub.so:system/vendor/lib/libfastcvadsp_stub.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libidl.so:/system/vendor/lib/libidl.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libqcci_legacy.so:/system/vendor/lib/libqcci_legacy.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libqcmaputils.so:/system/vendor/lib/libqcmaputils.so \
@@ -643,5 +646,11 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:/system/vendor/lib/libWVStreamControlAPI_L3.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libwvdrm_L3.so:/system/vendor/lib/libwvdrm_L3.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:/system/vendor/lib/mediadrm/libwvdrmengine.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:system/vendor/lib/rfsa/adsp/libapps_mem_heap.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:system/vendor/lib/rfsa/adsp/libdspCV_skel.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so:system/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:system/vendor/lib/rfsa/adsp/libfastcvadsp.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/libvpp_frc.so:system/vendor/lib/rfsa/adsp/libvpp_frc.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/libvpp_svc_skel.so:system/vendor/lib/rfsa/adsp/libvpp_svc_skel.so \
         vendor/oneplus/oneplus3/proprietary/bin/cnss-daemon:/system/bin/cnss-daemon \
         vendor/oneplus/oneplus3/proprietary/bin/cnss_diag:/system/bin/cnss_diag \
