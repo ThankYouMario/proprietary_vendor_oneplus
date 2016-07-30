@@ -52,7 +52,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libtime_genoff \
-    libthermalclient
+    libthermalclient \
+    dashd
 
 PRODUCT_PACKAGES += \
     colorservice \
