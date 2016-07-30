@@ -511,7 +511,6 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libqmi_csi.so:/system/vendor/lib/libqmi_csi.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libqmi_encdec.so:/system/vendor/lib/libqmi_encdec.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libqmiservices.so:/system/vendor/lib/libqmiservices.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib/libqti-wl.so:/system/vendor/lib/libqti-wl.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libquipc_os_api.so:/system/vendor/lib/libquipc_os_api.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libsmemlog.so:/system/vendor/lib/libsmemlog.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libExtendedExtractor.so:/system/vendor/lib/libExtendedExtractor.so \
@@ -532,7 +531,6 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqmi_csi.so:/system/vendor/lib64/libqmi_csi.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqmi_encdec.so:/system/vendor/lib64/libqmi_encdec.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqmiservices.so:/system/vendor/lib64/libqmiservices.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqti-wl.so:/system/vendor/lib64/libqti-wl.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libquipc_os_api.so:/system/vendor/lib64/libquipc_os_api.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libsmemlog.so:/system/vendor/lib64/libsmemlog.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libExtendedExtractor.so:/system/vendor/lib64/libExtendedExtractor.so \
