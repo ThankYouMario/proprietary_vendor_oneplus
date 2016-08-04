@@ -458,6 +458,7 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libconnctrl.so:/system/vendor/lib/libconnctrl.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libFlacSwDec.so:/system/vendor/lib/libFlacSwDec.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libFlacSwDec.so:/system/vendor/lib64/libFlacSwDec.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libmmosal.so:/system/vendor/lib64/libmmosal.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libconnctrl.so:/system/vendor/lib64/libconnctrl.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libQtiTether.so:/system/vendor/lib64/libQtiTether.so \
         vendor/oneplus/oneplus3/proprietary/vendor/firmware/libpn548ad_fw.so:/system/vendor/firmware/libpn548ad_fw.so \
