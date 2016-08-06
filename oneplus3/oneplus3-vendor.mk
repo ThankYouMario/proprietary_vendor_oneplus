@@ -33,7 +33,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libavenhancements \
     libmmparser \
-    libmmparser_lite
+    libmmparser_lite \
+    libqct_resampler
 
 PRODUCT_PACKAGES += \
     com.qti.dpmframework \
