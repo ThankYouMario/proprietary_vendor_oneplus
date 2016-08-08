@@ -18,6 +18,8 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/bin/adsprpcd:/system/bin/adsprpcd \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libadsprpc.so:/system/vendor/lib/libadsprpc.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libfastcvopt.so:/system/vendor/lib/libfastcvopt.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib/libadsp_default_listener.so:/system/vendor/lib/libadsp_default_listener.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/libadsp_fd_skel.so:system/vendor/lib/rfsa/adsp/libadsp_fd_skel.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libadsprpc.so:/system/vendor/lib64/libadsprpc.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libadsp_default_listener.so:/system/vendor/lib64/libadsp_default_listener.so \
         vendor/oneplus/oneplus3/proprietary/etc/firmware/tfa98xx.cnt:/system/etc/firmware/tfa98xx.cnt \
@@ -77,6 +79,8 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/lib/libopcamerahw_interface.so:/system/lib/libopcamerahw_interface.so \
         vendor/oneplus/oneplus3/proprietary/lib/libopcameralib.so:/system/lib/libopcameralib.so \
         vendor/oneplus/oneplus3/proprietary/lib/libqomx_core.so:/system/lib/libqomx_core.so \
+        vendor/oneplus/oneplus3/proprietary/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so:system/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so \
+        vendor/oneplus/oneplus3/proprietary/lib/rfsa/adsp/libmorpho_video_denoiser_hvx_skel.so:system/lib/rfsa/adsp/libmorpho_video_denoiser_hvx_skel.so \
         vendor/oneplus/oneplus3/proprietary/lib/libOmxVpp.so:/system/lib/libOmxVpp.so \
         vendor/oneplus/oneplus3/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libSonyIMX298PdafLibrary.so:/system/vendor/lib/libSonyIMX298PdafLibrary.so \
