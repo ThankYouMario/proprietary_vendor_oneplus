@@ -84,7 +84,6 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/lib/libOmxVpp.so:/system/lib/libOmxVpp.so \
         vendor/oneplus/oneplus3/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libSonyIMX298PdafLibrary.so:/system/vendor/lib/libSonyIMX298PdafLibrary.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib/libfastcvadsp_stub.so:/system/vendor/lib/libfastcvadsp_stub.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libfastcvopt.so:/system/vendor/lib/libfastcvopt.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libflash_pmic.so:/system/vendor/lib/libflash_pmic.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libjpegdhw.so:/system/vendor/lib/libjpegdhw.so \
