@@ -743,6 +743,7 @@ PRODUCT_PACKAGES += \
     embms \
     fastdormancy \
     QtiTelephonyService \
+    SimSettings \
     shutdownlistener \
     TimeService \
     CNEService \
