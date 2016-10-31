@@ -799,10 +799,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/lib/libstagefright_soft_flacdec.so:/system/lib/libstagefright_soft_flacdec.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libqti_performance.so:/system/vendor/lib/libqti_performance.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqti_performance.so:/system/vendor/lib64/libqti_performance.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libqti-at.so:/system/vendor/lib/libqti-at.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqti-at.so:/system/vendor/lib64/libqti-at.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libqti-gt.so:/system/vendor/lib/libqti-gt.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqti-gt.so:/system/vendor/lib64/libqti-gt.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libstagefright_soft_flacdec.so:/system/lib64/libstagefright_soft_flacdec.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libqti-iop.so:system/lib64/libqti-iop.so \
     vendor/oneplus/oneplus3/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
