@@ -3,7 +3,7 @@
     All Rights Reserved.
     Confidential and Proprietary - Qualcomm Technologies, Inc.-->
 <AndsfPolicy><Andsf>
-	    <Version>4.9</Version>
+	    <Version>5.0</Version>
 		<Name>Test 1</Name>
 		<Ext>
 			<WQE>
@@ -84,10 +84,10 @@
 				<CQE_Thresholds Id="128">
                     <!-- RSSI 	ld from which all values greather than it is considered as good for wlan to be -->
 					<!-- a candidate for interface selection -->
-					<RSSIAddThreshold units="dbm">-72</RSSIAddThreshold>
+					<RSSIAddThreshold units="dbm">-72,-72</RSSIAddThreshold>
 					<!-- RSSI 	ld from which all values lesser than it is considered as bad for wlan to be -->
 					<!-- a candidate for interface selection -->
-					<RSSIDropThreshold units="dbm">-72</RSSIDropThreshold>
+					<RSSIDropThreshold units="dbm">-72,-72</RSSIDropThreshold>
 					<!-- Interval over whcih RSSI values are averaged -->
 					<RSSIAveragingInterval units="secs">5</RSSIAveragingInterval>
 					<!-- RSSI 	ld below which MAC hysteresis timer is not started -->
@@ -138,10 +138,10 @@
 				<CQE_Thresholds Id="128">
 					<!-- RSSI 	ld from which all values greather than it is considered as good for wlan to be -->
 					<!-- a candidate for interface selection -->
-					<RSSIAddThreshold units="dbm">-72</RSSIAddThreshold>
+					<RSSIAddThreshold units="dbm">-72,-72</RSSIAddThreshold>
 					<!-- RSSI 	ld from which all values lesser than it is considered as bad for wlan to be -->
 					<!-- a candidate for interface selection -->
-					<RSSIDropThreshold units="dbm">-72</RSSIDropThreshold>
+					<RSSIDropThreshold units="dbm">-72,-72</RSSIDropThreshold>
 					<!-- RSSI 	ld from which to select linear model to compute CQE metric -->
 					<RSSIModelThreshold units="dbm">-72</RSSIModelThreshold>
 					<!-- Interval over whcih RSSI values are averaged -->
