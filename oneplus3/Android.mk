@@ -39,6 +39,24 @@ LOCAL_MODULE_SUFFIX := .xml
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := qdcm_calib_data_samsung_s6e3fa5_1080p_cmd_mode_dsi_panel
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/etc/qdcm_calib_data_samsung_s6e3fa5_1080p_cmd_mode_dsi_panel.xml
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_SUFFIX := .xml
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := qdcm_calib_data_samsung_s6e3fa5r9s_1080p_cmd_mode_dsi_panel
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/etc/qdcm_calib_data_samsung_s6e3fa5r9s_1080p_cmd_mode_dsi_panel.xml
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_SUFFIX := .xml
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := dashd
 LOCAL_MODULE_OWNER := oneplus
 LOCAL_MODULE_PATH := $(TARGET_ROOT_OUT_SBIN)
