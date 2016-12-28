@@ -255,6 +255,7 @@ LOCAL_SRC_FILES := proprietary/framework/com.qti.dpmframework.jar
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := $(COMMON_JAVA_PACKAGE_SUFFIX)
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_DEX_PREOPT := nostripping
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -392,6 +393,7 @@ LOCAL_SRC_FILES := proprietary/framework/qcrilhook.jar
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := .jar
+LOCAL_DEX_PREOPT := nostripping
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
