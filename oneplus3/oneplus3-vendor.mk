@@ -57,6 +57,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/etc/firmware/tp/fw_synaptics_touchkey.img:system/etc/firmware/tp/fw_synaptics_touchkey.img \
     vendor/oneplus/oneplus3/proprietary/etc/sensors/hals.conf:system/etc/sensors/hals.conf \
     vendor/oneplus/oneplus3/proprietary/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
+    vendor/oneplus/oneplus3/proprietary/etc/qmi_fw.conf:system/etc/qmi_fw.conf \
     vendor/oneplus/oneplus3/proprietary/lib64/hw/fingerprint.msm8996.so:system/lib64/hw/fingerprint.msm8996.so \
     vendor/oneplus/oneplus3/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
     vendor/oneplus/oneplus3/proprietary/lib/hw/camera.msm8996.so:system/lib/hw/camera.msm8996.so \
@@ -66,12 +67,14 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/oneplus/oneplus3/proprietary/lib/libmorpho_image_stab4.so:system/lib/libmorpho_image_stab4.so \
     vendor/oneplus/oneplus3/proprietary/lib/libmorpho_video_refiner.so:system/lib/libmorpho_video_refiner.so \
+    vendor/oneplus/oneplus3/proprietary/lib/lib_oneplus_facebeauty.so:system/lib/lib_oneplus_facebeauty.so \
     vendor/oneplus/oneplus3/proprietary/lib/lib_oneplus_md.so:system/lib/lib_oneplus_md.so \
-    vendor/oneplus/oneplus3/proprietary/lib/libop_calib3d.so:system/lib/libop_calib3d.so \
     vendor/oneplus/oneplus3/proprietary/lib/libopcamera_crypt.so:system/lib/libopcamera_crypt.so \
     vendor/oneplus/oneplus3/proprietary/lib/libopcameralib.so:system/lib/libopcameralib.so \
     vendor/oneplus/oneplus3/proprietary/lib/libopcamera_native_modules.so:system/lib/libopcamera_native_modules.so \
     vendor/oneplus/oneplus3/proprietary/lib/libopcamera.so:system/lib/libopcamera.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopbaselib.so:system/lib/libopbaselib.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libop_calib3d.so:system/lib/libop_calib3d.so \
     vendor/oneplus/oneplus3/proprietary/lib/libop_carotene.so:system/lib/libop_carotene.so \
     vendor/oneplus/oneplus3/proprietary/lib/libop_core.so:system/lib/libop_core.so \
     vendor/oneplus/oneplus3/proprietary/lib/libop_face.so:system/lib/libop_face.so \
@@ -166,6 +169,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx179_postproc.so:system/vendor/lib/libchromatix_imx179_postproc.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_3a_clearshot.so:system/vendor/lib/libchromatix_imx298_3a_clearshot.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_3a_clearshot_s.so:system/vendor/lib/libchromatix_imx298_3a_clearshot_s.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_3a_HDR.so:system/vendor/lib/libchromatix_imx298_3a_HDR.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_3a_HDR_s.so:system/vendor/lib/libchromatix_imx298_3a_HDR_s.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_3a_panorama.so:system/vendor/lib/libchromatix_imx298_3a_panorama.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_3a_panorama_s.so:system/vendor/lib/libchromatix_imx298_3a_panorama_s.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_4K_preview.so:system/vendor/lib/libchromatix_imx298_4K_preview.so \
@@ -367,7 +372,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libqomx_jpegenc_pipe.so:system/vendor/lib/libqomx_jpegenc_pipe.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libscalar.so:system/vendor/lib/libscalar.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libsd_sdk_display.so:system/vendor/lib/libsd_sdk_display.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libsdm-color.so:system/vendor/lib/libsdm-color.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libsdm-diag.so:system/vendor/lib/libsdm-diag.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libsdmextension.so:system/vendor/lib/libsdmextension.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libseemore.so:system/vendor/lib/libseemore.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libSonyIMX298PdafLibrary.so:system/vendor/lib/libSonyIMX298PdafLibrary.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libSubSystemShutdown.so:system/vendor/lib/libSubSystemShutdown.so \
@@ -489,6 +498,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/egl/libEGL_adreno.so:system/vendor/lib64/egl/libEGL_adreno.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:system/vendor/lib64/egl/libGLESv1_CM_adreno.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/egl/libGLESv2_adreno.so:system/vendor/lib64/egl/libGLESv2_adreno.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib64/egl/libQTapGLES.so:system/vendor/lib64/egl/libQTapGLES.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:system/vendor/lib64/egl/libq3dtools_adreno.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/egl/libq3dtools_esx.so:system/vendor/lib64/egl/libq3dtools_esx.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/hw/activity_recognition.msm8996.so:system/vendor/lib64/hw/activity_recognition.msm8996.so \
@@ -675,6 +685,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/egl/libQTapGLES.so:system/vendor/lib/egl/libQTapGLES.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/egl/libq3dtools_esx.so:system/vendor/lib/egl/libq3dtools_esx.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/hw/activity_recognition.msm8996.so:system/vendor/lib/hw/activity_recognition.msm8996.so \
@@ -720,6 +731,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmipstreamsourcehttp.so:/system/vendor/lib/libmmipstreamsourcehttp.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmipstreamutils.so:/system/vendor/lib/libmmipstreamutils.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libdpmctmgr.so:system/vendor/lib/libdpmctmgr.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libdpmfdmgr.so:system/vendor/lib/libdpmfdmgr.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libdpmframework.so:system/vendor/lib/libdpmframework.so \
@@ -780,6 +792,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libExtendedExtractor.so:/system/vendor/lib/libExtendedExtractor.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libsmwrapper.so:system/vendor/lib/libsmwrapper.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libtrueportrait.so:system/vendor/lib/libtrueportrait.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libvpphvx.so:system/vendor/lib/libvpphvx.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libvqzip.so:system/vendor/lib/libvqzip.so \
@@ -802,6 +815,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_stats.so:system/vendor/lib/rfsa/adsp/libadsp_hvx_stats.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_zzhdr_BGGR.so:system/vendor/lib/rfsa/adsp/libadsp_hvx_zzhdr_BGGR.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_zzhdr_RGGB.so:system/vendor/lib/rfsa/adsp/libadsp_hvx_zzhdr_RGGB.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/libobjectMattingApp_skel.so:system/vendor/lib/rfsa/adsp/libobjectMattingApp_skel.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so:system/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/libscveCleverCapture_skel.so:system/vendor/lib/rfsa/adsp/libscveCleverCapture_skel.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/libscveFaceRecognition_skel.so:system/vendor/lib/rfsa/adsp/libscveFaceRecognition_skel.so \
@@ -860,7 +874,7 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/bin/iop:system/bin/iop \
     vendor/oneplus/oneplus3/proprietary/lib/libstagefright_soft_flacdec.so:/system/lib/libstagefright_soft_flacdec.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqti-iop.so:system/lib64/libqti-iop.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqti-iop.so:system/vendor/lib64/libqti-iop.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libqti_performance.so:/system/vendor/lib/libqti_performance.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqti_performance.so:/system/vendor/lib64/libqti_performance.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libstagefright_soft_flacdec.so:/system/lib64/libstagefright_soft_flacdec.so \
