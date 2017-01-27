@@ -126,6 +126,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/qfp.wakeup.so:system/vendor/lib64/qfp.wakeup.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/lib-imscamera.so:system/vendor/lib/lib-imscamera.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libactuator_rohm_bu63165gwl.so:system/vendor/lib/libactuator_rohm_bu63165gwl.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libaptX-1.0.0-rel-Android21-ARMv7A.so:system/vendor/lib/libaptX-1.0.0-rel-Android21-ARMv7A.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libaptXHD-1.0.0-rel-Android21-ARMv7A.so:system/vendor/lib/libaptXHD-1.0.0-rel-Android21-ARMv7A.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libaptXScheduler.so:system/vendor/lib/libaptXScheduler.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libaudioalsa.so:system/vendor/lib/libaudioalsa.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromaflash.so:system/vendor/lib/libchromaflash.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx179_3a_1640x924_30fps_preview.so:system/vendor/lib/libchromatix_imx179_3a_1640x924_30fps_preview.so \
