@@ -50,11 +50,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/etc/firmware/mbn_ota/mcfg_sw/mcfg_sw_OEM_CDMA-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw/mcfg_sw_OEM_CDMA-Commercial.mbn \
     vendor/oneplus/oneplus3/proprietary/etc/firmware/mbn_ota/mcfg_sw/mcfg_sw_TMO-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw/mcfg_sw_TMO-Commercial.mbn \
     vendor/oneplus/oneplus3/proprietary/etc/firmware/mbn_ota/mcfg_sw_NoCDMA/mbn_ota.txt:system/etc/firmware/mbn_ota/mcfg_sw_NoCDMA/mbn_ota.txt \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/mbn_ota/mcfg_sw_NoCDMA/mcfg_sw_Airtel-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw_NoCDMA/mcfg_sw_Airtel-Commercial.mbn \
     vendor/oneplus/oneplus3/proprietary/etc/firmware/mbn_ota/mcfg_sw_NoCDMA/mcfg_sw_EE-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw_NoCDMA/mcfg_sw_EE-Commercial.mbn \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/mbn_ota/mcfg_sw_NoCDMA/mcfg_sw_Elisa-VoLTE.mbn:system/etc/firmware/mbn_ota/mcfg_sw_NoCDMA/mcfg_sw_Elisa-VoLTE.mbn \
     vendor/oneplus/oneplus3/proprietary/etc/firmware/mbn_ota/mcfg_sw_NoCDMA/mcfg_sw_H3G-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw_NoCDMA/mcfg_sw_H3G-Commercial.mbn \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/mbn_ota/mcfg_sw_NoCDMA/mcfg_sw_MTNL_BSNL.mbn:system/etc/firmware/mbn_ota/mcfg_sw_NoCDMA/mcfg_sw_MTNL_BSNL.mbn \
     vendor/oneplus/oneplus3/proprietary/etc/firmware/mbn_ota/mcfg_sw_NoCDMA/mcfg_sw_OEM_Test-VoLTE.mbn:system/etc/firmware/mbn_ota/mcfg_sw_NoCDMA/mcfg_sw_OEM_Test-VoLTE.mbn \
     vendor/oneplus/oneplus3/proprietary/etc/firmware/mbn_ota/mcfg_sw_NoCDMA/mcfg_sw_UK-VoLTE.mbn:system/etc/firmware/mbn_ota/mcfg_sw_NoCDMA/mcfg_sw_UK-VoLTE.mbn \
     vendor/oneplus/oneplus3/proprietary/etc/firmware/mbn_ota/mcfg_sw_NoCDMA/mcfg_sw_CMCC_Volte_OpenMkt-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw_NoCDMA/mcfg_sw_CMCC_Volte_OpenMkt-Commercial.mbn \
