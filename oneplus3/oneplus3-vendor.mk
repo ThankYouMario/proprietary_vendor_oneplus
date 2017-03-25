@@ -1000,6 +1000,10 @@ PRODUCT_PACKAGES += \
     libqmi_common_so \
     libthermalclient \
     libtime_genoff \
+    libts_detected_face_hal \
+    libts_detected_face_jni \
+    libts_face_beautify_hal \
+    libts_face_beautify_jni \
     datastatusnotification \
     embms \
     fastdormancy \
