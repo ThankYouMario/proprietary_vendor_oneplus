@@ -1035,7 +1035,7 @@ PRODUCT_PACKAGES += \
 endif
 
 # Prebuilts from our custom camera HAL
-ifeq ($(USE_CAMERA_STUB),true)
+ifeq ($(wildcard $(ANDROID_BUILD_TOP)/hardware/oneplus/camera),)
 PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/lib/hw/camera.msm8996.so:system/lib/hw/camera.msm8996.so \
     vendor/oneplus/oneplus3/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
