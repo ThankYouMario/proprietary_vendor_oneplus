@@ -91,13 +91,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/lib/libSensorManagerHAL.so:system/lib/libSensorManagerHAL.so \
     vendor/oneplus/oneplus3/proprietary/lib/lib_oneplus_facebeauty.so:system/lib/lib_oneplus_facebeauty.so \
     vendor/oneplus/oneplus3/proprietary/lib/lib_oneplus_md.so:system/lib/lib_oneplus_md.so \
-    vendor/oneplus/oneplus3/proprietary/lib64/libopbaselib.so:system/lib64/libopbaselib.so \
-    vendor/oneplus/oneplus3/proprietary/lib64/libopcamera.so:system/lib64/libopcamera.so \
-    vendor/oneplus/oneplus3/proprietary/lib64/libopcameralib.so:system/lib64/libopcameralib.so \
-    vendor/oneplus/oneplus3/proprietary/lib/libopcamera.so:system/lib/libopcamera.so \
-    vendor/oneplus/oneplus3/proprietary/lib/libopcameralib.so:system/lib/libopcameralib.so \
     vendor/oneplus/oneplus3/proprietary/lib/libopcamera_crypt.so:system/lib/libopcamera_crypt.so \
-    vendor/oneplus/oneplus3/proprietary/lib/libopbaselib.so:system/lib/libopbaselib.so \
     vendor/oneplus/oneplus3/proprietary/lib/libop_calib3d.so:system/lib/libop_calib3d.so \
     vendor/oneplus/oneplus3/proprietary/lib/libop_carotene.so:system/lib/libop_carotene.so \
     vendor/oneplus/oneplus3/proprietary/lib/libop_core.so:system/lib/libop_core.so \
