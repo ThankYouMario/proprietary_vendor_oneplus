@@ -1046,6 +1046,7 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/bin/iop:system/bin/iop \
     vendor/oneplus/oneplus3/proprietary/lib/libstagefright_soft_flacdec.so:/system/lib/libstagefright_soft_flacdec.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libqti-iop.so:system/vendor/lib/libqti-iop.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqti-iop.so:system/vendor/lib64/libqti-iop.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libqti_performance.so:/system/vendor/lib/libqti_performance.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqti_performance.so:/system/vendor/lib64/libqti_performance.so \
