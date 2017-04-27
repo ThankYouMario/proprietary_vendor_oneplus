@@ -616,7 +616,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
     vendor/oneplus/oneplus3/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     vendor/oneplus/oneplus3/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
-    vendor/oneplus/oneplus3/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/oneplus/oneplus3/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/oneplus/oneplus3/proprietary/lib64/libgnsspps.so:system/lib64/libgnsspps.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so \
@@ -1010,7 +1009,8 @@ PRODUCT_PACKAGES += \
     imssettings \
     qcrilhook \
     libqct_resampler \
-    libopcamera_native_modules
+    libopcamera_native_modules \
+    qti-telephony-common
 
 # QC AV enhancements
 PRODUCT_PACKAGES += \
