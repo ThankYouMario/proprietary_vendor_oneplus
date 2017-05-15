@@ -996,7 +996,6 @@ PRODUCT_PACKAGES += \
     libts_face_beautify_jni \
     datastatusnotification \
     embms \
-    fastdormancy \
     QtiTelephonyService \
     SimSettings \
     shutdownlistener \
