@@ -22,7 +22,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/onyx/proprietary/bin/loc_launcher:system/bin/loc_launcher \
     vendor/oneplus/onyx/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
     vendor/oneplus/onyx/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
-    vendor/oneplus/onyx/proprietary/bin/mpdecision:system/bin/mpdecision \
     vendor/oneplus/onyx/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/oneplus/onyx/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/oneplus/onyx/proprietary/bin/qseecomd:system/bin/qseecomd \
@@ -56,7 +55,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/onyx/proprietary/lib/libopcamerahw_interface.so:system/lib/libopcamerahw_interface.so \
     vendor/oneplus/onyx/proprietary/lib/libparam.so:system/lib/libparam.so \
     vendor/oneplus/onyx/proprietary/lib/libwcnss_qmi.so:system/lib/libwcnss_qmi.so \
-    vendor/oneplus/onyx/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/oneplus/onyx/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
@@ -224,7 +222,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/onyx/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
-    vendor/oneplus/onyx/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/libuiblur.so:system/vendor/lib/libuiblur.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
