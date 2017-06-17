@@ -1038,6 +1038,18 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so
 endif
 
+# Prebuilts from our custom performance controller
+ifeq ($(wildcard $(ANDROID_BUILD_TOP)/vendor/pa/proprietary),)
+PRODUCT_COPY_FILES += \
+    vendor/oneplus/oneplus3/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqti-perfd-client.so:system/vendor/lib64/libqti-perfd-client.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so
+else
+PRODUCT_PACKAGES += \
+    perfd \
+    libqti-perfd-client
+endif
+
 PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/bin/iop:system/bin/iop \
     vendor/oneplus/oneplus3/proprietary/lib/libstagefright_soft_flacdec.so:/system/lib/libstagefright_soft_flacdec.so \
@@ -1046,7 +1058,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libqti_performance.so:/system/vendor/lib/libqti_performance.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqti_performance.so:/system/vendor/lib64/libqti_performance.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libstagefright_soft_flacdec.so:/system/lib64/libstagefright_soft_flacdec.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/oneplus/oneplus3/proprietary/vendor/etc/perf-profile0.conf:system/vendor/etc/perf-profile0.conf \
     vendor/oneplus/oneplus3/proprietary/vendor/etc/perf-profile1.conf:system/vendor/etc/perf-profile1.conf \
     vendor/oneplus/oneplus3/proprietary/vendor/etc/perf-profile2.conf:system/vendor/etc/perf-profile2.conf \
@@ -1055,6 +1066,4 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/etc/perf-profile5.conf:system/vendor/etc/perf-profile5.conf \
     vendor/oneplus/oneplus3/proprietary/vendor/etc/perf-profile6.conf:system/vendor/etc/perf-profile6.conf \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqti-iop-client.so:system/vendor/lib64/libqti-iop-client.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqti-perfd-client.so:system/vendor/lib64/libqti-perfd-client.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libqti-iop-client.so:system/vendor/lib/libqti-iop-client.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so
