@@ -1,4 +1,4 @@
-# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,8 +17,6 @@
 PRODUCT_COPY_FILES += \
     vendor/oneplus/onyx/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/oneplus/onyx/proprietary/bin/btnvtool:system/bin/btnvtool \
-    vendor/oneplus/onyx/proprietary/bin/cnd:system/bin/cnd \
-    vendor/oneplus/onyx/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/oneplus/onyx/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/oneplus/onyx/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/oneplus/onyx/proprietary/bin/loc_launcher:system/bin/loc_launcher \
@@ -33,12 +31,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/onyx/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/oneplus/onyx/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
     vendor/oneplus/onyx/proprietary/bin/time_daemon:system/bin/time_daemon \
-    vendor/oneplus/onyx/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
-    vendor/oneplus/onyx/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
     vendor/oneplus/onyx/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
     vendor/oneplus/onyx/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
-    vendor/oneplus/onyx/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
-    vendor/oneplus/onyx/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml \
     vendor/oneplus/onyx/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
     vendor/oneplus/onyx/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
     vendor/oneplus/onyx/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
@@ -54,20 +48,16 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/onyx/proprietary/etc/firmware/venus.b04:system/etc/firmware/venus.b04 \
     vendor/oneplus/onyx/proprietary/etc/firmware/venus.mbn:system/etc/firmware/venus.mbn \
     vendor/oneplus/onyx/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt \
-    vendor/oneplus/onyx/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
-    vendor/oneplus/onyx/proprietary/etc/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \
-    vendor/oneplus/onyx/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
-    vendor/oneplus/onyx/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
-    vendor/oneplus/onyx/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
-    vendor/oneplus/onyx/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
     vendor/oneplus/onyx/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/oneplus/onyx/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
+    vendor/oneplus/onyx/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     vendor/oneplus/onyx/proprietary/lib/libFNVfbEngineLib.so:system/lib/libFNVfbEngineLib.so \
     vendor/oneplus/onyx/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
     vendor/oneplus/onyx/proprietary/lib/libopcamerahw_interface.so:system/lib/libopcamerahw_interface.so \
     vendor/oneplus/onyx/proprietary/lib/libparam.so:system/lib/libparam.so \
     vendor/oneplus/onyx/proprietary/lib/libwcnss_qmi.so:system/lib/libwcnss_qmi.so \
     vendor/oneplus/onyx/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
+    vendor/oneplus/onyx/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
@@ -117,17 +107,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/onyx/proprietary/vendor/lib/libchromatix_s5k3m2_video_hd.so:system/vendor/lib/libchromatix_s5k3m2_video_hd.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/libchromatix_s5k3m2_zsl.so:system/vendor/lib/libchromatix_s5k3m2_zsl.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
-    vendor/oneplus/onyx/proprietary/vendor/lib/libcneconn.so:system/vendor/lib/libcneconn.so \
-    vendor/oneplus/onyx/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
-    vendor/oneplus/onyx/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/libdataitems.so:system/vendor/lib/libdataitems.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
-    vendor/oneplus/onyx/proprietary/vendor/lib/libdpmframework.so:system/vendor/lib/libdpmframework.so \
-    vendor/oneplus/onyx/proprietary/vendor/lib/libdpmnsrm.so:system/vendor/lib/libdpmnsrm.so \
-    vendor/oneplus/onyx/proprietary/vendor/lib/libdrmdiag.so:system/vendor/lib/libdrmdiag.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
@@ -196,7 +180,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/onyx/proprietary/vendor/lib/libmmparser.so:system/vendor/lib/libmmparser.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
-    vendor/oneplus/onyx/proprietary/vendor/lib/libNimsWrap.so:system/vendor/lib/libNimsWrap.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/libOmxAmrwbplusDec.so:system/vendor/lib/libOmxAmrwbplusDec.so \
@@ -242,16 +225,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/onyx/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
-    vendor/oneplus/onyx/proprietary/vendor/lib/libtzdrmgenprov.so:system/vendor/lib/libtzdrmgenprov.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/libuiblur.so:system/vendor/lib/libuiblur.so \
-    vendor/oneplus/onyx/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
-    vendor/oneplus/onyx/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
-    vendor/oneplus/onyx/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
+    vendor/oneplus/onyx/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
+    vendor/oneplus/onyx/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
+    vendor/oneplus/onyx/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
-    vendor/oneplus/onyx/proprietary/vendor/lib/qcdrm/playready/lib/drm/libdrmprplugin_customer.so:system/vendor/lib/qcdrm/playready/lib/drm/libdrmprplugin_customer.so \
-    vendor/oneplus/onyx/proprietary/vendor/lib/qcdrm/playready/lib/libprdrmdecrypt_customer.so:system/vendor/lib/qcdrm/playready/lib/libprdrmdecrypt_customer.so \
-    vendor/oneplus/onyx/proprietary/vendor/lib/qcdrm/playready/lib/libtzplayready_customer.so:system/vendor/lib/qcdrm/playready/lib/libtzplayready_customer.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
     vendor/oneplus/onyx/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so
@@ -265,11 +244,6 @@ PRODUCT_PACKAGES += \
     shutdownlistener \
     TimeService \
     qcrilmsgtunnel \
-    cneapiclient \
-    com.google.widevine.software.drm \
-    com.qti.dpmframework \
-    com.quicinc.cne \
     ConnectivityExt \
-    dpmapi \
     qcnvitems \
     qcrilhook
