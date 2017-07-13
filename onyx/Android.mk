@@ -39,6 +39,16 @@ LOCAL_MODULE_SUFFIX := .so
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := libril
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/lib/libril.so
+LOCAL_MULTILIB := 32
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := libmm-abl
 LOCAL_MODULE_OWNER := oneplus
 LOCAL_SRC_FILES := proprietary/vendor/lib/libmm-abl.so

@@ -26,6 +26,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/onyx/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/oneplus/onyx/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/oneplus/onyx/proprietary/bin/radish:system/bin/radish \
+    vendor/oneplus/onyx/proprietary/bin/rild:system/bin/rild \
     vendor/oneplus/onyx/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/oneplus/onyx/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/oneplus/onyx/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
@@ -238,6 +239,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
     libloc_ds_api \
+    libril \
     libmm-abl \
     libtime_genoff \
     libTimeService \
