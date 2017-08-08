@@ -222,7 +222,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/lib/libop_zlib.so:system/lib/libop_zlib.so \
     vendor/oneplus/oneplus3/proprietary/lib/libopcamera.so:system/lib/libopcamera.so \
     vendor/oneplus/oneplus3/proprietary/lib/libopcamera_crypt.so:system/lib/libopcamera_crypt.so \
-    vendor/oneplus/oneplus3/proprietary/lib/libopcamera_native_modules.so:system/lib/libopcamera_native_modules.so \
     vendor/oneplus/oneplus3/proprietary/lib/libopcameralib.so:system/lib/libopcameralib.so \
     vendor/oneplus/oneplus3/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/oneplus/oneplus3/proprietary/lib/libstagefright_soft_flacdec.so:system/lib/libstagefright_soft_flacdec.so \
@@ -649,9 +648,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libsmwrapper.so:system/vendor/lib/libsmwrapper.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libsubsystem_control.so:system/vendor/lib/libsubsystem_control.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libtrueportrait.so:system/vendor/lib/libtrueportrait.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libts_detected_face_hal.so:system/vendor/lib/libts_detected_face_hal.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libts_detected_face_jni.so:system/vendor/lib/libts_detected_face_jni.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libts_face_beautify_hal.so:system/vendor/lib/libts_face_beautify_hal.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libts_face_beautify_jni.so:system/vendor/lib/libts_face_beautify_jni.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libubifocus.so:system/vendor/lib/libubifocus.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
@@ -968,6 +965,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libnfc-nci \
+    libopcamera_native_modules \
     libloc_api_v02 \
     lib-ims-rcscmjni \
     lib-imsrcscm \
@@ -983,6 +981,8 @@ PRODUCT_PACKAGES += \
     libthermalclient \
     libtime_genoff \
     libqct_resampler \
+    libts_detected_face_hal \
+    libts_face_beautify_hal \
     QtiTelephonyService \
     SimSettings \
     TimeService \
@@ -1017,4 +1017,5 @@ PRODUCT_PACKAGES += \
     rcsimssettings \
     rcsservice \
     tcmclient \
+    qti-vzw-ims-internal \
     dashd

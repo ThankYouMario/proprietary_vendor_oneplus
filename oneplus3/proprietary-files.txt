@@ -25,6 +25,7 @@
 -framework/rcsservice.jar
 -framework/tcmclient.jar
 -lib/libnfc-nci.so
+-lib/libopcamera_native_modules.so
 -lib64/libloc_api_v02.so
 -lib64/libnfc-nci.so
 -priv-app/CNEService/CNEService.apk
@@ -51,6 +52,8 @@
 -vendor/lib/libsdsprpc.so
 -vendor/lib/libthermalclient.so
 -vendor/lib/libtime_genoff.so
+-vendor/lib/libts_detected_face_hal.so|247470e7610f93b0a21d943f5e47ab61a032b1e0
+-vendor/lib/libts_face_beautify_hal.so|4b8700003fd32f5a6a650821b86ed33e73992d10
 -vendor/lib64/lib-ims-rcscmjni.so
 -vendor/lib64/lib-imsrcscm.so
 -vendor/lib64/lib-imsrcscmclient.so
@@ -273,7 +276,6 @@ lib/libop_xphoto.so
 lib/libop_zlib.so
 lib/libopcamera.so
 lib/libopcamera_crypt.so
-lib/libopcamera_native_modules.so
 lib/libopcameralib.so
 lib/libqomx_core.so|1f5a018dd4cf9ece7670c058eaaa36d45ecfcdd9
 lib/libstagefright_soft_flacdec.so
@@ -741,9 +743,7 @@ vendor/lib/libsmemlog.so
 vendor/lib/libsmwrapper.so
 vendor/lib/libsubsystem_control.so
 vendor/lib/libtrueportrait.so
-vendor/lib/libts_detected_face_hal.so|247470e7610f93b0a21d943f5e47ab61a032b1e0
 vendor/lib/libts_detected_face_jni.so|7caef4bb085c888a64e4d5622274391b0c3dd4dc
-vendor/lib/libts_face_beautify_hal.so|4b8700003fd32f5a6a650821b86ed33e73992d10
 vendor/lib/libts_face_beautify_jni.so|0c7c1d0fcbb3e0bd49acfb4bad5340db86e37aaa
 vendor/lib/libubifocus.so
 vendor/lib/libvendorconn.so
