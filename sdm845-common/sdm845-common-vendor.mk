@@ -290,4 +290,5 @@ PRODUCT_PACKAGES += \
     com.qti.dpmframework \
     dpmapi \
     qcrilhook \
-    tcmclient
+    tcmclient \
+    dashd
