@@ -21,6 +21,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sdm845-common/proprietary/etc/init/perfservice.rc:system/etc/init/perfservice.rc \
     vendor/oneplus/sdm845-common/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
     vendor/oneplus/sdm845-common/proprietary/etc/nfcee_access.xml:system/etc/nfcee_access.xml \
+    vendor/oneplus/sdm845-common/proprietary/etc/perf/whitelistedapps.xml:system/etc/perf/whitelistedapps.xml \
     vendor/oneplus/sdm845-common/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/oneplus/sdm845-common/proprietary/etc/permissions/com.nxp.nfc.xml:system/etc/permissions/com.nxp.nfc.xml \
     vendor/oneplus/sdm845-common/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
@@ -181,6 +182,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sdm845-common/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
     vendor/oneplus/sdm845-common/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
     vendor/oneplus/sdm845-common/proprietary/lib/libqmi_cci_system.so:system/lib/libqmi_cci_system.so \
+    vendor/oneplus/sdm845-common/proprietary/lib/libqti-at.so:system/lib/libqti-at.so \
     vendor/oneplus/sdm845-common/proprietary/lib/libqti-util_system.so:system/lib/libqti-util_system.so \
     vendor/oneplus/sdm845-common/proprietary/lib/librcc.so:system/lib/librcc.so \
     vendor/oneplus/sdm845-common/proprietary/lib/libsd_sdk_display.so:system/lib/libsd_sdk_display.so \
@@ -252,6 +254,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sdm845-common/proprietary/lib64/libnxpnfc-nci.so:system/lib64/libnxpnfc-nci.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/libnxpnfc_nci_jni.so:system/lib64/libnxpnfc_nci_jni.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/libqmi_cci_system.so:system/lib64/libqmi_cci_system.so \
+    vendor/oneplus/sdm845-common/proprietary/lib64/libqti-at.so:system/lib64/libqti-at.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/libqti-util_system.so:system/lib64/libqti-util_system.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/librcc.so:system/lib64/librcc.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/libsd_sdk_display.so:system/lib64/libsd_sdk_display.so \
