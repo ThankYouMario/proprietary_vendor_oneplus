@@ -254,6 +254,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/lib64/libqmi_cci_system.so:system/lib64/libqmi_cci_system.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libqti-iopd-client_system.so:system/lib64/libqti-iopd-client_system.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libqti-util_system.so:system/lib64/libqti-util_system.so \
+    vendor/oneplus/sm8150-common/proprietary/lib64/libqti_workloadclassifiermodel.so:system/lib64/libqti_workloadclassifiermodel.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/librcc.so:system/lib64/librcc.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libsd_sdk_display.so:system/lib64/libsd_sdk_display.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libsdm-disp-apis.so:system/lib64/libsdm-disp-apis.so \
