@@ -180,8 +180,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
     vendor/oneplus/sm8150-common/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
     vendor/oneplus/sm8150-common/proprietary/lib/libqmi_cci_system.so:system/lib/libqmi_cci_system.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/libqti-iopd-client_system.so:system/lib/libqti-iopd-client_system.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/libqti-util_system.so:system/lib/libqti-util_system.so \
     vendor/oneplus/sm8150-common/proprietary/lib/librcc.so:system/lib/librcc.so \
     vendor/oneplus/sm8150-common/proprietary/lib/libsd_sdk_display.so:system/lib/libsd_sdk_display.so \
     vendor/oneplus/sm8150-common/proprietary/lib/libsdm-disp-apis.so:system/lib/libsdm-disp-apis.so \
@@ -254,9 +252,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/lib64/libnxpnfc-nci.so:system/lib64/libnxpnfc-nci.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libnxpnfc_nci_jni.so:system/lib64/libnxpnfc_nci_jni.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libqmi_cci_system.so:system/lib64/libqmi_cci_system.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/libqti-iopd-client_system.so:system/lib64/libqti-iopd-client_system.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/libqti-util_system.so:system/lib64/libqti-util_system.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/libqti_workloadclassifiermodel.so:system/lib64/libqti_workloadclassifiermodel.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/librcc.so:system/lib64/librcc.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libsd_sdk_display.so:system/lib64/libsd_sdk_display.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libsdm-disp-apis.so:system/lib64/libsdm-disp-apis.so \
