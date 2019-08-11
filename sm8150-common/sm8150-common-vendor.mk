@@ -233,8 +233,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/lib64/libFileMux.so:system/lib64/libFileMux.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libOmxMux.so:system/lib64/libOmxMux.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libadsprpc_system.so:system/lib64/libadsprpc_system.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/libaptXHD_encoder.so:system/lib64/libaptXHD_encoder.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libcdsprpc_system.so:system/lib64/libcdsprpc_system.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libdpmctmgr.so:system/lib64/libdpmctmgr.so \
