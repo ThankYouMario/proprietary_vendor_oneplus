@@ -14,11 +14,9 @@
 
 PRODUCT_COPY_FILES += \
     vendor/oneplus/sdm845-common/proprietary/bin/dpmd:system/bin/dpmd \
-    vendor/oneplus/sdm845-common/proprietary/bin/perfservice:system/bin/perfservice \
     vendor/oneplus/sdm845-common/proprietary/bin/wfdservice:system/bin/wfdservice \
     vendor/oneplus/sdm845-common/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
     vendor/oneplus/sdm845-common/proprietary/etc/init/dpmd.rc:system/etc/init/dpmd.rc \
-    vendor/oneplus/sdm845-common/proprietary/etc/init/perfservice.rc:system/etc/init/perfservice.rc \
     vendor/oneplus/sdm845-common/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
     vendor/oneplus/sdm845-common/proprietary/etc/nfcee_access.xml:system/etc/nfcee_access.xml \
     vendor/oneplus/sdm845-common/proprietary/etc/perf/whitelistedapps.xml:system/etc/perf/whitelistedapps.xml \
@@ -160,7 +158,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sdm845-common/proprietary/lib/com.qualcomm.qti.imscmservice@2.1.so:system/lib/com.qualcomm.qti.imscmservice@2.1.so \
     vendor/oneplus/sdm845-common/proprietary/lib/com.qualcomm.qti.uceservice@2.0.so:system/lib/com.qualcomm.qti.uceservice@2.0.so \
     vendor/oneplus/sdm845-common/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
-    vendor/oneplus/sdm845-common/proprietary/lib/extractors/libmmparser.so:system/lib/extractors/libmmparser.so \
     vendor/oneplus/sdm845-common/proprietary/lib/lib-imsvideocodec.so:system/lib/lib-imsvideocodec.so \
     vendor/oneplus/sdm845-common/proprietary/lib/lib-imsvtextutils.so:system/lib/lib-imsvtextutils.so \
     vendor/oneplus/sdm845-common/proprietary/lib/lib-imsvtutils.so:system/lib/lib-imsvtutils.so \
@@ -177,13 +174,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sdm845-common/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
     vendor/oneplus/sdm845-common/proprietary/lib/liblocationservice_jni.so:system/lib/liblocationservice_jni.so \
     vendor/oneplus/sdm845-common/proprietary/lib/libmdsprpc_system.so:system/lib/libmdsprpc_system.so \
-    vendor/oneplus/sdm845-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
-    vendor/oneplus/sdm845-common/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
     vendor/oneplus/sdm845-common/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
     vendor/oneplus/sdm845-common/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
     vendor/oneplus/sdm845-common/proprietary/lib/libqmi_cci_system.so:system/lib/libqmi_cci_system.so \
     vendor/oneplus/sdm845-common/proprietary/lib/libqti-at.so:system/lib/libqti-at.so \
-    vendor/oneplus/sdm845-common/proprietary/lib/libqti-util_system.so:system/lib/libqti-util_system.so \
     vendor/oneplus/sdm845-common/proprietary/lib/librcc.so:system/lib/librcc.so \
     vendor/oneplus/sdm845-common/proprietary/lib/libsd_sdk_display.so:system/lib/libsd_sdk_display.so \
     vendor/oneplus/sdm845-common/proprietary/lib/libsdm-disp-apis.so:system/lib/libsdm-disp-apis.so \
@@ -229,7 +223,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sdm845-common/proprietary/lib64/com.qualcomm.qti.imscmservice@2.1.so:system/lib64/com.qualcomm.qti.imscmservice@2.1.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/com.qualcomm.qti.uceservice@2.0.so:system/lib64/com.qualcomm.qti.uceservice@2.0.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/ese_spi_nxp.so:system/lib64/ese_spi_nxp.so \
-    vendor/oneplus/sdm845-common/proprietary/lib64/extractors/libmmparser.so:system/lib64/extractors/libmmparser.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/lib-imsvideocodec.so:system/lib64/lib-imsvideocodec.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/lib-imsvtextutils.so:system/lib64/lib-imsvtextutils.so \
@@ -247,15 +240,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sdm845-common/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/liblocationservice_jni.so:system/lib64/liblocationservice_jni.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/libmdsprpc_system.so:system/lib64/libmdsprpc_system.so \
-    vendor/oneplus/sdm845-common/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
-    vendor/oneplus/sdm845-common/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/libmmrtpdecoder.so:system/lib64/libmmrtpdecoder.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/libmmrtpencoder.so:system/lib64/libmmrtpencoder.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/libnxpnfc-nci.so:system/lib64/libnxpnfc-nci.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/libnxpnfc_nci_jni.so:system/lib64/libnxpnfc_nci_jni.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/libqmi_cci_system.so:system/lib64/libqmi_cci_system.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/libqti-at.so:system/lib64/libqti-at.so \
-    vendor/oneplus/sdm845-common/proprietary/lib64/libqti-util_system.so:system/lib64/libqti-util_system.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/librcc.so:system/lib64/librcc.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/libsd_sdk_display.so:system/lib64/libsd_sdk_display.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/libsdm-disp-apis.so:system/lib64/libsdm-disp-apis.so \
