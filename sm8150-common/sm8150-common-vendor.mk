@@ -13,30 +13,20 @@
 # limitations under the License.
 
 PRODUCT_COPY_FILES += \
-    vendor/oneplus/sm8150-common/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/oneplus/sm8150-common/proprietary/bin/wfdservice:system/bin/wfdservice \
-    vendor/oneplus/sm8150-common/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
-    vendor/oneplus/sm8150-common/proprietary/etc/init/dpmd.rc:system/etc/init/dpmd.rc \
     vendor/oneplus/sm8150-common/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
     vendor/oneplus/sm8150-common/proprietary/etc/nfcee_access.xml:system/etc/nfcee_access.xml \
     vendor/oneplus/sm8150-common/proprietary/etc/permissions/com.nxp.nfc.xml:system/etc/permissions/com.nxp.nfc.xml \
-    vendor/oneplus/sm8150-common/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/oneplus/sm8150-common/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
     vendor/oneplus/sm8150-common/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:system/etc/permissions/com.qti.snapdragon.sdk.display.xml \
     vendor/oneplus/sm8150-common/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
-    vendor/oneplus/sm8150-common/proprietary/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:system/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
-    vendor/oneplus/sm8150-common/proprietary/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:system/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
     vendor/oneplus/sm8150-common/proprietary/etc/permissions/com.qualcomm.qti.imscmservice.xml:system/etc/permissions/com.qualcomm.qti.imscmservice.xml \
     vendor/oneplus/sm8150-common/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
-    vendor/oneplus/sm8150-common/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
-    vendor/oneplus/sm8150-common/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \
     vendor/oneplus/sm8150-common/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
-    vendor/oneplus/sm8150-common/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/oneplus/sm8150-common/proprietary/etc/permissions/privapp-permissions-com.qualcomm.location.xml:system/etc/permissions/privapp-permissions-com.qualcomm.location.xml \
     vendor/oneplus/sm8150-common/proprietary/etc/permissions/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml \
     vendor/oneplus/sm8150-common/proprietary/etc/permissions/qti_libpermissions.xml:system/etc/permissions/qti_libpermissions.xml \
     vendor/oneplus/sm8150-common/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
-    vendor/oneplus/sm8150-common/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
     vendor/oneplus/sm8150-common/proprietary/etc/sensors/proto/descriptor.proto:system/etc/sensors/proto/descriptor.proto \
     vendor/oneplus/sm8150-common/proprietary/etc/sensors/proto/nanopb.proto:system/etc/sensors/proto/nanopb.proto \
     vendor/oneplus/sm8150-common/proprietary/etc/sensors/proto/qti_gravity.proto:system/etc/sensors/proto/qti_gravity.proto \
@@ -121,55 +111,20 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/etc/sensors/proto/sns_ultra_violet.proto:system/etc/sensors/proto/sns_ultra_violet.proto \
     vendor/oneplus/sm8150-common/proprietary/etc/sensors/proto/sns_wrist_tilt_gesture.proto:system/etc/sensors/proto/sns_wrist_tilt_gesture.proto \
     vendor/oneplus/sm8150-common/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
-    vendor/oneplus/sm8150-common/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/oneplus/sm8150-common/proprietary/framework/com.nxp.nfc.jar:system/framework/com.nxp.nfc.jar \
     vendor/oneplus/sm8150-common/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/oneplus/sm8150-common/proprietary/framework/com.qti.snapdragon.sdk.display.jar:system/framework/com.qti.snapdragon.sdk.display.jar \
-    vendor/oneplus/sm8150-common/proprietary/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar:system/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar \
-    vendor/oneplus/sm8150-common/proprietary/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar:system/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar \
-    vendor/oneplus/sm8150-common/proprietary/framework/com.qualcomm.qti.uceservice-V2.0-java.jar:system/framework/com.qualcomm.qti.uceservice-V2.0-java.jar \
-    vendor/oneplus/sm8150-common/proprietary/framework/com.quicinc.cne.api-V1.1-java.jar:system/framework/com.quicinc.cne.api-V1.1-java.jar \
-    vendor/oneplus/sm8150-common/proprietary/framework/com.quicinc.cne.constants-V1.0-java.jar:system/framework/com.quicinc.cne.constants-V1.0-java.jar \
-    vendor/oneplus/sm8150-common/proprietary/framework/com.quicinc.cne.constants-V2.0-java.jar:system/framework/com.quicinc.cne.constants-V2.0-java.jar \
-    vendor/oneplus/sm8150-common/proprietary/framework/com.quicinc.cne.constants-V2.1-java.jar:system/framework/com.quicinc.cne.constants-V2.1-java.jar \
-    vendor/oneplus/sm8150-common/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
     vendor/oneplus/sm8150-common/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
-    vendor/oneplus/sm8150-common/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
-    vendor/oneplus/sm8150-common/proprietary/framework/vendor.qti.data.factory-V1.0-java.jar:system/framework/vendor.qti.data.factory-V1.0-java.jar \
-    vendor/oneplus/sm8150-common/proprietary/framework/vendor.qti.hardware.alarm-V1.0-java.jar:system/framework/vendor.qti.hardware.alarm-V1.0-java.jar \
-    vendor/oneplus/sm8150-common/proprietary/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar:system/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar \
-    vendor/oneplus/sm8150-common/proprietary/framework/vendor.qti.hardware.data.latency-V1.0-java.jar:system/framework/vendor.qti.hardware.data.latency-V1.0-java.jar \
-    vendor/oneplus/sm8150-common/proprietary/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar:system/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar \
-    vendor/oneplus/sm8150-common/proprietary/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar:system/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar \
-    vendor/oneplus/sm8150-common/proprietary/framework/vendor.qti.ims.callinfo-V1.0-java.jar:system/framework/vendor.qti.ims.callinfo-V1.0-java.jar \
-    vendor/oneplus/sm8150-common/proprietary/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar:system/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar \
-    vendor/oneplus/sm8150-common/proprietary/lib/com.qualcomm.qti.dpm.api@1.0.so:system/lib/com.qualcomm.qti.dpm.api@1.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/com.qualcomm.qti.imscmservice@1.0.so:system/lib/com.qualcomm.qti.imscmservice@1.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/com.qualcomm.qti.imscmservice@2.0.so:system/lib/com.qualcomm.qti.imscmservice@2.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/com.qualcomm.qti.imscmservice@2.1.so:system/lib/com.qualcomm.qti.imscmservice@2.1.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/com.qualcomm.qti.uceservice@2.0.so:system/lib/com.qualcomm.qti.uceservice@2.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/lib-imsvideocodec.so:system/lib/lib-imsvideocodec.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/lib-imsvtextutils.so:system/lib/lib-imsvtextutils.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/lib-imsvtutils.so:system/lib/lib-imsvtutils.so \
     vendor/oneplus/sm8150-common/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
     vendor/oneplus/sm8150-common/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
     vendor/oneplus/sm8150-common/proprietary/lib/libadsprpc_system.so:system/lib/libadsprpc_system.so \
     vendor/oneplus/sm8150-common/proprietary/lib/libcdsprpc_system.so:system/lib/libcdsprpc_system.so \
     vendor/oneplus/sm8150-common/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/libdpmctmgr.so:system/lib/libdpmctmgr.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/libdpmfdmgr.so:system/lib/libdpmfdmgr.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/libdpmframework.so:system/lib/libdpmframework.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/libdpmtcm.so:system/lib/libdpmtcm.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
     vendor/oneplus/sm8150-common/proprietary/lib/liblocationservice_jni.so:system/lib/liblocationservice_jni.so \
     vendor/oneplus/sm8150-common/proprietary/lib/libmdsprpc_system.so:system/lib/libmdsprpc_system.so \
     vendor/oneplus/sm8150-common/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
     vendor/oneplus/sm8150-common/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
     vendor/oneplus/sm8150-common/proprietary/lib/libqmi_cci_system.so:system/lib/libqmi_cci_system.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/libsd_sdk_display.qti.so:system/lib/libsd_sdk_display.qti.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/libsdm-disp-apis.qti.so:system/lib/libsdm-disp-apis.qti.so \
     vendor/oneplus/sm8150-common/proprietary/lib/libsdsprpc_system.so:system/lib/libsdsprpc_system.so \
     vendor/oneplus/sm8150-common/proprietary/lib/libvr_amb_engine.so:system/lib/libvr_amb_engine.so \
     vendor/oneplus/sm8150-common/proprietary/lib/libvr_object_engine.so:system/lib/libvr_object_engine.so \
@@ -190,44 +145,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/lib/libwfduibcsrc.so:system/lib/libwfduibcsrc.so \
     vendor/oneplus/sm8150-common/proprietary/lib/libwfduibcsrcinterface.so:system/lib/libwfduibcsrcinterface.so \
     vendor/oneplus/sm8150-common/proprietary/lib/libxt_native.so:system/lib/libxt_native.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/vendor.display.color@1.0.so:system/lib/vendor.display.color@1.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/vendor.display.color@1.1.so:system/lib/vendor.display.color@1.1.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/vendor.display.postproc@1.0.so:system/lib/vendor.display.postproc@1.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/vendor.qti.gnss@1.0.so:system/lib/vendor.qti.gnss@1.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/vendor.qti.gnss@1.1.so:system/lib/vendor.qti.gnss@1.1.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/vendor.qti.gnss@1.2.so:system/lib/vendor.qti.gnss@1.2.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/vendor.qti.gnss@2.0.so:system/lib/vendor.qti.gnss@2.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/vendor.qti.gnss@2.1.so:system/lib/vendor.qti.gnss@2.1.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/vendor.qti.hardware.alarm@1.0.so:system/lib/vendor.qti.hardware.alarm@1.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/vendor.qti.hardware.data.dynamicdds@1.0.so:system/lib/vendor.qti.hardware.data.dynamicdds@1.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/vendor.qti.hardware.data.latency@1.0.so:system/lib/vendor.qti.hardware.data.latency@1.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/vendor.qti.ims.callinfo@1.0.so:system/lib/vendor.qti.ims.callinfo@1.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/vendor.qti.ims.rcsconfig@1.0.so:system/lib/vendor.qti.ims.rcsconfig@1.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/vendor.qti.imsrtpservice@2.0.so:system/lib/vendor.qti.imsrtpservice@2.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/vendor.qti.imsrtpservice@2.1.so:system/lib/vendor.qti.imsrtpservice@2.1.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/com.qualcomm.qti.imscmservice@1.0.so:system/lib64/com.qualcomm.qti.imscmservice@1.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/com.qualcomm.qti.imscmservice@2.0.so:system/lib64/com.qualcomm.qti.imscmservice@2.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/com.qualcomm.qti.imscmservice@2.1.so:system/lib64/com.qualcomm.qti.imscmservice@2.1.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/com.qualcomm.qti.uceservice@2.0.so:system/lib64/com.qualcomm.qti.uceservice@2.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/lib-imsvideocodec.so:system/lib64/lib-imsvideocodec.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/lib-imsvtextutils.so:system/lib64/lib-imsvtextutils.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/lib-imsvtutils.so:system/lib64/lib-imsvtutils.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/vendor.qti.hardware.audiohalext-utils.so:system/lib/vendor.qti.hardware.audiohalext-utils.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so:system/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so:system/lib/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libFileMux.so:system/lib64/libFileMux.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libOmxMux.so:system/lib64/libOmxMux.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libadsprpc_system.so:system/lib64/libadsprpc_system.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libcdsprpc_system.so:system/lib64/libcdsprpc_system.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/libdpmctmgr.so:system/lib64/libdpmctmgr.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/libdpmfdmgr.so:system/lib64/libdpmfdmgr.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/libdpmframework.so:system/lib64/libdpmframework.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/libdpmtcm.so:system/lib64/libdpmtcm.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/liblocationservice_jni.so:system/lib64/liblocationservice_jni.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libmdsprpc_system.so:system/lib64/libmdsprpc_system.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libmmrtpdecoder.so:system/lib64/libmmrtpdecoder.so \
@@ -235,8 +157,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/lib64/libnxpnfc-nci.so:system/lib64/libnxpnfc-nci.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libnxpnfc_nci_jni.so:system/lib64/libnxpnfc_nci_jni.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libqmi_cci_system.so:system/lib64/libqmi_cci_system.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/libsd_sdk_display.qti.so:system/lib64/libsd_sdk_display.qti.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/libsdm-disp-apis.qti.so:system/lib64/libsdm-disp-apis.qti.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libsdsprpc_system.so:system/lib64/libsdsprpc_system.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libvr_amb_engine.so:system/lib64/libvr_amb_engine.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libvr_object_engine.so:system/lib64/libvr_object_engine.so \
@@ -245,25 +165,112 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/lib64/libwfdclient.so:system/lib64/libwfdclient.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libwfdnative.so:system/lib64/libwfdnative.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libxt_native.so:system/lib64/libxt_native.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/vendor.display.color@1.0.so:system/lib64/vendor.display.color@1.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/vendor.display.color@1.1.so:system/lib64/vendor.display.color@1.1.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/vendor.display.postproc@1.0.so:system/lib64/vendor.display.postproc@1.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/vendor.qti.gnss@1.0.so:system/lib64/vendor.qti.gnss@1.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/vendor.qti.gnss@1.1.so:system/lib64/vendor.qti.gnss@1.1.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/vendor.qti.gnss@1.2.so:system/lib64/vendor.qti.gnss@1.2.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/vendor.qti.gnss@2.0.so:system/lib64/vendor.qti.gnss@2.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/vendor.qti.gnss@2.1.so:system/lib64/vendor.qti.gnss@2.1.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/vendor.qti.hardware.alarm@1.0.so:system/lib64/vendor.qti.hardware.alarm@1.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so:system/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/vendor.qti.hardware.data.latency@1.0.so:system/lib64/vendor.qti.hardware.data.latency@1.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/vendor.qti.ims.callinfo@1.0.so:system/lib64/vendor.qti.ims.callinfo@1.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/vendor.qti.ims.rcsconfig@1.0.so:system/lib64/vendor.qti.ims.rcsconfig@1.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/vendor.qti.imsrtpservice@2.0.so:system/lib64/vendor.qti.imsrtpservice@2.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/vendor.qti.imsrtpservice@2.1.so:system/lib64/vendor.qti.imsrtpservice@2.1.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/vendor.qti.hardware.audiohalext-utils.so:system/lib64/vendor.qti.hardware.audiohalext-utils.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so:system/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/vendor.qti.hardware.mlshal@1.0.so:system/lib64/vendor.qti.hardware.mlshal@1.0.so \
-    vendor/oneplus/sm8150-common/proprietary/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so:system/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so
+    vendor/oneplus/sm8150-common/proprietary/product/bin/dpmd:system/product/bin/dpmd \
+    vendor/oneplus/sm8150-common/proprietary/product/etc/dpm/dpm.conf:system/product/etc/dpm/dpm.conf \
+    vendor/oneplus/sm8150-common/proprietary/product/etc/init/dpmd.rc:system/product/etc/init/dpmd.rc \
+    vendor/oneplus/sm8150-common/proprietary/product/etc/permissions/com.qti.dpmframework.xml:system/product/etc/permissions/com.qti.dpmframework.xml \
+    vendor/oneplus/sm8150-common/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:system/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
+    vendor/oneplus/sm8150-common/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:system/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
+    vendor/oneplus/sm8150-common/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml:system/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml \
+    vendor/oneplus/sm8150-common/proprietary/product/etc/permissions/dpmapi.xml:system/product/etc/permissions/dpmapi.xml \
+    vendor/oneplus/sm8150-common/proprietary/product/etc/permissions/embms.xml:system/product/etc/permissions/embms.xml \
+    vendor/oneplus/sm8150-common/proprietary/product/etc/permissions/qcrilhook.xml:system/product/etc/permissions/qcrilhook.xml \
+    vendor/oneplus/sm8150-common/proprietary/product/etc/permissions/telephonyservice.xml:system/product/etc/permissions/telephonyservice.xml \
+    vendor/oneplus/sm8150-common/proprietary/product/framework/QtiTelephonyServicelibrary.jar:system/product/framework/QtiTelephonyServicelibrary.jar \
+    vendor/oneplus/sm8150-common/proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar:system/product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar \
+    vendor/oneplus/sm8150-common/proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar:system/product/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar \
+    vendor/oneplus/sm8150-common/proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar:system/product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar \
+    vendor/oneplus/sm8150-common/proprietary/product/framework/com.qualcomm.qti.uceservice-V2.0-java.jar:system/product/framework/com.qualcomm.qti.uceservice-V2.0-java.jar \
+    vendor/oneplus/sm8150-common/proprietary/product/framework/com.qualcomm.qti.uceservice-V2.1-java.jar:system/product/framework/com.qualcomm.qti.uceservice-V2.1-java.jar \
+    vendor/oneplus/sm8150-common/proprietary/product/framework/com.quicinc.cne.api-V1.1-java.jar:system/product/framework/com.quicinc.cne.api-V1.1-java.jar \
+    vendor/oneplus/sm8150-common/proprietary/product/framework/com.quicinc.cne.constants-V1.0-java.jar:system/product/framework/com.quicinc.cne.constants-V1.0-java.jar \
+    vendor/oneplus/sm8150-common/proprietary/product/framework/com.quicinc.cne.constants-V2.0-java.jar:system/product/framework/com.quicinc.cne.constants-V2.0-java.jar \
+    vendor/oneplus/sm8150-common/proprietary/product/framework/com.quicinc.cne.constants-V2.1-java.jar:system/product/framework/com.quicinc.cne.constants-V2.1-java.jar \
+    vendor/oneplus/sm8150-common/proprietary/product/framework/embmslibrary.jar:system/product/framework/embmslibrary.jar \
+    vendor/oneplus/sm8150-common/proprietary/product/framework/qti-telephony-common.jar:system/product/framework/qti-telephony-common.jar \
+    vendor/oneplus/sm8150-common/proprietary/product/framework/vendor.qti.data.factory-V1.0-java.jar:system/product/framework/vendor.qti.data.factory-V1.0-java.jar \
+    vendor/oneplus/sm8150-common/proprietary/product/framework/vendor.qti.data.factory-V2.0-java.jar:system/product/framework/vendor.qti.data.factory-V2.0-java.jar \
+    vendor/oneplus/sm8150-common/proprietary/product/framework/vendor.qti.hardware.alarm-V1.0-java.jar:system/product/framework/vendor.qti.hardware.alarm-V1.0-java.jar \
+    vendor/oneplus/sm8150-common/proprietary/product/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar:system/product/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar \
+    vendor/oneplus/sm8150-common/proprietary/product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar:system/product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar \
+    vendor/oneplus/sm8150-common/proprietary/product/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar:system/product/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar \
+    vendor/oneplus/sm8150-common/proprietary/product/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar:system/product/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar \
+    vendor/oneplus/sm8150-common/proprietary/product/framework/vendor.qti.ims.callinfo-V1.0-java.jar:system/product/framework/vendor.qti.ims.callinfo-V1.0-java.jar \
+    vendor/oneplus/sm8150-common/proprietary/product/framework/vendor.qti.latency-V2.0-java.jar:system/product/framework/vendor.qti.latency-V2.0-java.jar \
+    vendor/oneplus/sm8150-common/proprietary/product/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar:system/product/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/com.qualcomm.qti.dpm.api@1.0.so:system/product/lib/com.qualcomm.qti.dpm.api@1.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/com.qualcomm.qti.imscmservice@1.0.so:system/product/lib/com.qualcomm.qti.imscmservice@1.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/com.qualcomm.qti.imscmservice@2.0.so:system/product/lib/com.qualcomm.qti.imscmservice@2.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/com.qualcomm.qti.imscmservice@2.1.so:system/product/lib/com.qualcomm.qti.imscmservice@2.1.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/com.qualcomm.qti.uceservice@2.0.so:system/product/lib/com.qualcomm.qti.uceservice@2.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/product/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/lib-imsvideocodec.so:system/product/product/lib/lib-imsvideocodec.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/lib-imsvtextutils.so:system/product/product/lib/lib-imsvtextutils.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/lib-imsvtutils.so:system/product/product/lib/lib-imsvtutils.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/libdpmctmgr.so:system/product/lib/libdpmctmgr.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/libdpmfdmgr.so:system/product/lib/libdpmfdmgr.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/libdpmframework.so:system/product/lib/libdpmframework.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/libdpmtcm.so:system/product/lib/libdpmtcm.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/libimscamera_jni.so:system/product/lib/libimscamera_jni.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/libimsmedia_jni.so:system/product/lib/libimsmedia_jni.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/libsd_sdk_display.qti.so:system/product/lib/libsd_sdk_display.qti.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/libsdm-disp-apis.qti.so:system/product/lib/libsdm-disp-apis.qti.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/vendor.display.color@1.0.so:system/product/lib/vendor.display.color@1.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/vendor.display.color@1.1.so:system/product/lib/vendor.display.color@1.1.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/vendor.display.postproc@1.0.so:system/product/lib/vendor.display.postproc@1.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/vendor.qti.gnss@1.0.so:system/product/lib/vendor.qti.gnss@1.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/vendor.qti.gnss@1.1.so:system/product/lib/vendor.qti.gnss@1.1.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/vendor.qti.gnss@1.2.so:system/product/lib/vendor.qti.gnss@1.2.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/vendor.qti.gnss@2.0.so:system/product/lib/vendor.qti.gnss@2.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/vendor.qti.gnss@2.1.so:system/product/lib/vendor.qti.gnss@2.1.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/vendor.qti.gnss@3.0.so:system/product/lib/vendor.qti.gnss@3.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/vendor.qti.hardware.alarm@1.0.so:system/product/lib/vendor.qti.hardware.alarm@1.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/vendor.qti.hardware.audiohalext-utils.so:system/product/lib/vendor.qti.hardware.audiohalext-utils.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/vendor.qti.hardware.data.dynamicdds@1.0.so:system/product/lib/vendor.qti.hardware.data.dynamicdds@1.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/vendor.qti.hardware.data.latency@1.0.so:system/product/lib/vendor.qti.hardware.data.latency@1.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so:system/product/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so:system/product/lib/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/vendor.qti.ims.callinfo@1.0.so:system/product/lib/vendor.qti.ims.callinfo@1.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/vendor.qti.ims.rcsconfig@1.0.so:system/product/lib/vendor.qti.ims.rcsconfig@1.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/vendor.qti.imsrtpservice@2.0.so:system/product/lib/vendor.qti.imsrtpservice@2.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/vendor.qti.imsrtpservice@2.1.so:system/product/lib/vendor.qti.imsrtpservice@2.1.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/product/lib64/com.qualcomm.qti.dpm.api@1.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/com.qualcomm.qti.imscmservice@1.0.so:system/product/lib64/com.qualcomm.qti.imscmservice@1.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/com.qualcomm.qti.imscmservice@2.0.so:system/product/lib64/com.qualcomm.qti.imscmservice@2.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/com.qualcomm.qti.imscmservice@2.1.so:system/product/lib64/com.qualcomm.qti.imscmservice@2.1.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/com.qualcomm.qti.uceservice@2.0.so:system/product/lib64/com.qualcomm.qti.uceservice@2.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/lib-imsvideocodec.so:system/product/lib64/lib-imsvideocodec.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/lib-imsvt.so:system/product/lib64/lib-imsvt.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/lib-imsvtextutils.so:system/product/lib64/lib-imsvtextutils.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/lib-imsvtutils.so:system/product/lib64/lib-imsvtutils.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/libdpmctmgr.so:system/product/lib64/libdpmctmgr.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/libdpmfdmgr.so:system/product/lib64/libdpmfdmgr.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/libdpmframework.so:system/product/lib64/libdpmframework.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/libdpmtcm.so:system/product/lib64/libdpmtcm.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/libimscamera_jni.so:system/product/lib64/libimscamera_jni.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/libimsmedia_jni.so:system/product/lib64/libimsmedia_jni.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/libsd_sdk_display.qti.so:system/product/lib64/libsd_sdk_display.qti.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/libsdm-disp-apis.qti.so:system/product/lib64/libsdm-disp-apis.qti.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/vendor.display.color@1.0.so:system/product/lib64/vendor.display.color@1.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/vendor.display.color@1.1.so:system/product/lib64/vendor.display.color@1.1.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/vendor.display.postproc@1.0.so:system/product/lib64/vendor.display.postproc@1.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/vendor.qti.gnss@1.0.so:system/product/lib64/vendor.qti.gnss@1.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/vendor.qti.gnss@1.1.so:system/product/lib64/vendor.qti.gnss@1.1.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/vendor.qti.gnss@1.2.so:system/product/lib64/vendor.qti.gnss@1.2.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/vendor.qti.gnss@2.0.so:system/product/lib64/vendor.qti.gnss@2.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/vendor.qti.gnss@2.1.so:system/product/lib64/vendor.qti.gnss@2.1.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/vendor.qti.gnss@3.0.so:system/product/lib64/vendor.qti.gnss@3.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/vendor.qti.hardware.alarm@1.0.so:system/product/lib64/vendor.qti.hardware.alarm@1.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/vendor.qti.hardware.audiohalext-utils.so:system/product/lib64/vendor.qti.hardware.audiohalext-utils.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so:system/product/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/vendor.qti.hardware.data.latency@1.0.so:system/product/lib64/vendor.qti.hardware.data.latency@1.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so:system/product/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/vendor.qti.hardware.mlshal@1.0.so:system/product/lib64/vendor.qti.hardware.mlshal@1.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so:system/product/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/vendor.qti.ims.callinfo@1.0.so:system/product/lib64/vendor.qti.ims.callinfo@1.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/vendor.qti.ims.rcsconfig@1.0.so:system/product/lib64/vendor.qti.ims.rcsconfig@1.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/vendor.qti.imsrtpservice@2.0.so:system/product/lib64/vendor.qti.imsrtpservice@2.0.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib64/vendor.qti.imsrtpservice@2.1.so:system/product/lib64/vendor.qti.imsrtpservice@2.1.so
 
 PRODUCT_PACKAGES += \
     com.qualcomm.qti.ant@1.0 \
