@@ -15,6 +15,8 @@
 PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/bin/wfdservice:system/bin/wfdservice \
     vendor/oneplus/sm8150-common/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
+    vendor/oneplus/sm8150-common/proprietary/etc/nfcee_access.xml:system/etc/nfcee_access.xml \
+    vendor/oneplus/sm8150-common/proprietary/etc/permissions/com.nxp.nfc.xml:system/etc/permissions/com.nxp.nfc.xml \
     vendor/oneplus/sm8150-common/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
     vendor/oneplus/sm8150-common/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:system/etc/permissions/com.qti.snapdragon.sdk.display.xml \
     vendor/oneplus/sm8150-common/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
@@ -109,6 +111,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/etc/sensors/proto/sns_ultra_violet.proto:system/etc/sensors/proto/sns_ultra_violet.proto \
     vendor/oneplus/sm8150-common/proprietary/etc/sensors/proto/sns_wrist_tilt_gesture.proto:system/etc/sensors/proto/sns_wrist_tilt_gesture.proto \
     vendor/oneplus/sm8150-common/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
+    vendor/oneplus/sm8150-common/proprietary/framework/com.nxp.nfc.jar:system/framework/com.nxp.nfc.jar \
     vendor/oneplus/sm8150-common/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/oneplus/sm8150-common/proprietary/framework/com.qti.snapdragon.sdk.display.jar:system/framework/com.qti.snapdragon.sdk.display.jar \
     vendor/oneplus/sm8150-common/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
@@ -151,6 +154,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/lib64/libmdsprpc_system.so:system/lib64/libmdsprpc_system.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libmmrtpdecoder.so:system/lib64/libmmrtpdecoder.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libmmrtpencoder.so:system/lib64/libmmrtpencoder.so \
+    vendor/oneplus/sm8150-common/proprietary/lib64/libnxpnfc-nci.so:system/lib64/libnxpnfc-nci.so \
+    vendor/oneplus/sm8150-common/proprietary/lib64/libnxpnfc_nci_jni.so:system/lib64/libnxpnfc_nci_jni.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libqmi_cci_system.so:system/lib64/libqmi_cci_system.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libsdsprpc_system.so:system/lib64/libsdsprpc_system.so \
     vendor/oneplus/sm8150-common/proprietary/lib64/libvr_amb_engine.so:system/lib64/libvr_amb_engine.so \
@@ -269,6 +274,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     com.qualcomm.qti.ant@1.0 \
+    NxpNfcNci \
+    NxpSecureElement \
     QtiSystemService \
     QtiTelephonyService \
     SoterService \
