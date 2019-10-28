@@ -35,5 +35,3 @@ message sns_pocket_data
   // Accuracy of the data
   required sns_std_sensor_sample_status accuracy = 2;
 }
-
-

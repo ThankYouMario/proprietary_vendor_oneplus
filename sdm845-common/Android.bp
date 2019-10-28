@@ -1,0 +1,6 @@
+dex_import {
+    name: "WfdCommon",
+    owner: "qti",
+    jars: ["proprietary/framework/WfdCommon.jar"],
+
+}

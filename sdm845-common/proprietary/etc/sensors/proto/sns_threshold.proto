@@ -2,7 +2,7 @@
 //
 // Defines standard message types for the Threshold Algorithm
 //
-// Copyright (c) 2018 Qualcomm Technologies, Inc.
+// Copyright (c) 2018 - 2019 Qualcomm Technologies, Inc.
 // All Rights Reserved.
 // Confidential and Proprietary - Qualcomm Technologies, Inc.
 syntax = "proto2";
@@ -50,6 +50,10 @@ enum sns_threshold_type
   // Provides thresholding of the current value against a fixed configured
   // threshold value.
   SNS_THRESHOLD_TYPE_ABSOLUTE = 2;
+
+  // Provides thresholding of angle between current and last reported quaternion
+  // for quaternion sensors, in radians
+  SNS_THRESHOLD_TYPE_ANGLE = 3;
 }
 
 // Configuration Message
@@ -60,7 +64,11 @@ message sns_threshold_config
   // UID of the sensor from which data is being requested from.
   required sns_std_suid sensor_uid = 1;
 
-  //The threshold value per axis.
+  // The threshold value per axis.
+  // The number of threshold values need to be less than or equal to the number of
+  // sensor data axes.
+  // For SNS_THRESHOLD_TYPE_ANGLE, a single threshold_val value representing the
+  // angle between current and last reported quaternions
   repeated float threshold_val = 2;
 
   // Tells us how to use the thresholding value provided.
