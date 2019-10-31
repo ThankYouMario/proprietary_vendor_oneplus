@@ -208,7 +208,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/product/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/product/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/oneplus/sm8150-common/proprietary/product/lib/lib-imsvideocodec.so:system/product/lib/lib-imsvideocodec.so \
     vendor/oneplus/sm8150-common/proprietary/product/lib/lib-imsvtextutils.so:system/product/lib/lib-imsvtextutils.so \
-    vendor/oneplus/sm8150-common/proprietary/product/lib/lib-imsvtutils.so:system/product/product/lib/lib-imsvtutils.so \
+    vendor/oneplus/sm8150-common/proprietary/product/lib/lib-imsvtutils.so:system/product/lib/lib-imsvtutils.so \
     vendor/oneplus/sm8150-common/proprietary/product/lib/libdpmctmgr.so:system/product/lib/libdpmctmgr.so \
     vendor/oneplus/sm8150-common/proprietary/product/lib/libdpmfdmgr.so:system/product/lib/libdpmfdmgr.so \
     vendor/oneplus/sm8150-common/proprietary/product/lib/libdpmframework.so:system/product/lib/libdpmframework.so \
