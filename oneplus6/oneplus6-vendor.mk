@@ -12,162 +12,185 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/oneplus/oneplus6
+
 PRODUCT_COPY_FILES += \
-    vendor/oneplus/oneplus6/proprietary/bin/wfdservice:system/bin/wfdservice \
-    vendor/oneplus/oneplus6/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
-    vendor/oneplus/oneplus6/proprietary/etc/nfcee_access.xml:system/etc/nfcee_access.xml \
-    vendor/oneplus/oneplus6/proprietary/etc/permissions/com.nxp.nfc.xml:system/etc/permissions/com.nxp.nfc.xml \
-    vendor/oneplus/oneplus6/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
-    vendor/oneplus/oneplus6/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:system/etc/permissions/com.qti.snapdragon.sdk.display.xml \
-    vendor/oneplus/oneplus6/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
-    vendor/oneplus/oneplus6/proprietary/etc/permissions/com.qualcomm.qti.imscmservice.xml:system/etc/permissions/com.qualcomm.qti.imscmservice.xml \
-    vendor/oneplus/oneplus6/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
-    vendor/oneplus/oneplus6/proprietary/etc/permissions/privapp-permissions-com.qualcomm.location.xml:system/etc/permissions/privapp-permissions-com.qualcomm.location.xml \
-    vendor/oneplus/oneplus6/proprietary/etc/permissions/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml \
-    vendor/oneplus/oneplus6/proprietary/etc/permissions/qti_libpermissions.xml:system/etc/permissions/qti_libpermissions.xml \
-    vendor/oneplus/oneplus6/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/descriptor.proto:system/etc/sensors/proto/descriptor.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/nanopb.proto:system/etc/sensors/proto/nanopb.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/qti_gravity.proto:system/etc/sensors/proto/qti_gravity.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_accel.proto:system/etc/sensors/proto/sns_accel.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_accel_cal.proto:system/etc/sensors/proto/sns_accel_cal.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_ambient_light.proto:system/etc/sensors/proto/sns_ambient_light.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_ambient_temperature.proto:system/etc/sensors/proto/sns_ambient_temperature.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_amd.proto:system/etc/sensors/proto/sns_amd.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_aont.proto:system/etc/sensors/proto/sns_aont.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_async_com_port.proto:system/etc/sensors/proto/sns_async_com_port.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_basic_gestures.proto:system/etc/sensors/proto/sns_basic_gestures.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_bring_to_ear.proto:system/etc/sensors/proto/sns_bring_to_ear.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_cal.proto:system/etc/sensors/proto/sns_cal.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_ccd_ttw.proto:system/etc/sensors/proto/sns_ccd_ttw.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_ccd_walk.proto:system/etc/sensors/proto/sns_ccd_walk.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_client.proto:system/etc/sensors/proto/sns_client.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_cmc.proto:system/etc/sensors/proto/sns_cmc.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_cmd.proto:system/etc/sensors/proto/sns_cmd.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_da_test.proto:system/etc/sensors/proto/sns_da_test.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_dae.proto:system/etc/sensors/proto/sns_dae.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_data_acquisition_engine.proto:system/etc/sensors/proto/sns_data_acquisition_engine.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_device_mode.proto:system/etc/sensors/proto/sns_device_mode.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_device_orient.proto:system/etc/sensors/proto/sns_device_orient.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_diag.proto:system/etc/sensors/proto/sns_diag.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_diag_sensor.proto:system/etc/sensors/proto/sns_diag_sensor.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_distance_bound.proto:system/etc/sensors/proto/sns_distance_bound.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_dpc.proto:system/etc/sensors/proto/sns_dpc.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_ext_svc.proto:system/etc/sensors/proto/sns_ext_svc.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_facing.proto:system/etc/sensors/proto/sns_facing.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_fmv.proto:system/etc/sensors/proto/sns_fmv.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_fw.proto:system/etc/sensors/proto/sns_fw.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_game_rv.proto:system/etc/sensors/proto/sns_game_rv.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_geomag_rv.proto:system/etc/sensors/proto/sns_geomag_rv.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_gravity.proto:system/etc/sensors/proto/sns_gravity.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_gyro.proto:system/etc/sensors/proto/sns_gyro.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_gyro_cal.proto:system/etc/sensors/proto/sns_gyro_cal.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_gyro_rot_matrix.proto:system/etc/sensors/proto/sns_gyro_rot_matrix.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_hall.proto:system/etc/sensors/proto/sns_hall.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_heart_beat.proto:system/etc/sensors/proto/sns_heart_beat.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_heart_rate.proto:system/etc/sensors/proto/sns_heart_rate.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_humidity.proto:system/etc/sensors/proto/sns_humidity.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_interrupt.proto:system/etc/sensors/proto/sns_interrupt.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_mag.proto:system/etc/sensors/proto/sns_mag.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_mag_cal.proto:system/etc/sensors/proto/sns_mag_cal.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_mcmd.proto:system/etc/sensors/proto/sns_mcmd.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_motion_detect.proto:system/etc/sensors/proto/sns_motion_detect.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_multishake.proto:system/etc/sensors/proto/sns_multishake.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_oem1.proto:system/etc/sensors/proto/sns_oem1.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_offbody_detect.proto:system/etc/sensors/proto/sns_offbody_detect.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_op_motion_detect.proto:system/etc/sensors/proto/sns_op_motion_detect.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_pedometer.proto:system/etc/sensors/proto/sns_pedometer.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_pedometer_wrist.proto:system/etc/sensors/proto/sns_pedometer_wrist.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_physical_sensor_test.proto:system/etc/sensors/proto/sns_physical_sensor_test.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_pickup.proto:system/etc/sensors/proto/sns_pickup.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_pocket.proto:system/etc/sensors/proto/sns_pocket.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_pose_6dof.proto:system/etc/sensors/proto/sns_pose_6dof.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_ppg.proto:system/etc/sensors/proto/sns_ppg.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_pressure.proto:system/etc/sensors/proto/sns_pressure.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_proximity.proto:system/etc/sensors/proto/sns_proximity.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_psmd.proto:system/etc/sensors/proto/sns_psmd.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_registry.proto:system/etc/sensors/proto/sns_registry.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_remote_proc_state.proto:system/etc/sensors/proto/sns_remote_proc_state.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_resampler.proto:system/etc/sensors/proto/sns_resampler.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_rgb.proto:system/etc/sensors/proto/sns_rgb.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_rmd.proto:system/etc/sensors/proto/sns_rmd.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_rotv.proto:system/etc/sensors/proto/sns_rotv.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_sar.proto:system/etc/sensors/proto/sns_sar.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_sensor_temperature.proto:system/etc/sensors/proto/sns_sensor_temperature.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_sig_motion.proto:system/etc/sensors/proto/sns_sig_motion.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_signal_sensor.proto:system/etc/sensors/proto/sns_signal_sensor.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_sim.proto:system/etc/sensors/proto/sns_sim.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_sim_legacy.proto:system/etc/sensors/proto/sns_sim_legacy.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_std.proto:system/etc/sensors/proto/sns_std.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_std_event_gated_sensor.proto:system/etc/sensors/proto/sns_std_event_gated_sensor.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_std_sensor.proto:system/etc/sensors/proto/sns_std_sensor.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_std_type.proto:system/etc/sensors/proto/sns_std_type.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_suid.proto:system/etc/sensors/proto/sns_suid.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_thermopile.proto:system/etc/sensors/proto/sns_thermopile.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_threshold.proto:system/etc/sensors/proto/sns_threshold.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_tilt.proto:system/etc/sensors/proto/sns_tilt.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_tilt_to_wake.proto:system/etc/sensors/proto/sns_tilt_to_wake.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_timer.proto:system/etc/sensors/proto/sns_timer.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_ultra_violet.proto:system/etc/sensors/proto/sns_ultra_violet.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_wrist_tilt_gesture.proto:system/etc/sensors/proto/sns_wrist_tilt_gesture.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
-    vendor/oneplus/oneplus6/proprietary/framework/com.nxp.nfc.jar:system/framework/com.nxp.nfc.jar \
-    vendor/oneplus/oneplus6/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
-    vendor/oneplus/oneplus6/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libadsprpc_system.so:system/lib/libadsprpc_system.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libantradio.so:system/lib/libantradio.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libcdsprpc_system.so:system/lib/libcdsprpc_system.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
-    vendor/oneplus/oneplus6/proprietary/lib/liblocationservice_jni.so:system/lib/liblocationservice_jni.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libmdsprpc_system.so:system/lib/libmdsprpc_system.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libqmi_cci_system.so:system/lib/libqmi_cci_system.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libsdsprpc_system.so:system/lib/libsdsprpc_system.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libvr_amb_engine.so:system/lib/libvr_amb_engine.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libvr_object_engine.so:system/lib/libvr_object_engine.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libvr_sam_wrapper.so:system/lib/libvr_sam_wrapper.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libvraudio.so:system/lib/libvraudio.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfdavenhancements.so:system/lib/libwfdavenhancements.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfdclient.so:system/lib/libwfdclient.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfdcommonutils.so:system/lib/libwfdcommonutils.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfdconfigutils.so:system/lib/libwfdconfigutils.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfdmminterface.so:system/lib/libwfdmminterface.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfdmmsink.so:system/lib/libwfdmmsink.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfdrtsp.so:system/lib/libwfdrtsp.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfdservice.so:system/lib/libwfdservice.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfdsm.so:system/lib/libwfdsm.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfduibcinterface.so:system/lib/libwfduibcinterface.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfduibcsink.so:system/lib/libwfduibcsink.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfduibcsinkinterface.so:system/lib/libwfduibcsinkinterface.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfduibcsrc.so:system/lib/libwfduibcsrc.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfduibcsrcinterface.so:system/lib/libwfduibcsrcinterface.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libxt_native.so:system/lib/libxt_native.so \
-    vendor/oneplus/oneplus6/proprietary/lib/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so:system/lib/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libFileMux.so:system/lib64/libFileMux.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libOmxMux.so:system/lib64/libOmxMux.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libadsprpc_system.so:system/lib64/libadsprpc_system.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libantradio.so:system/lib64/libantradio.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libcdsprpc_system.so:system/lib64/libcdsprpc_system.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/liblocationservice_jni.so:system/lib64/liblocationservice_jni.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libmdsprpc_system.so:system/lib64/libmdsprpc_system.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libmmrtpdecoder.so:system/lib64/libmmrtpdecoder.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libmmrtpencoder.so:system/lib64/libmmrtpencoder.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libnxpnfc-nci.so:system/lib64/libnxpnfc-nci.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libnxpnfc_nci_jni.so:system/lib64/libnxpnfc_nci_jni.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libqmi_cci_system.so:system/lib64/libqmi_cci_system.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libsdsprpc_system.so:system/lib64/libsdsprpc_system.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libvr_amb_engine.so:system/lib64/libvr_amb_engine.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libvr_object_engine.so:system/lib64/libvr_object_engine.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libvr_sam_wrapper.so:system/lib64/libvr_sam_wrapper.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libvraudio.so:system/lib64/libvraudio.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libwfdclient.so:system/lib64/libwfdclient.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libwfdnative.so:system/lib64/libwfdnative.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libxt_native.so:system/lib64/libxt_native.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so:system/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so \
+    vendor/oneplus/oneplus6/proprietary/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM)/bin/wfdservice \
+    vendor/oneplus/oneplus6/proprietary/etc/cne/Nexus/ATT/ATT_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ATT/ATT_profiles.xml \
+    vendor/oneplus/oneplus6/proprietary/etc/cne/Nexus/ROW/ROW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ROW/ROW_profiles.xml \
+    vendor/oneplus/oneplus6/proprietary/etc/cne/Nexus/VZW/VZW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/VZW/VZW_profiles.xml \
+    vendor/oneplus/oneplus6/proprietary/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/wfdservice.rc \
+    vendor/oneplus/oneplus6/proprietary/etc/nfcee_access.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/nfcee_access.xml \
+    vendor/oneplus/oneplus6/proprietary/etc/permissions/com.nxp.nfc.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.nxp.nfc.xml \
+    vendor/oneplus/oneplus6/proprietary/etc/permissions/com.qti.location.sdk.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qti.location.sdk.xml \
+    vendor/oneplus/oneplus6/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qti.snapdragon.sdk.display.xml \
+    vendor/oneplus/oneplus6/proprietary/etc/permissions/com.qualcomm.location.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.location.xml \
+    vendor/oneplus/oneplus6/proprietary/etc/permissions/com.qualcomm.qti.imscmservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.qti.imscmservice.xml \
+    vendor/oneplus/oneplus6/proprietary/etc/permissions/izat.xt.srv.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/izat.xt.srv.xml \
+    vendor/oneplus/oneplus6/proprietary/etc/permissions/privapp-permissions-com.qualcomm.location.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.qualcomm.location.xml \
+    vendor/oneplus/oneplus6/proprietary/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
+    vendor/oneplus/oneplus6/proprietary/etc/permissions/qcnvitems.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qcnvitems.xml \
+    vendor/oneplus/oneplus6/proprietary/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_libpermissions.xml \
+    vendor/oneplus/oneplus6/proprietary/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_permissions.xml \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/descriptor.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/descriptor.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/nanopb.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/nanopb.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/qti_gravity.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/qti_gravity.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_accel.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_accel.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_accel_cal.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_accel_cal.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_ambient_light.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_ambient_light.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_ambient_temperature.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_ambient_temperature.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_amd.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_amd.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_aont.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_aont.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_async_com_port.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_async_com_port.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_basic_gestures.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_basic_gestures.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_bring_to_ear.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_bring_to_ear.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_cal.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_cal.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_ccd_ttw.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_ccd_ttw.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_ccd_walk.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_ccd_walk.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_client.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_client.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_cmc.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_cmc.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_cmd.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_cmd.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_da_test.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_da_test.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_dae.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_dae.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_data_acquisition_engine.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_data_acquisition_engine.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_device_mode.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_device_mode.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_device_orient.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_device_orient.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_diag.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_diag.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_diag_sensor.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_diag_sensor.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_distance_bound.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_distance_bound.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_dpc.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_dpc.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_ext_svc.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_ext_svc.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_facing.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_facing.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_fmv.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_fmv.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_fw.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_fw.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_game_rv.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_game_rv.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_geomag_rv.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_geomag_rv.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_gravity.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_gravity.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_gyro.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_gyro.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_gyro_cal.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_gyro_cal.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_gyro_rot_matrix.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_gyro_rot_matrix.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_hall.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_hall.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_heart_beat.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_heart_beat.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_heart_rate.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_heart_rate.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_humidity.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_humidity.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_interrupt.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_interrupt.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_mag.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_mag.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_mag_cal.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_mag_cal.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_mcmd.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_mcmd.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_motion_detect.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_motion_detect.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_multishake.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_multishake.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_oem1.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_oem1.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_offbody_detect.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_offbody_detect.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_op_motion_detect.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_op_motion_detect.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_pedometer.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_pedometer.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_pedometer_wrist.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_pedometer_wrist.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_physical_sensor_test.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_physical_sensor_test.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_pickup.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_pickup.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_pocket.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_pocket.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_pose_6dof.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_pose_6dof.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_ppg.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_ppg.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_pressure.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_pressure.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_proximity.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_proximity.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_psmd.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_psmd.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_registry.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_registry.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_remote_proc_state.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_remote_proc_state.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_resampler.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_resampler.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_rgb.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_rgb.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_rmd.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_rmd.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_rotv.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_rotv.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_sar.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_sar.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_sensor_temperature.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_sensor_temperature.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_sig_motion.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_sig_motion.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_signal_sensor.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_signal_sensor.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_sim.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_sim.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_sim_legacy.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_sim_legacy.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_std.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_std.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_std_event_gated_sensor.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_std_event_gated_sensor.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_std_sensor.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_std_sensor.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_std_type.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_std_type.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_suid.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_suid.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_thermopile.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_thermopile.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_threshold.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_threshold.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_tilt.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_tilt.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_tilt_to_wake.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_tilt_to_wake.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_timer.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_timer.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_ultra_violet.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_ultra_violet.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_wrist_tilt_gesture.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_wrist_tilt_gesture.proto \
+    vendor/oneplus/oneplus6/proprietary/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/wfdconfigsink.xml \
+    vendor/oneplus/oneplus6/proprietary/framework/com.nxp.nfc.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.nxp.nfc.jar \
+    vendor/oneplus/oneplus6/proprietary/framework/com.qti.location.sdk.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.qti.location.sdk.jar \
+    vendor/oneplus/oneplus6/proprietary/framework/com.qti.snapdragon.sdk.display.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.qti.snapdragon.sdk.display.jar \
+    vendor/oneplus/oneplus6/proprietary/framework/izat.xt.srv.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/izat.xt.srv.jar \
+    vendor/oneplus/oneplus6/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libFileMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libFileMux.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libOmxMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libOmxMux.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libadsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libadsprpc_system.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libcdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcdsprpc_system.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdiag_system.so \
+    vendor/oneplus/oneplus6/proprietary/lib/liblocationservice_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/liblocationservice_jni.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libmdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmdsprpc_system.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libmiracastsystem.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmiracastsystem.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmrtpdecoder.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmrtpencoder.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libqmi_cci_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqmi_cci_system.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libsdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsdsprpc_system.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libvr_amb_engine.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvr_amb_engine.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libvr_object_engine.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvr_object_engine.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libvr_sam_wrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvr_sam_wrapper.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libvraudio.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvraudio.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libwfdavenhancements.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdavenhancements.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdclient.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libwfdcommonutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdcommonutils.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libwfdconfigutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdconfigutils.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libwfdmminterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdmminterface.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libwfdmmsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdmmsink.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libwfdmmsrc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdmmsrc_system.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libwfdrtsp.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdrtsp.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libwfdservice.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdservice.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libwfdsinksm.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdsinksm.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libwfdsm.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdsm.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libwfduibcinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcinterface.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libwfduibcsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcsink.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libwfduibcsinkinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcsinkinterface.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcsrc.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcsrcinterface.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libxt_native.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libxt_native.so \
+    vendor/oneplus/oneplus6/proprietary/lib/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libFileMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libFileMux.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libOmxMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libOmxMux.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libadsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libadsprpc_system.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libcdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcdsprpc_system.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdiag_system.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/liblocationservice_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/liblocationservice_jni.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libmdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmdsprpc_system.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libmiracastsystem.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmiracastsystem.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmrtpdecoder.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmrtpencoder.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libnxpnfc-nci.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libnxpnfc-nci.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libnxpnfc_nci_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libnxpnfc_nci_jni.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libqmi_cci_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqmi_cci_system.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libsdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsdsprpc_system.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libvr_amb_engine.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvr_amb_engine.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libvr_object_engine.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvr_object_engine.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libvr_sam_wrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvr_sam_wrapper.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libvraudio.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvraudio.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdclient.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libwfdcommonutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdcommonutils.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libwfdconfigutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdconfigutils.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libwfdmminterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdmminterface.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libwfdmmsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdmmsink.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libwfdnative.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdnative.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libwfdrtsp.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdrtsp.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libwfdsinksm.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdsinksm.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libwfdsm.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdsm.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libwfduibcinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfduibcinterface.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libwfduibcsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfduibcsink.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libwfduibcsinkinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfduibcsinkinterface.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfduibcsrc.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfduibcsrcinterface.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libxt_native.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxt_native.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so \
     vendor/oneplus/oneplus6/proprietary/product/bin/dpmd:$(TARGET_COPY_OUT_PRODUCT)/bin/dpmd \
     vendor/oneplus/oneplus6/proprietary/product/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/dpm/dpm.conf \
     vendor/oneplus/oneplus6/proprietary/product/etc/init/dpmd.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/dpmd.rc \
@@ -176,11 +199,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
     vendor/oneplus/oneplus6/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml \
     vendor/oneplus/oneplus6/proprietary/product/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/dpmapi.xml \
+    vendor/oneplus/oneplus6/proprietary/product/etc/permissions/embms-noship_product_privapp_permissions_qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/embms-noship_product_privapp_permissions_qti.xml \
     vendor/oneplus/oneplus6/proprietary/product/etc/permissions/embms.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/embms.xml \
     vendor/oneplus/oneplus6/proprietary/product/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/qcrilhook.xml \
     vendor/oneplus/oneplus6/proprietary/product/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephonyservice.xml \
     vendor/oneplus/oneplus6/proprietary/product/framework/QtiTelephonyServicelibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/QtiTelephonyServicelibrary.jar \
-    vendor/oneplus/oneplus6/proprietary/product/framework/com.qti.dpmframework.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qti.dpmframework.jar \
     vendor/oneplus/oneplus6/proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar \
     vendor/oneplus/oneplus6/proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar \
     vendor/oneplus/oneplus6/proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar \
@@ -190,7 +213,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/product/framework/com.quicinc.cne.constants-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.quicinc.cne.constants-V1.0-java.jar \
     vendor/oneplus/oneplus6/proprietary/product/framework/com.quicinc.cne.constants-V2.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.quicinc.cne.constants-V2.0-java.jar \
     vendor/oneplus/oneplus6/proprietary/product/framework/com.quicinc.cne.constants-V2.1-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.quicinc.cne.constants-V2.1-java.jar \
-    vendor/oneplus/oneplus6/proprietary/product/framework/dpmapi.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/dpmapi.jar \
     vendor/oneplus/oneplus6/proprietary/product/framework/embmslibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/embmslibrary.jar \
     vendor/oneplus/oneplus6/proprietary/product/framework/qti-telephony-common.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/qti-telephony-common.jar \
     vendor/oneplus/oneplus6/proprietary/product/framework/vendor.qti.data.factory-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.data.factory-V1.0-java.jar \
@@ -221,6 +243,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/product/lib/com.qualcomm.qti.imscmservice@2.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.imscmservice@2.2.so \
     vendor/oneplus/oneplus6/proprietary/product/lib/com.qualcomm.qti.uceservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.uceservice@2.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib/com.qualcomm.qti.uceservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.uceservice@2.1.so \
+    vendor/oneplus/oneplus6/proprietary/product/lib/com.quicinc.cne.api@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.quicinc.cne.api@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/product/lib/com.quicinc.cne.api@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.quicinc.cne.api@1.1.so \
+    vendor/oneplus/oneplus6/proprietary/product/lib/com.quicinc.cne.constants@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.quicinc.cne.constants@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/product/lib/com.quicinc.cne.constants@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.quicinc.cne.constants@2.0.so \
+    vendor/oneplus/oneplus6/proprietary/product/lib/com.quicinc.cne.constants@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.quicinc.cne.constants@2.1.so \
     vendor/oneplus/oneplus6/proprietary/product/lib/lib-imsvideocodec.so:$(TARGET_COPY_OUT_PRODUCT)/lib/lib-imsvideocodec.so \
     vendor/oneplus/oneplus6/proprietary/product/lib/lib-imsvt.so:$(TARGET_COPY_OUT_PRODUCT)/lib/lib-imsvt.so \
     vendor/oneplus/oneplus6/proprietary/product/lib/lib-imsvtextutils.so:$(TARGET_COPY_OUT_PRODUCT)/lib/lib-imsvtextutils.so \
@@ -308,6 +335,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/product/lib64/com.qualcomm.qti.imscmservice@2.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.imscmservice@2.2.so \
     vendor/oneplus/oneplus6/proprietary/product/lib64/com.qualcomm.qti.uceservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.uceservice@2.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib64/com.qualcomm.qti.uceservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.uceservice@2.1.so \
+    vendor/oneplus/oneplus6/proprietary/product/lib64/com.quicinc.cne.api@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.quicinc.cne.api@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/product/lib64/com.quicinc.cne.api@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.quicinc.cne.api@1.1.so \
+    vendor/oneplus/oneplus6/proprietary/product/lib64/com.quicinc.cne.constants@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.quicinc.cne.constants@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/product/lib64/com.quicinc.cne.constants@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.quicinc.cne.constants@2.0.so \
+    vendor/oneplus/oneplus6/proprietary/product/lib64/com.quicinc.cne.constants@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.quicinc.cne.constants@2.1.so \
     vendor/oneplus/oneplus6/proprietary/product/lib64/lib-imsvideocodec.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvideocodec.so \
     vendor/oneplus/oneplus6/proprietary/product/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvt.so \
     vendor/oneplus/oneplus6/proprietary/product/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvtextutils.so \
@@ -391,12 +423,14 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.voiceprint@1.0.so
 
 PRODUCT_PACKAGES += \
+    libantradio \
     com.qualcomm.qti.ant@1.0 \
     NxpNfcNci \
     NxpSecureElement \
     SoterService \
     WfdService \
     com.qualcomm.location \
+    DynamicDDSService \
     QtiSystemService \
     QtiTelephonyService \
     datastatusnotification \
@@ -405,9 +439,9 @@ PRODUCT_PACKAGES += \
     ims \
     qcrilmsgtunnel \
     WfdCommon \
-    com.qti.location.sdk \
-    com.qti.snapdragon.sdk.display \
     qcnvitems \
     tcmclient \
+    com.qti.dpmframework \
+    dpmapi \
     qcrilhook \
     dashd
