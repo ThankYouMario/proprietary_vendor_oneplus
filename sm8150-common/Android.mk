@@ -14,7 +14,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter oneplus7 oneplus7pro,$(TARGET_DEVICE)),)
+ifneq ($(filter oneplus7 oneplus7t oneplus7pro oneplus7tpro,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := com.qualcomm.qti.ant@1.0
