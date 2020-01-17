@@ -425,6 +425,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/product/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.voiceprint@1.0.so
 
 PRODUCT_PACKAGES += \
+    libantradio \
+    com.qualcomm.qti.ant@1.0 \
     NxpNfcNci \
     NxpSecureElement \
     SoterService \
