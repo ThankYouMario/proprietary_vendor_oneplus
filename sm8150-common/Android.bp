@@ -109,17 +109,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "WfdService",
-	owner: "oneplus",
-	apk: "proprietary/priv-app/WfdService/WfdService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
 	name: "com.qualcomm.location",
 	owner: "oneplus",
 	apk: "proprietary/priv-app/com.qualcomm.location/com.qualcomm.location.apk",
@@ -221,12 +210,6 @@ android_app_import {
 }
 
 dex_import {
-	name: "WfdCommon",
-	owner: "oneplus",
-	jars: ["proprietary/framework/WfdCommon.jar"],
-}
-
-dex_import {
 	name: "qcnvitems",
 	owner: "oneplus",
 	jars: ["proprietary/framework/qcnvitems.jar"],
@@ -258,4 +241,3 @@ dex_import {
 	jars: ["proprietary/product/framework/qcrilhook.jar"],
 	product_specific: true,
 }
-
