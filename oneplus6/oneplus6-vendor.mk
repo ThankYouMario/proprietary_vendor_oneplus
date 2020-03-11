@@ -121,6 +121,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib/libvr_sam_wrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvr_sam_wrapper.so \
     vendor/oneplus/oneplus6/proprietary/lib/libvraudio.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvraudio.so \
     vendor/oneplus/oneplus6/proprietary/lib/libxt_native.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libxt_native.so \
+    vendor/oneplus/oneplus6/proprietary/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libadsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libadsprpc_system.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libcdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcdsprpc_system.so \
     vendor/oneplus/oneplus6/proprietary/lib64/liblocationservice_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/liblocationservice_jni.so \
@@ -133,6 +134,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib64/libvr_sam_wrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvr_sam_wrapper.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libvraudio.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvraudio.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libxt_native.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxt_native.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so \
     vendor/oneplus/oneplus6/proprietary/product/framework/vendor.qti.hardware.alarm-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.hardware.alarm-V1.0-java.jar \
     vendor/oneplus/oneplus6/proprietary/product/framework/vendor.qti.hardware.capabilityconfigstore-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.hardware.capabilityconfigstore-V1.0-java.jar \
     vendor/oneplus/oneplus6/proprietary/product/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar \
