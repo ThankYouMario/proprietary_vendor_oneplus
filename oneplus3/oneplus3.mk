@@ -15,5 +15,8 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/oneplus3
 
+PRODUCT_PACKAGES += \
+    libgpustats
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/proprietary/vendor,$(TARGET_COPY_OUT_VENDOR))
