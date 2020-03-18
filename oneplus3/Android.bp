@@ -18,6 +18,24 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+	name: "libantradio",
+	owner: "qcom",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/build/system/lib/libantradio.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/build/system/lib64/libantradio.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libgpustats",
 	owner: "qcom",
 	strip: {
