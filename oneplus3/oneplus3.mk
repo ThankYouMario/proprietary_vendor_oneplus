@@ -16,6 +16,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/oneplus3
 
 PRODUCT_PACKAGES += \
+    CneApp \
     PowerOffAlarm \
     TimeService \
     libantradio \
