@@ -24,6 +24,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/proprietary/product/framework,$(TARGET_COPY_OUT_PRODUCT)/framework) \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/proprietary/product/lib,$(TARGET_COPY_OUT_PRODUCT)/lib) \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/proprietary/product/lib64,$(TARGET_COPY_OUT_PRODUCT)/lib64) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/proprietary/system,$(TARGET_COPY_OUT_SYSTEM)) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/proprietary/vendor/bin,$(TARGET_COPY_OUT_VENDOR)/bin) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/proprietary/vendor/etc,$(TARGET_COPY_OUT_VENDOR)/etc) \
