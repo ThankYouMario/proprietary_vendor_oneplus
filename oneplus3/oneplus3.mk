@@ -17,6 +17,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_PACKAGES += \
     CneApp \
+    IWlanService \
     PowerOffAlarm \
     TimeService \
     libantradio \
