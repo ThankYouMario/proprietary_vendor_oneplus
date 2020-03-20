@@ -16,11 +16,13 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/oneplus3
 
 PRODUCT_PACKAGES += \
+    PowerOffAlarm \
     TimeService \
     libantradio \
     libgpustats
 
 PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/proprietary/product/framework,$(TARGET_COPY_OUT_PRODUCT)/framework) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/proprietary/system,$(TARGET_COPY_OUT_SYSTEM)) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/proprietary/vendor/bin,$(TARGET_COPY_OUT_VENDOR)/bin) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/proprietary/vendor/etc,$(TARGET_COPY_OUT_VENDOR)/etc) \
