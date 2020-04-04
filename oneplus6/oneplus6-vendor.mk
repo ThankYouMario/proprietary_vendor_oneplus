@@ -209,7 +209,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.hardware.wifi.keystore@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.wifi.keystore@1.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so \
-    vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.voiceprint@1.0.so
+    vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.voiceprint@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/bin/dashd:$(TARGET_COPY_OUT_SYSTEM)/bin/dashd
 
 PRODUCT_PACKAGES += \
     libantradio \
@@ -219,5 +220,4 @@ PRODUCT_PACKAGES += \
     SoterService \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentXGoogleWCD9340 \
-    com.qualcomm.location \
-    dashd
+    com.qualcomm.location
