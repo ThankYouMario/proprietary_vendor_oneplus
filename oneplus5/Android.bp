@@ -107,3 +107,17 @@ android_app_import {
 	privileged: true,
 }
 
+prebuilt_etc {
+	name: "bt_profile",
+	owner: "oneplus",
+	src: "proprietary/etc/bluetooth/bt_profile.conf",
+	sub_dir: "bluetooth",
+}
+
+prebuilt_etc {
+	name: "interop_database",
+	owner: "oneplus",
+	src: "proprietary/etc/bluetooth/interop_database.conf",
+	sub_dir: "bluetooth",
+}
+
