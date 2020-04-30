@@ -70,7 +70,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/lib/libmm-qcamera.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmm-qcamera.so \
     vendor/oneplus/oneplus3/proprietary/lib/libqmi_cci_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqmi_cci_system.so \
     vendor/oneplus/oneplus3/proprietary/lib/libqomx_core.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqomx_core.so \
-    vendor/oneplus/oneplus3/proprietary/lib/libqspmsvc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqspmsvc.so \
     vendor/oneplus/oneplus3/proprietary/lib/libwfdavenhancements.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdavenhancements.so \
     vendor/oneplus/oneplus3/proprietary/lib/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdclient.so \
     vendor/oneplus/oneplus3/proprietary/lib/libwfdcodecv4l2.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdcodecv4l2.so \
@@ -101,7 +100,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/lib64/liblocationservice_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/liblocationservice_jni.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libmiracastsystem.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmiracastsystem.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libqmi_cci_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqmi_cci_system.so \
-    vendor/oneplus/oneplus3/proprietary/lib64/libqspmsvc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqspmsvc.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdclient.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libwfdnative.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdnative.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libxt_native.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxt_native.so \
