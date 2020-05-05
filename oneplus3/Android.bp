@@ -57,17 +57,6 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
-	name: "WfdService",
-	owner: "oneplus",
-	apk: "proprietary/priv-app/WfdService/WfdService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
 	name: "CneApp",
 	owner: "oneplus",
 	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
@@ -109,11 +98,5 @@ android_app_import {
 		enabled: false,
 	},
 	product_specific: true,
-}
-
-dex_import {
-	name: "WfdCommon",
-	owner: "oneplus",
-	jars: ["proprietary/framework/WfdCommon.jar"],
 }
 
