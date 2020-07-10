@@ -15,6 +15,38 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/oneplus5
 
+# Vendor blobs
+PRODUCT_COPY_FILES += \
+    vendor/oneplus/oneplus5/proprietary/vendor/bin/hw/vendor.qti.hardware.iop@2.0-service:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/bin/hw/vendor.qti.hardware.iop@2.0-service \
+    vendor/oneplus/oneplus5/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@2.0-service:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/bin/hw/vendor.qti.hardware.perf@2.0-service \
+    vendor/oneplus/oneplus5/proprietary/vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/init/vendor.qti.hardware.iop@2.0-service.rc \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib/libperfconfig.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib/libperfgluelayer.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libqti-iopd-client.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib/libqti-iopd-client.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libqti-iopd.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib/libqti-iopd.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib/libqti-perfd-client.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libqti-perfd.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib/libqti-perfd.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libqti-util.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib/libqti-util.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libqti-utils.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib/libqti-utils.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/vendor.qti.hardware.iop@1.0.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib/vendor.qti.hardware.iop@1.0.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib/vendor.qti.hardware.iop@2.0.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib/vendor.qti.hardware.perf@2.0.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib/hw/vendor.qti.hardware.iop@2.0-impl.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib64/libperfconfig.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib64/libperfgluelayer.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/libqti-iopd-client.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib64/libqti-iopd-client.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/libqti-iopd.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib64/libqti-iopd.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib64/libqti-perfd-client.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/libqti-perfd.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib64/libqti-perfd.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/libqti-util.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib64/libqti-util.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/libqti-utils.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib64/libqti-utils.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/libskewknob.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib64/libskewknob.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/vendor.qti.hardware.iop@1.0.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib64/vendor.qti.hardware.iop@1.0.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib64/vendor.qti.hardware.iop@2.0.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib64/vendor.qti.hardware.perf@2.0.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
+
+# System Blobs
 PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/etc/firmware/cpp_firmware_v1_10_0.fw:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/cpp_firmware_v1_10_0.fw \
     vendor/oneplus/oneplus5/proprietary/etc/firmware/cpp_firmware_v1_12_0.fw:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/cpp_firmware_v1_12_0.fw \
