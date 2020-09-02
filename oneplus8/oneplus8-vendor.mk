@@ -16,7 +16,9 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/oneplus8
 
 PRODUCT_COPY_FILES += \
-    vendor/oneplus/oneplus8/proprietary/system/bin/dashd:$(TARGET_COPY_OUT_SYSTEM)/bin/dashd
+    vendor/oneplus/oneplus8/proprietary/system/bin/dashd:$(TARGET_COPY_OUT_SYSTEM)/bin/dashd \
+    vendor/oneplus/oneplus8/proprietary/vendor/lib/libgf_ud_hal.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib/libgf_ud_hal.so \
+    vendor/oneplus/oneplus8/proprietary/vendor/lib64/libgf_ud_hal.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib64/libgf_ud_hal.so
 
 PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleHEXAGON \
