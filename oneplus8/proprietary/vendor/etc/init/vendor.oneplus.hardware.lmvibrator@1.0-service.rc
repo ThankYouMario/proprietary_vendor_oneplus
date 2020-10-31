@@ -1,0 +1,4 @@
+service vendor.lmvibrator-1-0 /vendor/bin/hw/vendor.oneplus.hardware.lmvibrator@1.0-service
+    class hal
+    user system
+    group system
