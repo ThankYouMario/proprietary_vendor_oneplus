@@ -20,26 +20,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-	name: "libMpeg4SwEncoder",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libMpeg4SwEncoder.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libMpeg4SwEncoder.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libfastcvopt",
 	owner: "oneplus",
 	strip: {
@@ -237,25 +217,9 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "c2_manifest_vendor.xml",
-	owner: "oneplus",
-	src: "proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor.xml",
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "manifest_android.hardware.drm@1.3-service.widevine.xml",
 	owner: "oneplus",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.qti.gnss@4.0-service.xml",
-	owner: "oneplus",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml",
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
