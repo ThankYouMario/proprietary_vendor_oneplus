@@ -22,7 +22,7 @@
     <Libname>libgameoptfeature.so</Libname>
     <Configs>
         <Enable>1</Enable>
-        <STATIC_L0>0</STATIC_L0>
+        <STATIC_L0>1</STATIC_L0>
         <ATML1>0</ATML1>
         <ATML2>0</ATML2>
         <ATML3>0</ATML3>
@@ -86,10 +86,10 @@
             </DEFAULT_PROF>
         </Profile>
         <Profile>
-            <!-- Colocation v3 1 GHz, Predictive Load 1 -->
-            <DEFAULT>0x4144C100,1000000,0x41444000,1</DEFAULT>
-            <!-- Colocation v3 1 GHz, Predictive Load 1 -->
-            <SKEW2>0x4144C100,1000000,0x41444000,1</SKEW2>
+            <!-- Colocation v3 1 GHz, Core-CTL 3 -->
+            <DEFAULT>0x4144C100,1000000,0x41000000,3</DEFAULT>
+            <!-- Colocation v3 1 GHz, Core-CTL 3 -->
+            <SKEW2>0x4144C100,1000000,0x41000000,3</SKEW2>
         </Profile>
     </Profiles>
 
