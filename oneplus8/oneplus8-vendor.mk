@@ -48,7 +48,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus8/proprietary/vendor/bin/hdcp2p2prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp2p2prov \
     vendor/oneplus/oneplus8/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
     vendor/oneplus/oneplus8/proprietary/vendor/bin/hw/android.hardware.authsecret@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.authsecret@1.0-service-qti \
-    vendor/oneplus/oneplus8/proprietary/vendor/bin/hw/android.hardware.biometrics.face@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.face@1.0-service \
     vendor/oneplus/oneplus8/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-qti \
     vendor/oneplus/oneplus8/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.widevine \
     vendor/oneplus/oneplus8/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
@@ -199,13 +198,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml \
-    vendor/oneplus/oneplus8/proprietary/vendor/etc/face3d/qcnn_concat_file_model-0324_2_encrypted:$(TARGET_COPY_OUT_VENDOR)/etc/face3d/qcnn_concat_file_model-0324_2_encrypted \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/ftm_test_config:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/ftm_test_config_kona-qrd-snd-card:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_kona-qrd-snd-card \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/init.qti.fm.sh:$(TARGET_COPY_OUT_VENDOR)/etc/init.qti.fm.sh \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/init/android.hardware.authsecret@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.authsecret@1.0-service-qti.rc \
-    vendor/oneplus/oneplus8/proprietary/vendor/etc/init/android.hardware.biometrics.face@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.face@1.0-service.rc \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
@@ -296,7 +293,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
-    vendor/oneplus/oneplus8/proprietary/vendor/etc/permissions/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.biometrics.face.xml \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/permissions/android.hardware.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.light.xml \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/permissions/vendor.qti.hardware.factory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.qti.hardware.factory.xml \
@@ -655,7 +651,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus8/proprietary/vendor/firmware/tp/LIMIT_19821_SY761.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_19821_SY761.img \
     vendor/oneplus/oneplus8/proprietary/vendor/firmware/tp/LIMIT_19821_SY771.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_19821_SY771.img \
     vendor/oneplus/oneplus8/proprietary/vendor/firmware/wentai24k_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wentai24k_rtp.bin \
-    vendor/oneplus/oneplus8/proprietary/vendor/lib/android.hardware.biometrics.face@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.biometrics.face@1.0-impl.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/android.hardware.secure_element@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.secure_element@1.0-impl.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib/btaudio_offload_if.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/camera/com.qti.eeprom.truly_cmb433.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.eeprom.truly_cmb433.so \
@@ -792,8 +787,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libApeSwDec.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libC2D2.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCB.so \
-    vendor/oneplus/oneplus8/proprietary/vendor/lib/libFace3DTA.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFace3DTA.so \
-    vendor/oneplus/oneplus8/proprietary/vendor/lib/libFace3D_hlos.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFace3D_hlos.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/libFileMux_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFileMux_proprietary.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFlacSwDec.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/libGPQTEEC_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPQTEEC_vendor.so \
@@ -819,7 +812,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxWmaDec.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/libPolarrRender.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPolarrRender.so \
-    vendor/oneplus/oneplus8/proprietary/vendor/lib/libQ6MSFR_manager_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQ6MSFR_manager_stub.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQSEEComAPI.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/libQTEEConnector_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQTEEConnector_vendor.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/libSNPE.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSNPE.so \
@@ -939,7 +931,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/libdualcam_image_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcam_image_optical_zoom.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/libdualcam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcam_optical_zoom_control.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/libdualcam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcam_video_optical_zoom.so \
-    vendor/oneplus/oneplus8/proprietary/vendor/lib/libface3d_dev.so:$(TARGET_COPY_OUT_VENDOR)/lib/libface3d_dev.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvdsp_stub.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/libfastov_dsp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastov_dsp.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/libgcs-calwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-calwrapper.so \
@@ -1128,7 +1119,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/qtibus.so:$(TARGET_COPY_OUT_VENDOR)/lib/qtibus.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/qtimutex.so:$(TARGET_COPY_OUT_VENDOR)/lib/qtimutex.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/rfsa/adsp/libBeautyShot_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libBeautyShot_skel.so \
-    vendor/oneplus/oneplus8/proprietary/vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libQ6MSFR_manager_skel.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/rfsa/adsp/libSuperSensor_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libSuperSensor_skel.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/rfsa/adsp/libalCFR_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libalCFR_skel.so \
@@ -1262,7 +1252,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.qspmhal@1.0.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/vendor.qti.spu@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.spu@1.0.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.voiceprint@1.0.so \
-    vendor/oneplus/oneplus8/proprietary/vendor/lib64/android.hardware.biometrics.face@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.face@1.0-impl.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib64/android.hardware.secure_element@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.secure_element@1.0-impl.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib64/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib64/btaudio_offload_if.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib64/camera/CFR_OnePlus_UW_photo_preview.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/CFR_OnePlus_UW_photo_preview.bin \
@@ -1402,8 +1391,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus8/proprietary/vendor/lib64/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libApeSwDec.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib64/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libC2D2.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib64/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCB.so \
-    vendor/oneplus/oneplus8/proprietary/vendor/lib64/libFace3DTA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFace3DTA.so \
-    vendor/oneplus/oneplus8/proprietary/vendor/lib64/libFace3D_hlos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFace3D_hlos.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib64/libFaceBeautyLiteCap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFaceBeautyLiteCap.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib64/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFlacSwDec.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib64/libGPQTEEC_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPQTEEC_vendor.so \
@@ -1428,7 +1415,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus8/proprietary/vendor/lib64/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxWmaDec.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib64/libPolarrRender.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPolarrRender.so \
-    vendor/oneplus/oneplus8/proprietary/vendor/lib64/libQ6MSFR_manager_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQ6MSFR_manager_stub.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib64/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQSEEComAPI.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib64/libQTEEConnector_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQTEEConnector_vendor.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib64/libSNPE.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSNPE.so \
@@ -1552,7 +1538,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus8/proprietary/vendor/lib64/libdualcam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_optical_zoom_control.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib64/libdualcam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_video_optical_zoom.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib64/libembmsservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libembmsservice.so \
-    vendor/oneplus/oneplus8/proprietary/vendor/lib64/libface3d_dev.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libface3d_dev.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib64/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvdsp_stub.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib64/libfastov_dsp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastov_dsp.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib64/libgameoptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgameoptfeature.so \
