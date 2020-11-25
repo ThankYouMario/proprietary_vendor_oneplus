@@ -16,6 +16,9 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/oneplus8t
 
 PRODUCT_COPY_FILES += \
+    vendor/oneplus/oneplus8t/proprietary/vendor/firmware/a650_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_zap.b01 \
+    vendor/oneplus/oneplus8t/proprietary/vendor/firmware/a650_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_zap.elf \
+    vendor/oneplus/oneplus8t/proprietary/vendor/firmware/a650_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_zap.mdt \
     vendor/oneplus/oneplus8t/proprietary/vendor/lib/camera/com.qti.sensor.gc02m1b.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.gc02m1b.so \
     vendor/oneplus/oneplus8t/proprietary/vendor/lib/camera/com.qti.sensormodule.holitech_gc02m1b.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.holitech_gc02m1b.bin \
     vendor/oneplus/oneplus8t/proprietary/vendor/lib/camera/com.qti.sensormodule.qtech_imx481.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.qtech_imx481.bin \
