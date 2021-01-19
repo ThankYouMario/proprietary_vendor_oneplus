@@ -214,6 +214,22 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+	name: "vendor.pixelworks.hardware.display.iris-service.xml",
+	owner: "oneplus",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.pixelworks.hardware.display.iris-service.xml",
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.pixelworks.hardware.feature.irisfeature-service.xml",
+	owner: "oneplus",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.pixelworks.hardware.feature.irisfeature-service.xml",
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
 	name: "vendor.qti.gnss@4.0-service.xml",
 	owner: "oneplus",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml",
