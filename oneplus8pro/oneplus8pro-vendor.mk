@@ -16,6 +16,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/oneplus8pro
 
 PRODUCT_COPY_FILES += \
+    vendor/oneplus/oneplus8pro/proprietary/vendor/bin/hw/vendor.pixelworks.hardware.display.iris-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.pixelworks.hardware.display.iris-service \
     vendor/oneplus/oneplus8pro/proprietary/vendor/etc/camera/calibrationOutput_IR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/calibrationOutput_IR.bin \
     vendor/oneplus/oneplus8pro/proprietary/vendor/etc/camera/calibrationOutput_wt.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/calibrationOutput_wt.bin \
     vendor/oneplus/oneplus8pro/proprietary/vendor/etc/init/calibrationOutput_IR.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/calibrationOutput_IR.rc \
