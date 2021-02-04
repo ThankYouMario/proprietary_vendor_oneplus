@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/oneplus8pro
 
 PRODUCT_COPY_FILES += \
+    vendor/oneplus/oneplus8pro/proprietary/vendor/bin/wlchgd:$(TARGET_COPY_OUT_VENDOR)/bin/wlchgd \
     vendor/oneplus/oneplus8pro/proprietary/vendor/etc/camera/ashdr/ncf_pack_imx586.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/ncf_pack_imx586.ncf \
     vendor/oneplus/oneplus8pro/proprietary/vendor/etc/camera/ashdr/ncf_pack_imx689.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/ncf_pack_imx689.ncf \
     vendor/oneplus/oneplus8pro/proprietary/vendor/etc/camera/ashdr/ncf_pack_s5k3m5.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/ncf_pack_s5k3m5.ncf \
