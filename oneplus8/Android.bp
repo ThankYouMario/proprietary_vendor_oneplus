@@ -123,17 +123,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "com.qualcomm.qti.gpudrivers.kona.api30",
-	owner: "oneplus",
-	apk: "proprietary/vendor/app/com.qualcomm.qti.gpudrivers.kona.api30/com.qualcomm.qti.gpudrivers.kona.api30.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
-}
-
-android_app_import {
 	name: "HotwordEnrollmentOKGoogleHEXAGON",
 	owner: "oneplus",
 	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk",
