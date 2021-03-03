@@ -18,6 +18,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus8pro/proprietary/vendor/etc/camera/distortion_result.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/distortion_result.bin \
     vendor/oneplus/oneplus8pro/proprietary/vendor/etc/init/calibrationOutput_IR.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/calibrationOutput_IR.rc \
     vendor/oneplus/oneplus8pro/proprietary/vendor/etc/init/calibrationOutput_wt.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/calibrationOutput_wt.rc \
+    vendor/oneplus/oneplus8pro/proprietary/vendor/etc/sensors/config/kona_T0_tcs3408.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_T0_tcs3408.json \
+    vendor/oneplus/oneplus8pro/proprietary/vendor/etc/sensors/config/kona_tcs3408.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_tcs3408.json \
     vendor/oneplus/oneplus8pro/proprietary/vendor/lib64/camera/com.qti.sensor.gc5035.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.gc5035.so \
     vendor/oneplus/oneplus8pro/proprietary/vendor/lib64/camera/com.qti.sensor.imx471.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx471.so \
     vendor/oneplus/oneplus8pro/proprietary/vendor/lib64/camera/com.qti.sensor.imx586.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx586.so \
