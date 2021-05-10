@@ -463,18 +463,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus8/proprietary/vendor/firmware/ipa_uc.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_uc.elf \
     vendor/oneplus/oneplus8/proprietary/vendor/firmware/ipa_uc.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_uc.mdt \
     vendor/oneplus/oneplus8/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
-    vendor/oneplus/oneplus8/proprietary/vendor/firmware/tp/FW_19805_S3908.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_19805_S3908.img \
-    vendor/oneplus/oneplus8/proprietary/vendor/firmware/tp/FW_19811_SY761.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_19811_SY761.bin \
-    vendor/oneplus/oneplus8/proprietary/vendor/firmware/tp/FW_19811_SY79x.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_19811_SY79x.bin \
-    vendor/oneplus/oneplus8/proprietary/vendor/firmware/tp/FW_19821_S3908.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_19821_S3908.img \
-    vendor/oneplus/oneplus8/proprietary/vendor/firmware/tp/FW_19821_SY761.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_19821_SY761.bin \
-    vendor/oneplus/oneplus8/proprietary/vendor/firmware/tp/FW_19821_SY771.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_19821_SY771.bin \
-    vendor/oneplus/oneplus8/proprietary/vendor/firmware/tp/LIMIT_19805_S3908.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_19805_S3908.img \
-    vendor/oneplus/oneplus8/proprietary/vendor/firmware/tp/LIMIT_19811_SY761.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_19811_SY761.img \
-    vendor/oneplus/oneplus8/proprietary/vendor/firmware/tp/LIMIT_19811_SY79x.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_19811_SY79x.img \
-    vendor/oneplus/oneplus8/proprietary/vendor/firmware/tp/LIMIT_19821_S3908.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_19821_S3908.img \
-    vendor/oneplus/oneplus8/proprietary/vendor/firmware/tp/LIMIT_19821_SY761.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_19821_SY761.img \
-    vendor/oneplus/oneplus8/proprietary/vendor/firmware/tp/LIMIT_19821_SY771.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_19821_SY771.img \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib/btaudio_offload_if.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib/hw/audio.bluetooth_qti.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.bluetooth_qti.default.so \
