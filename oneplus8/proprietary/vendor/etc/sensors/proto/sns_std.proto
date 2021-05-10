@@ -2,7 +2,7 @@
 //
 // Defines standard messages used across multiple Sensor API definitions
 //
-// Copyright (c) 2016-2018,2020 Qualcomm Technologies, Inc.
+// Copyright (c) 2016-2020 Qualcomm Technologies, Inc.
 // All Rights Reserved.
 // Confidential and Proprietary - Qualcomm Technologies, Inc.
 syntax = "proto2";
@@ -21,7 +21,7 @@ enum sns_std_msgid {
   // When a sensor receives a flush request it publishes any unpublished
   // samples. The sensor always  publishes a SNS_STD_MSGID_SNS_STD_FLUSH_EVENT
   // event to indicate completion of a flush request.
-  // All Sensors handle this flush request message.
+  // All Sensors handle this flush request message. See special case handling below
   // Empty Message
   // @event sns_pb_flush_event
   SNS_STD_MSGID_SNS_STD_FLUSH_REQ = 2;
@@ -41,6 +41,21 @@ enum sns_std_msgid {
 
   // NOTE: 250-255 Are reserved
 }
+// Special case handling for flush request
+// 1. No prior instance has been created, and a flush request is received, i.e. flush request is sent before an enable req
+//    Unexpected sequence, driver can ignore the flush request, and set_client_request returns  NULL
+// 2. When enable request is sent and while that is still ongoing ( phy cfg event not published yet) and a flush request is received, expected sequence below:
+//    a) sensor driver gets sns_std_sensor_config
+//    b) sensor driver gets sns_std_flush_req
+//    c) sensor driver sends sns_std_sensor_physical_config_event
+//    d) sensor driver sends sns_std_flush_event
+// 3. When a previous flush request is still ongoing and another flush request comes
+//    a) sensor driver receives  sns_std_flush_req
+//    b) sensor driver receives another sns_std_flush_req while first flush request is being handled, but no flush event is sent yet
+//    c) sensor driver can ignore the 2nd flush request
+//    d) sensor driver finishes processing the first flush request and sends sns_std_flush_event
+// #1 and # 3 applies to algorithm as well.
+
 
 // Base message payload, from which all other Request payloads must extend
 // The message will be delivered decoded within the Sensor API
@@ -124,6 +139,7 @@ message sns_std_error_event {
   // SNS_STD_ERROR_INVALID_STATE - Catastrophic error in the Sensor; do not
   //    expect any further data.  Client may try sending enable-request again.
   // SNS_STD_ERROR_NOT_SUPPORTED - Sensor received an unsupported request; or a
-  //    supported request at an unexpected time.
+  //    supported request at an unexpected time. Client may not expect any
+  //    further data and may try sending valid request.
   required sns_std_error error = 1;
 }

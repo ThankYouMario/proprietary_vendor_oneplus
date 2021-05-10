@@ -49,6 +49,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus8/proprietary/vendor/bin/imsdatadaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdatadaemon \
     vendor/oneplus/oneplus8/proprietary/vendor/bin/imsqmidaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsqmidaemon \
     vendor/oneplus/oneplus8/proprietary/vendor/bin/imsrcsd:$(TARGET_COPY_OUT_VENDOR)/bin/imsrcsd \
+    vendor/oneplus/oneplus8/proprietary/vendor/bin/init.qcom.sensors.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.sensors.sh \
     vendor/oneplus/oneplus8/proprietary/vendor/bin/init.qti.keymaster.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.keymaster.sh \
     vendor/oneplus/oneplus8/proprietary/vendor/bin/ipacm-diag:$(TARGET_COPY_OUT_VENDOR)/bin/ipacm-diag \
     vendor/oneplus/oneplus8/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
@@ -241,13 +242,17 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/bmi26x_0_crt.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmi26x_0_crt.json \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/bmi26x_0_crt_cfg.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmi26x_0_crt_cfg.json \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/bmp380_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmp380_0.json \
+    vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/icm4x6xx_0.json \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/kona_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_ak991x_0.json \
+    vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/kona_amd_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_amd_sw_disabled.json \
+    vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/kona_bmp380_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_bmp380_0.json \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/kona_bu52053nvx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_bu52053nvx_0.json \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/kona_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_default_sensors.json \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/kona_dynamic_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_dynamic_sensors.json \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/kona_hdk_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_hdk_ak991x_0.json \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/kona_hdk_lsm6dst_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_hdk_lsm6dst_0.json \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/kona_hdk_lsm6dst_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_hdk_lsm6dst_1.json \
+    vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/kona_icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_icm4x6xx_0.json \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/kona_irq.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_irq.json \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/kona_lps22hh_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_lps22hh_0.json \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/kona_lsm6dsm_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_lsm6dsm_0.json \
@@ -263,11 +268,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/kona_stk3a6x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_stk3a6x_0.json \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/kona_svr_bma4_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_svr_bma4_0.json \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/kona_svr_bmg160_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_svr_bmg160_0.json \
-    vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/kona_svr_icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_svr_icm4x6xx_0.json \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/kona_svr_rpr0521rs_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_svr_rpr0521rs_0.json \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/kona_sx9324_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_sx9324_0.json \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/kona_sx9324up_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_sx9324up_0.json \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/kona_sx932x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_sx932x_0.json \
+    vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/kona_tcs3408.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_tcs3408.json \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/kona_tcs3701.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_tcs3701.json \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/kona_tcs3707.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_tcs3707.json \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/config/kona_tmd2725_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_tmd2725_0.json \
@@ -342,6 +347,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/proto/sns_device_orient.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_device_orient.proto \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/proto/sns_diag.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_diag.proto \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/proto/sns_diag_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_diag_sensor.proto \
+    vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/proto/sns_direct_channel.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_direct_channel.proto \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/proto/sns_distance_bound.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_distance_bound.proto \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/proto/sns_dpc.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_dpc.proto \
     vendor/oneplus/oneplus8/proprietary/vendor/etc/sensors/proto/sns_ext_svc.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ext_svc.proto \
@@ -435,6 +441,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus8/proprietary/vendor/firmware/500ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/500ms_RTP.bin \
     vendor/oneplus/oneplus8/proprietary/vendor/firmware/60ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/60ms_RTP.bin \
     vendor/oneplus/oneplus8/proprietary/vendor/firmware/80ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/80ms_RTP.bin \
+    vendor/oneplus/oneplus8/proprietary/vendor/firmware/AT500ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/AT500ms_RTP.bin \
     vendor/oneplus/oneplus8/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
     vendor/oneplus/oneplus8/proprietary/vendor/firmware/a650_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_gmu.bin \
     vendor/oneplus/oneplus8/proprietary/vendor/firmware/a650_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_sqe.fw \
@@ -836,6 +843,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus8/proprietary/vendor/lib64/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdataitems.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib64/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisp-aba.so \
+    vendor/oneplus/oneplus8/proprietary/vendor/lib64/libdisplayconfig.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayconfig.qti.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib64/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayqos.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib64/libdisplayskuutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayskuutils.so \
     vendor/oneplus/oneplus8/proprietary/vendor/lib64/libdpmqmihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpmqmihal.so \

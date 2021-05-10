@@ -2,7 +2,7 @@
 //
 // Defines all high-level messages sent to/from the Nano sensor environment
 //
-// Copyright (c) 2017,2018 Qualcomm Technologies, Inc.
+// Copyright (c) 2017 - 2019 Qualcomm Technologies, Inc.
 // All Rights Reserved.
 // Confidential and Proprietary - Qualcomm Technologies, Inc.
 syntax = "proto2";
@@ -50,10 +50,18 @@ enum sns_dae_msgid {
   SNS_DAE_MSGID_SNS_DAE_DATA_EVENT           = 1200;
 
   // message from DAE sensor to deliver unhandle interrupts
+  // DAE stops receiving interrupt from this point on.
+  // sensor must send SET_STREAMING_CONFIG to restart
   SNS_DAE_MSGID_SNS_DAE_INTERRUPT_EVENT      = 1201;
+
+  // message which indicates S4S DT was sent to slave
+  SNS_DAE_MSGID_SNS_DAE_S4S_DT_EVENT         = 1202;
 }
 
 enum sns_dae_timestamp_type {
+
+  option (nanopb_enumopt).long_names = false;
+
   // Unknown timestamp type
   SNS_DAE_TIMESTAMP_TYPE_UNKNOWN = 0;
 
@@ -65,8 +73,7 @@ enum sns_dae_timestamp_type {
   // within the interrupt handler
   SNS_DAE_TIMESTAMP_TYPE_SW_IRQ = 2;
 
-  // The timestamp is the current system time when the data was read. The data
-  // was read due to a system timer firing (for polling & S4S sensors)
+  // The timestamp is the time the polling timer expired.
   SNS_DAE_TIMESTAMP_TYPE_TIMER = 3;
 
   // The timestamp is the current system time when the data was read. The data
@@ -74,6 +81,18 @@ enum sns_dae_timestamp_type {
   SNS_DAE_TIMESTAMP_TYPE_SYSTEM_TIME = 4;
 }
 
+enum sns_dae_int_op_mode {
+  option (nanopb_enumopt).long_names = false;
+
+  // Operation mode for polling:
+  SNS_DAE_INT_OP_MODE_POLLING = 0;
+
+  // Operation mode for IRQ
+  SNS_DAE_INT_OP_MODE_IRQ = 1;
+
+  // Operation mode for IBI over I3C
+  SNS_DAE_INT_OP_MODE_IBI = 2;
+}
 // S4S static information
 //
 // This contains S4S information which does not change during the life of the S4S sensor
@@ -86,6 +105,11 @@ message sns_s4s_static_info {
 
   // Register address of the S4S DT command
   required int32   dt_reg_addr = 3;
+
+  // Use I3C CCC for ST/DT commands
+  // If set to true, the st_reg_addr and dt_reg_addr fields will be ignored, and
+  // I3C XTIME CCC commands will be used for ST/DT
+  optional bool    use_i3c_ccc = 4;
 }
 
 
@@ -103,6 +127,23 @@ message sensor_to_phone_conversion {
   required bool invert = 3;
 }
 
+// Represents possible values of a sensor attribute
+// An Attribute can only have a single value of any possible type
+message sns_accel_attribute_value {
+  option (nanopb_msgopt).no_unions = true;
+  oneof value {
+    sfixed64 sint = 1;
+  }
+}
+
+// Represents an Attribute - Value pair
+message sns_accel_attribute {
+  // input attribute id
+  required uint32 attr_id = 1;
+  // input attribute value
+  required sns_accel_attribute_value value = 2;
+}
+
 // Accel static informtaion
 //
 // Accel configuration setting that is not expected to change at run time
@@ -117,8 +158,12 @@ message sns_accel_static_info {
   // range in G
   required int32 accel_range = 3;
 
-  // axis map to convert from sensor to phone 
+  // axis map to convert from sensor to phone
   repeated sensor_to_phone_conversion axis_map = 4 [(nanopb).max_count = 3];
+
+  // attribute <-> value pairs for additional identification
+  repeated sns_accel_attribute accel_attr = 5 [(nanopb).max_count = 5];
+
 }
 
 
@@ -160,18 +205,12 @@ message sns_dae_set_static_config {
   required string func_table_name = 1 [(nanopb).max_size = 32];
 
   // Operational mode of the sensor:
-  // 0 --> Polling
-  // 1 --> Interrupt
-  // 2 --> IBI (I3C In Band Interrupt)
-  required int32 interrupt = 2;
+  required sns_dae_int_op_mode interrupt = 2;
 
-  // x/y/z axis map for this sensor (DEPRECATED - moved to sns_accel_static_info)
-  repeated int32           axis_map = 3 [(nanopb).max_count = 3, deprecated = true];
-
-  // irq_config required if interrupt == 1
+  // irq_config required if interrupt == SNS_DAE_INT_OP_MODE_IRQ
   optional sns_interrupt_req     irq_config = 4;
 
-  // ibi_config required if interrupt == 2
+  // ibi_config required if interrupt == SNS_DAE_INT_OP_MODE_IBI
   optional sns_ibi_req           ibi_config = 8;
 
   // s4s_config required if sensor supports S4S
@@ -182,6 +221,9 @@ message sns_dae_set_static_config {
 
   // Only for accel sensors
   optional sns_accel_static_info accel_info = 7;
+
+  // x/y/z axis map for this sensor (DEPRECATED - moved to sns_accel_static_info)
+  repeated int32           axis_map = 3 [(nanopb).max_count = 3, deprecated = true];
 }
 
 // S4S dynamic information
@@ -203,6 +245,9 @@ message sns_dae_s4s_dynamic_config {
   // messages. Will depend on clock accuracy of the sensor, as well as current
   // sync_interval
   required int32  st_delay = 4;
+
+  // "true" if DAE should send DAE_S4S_DT_EVENTs for DT messages
+  optional bool   send_dt_event = 5;
 }
 
 message sns_dae_set_streaming_config {
@@ -223,6 +268,9 @@ message sns_dae_set_streaming_config {
   // "get_data" driver function.
   // If not included, default value is 100 bytes.
   optional uint32 expected_get_data_bytes = 5;
+
+  // Expected interval between interrupts
+  optional uint32 interrupt_interval = 6;
 }
 
 message sns_dae_resp {
@@ -234,8 +282,8 @@ message sns_dae_resp {
 }
 
 message sns_dae_data_event {
-  // Timestamp: For interrupt based sensors, this is the timestamp of the IRQ.
-  // For polling sensors, this is the timestamp of when get_data() was called
+  // Timestamp:
+  // See the "timestamp_type" for details of this timestamp
   required fixed64 timestamp = 1;
 
   // Timestamp type
@@ -252,5 +300,13 @@ message sns_dae_interrupt_event {
 
   // Format of registers are vendor specific, and up to the nano sensor implementation.
   required bytes registers = 2 [(nanopb).max_size = 8];
+}
+
+message sns_dae_s4s_dt_event {
+  // Timestamp of the S4S ideal sync time this DT was associated with
+  required fixed64 timestamp = 1;
+
+  // Value of DT sent to the slave
+  required int32   dt_value  = 2;
 }
 

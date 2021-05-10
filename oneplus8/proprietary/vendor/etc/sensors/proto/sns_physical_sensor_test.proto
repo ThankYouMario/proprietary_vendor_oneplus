@@ -7,7 +7,7 @@
 // implemented in all physical Sensor drivers. Any new or device-specific
 // test type may be defined in the Sensor-specific API.
 //
-// Copyright (c) 2016-2017 Qualcomm Technologies, Inc.
+// Copyright (c) 2016-2018 Qualcomm Technologies, Inc.
 // All Rights Reserved.
 // Confidential and Proprietary - Qualcomm Technologies, Inc.
 

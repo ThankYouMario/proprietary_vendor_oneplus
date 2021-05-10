@@ -6,7 +6,7 @@
 // developers may choose to define Sensor-specific message API for any
 // new/Sensor-specific functionality.
 //
-// Copyright (c) 2016-2018,2020 Qualcomm Technologies, Inc.
+// Copyright (c) 2016-2020 Qualcomm Technologies, Inc.
 // All Rights Reserved.
 // Confidential and Proprietary - Qualcomm Technologies, Inc.
 
@@ -309,16 +309,16 @@ message sns_std_sensor_physical_config_event
   // set to true once the clocks have been synchronized.
   optional bool stream_is_synchronous = 7;
 
-  // Sensor has enabled Data Ready Interrupt
+  // Sensor has enabled Data Ready Interrupt (DRI) or In Band Interrupt (IBI)
   optional bool dri_enabled = 8;
 
   // Current DAE water mark setting. 0 if non-DAE sensor.
   optional uint32 DAE_watermark = 9;
 
-  // The sync anchor is only valid for polled or synchronized sensors.
+  // The sync anchor is only valid for synchronized sensors.
+  // If used, "stream_is_synchronous" should eventually be set to true when the clocks are synchronized.
   // It is a timestamp of a future (or past) sns_std_sensor_event.
-  // For synchronous sensors: this may be used by clients to determine the
-  // synchronized timeline before it is synchronized.
+  // This may be used by clients to determine the synchronized timeline before it is synchronized.
   optional uint64 sync_ts_anchor = 10;
 }
 

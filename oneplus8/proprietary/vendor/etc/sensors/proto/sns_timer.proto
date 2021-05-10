@@ -2,7 +2,7 @@
 //
 // Defines standard message types for the Timer Sensor
 //
-// Copyright (c) 2017 Qualcomm Technologies, Inc.
+// Copyright (c) 2016-2018 Qualcomm Technologies, Inc.
 // All Rights Reserved.
 // Confidential and Proprietary - Qualcomm Technologies, Inc.
 syntax = "proto2";
@@ -21,15 +21,13 @@ enum sns_timer_msgid {
   // Timer config message.
   //
   //Corresponds to the message sns_timer_sensor_config.
-  // This message is used to start, reconfigure or
-  // stop the timer sensor
+  // This message is used to start, reconfigure or stop the timer sensor
   SNS_TIMER_MSGID_SNS_TIMER_SENSOR_CONFIG = 512;
 
   // Timer event message.
   //
   // Corresponds to the message sns_timer_sensor_event.
-  // This event is generated when a timer's timeout
-  // occurs.
+  // This event is generated when a timer's timeout occurs.
   SNS_TIMER_MSGID_SNS_TIMER_SENSOR_EVENT  = 1025;
 
   // Timer registration message

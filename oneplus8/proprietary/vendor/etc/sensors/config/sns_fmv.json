@@ -1,8 +1,8 @@
 {
   "config":
   {
-    "hw_platform": ["MTP", "Dragon", "Surf", "QRD", "HDK", "IDP"],
-    "soc_id": ["415", "439"]
+    "hw_platform": ["MTP", "Dragon", "Surf", "QRD", "HDK", "IDP", "IOT"],
+    "soc_id": ["415", "439", "456", "454","450", "469", "470"]
   },
   "sns_fmv_platform": {
     "owner": "sns_fmv",
@@ -43,6 +43,9 @@
       },
       "amd_int_cfg_param3": { "type": "flt", "ver": "0",
         "data": "0.4"
+      },
+      "debug_mode": { "type": "int", "ver": "0",
+        "data": "0"
       }
     }
   }

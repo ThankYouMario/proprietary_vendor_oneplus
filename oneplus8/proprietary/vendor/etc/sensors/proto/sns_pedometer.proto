@@ -2,7 +2,7 @@
 //
 // Defines message types for the Pedometer Sensor.
 //
-// Copyright (c) 2017 Qualcomm Technologies, Inc.
+// Copyright (c) 2017-2019 Qualcomm Technologies, Inc.
 // All Rights Reserved.
 // Confidential and Proprietary - Qualcomm Technologies, Inc.
 
@@ -12,8 +12,8 @@ import "sns_std_sensor.proto";
 
 // The Pedometer Sensor detects steps taken by the user
 //
-// The Pedometer Step event is generated when the user takes a step.
-// The event includes the latest step count accumulated since activation.
+// The Pedometer step event includes the latest step count accumulated since 
+// activation.
 // All clients to Pedometer get the same step event.
 // The timestamp of the event indicates the time of the latest detected step.
 
@@ -29,9 +29,7 @@ enum sns_pedometer_msgid {
   option (nanopb_enumopt).long_names = false;
 
   SNS_PEDOMETER_MSGID_SNS_STEP_EVENT = 1028;
-  
-  //send to client immediatly to inform current step count
-  //msg body same as sns_step_event
+
   SNS_PEDOMETER_MSGID_SNS_STEP_EVENT_CONFIG = 775;
 }
 
@@ -53,5 +51,6 @@ message sns_step_event_config
 //
 // The sns_step_event message is used to publish updated step count
 //
-// Pedometer does not publish configuration events.
+// The sns_step_event_config message is used to publish current step count
+// to the client
 

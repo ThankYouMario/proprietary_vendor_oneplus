@@ -2,7 +2,7 @@
 //
 // Defines message types for the Accel Calibration Sensor.
 //
-// Copyright (c) 2017 Qualcomm Technologies, Inc.
+// Copyright (c) 2017, 2020 Qualcomm Technologies, Inc.
 // All Rights Reserved.
 // Confidential and Proprietary - Qualcomm Technologies, Inc.
 
@@ -27,6 +27,6 @@ import "sns_cal.proto";
 // - SNS_CAL_MSGID_SNS_CAL_EVENT message ID is used to report calibration
 //      parameters to the client of the sensor. The sns_cal_event message as
 //      defined in sns_cal.proto is used to report this data event where the
-//      units for the bias field in the message are in rad / s
+//      units for the bias field in the message are in m / s ^2
 
 
