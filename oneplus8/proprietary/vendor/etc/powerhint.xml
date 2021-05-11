@@ -303,7 +303,8 @@
         <!-- cpu-llcc-bw min_freq : MPCTLV3_CPUBW_HWMON_MIN_FREQ(0x41800000) : 71 -->
         <Config
             Id="0x00001336" Enable="true" Timeout="0" Target="kona"
-            Resources="0x43008000, 0, 0x4300C000, 0xA, 0x43000000, 29, 0x4180C000, 0, 0x41820000, 0xA, 0x41800000, 71"/>
+            Resources="0x43008000, 0, 0x4300C000, 0xA, 0x43000000, 29, 0x4180C000, 0, 0x41820000, 0xA, 0x41800000, 71,
+            0x40800100, 1036, 0x40800000, 1056, 0x40C20000, 20, 0x40C1C000, 30"/>
 
         <!-- PERF_LOCK_POWER_HINT_ID_VIDEO_REAR_UHD_60 -->
         <!-- Rear Cam 4K 60 Encoding -->
@@ -321,8 +322,10 @@
         <Config
             Id="0x00001337" Enable="true" Timeout="0" Target="kona"
             Resources="0x43008000, 0, 0x4300C000, 0xA, 0x43000000, 38, 0x4180C000, 0, 0x41820000, 0xA, 0x41800000, 91, 0x41000000,3,0x41000200,1,
-            0x40800100, 1516, 0x40800000, 1478, 0x40800200,1478, 0x40C20000, 20, 0x40C1C000, 30, 0x41808000, 80"/>
+            0x40800100, 1516, 0x40800000, 1478, 0x40800200,1190, 0x40C20000, 35, 0x40C1C000, 45, 0x40CA8000, 1, 0x41808000, 80,
+            0x43000000, 0x3B, 0x41800000, 0x7A, 0x41444100,0x00, 0x41444000, 0x00, 0x4180C000, 0x00, 0x43008000, 0x00"/>
 
+        <!-- PERF_LOCK_POWER_HINT_ID_FRONT_PREVIEW -->
         <!-- Front Cam Preview -->
         <!-- llcc-ddr-bw hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
         <!-- llcc-ddr-bw sample_ms : MPCTLV3_LLCBW_HWMON_SAMPLE_MS(0x4300C000) : 0x0A(10) -->
@@ -498,8 +501,7 @@
         <Config
             Id="0x00001344" Enable="true" Timeout="0" Target="kona"
             Resources="0x43008000, 0, 0x4300C000, 0xA, 0x43000000, 29, 0x4180C000, 0, 0x41820000, 0xA, 0x41800000, 71,
-            0x41808000, 80, 0x40800000, 1800, 0x40800100, 1800, 0x40800200, 1400, 0x41000000, 3, 0x41000100, 4, 0x41000200, 1,
-            0x40C1C000, 30, 0x40C1C200, 30, 0x40C20000, 20, 0x40C20200, 20"/>
+            0x41808000, 80"/>
 
         <!-- Gallery Slow Motion Playback -->
         <!-- L CPU - Cluster min freq ~1.785GHz : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100) : 1785 -->
