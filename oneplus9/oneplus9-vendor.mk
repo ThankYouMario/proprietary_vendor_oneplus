@@ -141,7 +141,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_china_level2:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_china_level2 \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_china_level3:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_china_level3 \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_default:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_default \
-    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_eyes_enhance:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_eyes_enhance \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_indian_big_level1:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_indian_big_level1 \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_indian_big_level2:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_indian_big_level2 \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_indian_big_level3:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_indian_big_level3 \
