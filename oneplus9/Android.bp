@@ -150,6 +150,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+	name: "vendor.qti.diag.hal.service",
+	owner: "oneplus",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
 	name: "vendor.qti.gnss@4.0-service",
 	owner: "oneplus",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml",
