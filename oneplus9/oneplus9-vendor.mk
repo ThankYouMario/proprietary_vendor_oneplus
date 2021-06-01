@@ -128,6 +128,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/audio/sku_lahaina/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/sound_trigger_mixer_paths.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/audio/sku_lahaina/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/sound_trigger_platform_info.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
+    vendor/oneplus/oneplus9/proprietary/odm/etc/prj_11/camera/CameraHWConfiguration.config:$(TARGET_COPY_OUT_ODM)/etc/prj_11/camera/CameraHWConfiguration.config \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/CameraHWConfiguration.config:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CameraHWConfiguration.config \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/M_Attribute_AG_BMW_1.1.0.model.hardcode:$(TARGET_COPY_OUT_VENDOR)/etc/camera/M_Attribute_AG_BMW_1.1.0.model.hardcode \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/ashdr/ncf_pack.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/ncf_pack.ncf \
@@ -491,27 +492,36 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/bmi26x_0_crt_cfg.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmi26x_0_crt_cfg.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/bmp380_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmp380_0.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/icm4x6xx_0.json \
+    vendor/oneplus/oneplus9/proprietary/odm/etc/prj_11/sensors/config/lahaina_ak0991x_0.json:$(TARGET_COPY_OUT_ODM)/etc/prj_11/sensors/config/lahaina_ak0991x_0.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_ak0991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_ak0991x_0.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_ak0991x_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_ak0991x_1.json \
+    vendor/oneplus/oneplus9/proprietary/odm/etc/prj_11/sensors/config/lahaina_aw9610x_0.json:$(TARGET_COPY_OUT_ODM)/etc/prj_11/sensors/config/lahaina_aw9610x_0.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_aw9610x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_aw9610x_0.json \
+    vendor/oneplus/oneplus9/proprietary/odm/etc/prj_11/sensors/config/lahaina_aw9610x_down_0.json:$(TARGET_COPY_OUT_ODM)/etc/prj_11/sensors/config/lahaina_aw9610x_down_0.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_aw9610x_down_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_aw9610x_down_0.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_bmi16x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_bmi16x_0.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_bmi16x_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_bmi16x_1.json \
+    vendor/oneplus/oneplus9/proprietary/odm/etc/prj_11/sensors/config/lahaina_bmi26x_0.json:$(TARGET_COPY_OUT_ODM)/etc/prj_11/sensors/config/lahaina_bmi26x_0.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_bmp380_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_bmp380_0.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_default_sensors.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_dynamic_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_dynamic_sensors.json \
+    vendor/oneplus/oneplus9/proprietary/odm/etc/prj_11/sensors/config/lahaina_icm4x6xx_0.json:$(TARGET_COPY_OUT_ODM)/etc/prj_11/sensors/config/lahaina_icm4x6xx_0.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_icm4x6xx_0.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_icm4x6xx_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_icm4x6xx_1.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_irq.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_irq.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_lps22hb_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_lps22hb_0.json \
+    vendor/oneplus/oneplus9/proprietary/odm/etc/prj_11/sensors/config/lahaina_mmc56x3x_0.json:$(TARGET_COPY_OUT_ODM)/etc/prj_11/sensors/config/lahaina_mmc56x3x_0.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_mmc56x3x_0.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_mmc56x3x_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_mmc56x3x_1.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_power_0.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_stk2232_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_stk2232_0.json \
+    vendor/oneplus/oneplus9/proprietary/odm/etc/prj_11/sensors/config/lahaina_sx9324_0.json:$(TARGET_COPY_OUT_ODM)/etc/prj_11/sensors/config/lahaina_sx9324_0.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_sx9324_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_sx9324_0.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_sx9324_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_sx9324_1.json \
+    vendor/oneplus/oneplus9/proprietary/odm/etc/prj_11/sensors/config/lahaina_sx9324up_0.json:$(TARGET_COPY_OUT_ODM)/etc/prj_11/sensors/config/lahaina_sx9324up_0.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_sx9324up_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_sx9324up_0.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_sx932x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_sx932x_0.json \
+    vendor/oneplus/oneplus9/proprietary/odm/etc/prj_11/sensors/config/lahaina_tcs3408.json:$(TARGET_COPY_OUT_ODM)/etc/prj_11/sensors/config/lahaina_tcs3408.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_tcs3408_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_tcs3408_0.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_tcs3408_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_tcs3408_1.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_tcs3707.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_tcs3707.json \
@@ -909,6 +919,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.tuned.sunny_imx766.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.sunny_imx766.bin \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.tuned.truly_imx471.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.truly_imx471.bin \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.arcsoft.node.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.eisv2.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib64/prj_11/camera/components/com.arcsoft.node.smooth_transition.so:$(TARGET_COPY_OUT_ODM)/lib64/prj_11/camera/components/com.arcsoft.node.smooth_transition.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.arcsoft.node.smooth_transition.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.smooth_transition.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.oplus.node.rtb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oplus.node.rtb.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qti.camx.chiiqutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.camx.chiiqutils.so \
@@ -1012,8 +1023,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/hw/audio.bluetooth_qti.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.bluetooth_qti.default.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib64/prj_11/hw/camera.qcom.so:$(TARGET_COPY_OUT_ODM)/lib64/prj_11/hw/camera.qcom.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/hw/com.dsi.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.dsi.ant@1.0-impl.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib64/prj_11/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_ODM)/lib64/prj_11/hw/com.qti.chi.override.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/hw/goodix.fod.lahaina.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/goodix.fod.lahaina.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/hw/sound_trigger.primary.lahaina.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.lahaina.so \
