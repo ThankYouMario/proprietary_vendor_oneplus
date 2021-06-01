@@ -6,12 +6,19 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/oneplus9
 
 PRODUCT_COPY_FILES += \
+    vendor/oneplus/oneplus9/proprietary/odm/etc/prj_11/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/prj_11/acdbdata/Bluetooth_cal.acdb \
     vendor/oneplus/oneplus9/proprietary/odm/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Bluetooth_cal.acdb \
+    vendor/oneplus/oneplus9/proprietary/odm/etc/prj_11/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/prj_11/acdbdata/General_cal.acdb \
     vendor/oneplus/oneplus9/proprietary/odm/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/General_cal.acdb \
+    vendor/oneplus/oneplus9/proprietary/odm/etc/prj_11/acdbdata/Global_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/prj_11/acdbdata/Global_cal.acdb \
     vendor/oneplus/oneplus9/proprietary/odm/etc/acdbdata/Global_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Global_cal.acdb \
+    vendor/oneplus/oneplus9/proprietary/odm/etc/prj_11/acdbdata/Handset_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/prj_11/acdbdata/Handset_cal.acdb \
     vendor/oneplus/oneplus9/proprietary/odm/etc/acdbdata/Handset_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Handset_cal.acdb \
+    vendor/oneplus/oneplus9/proprietary/odm/etc/prj_11/acdbdata/Hdmi_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/prj_11/acdbdata/Hdmi_cal.acdb \
     vendor/oneplus/oneplus9/proprietary/odm/etc/acdbdata/Hdmi_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Hdmi_cal.acdb \
+    vendor/oneplus/oneplus9/proprietary/odm/etc/prj_11/acdbdata/Headset_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/prj_11/acdbdata/Headset_cal.acdb \
     vendor/oneplus/oneplus9/proprietary/odm/etc/acdbdata/Headset_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Headset_cal.acdb \
+    vendor/oneplus/oneplus9/proprietary/odm/etc/prj_11/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/prj_11/acdbdata/Speaker_cal.acdb \
     vendor/oneplus/oneplus9/proprietary/odm/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Speaker_cal.acdb \
     vendor/oneplus/oneplus9/proprietary/odm/etc/odm_feature_list:$(TARGET_COPY_OUT_ODM)/etc/odm_feature_list \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/com.qti.sensor.imx481.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.imx481.so \
@@ -121,12 +128,16 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.10.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.10.pmd \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
+    vendor/oneplus/oneplus9/proprietary/odm/etc/prj_11/audio/sku_lahaina/audio_effects.xml:$(TARGET_COPY_OUT_ODM)/etc/prj_11/audio/sku_lahaina/audio_effects.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/audio/sku_lahaina/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_effects.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/audio/sku_lahaina/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_io_policy.conf \
+    vendor/oneplus/oneplus9/proprietary/odm/etc/prj_11/audio/sku_lahaina/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_ODM)/etc/prj_11/audio/sku_lahaina/audio_platform_info_intcodec.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/audio/sku_lahaina/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_platform_info_intcodec.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/audio/sku_lahaina/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_policy_configuration.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/audio/sku_lahaina/audio_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_tuning_mixer.txt \
+    vendor/oneplus/oneplus9/proprietary/odm/etc/prj_11/audio/sku_lahaina/mixer_paths.xml:$(TARGET_COPY_OUT_ODM)/etc/prj_11/audio/sku_lahaina/mixer_paths.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/audio/sku_lahaina/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/mixer_paths.xml \
+    vendor/oneplus/oneplus9/proprietary/odm/etc/prj_11/audio/sku_lahaina/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_ODM)/etc/prj_11/audio/sku_lahaina/sound_trigger_mixer_paths.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/audio/sku_lahaina/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/sound_trigger_mixer_paths.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/audio/sku_lahaina/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/sound_trigger_platform_info.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
@@ -735,6 +746,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b04 \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.elf \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.mdt \
+    vendor/oneplus/oneplus9/proprietary/odm/firmware/prj_11/tfa98xx.cnt:$(TARGET_COPY_OUT_ODM)/firmware/prj_11/tfa98xx.cnt \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/tof8801_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tof8801_firmware.bin \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/vpu20_4v.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b01 \
