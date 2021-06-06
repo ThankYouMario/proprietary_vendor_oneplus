@@ -304,6 +304,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/tonemap/tonemap_lut_8:$(TARGET_COPY_OUT_VENDOR)/etc/camera/tonemap/tonemap_lut_8 \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/tonemap/tonemap_lut_9:$(TARGET_COPY_OUT_VENDOR)/etc/camera/tonemap/tonemap_lut_9 \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/charger_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fstab.qti \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/charger_fw_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fw_fstab.qti \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/profileMwqem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileMwqem.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
