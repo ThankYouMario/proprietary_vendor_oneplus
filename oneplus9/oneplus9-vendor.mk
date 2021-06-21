@@ -784,6 +784,20 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/odm/firmware/prj_11/tfa98xx.cnt:$(TARGET_COPY_OUT_ODM)/firmware/prj_11/tfa98xx.cnt \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/tof8801_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tof8801_firmware.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tp/FW_19811_SY761.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_19811_SY761.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tp/FW_19811_SY79x.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_19811_SY79x.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tp/FW_19815_S3908.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_19815_S3908.img \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tp/FW_19821_S3908.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_19821_S3908.img \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tp/FW_19821_SY761.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_19821_SY761.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tp/FW_19821_SY771.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_19821_SY771.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tp/FW_19825_SY792.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_19825_SY792.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tp/LIMIT_19811_SY761.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_19811_SY761.img \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tp/LIMIT_19811_SY79x.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_19811_SY79x.img \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tp/LIMIT_19815_S3908.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_19815_S3908.img \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tp/LIMIT_19821_S3908.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_19821_S3908.img \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tp/LIMIT_19821_SY761.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_19821_SY761.img \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tp/LIMIT_19821_SY771.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_19821_SY771.img \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tp/LIMIT_19825_SY792.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_19825_SY792.img \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/vpu20_4v.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b01 \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/vpu20_4v.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b02 \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/vpu20_4v.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b03 \
