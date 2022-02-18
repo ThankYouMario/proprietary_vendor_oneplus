@@ -15,9 +15,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9pro/proprietary/odm/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Speaker_cal.acdb \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/audio/sku_lahaina/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_effects.xml \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/audio/sku_lahaina/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_platform_info_intcodec.xml \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/audio/sku_lahaina/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/default_volume_tables.xml \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/audio/sku_lahaina/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/mixer_paths.xml \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/audio/sku_lahaina/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/sound_trigger_mixer_paths.xml \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/camera/CameraHWConfiguration.config:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CameraHWConfiguration.config \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/irissoft/inParm1_center.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm1_center.txt \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/irissoft/inParm1_down.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm1_down.txt \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/irissoft/inParm1_up.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm1_up.txt \
@@ -52,6 +55,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/irissoft/inParm18_down.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm18_down.txt \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/irissoft/inParm18_up.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm18_up.txt \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/irissoft.fw:$(TARGET_COPY_OUT_VENDOR)/etc/irissoft.fw \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/lahaina_ak0991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_ak0991x_0.json \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/lahaina_aw9610x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_aw9610x_0.json \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/lahaina_aw9610x_down_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_aw9610x_down_0.json \
@@ -61,6 +65,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/lahaina_sx9324up_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_sx9324up_0.json \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/lahaina_sx9324_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_sx9324_0.json \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/lahaina_tcs3408.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_tcs3408.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml \
     vendor/oneplus/oneplus9pro/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
     vendor/oneplus/oneplus9pro/proprietary/vendor/lib64/camera/components/com.arcsoft.node.smooth_transition.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.smooth_transition.so \
     vendor/oneplus/oneplus9pro/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
