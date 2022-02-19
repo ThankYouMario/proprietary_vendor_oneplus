@@ -140,6 +140,18 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/audio_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio_tuning_mixer.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/bluetooth/nvm/1211althpnv10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/nvm/1211althpnv10.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/bluetooth/nvm/1211althpnv10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/nvm/1211althpnv10.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/bluetooth/nvm/1211hpnv10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/nvm/1211hpnv10.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/bluetooth/nvm/1211hpnv10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/nvm/1211hpnv10.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/bluetooth/nvm/1213althpnv10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/nvm/1213althpnv10.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/bluetooth/nvm/1213althpnv10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/nvm/1213althpnv10.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/bluetooth/nvm/1213hpnv10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/nvm/1213hpnv10.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/bluetooth/nvm/1213hpnv10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/nvm/1213hpnv10.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/bluetooth/nvm/1221hpnv10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/nvm/1221hpnv10.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/bluetooth/nvm/1221hpnv10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/nvm/1221hpnv10.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/bluetooth/nvm/1222hpnv10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/nvm/1222hpnv10.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/bluetooth/nvm/1222hpnv10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/nvm/1222hpnv10.bin \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/CameraHWConfiguration.config:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CameraHWConfiguration.config \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/M_Attribute_AG_BMW_1.1.0.model.hardcode:$(TARGET_COPY_OUT_VENDOR)/etc/camera/M_Attribute_AG_BMW_1.1.0.model.hardcode \
@@ -461,7 +473,23 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/irissoft_fod.fw:$(TARGET_COPY_OUT_VENDOR)/etc/irissoft_fod.fw \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-mtp-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-mtp-SN100.conf_19825:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf_19825 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-mtp-SN100.conf_19825:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf_19825 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-mtp-SN100.conf_20851:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf_20851 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-mtp-SN100.conf_20851:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf_20851 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-mtp-SN100.conf_20852:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf_20852 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-mtp-SN100.conf_20852:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf_20852 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-mtp-SN100.conf_20853:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf_20853 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-mtp-SN100.conf_20853:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf_20853 \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100_38_4MHZ.conf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-qrd-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100.conf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-qrd-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100.conf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100_38_4MHZ.conf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100_38_4MHZ.conf \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/ltm_config_samsung_amb655x_fhd_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_amb655x_fhd_cmd_mode_dsc_dsi_panel.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/ltm_config_samsung_amb670yf01_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_amb670yf01_dsc_cmd_mode_panel.xml \
