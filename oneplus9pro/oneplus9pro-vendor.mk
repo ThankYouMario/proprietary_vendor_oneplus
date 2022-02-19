@@ -13,14 +13,34 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9pro/proprietary/odm/etc/acdbdata/Hdmi_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Hdmi_cal.acdb \
     vendor/oneplus/oneplus9pro/proprietary/odm/etc/acdbdata/Headset_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Headset_cal.acdb \
     vendor/oneplus/oneplus9pro/proprietary/odm/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Speaker_cal.acdb \
-    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/audio/sku_lahaina/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_effects.xml \
-    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/audio/sku_lahaina/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_platform_info_intcodec.xml \
+    vendor/oneplus/oneplus9pro/proprietary/odm/etc/odm_feature_list:$(TARGET_COPY_OUT_ODM)/etc/odm_feature_list \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/audio/sku_lahaina/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/default_volume_tables.xml \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/audio/sku_lahaina/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/mixer_paths.xml \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/audio/sku_lahaina/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/sound_trigger_mixer_paths.xml \
-    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/bluetooth/nvm/1111hpnv10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/nvm/1111hpnv10.bin \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/bluetooth/nvm/1113hpnv10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/nvm/1113hpnv10.bin \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/bluetooth/nvm/1121hpnv10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/nvm/1121hpnv10.bin \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/bluetooth/nvm/1122hpnv10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/nvm/1122hpnv10.bin \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/camera/CameraHWConfiguration.config:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CameraHWConfiguration.config \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/iris5/inParm1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/iris5/inParm1.txt \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/iris5/inParm2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/iris5/inParm2.txt \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/iris5/inParm3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/iris5/inParm3.txt \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/iris5/inParm4.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/iris5/inParm4.txt \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/iris5/inParm5.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/iris5/inParm5.txt \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/iris5/inParm6.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/iris5/inParm6.txt \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/iris5/inParm7.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/iris5/inParm7.txt \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/iris5/inParm8.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/iris5/inParm8.txt \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/iris5/inParm9.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/iris5/inParm9.txt \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/iris5/inParm10.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/iris5/inParm10.txt \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/iris5/inParm11.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/iris5/inParm11.txt \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/iris5/inParm12.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/iris5/inParm12.txt \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/iris5/inParm13.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/iris5/inParm13.txt \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/iris5/inParm14.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/iris5/inParm14.txt \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/iris5/inParm15.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/iris5/inParm15.txt \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/iris5/inParm16.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/iris5/inParm16.txt \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/iris5/inParm17.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/iris5/inParm17.txt \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/iris5/inParm18.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/iris5/inParm18.txt \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/irissoft/inParm1_center.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm1_center.txt \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/irissoft/inParm1_down.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm1_down.txt \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/irissoft/inParm1_up.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm1_up.txt \
@@ -42,6 +62,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/irissoft/inParm8_a.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm8_a.txt \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/irissoft/inParm8_b.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm8_b.txt \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/irissoft/inParm8_c.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm8_c.txt \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/irissoft/inParm10.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm10.txt \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/irissoft/inParm11.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm11.txt \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/irissoft/inParm12.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm12.txt \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/irissoft/inParm14_a.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm14_a.txt \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/irissoft/inParm14_b.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm14_b.txt \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/irissoft/inParm14_c.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm14_c.txt \
@@ -54,18 +77,182 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/irissoft/inParm18_center.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm18_center.txt \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/irissoft/inParm18_down.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm18_down.txt \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/irissoft/inParm18_up.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm18_up.txt \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/irissoft/inParm.lst:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm.lst \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/inparm/irissoft/mcfCheck.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/mcfCheck.txt \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/irissoft.fw:$(TARGET_COPY_OUT_VENDOR)/etc/irissoft.fw \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/irissoft_fod.fw:$(TARGET_COPY_OUT_VENDOR)/etc/irissoft_fod.fw \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/libnfc-mtp-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/libnfc-mtp-SN100.conf_19815:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf_19815 \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/libnfc-mtp-SN100.conf_20857:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf_20857 \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/libnfc-mtp-SN100.conf_20858:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf_20858 \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/libnfc-mtp-SN100.conf_20859:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf_20859 \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100_38_4MHZ.conf \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/libnfc-qrd-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100.conf \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100_38_4MHZ.conf \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/ak0991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ak0991x_0.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/bmi26x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmi26x_0.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/bmi26x_0_crt.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmi26x_0_crt.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/bmi26x_0_crt_cfg.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmi26x_0_crt_cfg.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/bmp380_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmp380_0.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/icm4x6xx_0.json \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/lahaina_ak0991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_ak0991x_0.json \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/lahaina_aw9610x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_aw9610x_0.json \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/lahaina_aw9610x_down_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_aw9610x_down_0.json \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/lahaina_bmi26x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_bmi26x_0.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/lahaina_bmp380_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_bmp380_0.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/lahaina_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_default_sensors.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/lahaina_dynamic_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_dynamic_sensors.json \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/lahaina_icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_icm4x6xx_0.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/lahaina_irq.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_irq.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/lahaina_lps22hb_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_lps22hb_0.json \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/lahaina_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_mmc56x3x_0.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/lahaina_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_power_0.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/lahaina_stk2232_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_stk2232_0.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/lahaina_sx932x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_sx932x_0.json \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/lahaina_sx9324up_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_sx9324up_0.json \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/lahaina_sx9324_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_sx9324_0.json \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/lahaina_tcs3408.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_tcs3408.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/lahaina_tcs3707.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_tcs3707.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/lps22hb_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lps22hb_0.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/mmc56x3x_0.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_amd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_amd_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_disabled.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_amd_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_enabled.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_aont.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_aont.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_basic_gestures.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_basic_gestures.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_bring_to_ear.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_bring_to_ear.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_ccd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_ccd_v2_walk.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd_v2_walk.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_ccd_v3_1_walk.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd_v3_1_walk.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_ccd_v3_walk.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd_v3_walk.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_cm.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_cm.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_dae.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_dae.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_device_orient.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_device_orient.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_diag_filter.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_diag_filter.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_distance_bound.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_distance_bound.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_dpc.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_dpc.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_facing.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_facing.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_fmv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_fmv.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_fmv_legacy.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_fmv_legacy.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_geomag_rv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_geomag_rv.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_gyro_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_gyro_cal.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_heart_rate.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_heart_rate.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_mag_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_mag_cal.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_mag_cal_legacy.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_mag_cal_legacy.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_multishake.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_multishake.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_pedometer.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_pedometer.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_rmd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rmd.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_rotv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rotv.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_smd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_smd.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_tilt.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_tilt_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_disabled.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_tilt_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_enabled.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_tilt_to_wake.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_to_wake.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sns_wrist_pedo.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_wrist_pedo.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/stk2232_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/stk2232_0.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sx9324up_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sx9324up_0.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/sx9324_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sx9324_0.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/tcs3408.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tcs3408.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/config/tcs3707.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tcs3707.json \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/descriptor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/descriptor.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/nanopb.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/nanopb.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/qti_gravity.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/qti_gravity.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_accel.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_accel.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_accel_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_accel_cal.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_activity_recognition.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_activity_recognition.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_ambient_light.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ambient_light.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_ambient_temperature.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ambient_temperature.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_amd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_amd.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_aont.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_aont.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_async_com_port.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_async_com_port.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_basic_gestures.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_basic_gestures.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_bring_to_ear.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_bring_to_ear.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_cal.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_ccd_ttw.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ccd_ttw.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_ccd_walk.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ccd_walk.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_client.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_client.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_cmc.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_cmc.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_cmd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_cmd.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_dae.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_dae.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_data_acquisition_engine.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_data_acquisition_engine.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_da_test.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_da_test.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_device_mode.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_device_mode.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_device_orient.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_device_orient.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_diag.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_diag.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_diag_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_diag_sensor.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_direct_channel.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_direct_channel.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_distance_bound.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_distance_bound.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_dpc.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_dpc.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_ext_svc.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ext_svc.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_facing.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_facing.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_fmv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_fmv.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_formatter.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_formatter.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_fw.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_fw.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_game_rv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_game_rv.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_geomag_rv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_geomag_rv.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_gravity.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_gravity.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_gyro.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_gyro.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_gyro_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_gyro_cal.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_gyro_rot_matrix.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_gyro_rot_matrix.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_hall.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_hall.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_heart_beat.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_heart_beat.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_heart_rate.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_heart_rate.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_hinge_angle.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_hinge_angle.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_humidity.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_humidity.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_interrupt.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_interrupt.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_mag.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_mag.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_mag_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_mag_cal.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_mcmd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_mcmd.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_motion_detect.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_motion_detect.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_multishake.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_multishake.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_oem1.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_oem1.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_offbody_detect.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_offbody_detect.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_ois_system.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ois_system.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_op_motion_detect.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_op_motion_detect.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_op_sar.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_op_sar.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_pedometer.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pedometer.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_pedometer_wrist.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pedometer_wrist.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_physical_sensor_test.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_physical_sensor_test.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_pocket.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pocket.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_pose_6dof.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pose_6dof.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_ppg.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ppg.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_pressure.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pressure.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_proximity.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_proximity.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_psmd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_psmd.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_registry.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_registry.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_remote_proc_state.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_remote_proc_state.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_resampler.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_resampler.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_rgb.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_rgb.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_rmd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_rmd.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_rotv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_rotv.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_sar.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sar.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_sensor_temperature.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sensor_temperature.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_signal_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_signal_sensor.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_sig_motion.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sig_motion.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_sim.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sim.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_sim_legacy.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sim_legacy.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_std.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_std.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_std_event_gated_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_std_event_gated_sensor.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_std_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_std_sensor.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_std_type.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_std_type.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_step_detect.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_step_detect.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_suid.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_suid.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_thermopile.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_thermopile.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_threshold.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_threshold.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_tilt.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_tilt.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_tilt_to_wake.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_tilt_to_wake.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_timer.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_timer.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_ultra_violet.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ultra_violet.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/proto/sns_wrist_tilt_gesture.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_wrist_tilt_gesture.proto \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
     vendor/oneplus/oneplus9pro/proprietary/vendor/etc/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/firmware/iris5.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/iris5.fw \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/firmware/iris5_ccf1.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/iris5_ccf1.fw \
+    vendor/oneplus/oneplus9pro/proprietary/vendor/firmware/iris5_ccf2.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/iris5_ccf2.fw \
     vendor/oneplus/oneplus9pro/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
     vendor/oneplus/oneplus9pro/proprietary/vendor/lib64/camera/components/com.arcsoft.node.smooth_transition.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.smooth_transition.so \
     vendor/oneplus/oneplus9pro/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
