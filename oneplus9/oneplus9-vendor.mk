@@ -876,6 +876,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.oplus.hardware.cammidasservice@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.cammidasservice@1.0.so \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.oplus.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.commondcs@1.0.so \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.oplus.hardware.orms@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.orms@1.0.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.oplus.hardware.performance@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.performance@1.0.so \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.pixelworks.hardware.display@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.pixelworks.hardware.display@1.0.so \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.pixelworks.hardware.display@1.1.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.pixelworks.hardware.display@1.1.so \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.pixelworks.hardware.feature@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.pixelworks.hardware.feature@1.0.so \
