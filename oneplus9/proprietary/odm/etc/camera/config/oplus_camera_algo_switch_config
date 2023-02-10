@@ -190,7 +190,8 @@
                     "id" : 0,
                     "enable" : 1,
                     "aps_algo_filter" : 1,
-                    "aps_algo_watermark" : 1
+                    "aps_algo_watermark" : 1,
+                    "aps_algo_rotate_mirror" : 1
                 }
             ]
         },

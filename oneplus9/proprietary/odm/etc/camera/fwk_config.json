@@ -1,5 +1,6 @@
 {
     "default": {
+        "feature_enable_fwk_timer": false,
         "skip_rus_check_list": [
             "android.camera.cts",
             "com.android.cts.verifier",
@@ -93,5 +94,13 @@
     },
     "vendor.client.pid": {
         "isFreeDomEvictionPackge": true
+    },
+    "com.twitter.android": {
+        "previewSizeForAPI1Width": 1920,
+        "previewSizeForAPI1Height": 1080
+    },
+    "com.taikang.tailife": {
+        "previewSizeForAPI1Width": 1920,
+        "previewSizeForAPI1Height": 1080
     }
 }

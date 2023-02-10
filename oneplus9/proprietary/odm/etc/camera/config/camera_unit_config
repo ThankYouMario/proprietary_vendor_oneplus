@@ -9,7 +9,7 @@
     "rear_wide":["video_mode", "photo_mode", "super_text_mode", "macro_mode", "fastvideo_mode", "professional_mode", "xpan_mode", "movie_mode", "long_exposure_mode"],
     "rear_main":["video_mode", "photo_mode", "super_text_mode", "fastvideo_mode", "professional_mode", "id_photo_mode", "slowvideo_mode", "movie_mode", "xpan_mode", "panorama_mode", "long_exposure_mode"],
     "front_main":["video_mode", "photo_mode", "portrait_mode", "fastvideo_mode", "id_photo_mode", "night_mode", "panorama_mode"],
-    "rear_sat":["video_mode", "photo_mode", "super_text_mode", "portrait_mode", "night_mode", "fastvideo_mode"],
+    "rear_sat":["video_mode", "photo_mode", "super_text_mode", "portrait_mode", "night_mode", "fastvideo_mode","tilt_shift_mode"],
     "rear_main_front_main":["multi_camera_mode"],
     "rear_microscope":["microscope_capture_mode", "microscope_video_mode"],
     "rear_macro":["macro_mode"],
@@ -80,6 +80,12 @@
       }
     },
 
+    "tilt_shift_mode":{
+      "mono_filter_type":{
+        "black_white":"80AB"
+      }
+    },
+
     "photo_mode":{
       "mono_filter_type":{
         "black_white":"80AB"
@@ -104,6 +110,7 @@
     "microscope_video_mode":"800b",
     "macro_mode":"80A6",
     "xpan_mode":"80AC",
+    "tilt_shift_mode":"8001",
     "movie_mode":"80A3",
     "long_exposure_mode":"80AA"
   },
@@ -404,6 +411,12 @@
       "hdr/off":["0", "0", "0", "0", "0", "0", "1", "0", "1", "0", "1"],
       "hdr/auto":["1", "0", "0", "1", "0", "0", "1", "1", "0", "0", "1"],
       "ai_photo/[on,off]":["0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "1"],
+      "mono_filter_type/black_white":["0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"]
+    }
+  },
+
+  "tilt_shift_mode_featureTable":{
+    "rear_sat":{
       "mono_filter_type/black_white":["0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"]
     }
   },

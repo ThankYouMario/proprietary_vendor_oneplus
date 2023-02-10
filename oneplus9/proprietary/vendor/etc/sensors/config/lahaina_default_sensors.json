@@ -48,11 +48,6 @@
                 "owner": "suid",
                 "id": { "type": "int", "ver": "0", "data": "19" },
                 "val": { "type": "int", "ver": "0", "data": "0" }
-            },
-            ".attr_1": {
-                "owner": "suid",
-                "id": { "type": "int", "ver": "0", "data": "0" },
-                "val": { "type": "str", "ver": "0", "data": "lsm6dst" }
             }
         },
 
@@ -78,8 +73,8 @@
             "owner": "suid",
             ".attr_0": {
                 "owner": "suid",
-                "id": { "type": "int", "ver": "0", "data": "16" },
-                "val": { "type": "int", "ver": "0", "data": "1" }
+                "id": { "type": "int", "ver": "0", "data": "19" },
+                "val": { "type": "int", "ver": "0", "data": "0" }
             }
         },
 

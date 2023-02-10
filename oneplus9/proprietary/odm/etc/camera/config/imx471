@@ -1138,19 +1138,19 @@
 
             /*index6*/,
             640/*iso*/, 35/*LuminDenoiseLevel*/, 100/*ColorDenoiseLevel*/, 25/*SharpLevel*/, 0/*RingNoiseLevel*/,
-            20/*ToneLength*/, -3/*Brightness*/, 2/*Saturation*/, 0/*SceneType*/
+            20/*ToneLength*/, 2/*Brightness*/, 2/*Saturation*/, 0/*SceneType*/
 
             /*index7*/,
             320/*iso*/, 30/*LuminDenoiseLevel*/, 100/*ColorDenoiseLevel*/, 25/*SharpLevel*/, 0/*RingNoiseLevel*/,
-            20/*ToneLength*/, -6/*Brightness*/, 0/*Saturation*/, 0/*SceneType*/
+            20/*ToneLength*/, 2/*Brightness*/, 0/*Saturation*/, 0/*SceneType*/
 
             /*index8*/,
             160/*iso*/, 25/*LuminDenoiseLevel*/, 75/*ColorDenoiseLevel*/, 12/*SharpLevel*/, 3/*RingNoiseLevel*/,
-            20/*ToneLength*/, -8/*Brightness*/, 0/*Saturation*/, 0/*SceneType*/
+            20/*ToneLength*/, 0/*Brightness*/, 0/*Saturation*/, 0/*SceneType*/
 
             /*index9*/,
             0/*iso*/, 25/*LuminDenoiseLevel*/, 75/*ColorDenoiseLevel*/, 12/*SharpLevel*/, 3/*RingNoiseLevel*/,
-            20/*ToneLength*/, -10/*Brightness*/, 0/*Saturation*/, 0/*SceneType*/
+            20/*ToneLength*/, -2/*Brightness*/, 0/*Saturation*/, 0/*SceneType*/
             ",
   "Comment": "arcsoft_hdr_sensor_param_t"
 },

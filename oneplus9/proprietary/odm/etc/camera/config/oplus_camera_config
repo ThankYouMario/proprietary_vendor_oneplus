@@ -22,6 +22,20 @@
 },
 
 {
+  "VendorTag": "com.oplus.thermal.pause.video.preview.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.thermal.pause.video.preview.black.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
   "VendorTag": "com.oplus.track.focus.ultra.wide.support",
   "Type": "Byte",
   "Count": "1",
@@ -1072,6 +1086,27 @@
 },
 
 {
+  "VendorTag": "com.oplus.athena.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.scenes.force.athena",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.athena.memory.threshold",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "3.0"
+},
+
+{
   "VendorTag": "com.oplus.feature.ai.enhancement.video.facebeauty.mutex.support",
   "Type": "Byte",
   "Count": "1",
@@ -1338,10 +1373,24 @@
 },
 
 {
+  "VendorTag": "com.oplus.filter.keep.without.normalization",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
   "VendorTag": "com.oplus.feature.sat.tele.support",
   "Type": "Byte",
   "Count": "1",
   "Value": "0"
+},
+
+{
+  "VendorTag": "com.oplus.feature.tilt.shift.macro.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
 }
 
 ]
