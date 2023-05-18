@@ -605,7 +605,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/tcs3408.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tcs3408.json \
     vendor/oneplus/oneplus9/proprietary/odm/overlay/prj_11/vendor/etc/sensors/config/tcs3707.json:$(TARGET_COPY_OUT_ODM)/overlay/prj_11/vendor/etc/sensors/config/tcs3707.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/tcs3707.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tcs3707.json \
-    vendor/oneplus/oneplus9/proprietary/odm/overlay/prj_11/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_ODM)/overlay/prj_11/vendor/etc/sensors/hals.conf \
     vendor/oneplus/oneplus9/proprietary/odm/overlay/prj_11/vendor/etc/sensors/proto/descriptor.proto:$(TARGET_COPY_OUT_ODM)/overlay/prj_11/vendor/etc/sensors/proto/descriptor.proto \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/descriptor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/descriptor.proto \
     vendor/oneplus/oneplus9/proprietary/odm/overlay/prj_11/vendor/etc/sensors/proto/nanopb.proto:$(TARGET_COPY_OUT_ODM)/overlay/prj_11/vendor/etc/sensors/proto/nanopb.proto \
