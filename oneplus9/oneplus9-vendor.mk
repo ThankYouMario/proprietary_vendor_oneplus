@@ -6,12 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/oneplus9
 
 PRODUCT_COPY_FILES += \
-    vendor/oneplus/oneplus9/proprietary/odm/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_ODM)/bin/hw/android.hardware.drm@1.3-service.widevine \
-    vendor/oneplus/oneplus9/proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service \
-    vendor/oneplus/oneplus9/proprietary/odm/bin/hw/vendor.pixelworks.hardware.display.iris-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.pixelworks.hardware.display.iris-service \
-    vendor/oneplus/oneplus9/proprietary/odm/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service \
-    vendor/oneplus/oneplus9/proprietary/odm/bin/init.oplus.fingerprints.sh:$(TARGET_COPY_OUT_ODM)/bin/init.oplus.fingerprints.sh \
-    vendor/oneplus/oneplus9/proprietary/odm/bin/oplus_sensor_fb:$(TARGET_COPY_OUT_ODM)/bin/oplus_sensor_fb \
     vendor/oneplus/oneplus9/proprietary/odm/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/oneplus/oneplus9/proprietary/odm/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/General_cal.acdb \
     vendor/oneplus/oneplus9/proprietary/odm/etc/acdbdata/Global_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Global_cal.acdb \
@@ -19,883 +13,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/odm/etc/acdbdata/Hdmi_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Hdmi_cal.acdb \
     vendor/oneplus/oneplus9/proprietary/odm/etc/acdbdata/Headset_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Headset_cal.acdb \
     vendor/oneplus/oneplus9/proprietary/odm/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Speaker_cal.acdb \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/CameraHWConfiguration.config:$(TARGET_COPY_OUT_ODM)/etc/camera/CameraHWConfiguration.config \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/anc_cl_kernel.cache:$(TARGET_COPY_OUT_ODM)/etc/camera/anc_cl_kernel.cache \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/anc_cl_kernel_ins.cache:$(TARGET_COPY_OUT_ODM)/etc/camera/anc_cl_kernel_ins.cache \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/ancsegbase/anc_cl_kernel.cache:$(TARGET_COPY_OUT_ODM)/etc/camera/ancsegbase/anc_cl_kernel.cache \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/ancsegbase/model.data:$(TARGET_COPY_OUT_ODM)/etc/camera/ancsegbase/model.data \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/asd/class.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/asd/class.dlc \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/asd/detect.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/asd/detect.dlc \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/ashdr/ncf_pack.ncf:$(TARGET_COPY_OUT_ODM)/etc/camera/ashdr/ncf_pack.ncf \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/ashdr/ncf_pack_imx471.ncf:$(TARGET_COPY_OUT_ODM)/etc/camera/ashdr/ncf_pack_imx471.ncf \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/ashdr/ncf_pack_imx689.ncf:$(TARGET_COPY_OUT_ODM)/etc/camera/ashdr/ncf_pack_imx689.ncf \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/ashdr/ncf_pack_imx766.ncf:$(TARGET_COPY_OUT_ODM)/etc/camera/ashdr/ncf_pack_imx766.ncf \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/ashdr/ncf_pack_imx789.ncf:$(TARGET_COPY_OUT_ODM)/etc/camera/ashdr/ncf_pack_imx789.ncf \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/ashdr/ncf_pack_ov08a10.ncf:$(TARGET_COPY_OUT_ODM)/etc/camera/ashdr/ncf_pack_ov08a10.ncf \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/calibrationOutput_uw.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/calibrationOutput_uw.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/calibrationOutput_uw_686.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/calibrationOutput_uw_686.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/cfr_bin/CFR_OPlus_EF017_UW_snapshot.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/cfr_bin/CFR_OPlus_EF017_UW_snapshot.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/cfr_bin/cfr_bin/CFR_imx766.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/cfr_bin/cfr_bin/CFR_imx766.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/cfr_bin/cfr_bin/CFR_imx766_uw.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/cfr_bin/cfr_bin/CFR_imx766_uw.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/cfr_bin/cfr_bin/CFR_s5k3m5.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/cfr_bin/cfr_bin/CFR_s5k3m5.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/config/camera_unit_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/camera_unit_config \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/config/camera_unit_feature_config.protobuf:$(TARGET_COPY_OUT_ODM)/etc/camera/config/camera_unit_feature_config.protobuf \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/config/imx471:$(TARGET_COPY_OUT_ODM)/etc/camera/config/imx471 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/config/imx689:$(TARGET_COPY_OUT_ODM)/etc/camera/config/imx689 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/config/imx766:$(TARGET_COPY_OUT_ODM)/etc/camera/config/imx766 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/config/imx789:$(TARGET_COPY_OUT_ODM)/etc/camera/config/imx789 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/config/oplus_camera_algo_switch_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_algo_switch_config \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/config/oplus_camera_aps_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_aps_config \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/config/oplus_camera_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_config \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/config/ov08a10:$(TARGET_COPY_OUT_ODM)/etc/camera/config/ov08a10 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/config/video_beauty_default_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/video_beauty_default_config \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/darksight/darksight_main.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/darksight/darksight_main.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/darksight/darksight_ultrawide.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/darksight/darksight_ultrawide.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/distortion_result.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/distortion_result.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/eis_camera.vcfg:$(TARGET_COPY_OUT_ODM)/etc/camera/eis_camera.vcfg \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/engineer_camera_config:$(TARGET_COPY_OUT_ODM)/etc/camera/engineer_camera_config \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_default:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_default \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/000.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/000.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/000_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/000_pre.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/001.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/001.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/001_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/001_pre.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/002.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/002.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/002_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/002_pre.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/003.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/003.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/003_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/003_pre.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/010.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/010.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/010_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/010_pre.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/011.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/011.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/011_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/011_pre.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/012.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/012.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/012_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/012_pre.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/013.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/013.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/100.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/100.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/100_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/100_pre.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/101.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/101.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/101_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/101_pre.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/102.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/102.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/102_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/102_pre.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/103.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/103.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/103_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/103_pre.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/110.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/110.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/110_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/110_pre.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/111.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/111.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/111_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/111_pre.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/112.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/112.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/112_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/112_pre.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/113.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/113.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/200.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/200.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/200_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/200_pre.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/201.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/201.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/201_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/201_pre.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/202.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/202.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/202_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/202_pre.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/203.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/203.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/203_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/203_pre.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/210.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/210.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/210_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/210_pre.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/211.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/211.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/211_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/211_pre.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/212.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/212.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/212_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/212_pre.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/213.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/213.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/beauty_body.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/beauty_body.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/eyeBright.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/eyeBright.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/eyesMask.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/eyesMask.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/face_retouch_chinese.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/face_retouch_chinese.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/skinLUTs00.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs00.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/skinLUTs01.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs01.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/skinLUTs02.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs02.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/skinLUTs03.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs03.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/skinLUTs10.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs10.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/skinLUTs11.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs11.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/skinLUTs12.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs12.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/skinLUTs13.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs13.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/skinLUTs_yuv16_00.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs_yuv16_00.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/skinLUTs_yuv16_01.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs_yuv16_01.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/skinLUTs_yuv16_02.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs_yuv16_02.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/skinLUTs_yuv16_03.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs_yuv16_03.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/skinLUTs_yuv16_10.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs_yuv16_10.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/skinLUTs_yuv16_11.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs_yuv16_11.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/skinLUTs_yuv16_12.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs_yuv16_12.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/skinLUTs_yuv16_13.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs_yuv16_13.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/skinmask.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinmask.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fb_model/skinmask.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinmask.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fdc_lite_cl.cache:$(TARGET_COPY_OUT_ODM)/etc/camera/fdc_lite_cl.cache \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/B1VLf4peM:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/B1VLf4peM \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/B1aMqioxf:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/B1aMqioxf \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/B1nmcmWbG:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/B1nmcmWbG \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/B1si_XbZz:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/B1si_XbZz \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/B612Pretty.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/B612Pretty.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/BJJAwoigM:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/BJJAwoigM \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/BJyKIwqxz:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/BJyKIwqxz \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/BeautyplusMellow-5.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/BeautyplusMellow-5.CUBE.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/ByW7g4bbf:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/ByW7g4bbf \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/ByYo3If:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/ByYo3If \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/BycYf7WWz:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/BycYf7WWz \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/DL_D_G4.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/DL_D_G4.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/DL_L_B6.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/DL_L_B6.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/Delta400.3dl.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/Delta400.3dl.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/EyxRbD2UCe:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/EyxRbD2UCe \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/FaceappGrayscale.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/FaceappGrayscale.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/InsClarendon.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/InsClarendon.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/InsJuno.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/InsJuno.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/InsValencia-2.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/InsValencia-2.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/Martin.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/Martin.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/OPLUSR0604.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/OPLUSR0604.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/PP1-soft-2.6.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/PP1-soft-2.6.CUBE.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/PP2-pop-4.1.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/PP2-pop-4.1.CUBE.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/PP3-mono-3.3.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/PP3-mono-3.3.CUBE.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/SJ3mbr6ef:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/SJ3mbr6ef \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/SkpZ8ebbz:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/SkpZ8ebbz \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/SnapseedBright.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/SnapseedBright.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/SweetSnapAlice-3.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/SweetSnapAlice-3.CUBE.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/Sy4uLSTgf:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/Sy4uLSTgf \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/Syt2KeZZf:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/Syt2KeZZf \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/V01-landscape-2.6.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/V01-landscape-2.6.CUBE.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/V02-portrait-2.5.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/V02-portrait-2.5.CUBE.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/V03-food-2.0.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/V03-food-2.0.CUBE.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/V04-night-1.3.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/V04-night-1.3.CUBE.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/V05-mono-3.3.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/V05-mono-3.3.CUBE.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/YoucamAdorable80.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/YoucamAdorable80.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/b-w-P8.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/b-w-P8.CUBE.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/black_gold.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/black_gold.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/bowu-2.1.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/bowu-2.1.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/bright_coloured.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/bright_coloured.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/calm-V5.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/calm-V5.CUBE.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/candy-P7.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/candy-P7.CUBE.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/cyberpunk-kitsch-3.1.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/cyberpunk-kitsch-3.1.CUBE.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/cyberpunk-neoMilitarism-2.4-final.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/cyberpunk-neoMilitarism-2.4-final.CUBE.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/default:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/default \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/delight-P3.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/delight-P3.CUBE.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/delight-V1.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/delight-V1.CUBE.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/drjw1994.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/drjw1994.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/drjw2010.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/drjw2010.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/f_bin_hideaki:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/f_bin_hideaki \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/f_candy_water_weak.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/f_candy_water_weak.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/f_contrast_gray_face_dark:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/f_contrast_gray_face_dark \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/f_fuji_strong.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/f_fuji_strong.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/f_japan_strong.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/f_japan_strong.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/farewell-V7.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/farewell-V7.CUBE.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/interstellar_space.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/interstellar_space.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/jiari-2.0.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/jiari-2.0.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/lvtu-2.0.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/lvtu-2.0.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/meiwei-2.2.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/meiwei-2.2.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/mellow-V3.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/mellow-V3.CUBE.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/misty-P5.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/misty-P5.CUBE.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/misty-V4.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/misty-V4.CUBE.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/natural-P1.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/natural-P1.CUBE.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/neon-2020.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/neon-2020.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oplus-black-gold.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus-black-gold.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oplus-cyberpunk.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus-cyberpunk.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oplus-nightcity.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus-nightcity.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oplus-r-black-gold-1.1-RGB.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus-r-black-gold-1.1-RGB.CUBE.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oplus-r-cyberpunk-RGB.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus-r-cyberpunk-RGB.CUBE.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oplus-r-infra-RGB.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus-r-infra-RGB.CUBE.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oplus-yellow-blue.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus-yellow-blue.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oplus_SAREK_III.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_SAREK_III.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oplus_VAEROY_III.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_VAEROY_III.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oplus_YLLAAS.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_YLLAAS.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oplus_r4.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_r4.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oplus_r5.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_r5.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oplus_r6.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_r6.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oplus_video_filter_black_and_white:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_video_filter_black_and_white \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oplus_video_filter_highlight:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_video_filter_highlight \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oplus_video_filter_ins:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_video_filter_ins \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oplus_video_filter_natal:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_video_filter_natal \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oplus_video_filter_olympus:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_video_filter_olympus \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oplus_video_filter_plain:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_video_filter_plain \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oplus_video_filter_show:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_video_filter_show \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oplus_video_filter_solar:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_video_filter_solar \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oplus_video_filter_strong:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_video_filter_strong \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oplus_video_filter_west:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oplus_video_filter_west \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oppo_video_filter_black_and_white:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oppo_video_filter_black_and_white \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oppo_video_filter_highlight:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oppo_video_filter_highlight \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oppo_video_filter_ins:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oppo_video_filter_ins \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oppo_video_filter_natal:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oppo_video_filter_natal \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oppo_video_filter_olympus:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oppo_video_filter_olympus \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oppo_video_filter_plain:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oppo_video_filter_plain \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oppo_video_filter_show:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oppo_video_filter_show \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oppo_video_filter_solar:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oppo_video_filter_solar \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oppo_video_filter_strong:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oppo_video_filter_strong \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/oppo_video_filter_west:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/oppo_video_filter_west \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/p4_1.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/p4_1.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/p4_2.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/p4_2.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/p4_3.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/p4_3.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/p4_4.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/p4_4.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/qiuri-2.0.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/qiuri-2.0.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/r1JaFSZZG:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/r1JaFSZZG \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/r1PrfoolG:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/r1PrfoolG \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/rJ5g5vPWG:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/rJ5g5vPWG \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/rJxJtmaez:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/rJxJtmaez \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/red-red.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/red-red.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/rkMhq4ZWf:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/rkMhq4ZWf \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/rkx5u4Zbf:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/rkx5u4Zbf \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/senlin-2.0.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/senlin-2.0.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/serene-P9.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/serene-P9.CUBE.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/sky-blue.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/sky-blue.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/sweet-P2.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/sweet-P2.CUBE.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/sweet-V2.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/sweet-V2.CUBE.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/tree-green.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/tree-green.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/type_fuji_acros:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/type_fuji_acros \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/type_fuji_astia:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/type_fuji_astia \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/type_fuji_chrome:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/type_fuji_chrome \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/type_fuji_provia:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/type_fuji_provia \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/type_fuji_velvia:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/type_fuji_velvia \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_lut/yuanqi-2.2s.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/yuanqi-2.2s.cube.rgb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_res/film_grain_small.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_res/film_grain_small.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_res/lut_all_points.png:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_res/lut_all_points.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/filters_res/overlay_p4_3_weak.png:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_res/overlay_p4_3_weak.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/fwk_config.json:$(TARGET_COPY_OUT_ODM)/etc/camera/fwk_config.json \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/gasryuv_1.2_wp.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gasryuv_1.2_wp.model \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/micFilter/blue_pink_3.png:$(TARGET_COPY_OUT_ODM)/etc/camera/micFilter/blue_pink_3.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/micFilter/curve_0.png:$(TARGET_COPY_OUT_ODM)/etc/camera/micFilter/curve_0.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/micFilter/green_orange_2.png:$(TARGET_COPY_OUT_ODM)/etc/camera/micFilter/green_orange_2.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/micFilter/yellow_green_1.png:$(TARGET_COPY_OUT_ODM)/etc/camera/micFilter/yellow_green_1.png \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/model/DocDetectV15.xbin:$(TARGET_COPY_OUT_ODM)/etc/camera/model/DocDetectV15.xbin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/model_fdc.data:$(TARGET_COPY_OUT_ODM)/etc/camera/model_fdc.data \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut0:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut0 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut10:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut10 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut11:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut11 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut12:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut12 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut13:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut13 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut14:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut14 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut15:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut15 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut16:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut16 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut17:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut17 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut18:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut18 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut1:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut1 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut2:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut2 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut3:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut3 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut4:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut4 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut5:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut5 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut6:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut6 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut7:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut7 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut8:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut8 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut9:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut9 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut0:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut0 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut10:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut10 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut11:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut11 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut12:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut12 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut13:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut13 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut14:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut14 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut15:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut15 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut16:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut16 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut17:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut17 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut18:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut18 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut1:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut1 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut2:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut2 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut3:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut3 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut4:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut4 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut5:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut5 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut6:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut6 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut7:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut7 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut8:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut8 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut9:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut9 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/frameSet.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/frameSet.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param0.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param0.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param1.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param1.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param10.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param10.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param11.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param11.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param12.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param12.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param13.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param13.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param14.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param14.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param15.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param15.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param16.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param16.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param17.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param17.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param18.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param18.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param2.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param2.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param3.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param3.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param4.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param4.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param5.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param5.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param6.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param6.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param7.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param7.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param8.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param8.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/param9.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/param9.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/photoSet.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/photoSet.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/platformSet.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/platformSet.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/sceneList.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/sceneList.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut0:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut0 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut10:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut10 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut11:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut11 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut12:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut12 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut13:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut13 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut14:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut14 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut15:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut15 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut16:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut16 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut17:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut17 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut18:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut18 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut1:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut1 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut2:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut2 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut3:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut3 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut4:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut4 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut5:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut5 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut6:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut6 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut7:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut7 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut8:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut8 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut9:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut9 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut0:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut0 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut10:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut10 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut11:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut11 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut12:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut12 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut13:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut13 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut14:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut14 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut15:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut15 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut16:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut16 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut17:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut17 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut18:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut18 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut1:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut1 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut2:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut2 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut3:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut3 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut4:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut4 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut5:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut5 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut6:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut6 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut7:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut7 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut8:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut8 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut9:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut9 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/frameSet.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/frameSet.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param0.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param0.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param1.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param1.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param10.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param10.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param11.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param11.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param12.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param12.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param13.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param13.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param14.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param14.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param15.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param15.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param16.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param16.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param17.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param17.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param18.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param18.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param2.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param2.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param3.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param3.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param4.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param4.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param5.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param5.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param6.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param6.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param7.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param7.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param8.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param8.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/param9.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/param9.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/photoSet.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/photoSet.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/platformSet.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/platformSet.ini \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/sceneList.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/sceneList.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/BeardSharp.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/BeardSharp.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/BeardSharp.frag:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/BeardSharp.frag \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/BeardSharp.vert:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/BeardSharp.vert \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/PreAddSRBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreAddSRBinary.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/PreCalVarBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreCalVarBinary.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/PreCalcSRBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreCalcSRBinary.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/PreDepouchBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreDepouchBinary.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/PreEyeMeanBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreEyeMeanBinary.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/PreHighPassBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreHighPassBinary.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/PreHighPassPreBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreHighPassPreBinary.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/PreHoriFilterBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreHoriFilterBinary.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/PreMakeupBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreMakeupBinary.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/PreMakeupMultiFaceBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreMakeupMultiFaceBinary.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/PreMakeupSingleFaceBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreMakeupSingleFaceBinary.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/PreMixImageBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreMixImageBinary.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/PreMorphBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreMorphBinary.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/PreOnlywhitenBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreOnlywhitenBinary.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/PreSkintuneBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreSkintuneBinary.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/PreSkintuneMRTBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreSkintuneMRTBinary.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/PreSurfaceBlurBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreSurfaceBlurBinary.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/PreVertFilterBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreVertFilterBinary.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/PreVertSurBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreVertSurBinary.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/SkinCalcHue.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/SkinCalcHue.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/SkinCalcHue.frag:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/SkinCalcHue.frag \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/SkinCalcHue.vert:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/SkinCalcHue.vert \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/SkinColorBlur.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/SkinColorBlur.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/SkinColorBlur.frag:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/SkinColorBlur.frag \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/SkinColorBlur.vert:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/SkinColorBlur.vert \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/SkinColorUnify.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/SkinColorUnify.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/SkinColorUnify.frag:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/SkinColorUnify.frag \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/SkinColorUnify.vert:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/SkinColorUnify.vert \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/SkinHueUnify.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/SkinHueUnify.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/SkinHueUnify.frag:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/SkinHueUnify.frag \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/SkinHueUnify.vert:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/SkinHueUnify.vert \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/ThirdPartyPreHoriFilterBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/ThirdPartyPreHoriFilterBinary.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/ThirdPartyPreMorphBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/ThirdPartyPreMorphBinary.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/ThirdPartyPreOnlywhitenBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/ThirdPartyPreOnlywhitenBinary.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/ThirdPartyPreSkintuneBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/ThirdPartyPreSkintuneBinary.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/ThirdPartyPreSkintuneMRTBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/ThirdPartyPreSkintuneMRTBinary.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/ThirdPartyPreVertFilterBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/ThirdPartyPreVertFilterBinary.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/pfb_bin/ThirdPartyPreVertSurBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/ThirdPartyPreVertSurBinary.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/settings_fdc.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/settings_fdc.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/settings_fdc_lite.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/settings_fdc_lite.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/sticker/M_SenseME_Action_5.2.12.model:$(TARGET_COPY_OUT_ODM)/etc/camera/sticker/M_SenseME_Action_5.2.12.model \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/sticker/material/animoji/data.zip:$(TARGET_COPY_OUT_ODM)/etc/camera/sticker/material/animoji/data.zip \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/sticker/material/animoji/snowleopard_v_0_0_0_9.zip:$(TARGET_COPY_OUT_ODM)/etc/camera/sticker/material/animoji/snowleopard_v_0_0_0_9.zip \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/tonemap/curve_lut_0:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_0 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/tonemap/curve_lut_10:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_10 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/tonemap/curve_lut_1:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_1 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/tonemap/curve_lut_2:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_2 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/tonemap/curve_lut_3:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_3 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/tonemap/curve_lut_4:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_4 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/tonemap/curve_lut_5:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_5 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/tonemap/curve_lut_6:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_6 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/tonemap/curve_lut_7:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_7 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/tonemap/curve_lut_8:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_8 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/tonemap/curve_lut_9:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_9 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/tonemap/list.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/list.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/tonemap/s_curve_lut:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/s_curve_lut \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/tonemap/tonemap_lut_0:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_0 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/tonemap/tonemap_lut_10:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_10 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/tonemap/tonemap_lut_1:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_1 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/tonemap/tonemap_lut_2:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_2 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/tonemap/tonemap_lut_3:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_3 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/tonemap/tonemap_lut_4:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_4 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/tonemap/tonemap_lut_5:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_5 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/tonemap/tonemap_lut_6:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_6 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/tonemap/tonemap_lut_7:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_7 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/tonemap/tonemap_lut_8:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_8 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/camera/tonemap/tonemap_lut_9:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_9 \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/init/calibrationOutput_uw.rc:$(TARGET_COPY_OUT_ODM)/etc/init/calibrationOutput_uw.rc \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/init/calibrationOutput_uw_686.rc:$(TARGET_COPY_OUT_ODM)/etc/init/calibrationOutput_uw_686.rc \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/init/vendor.pixelworks.hardware.display.iris-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.pixelworks.hardware.display.iris-service.rc \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/iris5/inParm1.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris5/inParm1.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/iris5/inParm10.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris5/inParm10.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/iris5/inParm11.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris5/inParm11.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/iris5/inParm12.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris5/inParm12.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/iris5/inParm13.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris5/inParm13.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/iris5/inParm14.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris5/inParm14.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/iris5/inParm15.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris5/inParm15.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/iris5/inParm16.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris5/inParm16.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/iris5/inParm17.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris5/inParm17.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/iris5/inParm18.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris5/inParm18.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/iris5/inParm2.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris5/inParm2.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/iris5/inParm3.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris5/inParm3.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/iris5/inParm4.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris5/inParm4.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/iris5/inParm5.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris5/inParm5.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/iris5/inParm6.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris5/inParm6.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/iris5/inParm7.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris5/inParm7.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/iris5/inParm8.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris5/inParm8.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/iris5/inParm9.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris5/inParm9.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm.lst:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm.lst \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm10.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm10.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm11.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm11.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm12.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm12.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm14_a.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm14_a.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm14_b.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm14_b.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm14_c.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm14_c.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm16_center.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm16_center.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm16_down.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm16_down.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm16_up.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm16_up.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm17_center.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm17_center.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm17_down.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm17_down.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm17_up.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm17_up.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm18_center.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm18_center.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm18_down.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm18_down.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm18_up.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm18_up.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm1_center.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm1_center.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm1_down.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm1_down.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm1_up.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm1_up.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm2_center.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm2_center.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm2_down.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm2_down.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm2_up.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm2_up.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm3_center.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm3_center.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm3_down.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm3_down.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm3_up.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm3_up.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm4_center.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm4_center.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm4_down.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm4_down.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm4_up.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm4_up.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm5_center.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm5_center.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm5_down.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm5_down.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm5_up.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm5_up.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm6_center.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm6_center.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm6_down.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm6_down.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm6_up.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm6_up.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm8_a.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm8_a.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm8_b.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm8_b.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/inParm8_c.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm8_c.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/mcfCheck.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/mcfCheck.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/inparm/irissoft/mcfCheck_low.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/mcfCheck_low.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/irissoft.fw:$(TARGET_COPY_OUT_ODM)/etc/irissoft.fw \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/irissoft_fod.fw:$(TARGET_COPY_OUT_ODM)/etc/irissoft_fod.fw \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/lvimfs_params/LVACFS_Configuration.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVACFS_Configuration.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/lvimfs_params/LVIMFS_Calibration_2mic.dat:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Calibration_2mic.dat \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID10_MIC_VR.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID10_MIC_VR.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID11_HE.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID11_HE.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID12_HE_APP1.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID12_HE_APP1.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID13_HE_APP2.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID13_HE_APP2.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID14_HE_Cam.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID14_HE_Cam.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID15_HE_Conference.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID15_HE_Conference.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID16_HE_Fast.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID16_HE_Fast.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID17_HE_Interview.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID17_HE_Interview.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID18_HE_Unprocess.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID18_HE_Unprocess.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID19_HE_Voice.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID19_HE_Voice.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID1_MIC_Normal.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID1_MIC_Normal.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID20_HE_VR.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID20_HE_VR.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID21_USB_Normal.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID21_USB_Normal.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID22_USB_APP1.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID22_USB_APP1.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID23_BT_Normal.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID23_BT_Normal.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID24_BT_APP1.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID24_BT_APP1.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID2_MIC_APP1.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID2_MIC_APP1.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID3_MIC_APP2.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID3_MIC_APP2.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID4_MIC_Cam.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID4_MIC_Cam.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID5_MIC_Conference.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID5_MIC_Conference.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID6_MIC_Fast.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID6_MIC_Fast.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID7_MIC_Interview.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID7_MIC_Interview.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID8_MIC_Unprocess.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID8_MIC_Unprocess.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID9_MIC_Voice.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID9_MIC_Voice.txt \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/sensor/config/lahaina_aw9610x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/lahaina_aw9610x_0.json \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/sensor/config/lahaina_aw9610x_down_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/lahaina_aw9610x_down_0.json \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/sensor/config/lahaina_qrd_ak0991x.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/lahaina_qrd_ak0991x.json \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/sensor/config/lahaina_qrd_alsps.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/lahaina_qrd_alsps.json \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/sensor/config/lahaina_qrd_bmi16x.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/lahaina_qrd_bmi16x.json \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/sensor/config/lahaina_qrd_cct_rear.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/lahaina_qrd_cct_rear.json \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/sensor/config/lahaina_qrd_icm4x6xx.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/lahaina_qrd_icm4x6xx.json \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/sensor/config/lahaina_qrd_mmc56x3x.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/lahaina_qrd_mmc56x3x.json \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/sensor/config/lahaina_qrd_sx932x.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/lahaina_qrd_sx932x.json \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/sensor/config/lahaina_qrd_sx932x_down.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/lahaina_qrd_sx932x_down.json \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/sensor/config/lahaina_tcs3707.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/lahaina_tcs3707.json \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/sensor/sensor_config.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/sensor_config.json \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/wifi/bdwlan.elf:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlan.elf \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/wifi/cnss_diag_always_on.conf:$(TARGET_COPY_OUT_ODM)/etc/wifi/cnss_diag_always_on.conf \
-    vendor/oneplus/oneplus9/proprietary/odm/etc/wifi/regdb.bin:$(TARGET_COPY_OUT_ODM)/etc/wifi/regdb.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/100ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/100ms_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/120ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/120ms_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/140ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/140ms_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/160ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/160ms_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/180ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/180ms_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/200ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/200ms_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/20ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/20ms_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/220ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/220ms_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/240ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/240ms_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/260ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/260ms_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/280ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/280ms_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/300ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/300ms_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/320ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/320ms_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/340ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/340ms_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/360ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/360ms_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/380ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/380ms_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/400ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/400ms_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/40ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/40ms_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/420ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/420ms_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/440ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/440ms_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/460ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/460ms_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/480ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/480ms_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/500ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/500ms_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/60ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/60ms_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/80ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/80ms_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/AT500ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/AT500ms_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/VZW_Alrwave_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/VZW_Alrwave_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/Version_Alert_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/Version_Alert_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/alarm_Alarm_clock_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Alarm_clock_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/alarm_Beep_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Beep_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/alarm_Breeze_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Breeze_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/alarm_Dawn_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Dawn_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/alarm_Dream_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Dream_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/alarm_Fluttering_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Fluttering_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/alarm_Flyer_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Flyer_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/alarm_Interesting_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Interesting_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/alarm_Leisurely_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Leisurely_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/alarm_Memory_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Memory_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/alarm_Relieved_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Relieved_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/alarm_Ripple_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Ripple_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/alarm_Slowly_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Slowly_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/alarm_Stars_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Stars_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/alarm_Surging_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Surging_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/alarm_The_wind_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_The_wind_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/alarm_Walking_in_the_rain_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Walking_in_the_rain_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/alarm_spring_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_spring_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/alarm_tactfully_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_tactfully_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/aw8697_haptic.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/aw8697_haptic_166.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_166.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/aw8697_haptic_168.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_168.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/aw8697_haptic_170.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_170.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/aw8697_haptic_172.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_172.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/aw8697_haptic_174.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_174.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/aw8697_rtp.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_rtp.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/aw8697_rtp_lighthouse.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_rtp_lighthouse.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/aw8697_rtp_silk.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_rtp_silk.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/awinic_haptic_gun_params.bin:$(TARGET_COPY_OUT_ODM)/firmware/awinic_haptic_gun_params.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/awinic_haptic_params.bin:$(TARGET_COPY_OUT_ODM)/firmware/awinic_haptic_params.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/notif_Allay_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Allay_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/notif_Allusion_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Allusion_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/notif_Amiable_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Amiable_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/notif_Blare_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Blare_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/notif_Blissful_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Blissful_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/notif_Brisk_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Brisk_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/notif_Bubble_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Bubble_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/notif_Cheerful_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Cheerful_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/notif_Clear_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Clear_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/notif_Comely_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Comely_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/notif_Cozy_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Cozy_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/notif_Ding_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Ding_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/notif_Effervesce_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Effervesce_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/notif_Elegant_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Elegant_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/notif_Free_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Free_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/notif_Hallucination_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Hallucination_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/notif_Inbound_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Inbound_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/notif_Light_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Light_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/notif_Meet_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Meet_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/notif_Naivety_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Naivety_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/notif_Quickly_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Quickly_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/notif_Rhythm_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Rhythm_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/notif_Surprise_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Surprise_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/notif_Twinkle_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Twinkle_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ring_Amenity_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ring_Amenity_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ring_Bounce_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ring_Bounce_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ring_Calm_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ring_Calm_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ring_Lazy_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ring_Lazy_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ring_Mystical_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ring_Mystical_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ring_Whirl_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ring_Whirl_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_Alacrity_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Alacrity_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_Blues_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Blues_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_Cloud_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Cloud_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_Cyclotron_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Cyclotron_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_Distinct_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Distinct_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_Dynamic_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Dynamic_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_Eager.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Eager.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_Ebullition.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Ebullition.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_Echo_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Echo_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_Expect_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Expect_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_Fanatical_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Fanatical_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_Friendship.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Friendship.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_Funky_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Funky_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_Guitar_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Guitar_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_Harping_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Harping_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_Highlight_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Highlight_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_Idyl_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Idyl_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_Innocence_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Innocence_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_Jazz_life_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Jazz_life_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_Journey_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Journey_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_Joyous_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Joyous_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_Marimba_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Marimba_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_Old_telephone_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Old_telephone_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_OnePlus_tune_rhythm_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_OnePlus_tune_rhythm_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_Oneplus_tune_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Oneplus_tune_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_Optimistic_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Optimistic_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_Piano_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Piano_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_Rhythm_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Rhythm_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/ringtone_Sun_glittering_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Sun_glittering_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/shuntai24k_rtp.bin:$(TARGET_COPY_OUT_ODM)/firmware/shuntai24k_rtp.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/t-jingle_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/t-jingle_RTP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_ODM)/firmware/tfa98xx.cnt \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/19815/FW_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19815/FW_S3908_SAMSUNG.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/19815/FW_S3908_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19815/FW_S3908_SAMSUNG_FAE.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/19815/LIMIT_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19815/LIMIT_S3908_SAMSUNG.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/19825/FW_S6SY792_SAMSUNG.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/19825/FW_S6SY792_SAMSUNG.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/19825/FW_S6SY792_SAMSUNG_FAE.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/19825/FW_S6SY792_SAMSUNG_FAE.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/19825/LIMIT_S6SY792_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19825/LIMIT_S6SY792_SAMSUNG.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/20031/FW_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20031/FW_S3908_SAMSUNG.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/20031/FW_S3908_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20031/FW_S3908_SAMSUNG_FAE.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/20031/LIMIT_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20031/LIMIT_S3908_SAMSUNG.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/20085/FW_S3908_BOE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20085/FW_S3908_BOE.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/20085/FW_S3908_BOE_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20085/FW_S3908_BOE_FAE.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/20085/FW_ST80Y_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20085/FW_ST80Y_SAMSUNG.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/20085/FW_ST80Y_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20085/FW_ST80Y_SAMSUNG_FAE.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/20085/LIMIT_S3908_BOE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20085/LIMIT_S3908_BOE.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/20085/LIMIT_ST80Y_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20085/LIMIT_ST80Y_SAMSUNG.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/20085/LIMIT_ST80Y_SAMSUNG_AGING.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20085/LIMIT_ST80Y_SAMSUNG_AGING.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/20627/FW_FT3518_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20627/FW_FT3518_SAMSUNG.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/20627/FW_FT3518_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20627/FW_FT3518_SAMSUNG_FAE.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/20627/LIMIT_FT3518_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20627/LIMIT_FT3518_SAMSUNG.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/20659/FW_S6SY792_SAMSUNG.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/20659/FW_S6SY792_SAMSUNG.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/20659/FW_S6SY792_SAMSUNG_FAE.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/20659/FW_S6SY792_SAMSUNG_FAE.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/20659/LIMIT_S6SY792_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20659/LIMIT_S6SY792_SAMSUNG.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/20820/FW_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20820/FW_S3908_SAMSUNG.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/20820/FW_S3908_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20820/FW_S3908_SAMSUNG_FAE.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/20820/LIMIT_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20820/LIMIT_S3908_SAMSUNG.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/21005/FW_S3908_BOE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21005/FW_S3908_BOE.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/21005/FW_S3908_BOE_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21005/FW_S3908_BOE_FAE.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/21005/FW_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21005/FW_S3908_SAMSUNG.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/21005/FW_S3908_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21005/FW_S3908_SAMSUNG_FAE.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/21005/LIMIT_S3908_BOE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21005/LIMIT_S3908_BOE.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/21005/LIMIT_S3908_BOE_AGING.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21005/LIMIT_S3908_BOE_AGING.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/21005/LIMIT_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21005/LIMIT_S3908_SAMSUNG.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/21005/LIMIT_S3908_SAMSUNG_AGING.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21005/LIMIT_S3908_SAMSUNG_AGING.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/21031/FW_FT3518_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21031/FW_FT3518_SAMSUNG.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/21031/FW_FT3518_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21031/FW_FT3518_SAMSUNG_FAE.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/21031/LIMIT_FT3518_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21031/LIMIT_FT3518_SAMSUNG.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/21051/FW_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21051/FW_S3908_SAMSUNG.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/21051/FW_S3908_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21051/FW_S3908_SAMSUNG_FAE.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/21051/LIMIT_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21051/LIMIT_S3908_SAMSUNG.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/21075/FW_NF_ILI7807S_BOE_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21075/FW_NF_ILI7807S_BOE_FAE.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/21075/FW_NF_ILI7807S_DSJM.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21075/FW_NF_ILI7807S_DSJM.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/21075/FW_NF_ILI7807S_DSJM_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21075/FW_NF_ILI7807S_DSJM_FAE.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/21075/LIMIT_NF_ILI7807S_BOE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21075/LIMIT_NF_ILI7807S_BOE.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/21075/LIMIT_NF_ILI7807S_DSJM.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21075/LIMIT_NF_ILI7807S_DSJM.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/21147/FW_FT3658U_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21147/FW_FT3658U_SAMSUNG.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/21147/FW_FT3658U_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21147/FW_FT3658U_SAMSUNG_FAE.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/21147/LIMIT_FT3658U_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21147/LIMIT_FT3658U_SAMSUNG.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/21617/FW_FT3658U_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21617/FW_FT3658U_SAMSUNG.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/21617/FW_FT3658U_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21617/FW_FT3658U_SAMSUNG_FAE.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/tp/21617/LIMIT_FT3658U_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21617/LIMIT_FT3658U_SAMSUNG.img \
-    vendor/oneplus/oneplus9/proprietary/odm/firmware/wentai24k_rtp.bin:$(TARGET_COPY_OUT_ODM)/firmware/wentai24k_rtp.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/lib/libDeVIS.so:$(TARGET_COPY_OUT_ODM)/lib/libDeVIS.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib/libaudioEngineerTest.so:$(TARGET_COPY_OUT_ODM)/lib/libaudioEngineerTest.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib/libc++_shared.so:$(TARGET_COPY_OUT_ODM)/lib/libc++_shared.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib/libdehaze.so:$(TARGET_COPY_OUT_ODM)/lib/libdehaze.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib/liblvimfs.so:$(TARGET_COPY_OUT_ODM)/lib/liblvimfs.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib/liblvimfs_wrapper.so:$(TARGET_COPY_OUT_ODM)/lib/liblvimfs_wrapper.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib/libnightvision.so:$(TARGET_COPY_OUT_ODM)/lib/libnightvision.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib/vendor.oplus.hardware.performance@1.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.performance@1.0.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/anc.hal.so:$(TARGET_COPY_OUT_ODM)/lib64/anc.hal.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/arcsoft_calibration_uw.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/arcsoft_calibration_uw.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/arcsoft_calibration_wt.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/arcsoft_calibration_wt.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/arcsoft_dc_calibration_t.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/arcsoft_dc_calibration_t.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/arcsoft_dc_calibration_u.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/arcsoft_dc_calibration_u.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/arcsoft_dc_calibration_w.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/arcsoft_dc_calibration_w.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/com.qti.sensor.gc02m1b.lemonade.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.gc02m1b.lemonade.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/com.qti.sensor.imx471.lemonade.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.imx471.lemonade.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/com.qti.sensor.imx689.lemonade.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.imx689.lemonade.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/com.qti.sensor.imx766.lemonade.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.imx766.lemonade.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/com.qti.sensormodule.lemonade.semco_imx689.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.lemonade.semco_imx689.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/com.qti.sensormodule.lemonade.shine_gc02m1b.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.lemonade.shine_gc02m1b.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766_MP.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766_MP.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766_ak7375c.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766_ak7375c.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/com.qti.sensormodule.lemonade.truly_imx471.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.lemonade.truly_imx471.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/com.qti.tuned.semco_imx689.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.semco_imx689.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/com.qti.tuned.shine_gc02m1b.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.shine_gc02m1b.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/com.qti.tuned.sunny_imx766.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.sunny_imx766.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/com.qti.tuned.truly_imx471.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.truly_imx471.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/components/com.arcsoft.node.eisv2.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/components/com.arcsoft.node.eisv2.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/components/com.arcsoft.node.smooth_transition.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/components/com.arcsoft.node.smooth_transition.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/components/com.oplus.node.preview.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/components/com.oplus.node.preview.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/components/com.oplus.node.rtb.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/components/com.oplus.node.rtb.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/components/com.oplus.node.videoenhance.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/components/com.oplus.node.videoenhance.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/fdconfigpreview.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/fdconfigpreviewlite.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/fdconfigvideo.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/fdconfigvideolite.bin \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/hw/fingerprint.goodix_G3.default.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/fingerprint.goodix_G3.default.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libAlgoInterface.so:$(TARGET_COPY_OUT_ODM)/lib64/libAlgoInterface.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libAlgoProcess.so:$(TARGET_COPY_OUT_ODM)/lib64/libAlgoProcess.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libAncSegmentSdk.so:$(TARGET_COPY_OUT_ODM)/lib64/libAncSegmentSdk.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libCOppLceTonemapAPI.so:$(TARGET_COPY_OUT_ODM)/lib64/libCOppLceTonemapAPI.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libEIS.so:$(TARGET_COPY_OUT_ODM)/lib64/libEIS.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libFaceBeautyCap.so:$(TARGET_COPY_OUT_ODM)/lib64/libFaceBeautyCap.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libFaceBeautyPICap.so:$(TARGET_COPY_OUT_ODM)/lib64/libFaceBeautyPICap.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libFaceBeautyPre.so:$(TARGET_COPY_OUT_ODM)/lib64/libFaceBeautyPre.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libFaceDistortionCorrection.so:$(TARGET_COPY_OUT_ODM)/lib64/libFaceDistortionCorrection.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libOGLManager.so:$(TARGET_COPY_OUT_ODM)/lib64/libOGLManager.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libOPLUS_SCPortrait.so:$(TARGET_COPY_OUT_ODM)/lib64/libOPLUS_SCPortrait.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libPerfectlyClearCrux.so:$(TARGET_COPY_OUT_ODM)/lib64/libPerfectlyClearCrux.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libPerfectlyClearCruxOpt.so:$(TARGET_COPY_OUT_ODM)/lib64/libPerfectlyClearCruxOpt.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libPolarrRender.so:$(TARGET_COPY_OUT_ODM)/lib64/libPolarrRender.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libPreviewDecisionOld.so:$(TARGET_COPY_OUT_ODM)/lib64/libPreviewDecisionOld.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libSNPE.so:$(TARGET_COPY_OUT_ODM)/lib64/libSNPE.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libSNPE_G.so:$(TARGET_COPY_OUT_ODM)/lib64/libSNPE_G.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libVDBayerHDR.so:$(TARGET_COPY_OUT_ODM)/lib64/libVDBayerHDR.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libVDBlurless.so:$(TARGET_COPY_OUT_ODM)/lib64/libVDBlurless.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libVDDualCameraBlurlessAPI.so:$(TARGET_COPY_OUT_ODM)/lib64/libVDDualCameraBlurlessAPI.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libVDExternal.so:$(TARGET_COPY_OUT_ODM)/lib64/libVDExternal.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libVDPostureDetection.so:$(TARGET_COPY_OUT_ODM)/lib64/libVDPostureDetection.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libVDSuperPhotoAPI.so:$(TARGET_COPY_OUT_ODM)/lib64/libVDSuperPhotoAPI.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libVDUpScale.so:$(TARGET_COPY_OUT_ODM)/lib64/libVDUpScale.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libVideoEnhance.so:$(TARGET_COPY_OUT_ODM)/lib64/libVideoEnhance.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libWaterMark.so:$(TARGET_COPY_OUT_ODM)/lib64/libWaterMark.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libWaterMode.so:$(TARGET_COPY_OUT_ODM)/lib64/libWaterMode.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/lib_oplus_starburst_capture.so:$(TARGET_COPY_OUT_ODM)/lib64/lib_oplus_starburst_capture.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/lib_oplus_starburst_preview.so:$(TARGET_COPY_OUT_ODM)/lib64/lib_oplus_starburst_preview.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/lib_rectify.so:$(TARGET_COPY_OUT_ODM)/lib64/lib_rectify.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libaisal.so:$(TARGET_COPY_OUT_ODM)/lib64/libaisal.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libancbase_segment.so:$(TARGET_COPY_OUT_ODM)/lib64/libancbase_segment.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libaps_frame_registration.so:$(TARGET_COPY_OUT_ODM)/lib64/libaps_frame_registration.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libapsdarksight.so:$(TARGET_COPY_OUT_ODM)/lib64/libapsdarksight.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libapsexif.so:$(TARGET_COPY_OUT_ODM)/lib64/libapsexif.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libapsjpeg.so:$(TARGET_COPY_OUT_ODM)/lib64/libapsjpeg.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_calibverify_TriCamera.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_calibverify_TriCamera.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_distortion_correction.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_distortion_correction.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_dual_sat.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_dual_sat.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_dual_zoomtranslator.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_dual_zoomtranslator.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_dualcam_bokeh_api.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_dualcam_bokeh_api.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_dualcam_refocus_left.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_dualcam_refocus_left.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_dualcam_refocus_preview.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_dualcam_refocus_preview.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_dualcam_refocus_uw.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_dualcam_refocus_uw.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_eis_wrapper.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_eis_wrapper.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_hdr_couple_api.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_hdr_couple_api.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_hdr_couple_api_v4.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_hdr_couple_api_v4.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_hdr_denoise_api.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_hdr_denoise_api.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_hdr_denoise_api_v4.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_hdr_denoise_api_v4.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_hdrplus_hvx_stub.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_hdrplus_hvx_stub.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_high_dynamic_range.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_high_dynamic_range.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_high_dynamic_range_couple.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_high_dynamic_range_couple.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_high_dynamic_range_couple_v4.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_high_dynamic_range_couple_v4.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_high_dynamic_range_v4.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_high_dynamic_range_v4.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_lensstaindetection.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_lensstaindetection.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_low_light_hdr.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_low_light_hdr.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_pic_best.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_pic_best.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_portraitSN_hvx_stub.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_portraitSN_hvx_stub.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_portrait_super_night_raw.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_portrait_super_night_raw.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_preview_antibanding.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_preview_antibanding.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_qnnhtp.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_qnnhtp.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_scbokeh_video.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_scbokeh_video.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_smart_denoise.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_smart_denoise.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_smart_denoise_v4.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_smart_denoise_v4.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_super_night_raw.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_super_night_raw.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_tricam_calibration.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_tricam_calibration.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_tricam_verification.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_tricam_verification.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_triple_sat.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_triple_sat.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_triple_zoomtranslator.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_triple_zoomtranslator.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libarcsoft_videoautozoom.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_videoautozoom.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libc++_shared.so:$(TARGET_COPY_OUT_ODM)/lib64/libc++_shared.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libdualcam_image_optical_zoom.so:$(TARGET_COPY_OUT_ODM)/lib64/libdualcam_image_optical_zoom.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libdualcam_optical_zoom_control.so:$(TARGET_COPY_OUT_ODM)/lib64/libdualcam_optical_zoom_control.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libdualcam_video_optical_zoom.so:$(TARGET_COPY_OUT_ODM)/lib64/libdualcam_video_optical_zoom.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libfastov_dsp.so:$(TARGET_COPY_OUT_ODM)/lib64/libfastov_dsp.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libgf_hal_G3.so:$(TARGET_COPY_OUT_ODM)/lib64/libgf_hal_G3.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libhta.so:$(TARGET_COPY_OUT_ODM)/lib64/libhta.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libhwconfigurationutil.so:$(TARGET_COPY_OUT_ODM)/lib64/libhwconfigurationutil.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libhyperlapse.so:$(TARGET_COPY_OUT_ODM)/lib64/libhyperlapse.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libml_util.so:$(TARGET_COPY_OUT_ODM)/lib64/libml_util.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libmpbase.so:$(TARGET_COPY_OUT_ODM)/lib64/libmpbase.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_ODM)/lib64/liboemcrypto.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libop-ai-beauty-body-detection.so:$(TARGET_COPY_OUT_ODM)/lib64/libop-ai-beauty-body-detection.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libop-ai-beauty-faceretouch-cn.so:$(TARGET_COPY_OUT_ODM)/lib64/libop-ai-beauty-faceretouch-cn.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/liboplus_dehaze_module.so:$(TARGET_COPY_OUT_ODM)/lib64/liboplus_dehaze_module.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/liboplus_service.so:$(TARGET_COPY_OUT_ODM)/lib64/liboplus_service.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/liboptical_zoom_dc.so:$(TARGET_COPY_OUT_ODM)/lib64/liboptical_zoom_dc.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/liboptical_zoom_vs.so:$(TARGET_COPY_OUT_ODM)/lib64/liboptical_zoom_vs.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libormshalclient.so:$(TARGET_COPY_OUT_ODM)/lib64/libormshalclient.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libosensehalclient.so:$(TARGET_COPY_OUT_ODM)/lib64/libosensehalclient.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libpwirisIoctlWrapper.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirisIoctlWrapper.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libpwirisPCS.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirisPCS.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libpwiriscalibrate.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwiriscalibrate.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libpwirisfeature.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirisfeature.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libpwirishalwrapper.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirishalwrapper.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libpwirispq.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirispq.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libpwirisservice.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirisservice.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libpwirissoft.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirissoft.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libpwsoftirisPCS.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwsoftirisPCS.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libsnapdragoncolor-pxlw.so:$(TARGET_COPY_OUT_ODM)/lib64/libsnapdragoncolor-pxlw.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libsnpe_dsp_domains_v2.so:$(TARGET_COPY_OUT_ODM)/lib64/libsnpe_dsp_domains_v2.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libsnpe_dsp_domains_v3.so:$(TARGET_COPY_OUT_ODM)/lib64/libsnpe_dsp_domains_v3.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libsnpe_htp.so:$(TARGET_COPY_OUT_ODM)/lib64/libsnpe_htp.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libsnpe_loader.so:$(TARGET_COPY_OUT_ODM)/lib64/libsnpe_loader.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libsnpeml.so:$(TARGET_COPY_OUT_ODM)/lib64/libsnpeml.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libstblur_api.so:$(TARGET_COPY_OUT_ODM)/lib64/libstblur_api.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libstblur_capture_api.so:$(TARGET_COPY_OUT_ODM)/lib64/libstblur_capture_api.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libstface_fd_api.so:$(TARGET_COPY_OUT_ODM)/lib64/libstface_fd_api.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libstfd_mobile_api.so:$(TARGET_COPY_OUT_ODM)/lib64/libstfd_mobile_api.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libtriplecam_image_optical_zoom.so:$(TARGET_COPY_OUT_ODM)/lib64/libtriplecam_image_optical_zoom.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libtriplecam_optical_zoom_control.so:$(TARGET_COPY_OUT_ODM)/lib64/libtriplecam_optical_zoom_control.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libtriplecam_video_optical_zoom.so:$(TARGET_COPY_OUT_ODM)/lib64/libtriplecam_video_optical_zoom.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libwatermark_photo.so:$(TARGET_COPY_OUT_ODM)/lib64/libwatermark_photo.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/libwvhidl.so:$(TARGET_COPY_OUT_ODM)/lib64/libwvhidl.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_ODM)/lib64/mediadrm/libwvdrmengine.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.oplus.hardware.cameraextension@1.0-service-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.cameraextension@1.0-service-impl.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.oplus.hardware.cammidasservice@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.cammidasservice@1.0.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.oplus.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.commondcs@1.0.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.oplus.hardware.cwb@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.cwb@1.0.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.oplus.hardware.orms@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.orms@1.0.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.oplus.hardware.osense.client@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.osense.client@1.0.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.oplus.hardware.performance@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.performance@1.0.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.pixelworks.hardware.display@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.pixelworks.hardware.display@1.0.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.pixelworks.hardware.display@1.1.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.pixelworks.hardware.display@1.1.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.pixelworks.hardware.feature@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.pixelworks.hardware.feature@1.0.so \
-    vendor/oneplus/oneplus9/proprietary/odm/vendor/firmware/goodixfp.b00:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b00 \
-    vendor/oneplus/oneplus9/proprietary/odm/vendor/firmware/goodixfp.b01:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b01 \
-    vendor/oneplus/oneplus9/proprietary/odm/vendor/firmware/goodixfp.b02:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b02 \
-    vendor/oneplus/oneplus9/proprietary/odm/vendor/firmware/goodixfp.b03:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b03 \
-    vendor/oneplus/oneplus9/proprietary/odm/vendor/firmware/goodixfp.b04:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b04 \
-    vendor/oneplus/oneplus9/proprietary/odm/vendor/firmware/goodixfp.b05:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b05 \
-    vendor/oneplus/oneplus9/proprietary/odm/vendor/firmware/goodixfp.b06:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b06 \
-    vendor/oneplus/oneplus9/proprietary/odm/vendor/firmware/goodixfp.b07:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b07 \
-    vendor/oneplus/oneplus9/proprietary/odm/vendor/firmware/goodixfp.mdt:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.mdt \
+    vendor/oneplus/oneplus9/proprietary/odm/etc/odm_feature_list:$(TARGET_COPY_OUT_ODM)/etc/odm_feature_list \
+    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/com.qti.sensor.imx481.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.imx481.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/com.qti.sensor.s5k3m5.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.s5k3m5.so \
+    vendor/oneplus/oneplus9/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
@@ -912,12 +33,20 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/hdcp2p2prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp2p2prov \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/hw/android.hardware.authsecret@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.authsecret@1.0-service-qti \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-qti \
+    vendor/oneplus/oneplus9/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.widevine \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service-qti \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/hw/android.hardware.keymaster@4.1-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.1-service-qti \
+    vendor/oneplus/oneplus9/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.3-service-qti \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/hw/qconfigservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qconfigservice \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/hw/qcrilNrd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrilNrd \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
+    vendor/oneplus/oneplus9/proprietary/vendor/bin/hw/vendor.oneplus.hardware.CameraMDMHIDL@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oneplus.hardware.CameraMDMHIDL@1.0-service \
+    vendor/oneplus/oneplus9/proprietary/vendor/bin/hw/vendor.oneplus.hardware.camera@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oneplus.hardware.camera@1.0-service \
+    vendor/oneplus/oneplus9/proprietary/vendor/bin/hw/vendor.oneplus.hardware.charger@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oneplus.hardware.charger@1.0-service \
+    vendor/oneplus/oneplus9/proprietary/vendor/bin/hw/vendor.oneplus.hardware.display@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oneplus.hardware.display@1.0-service \
+    vendor/oneplus/oneplus9/proprietary/vendor/bin/hw/vendor.pixelworks.hardware.display.iris-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.pixelworks.hardware.display.iris-service \
+    vendor/oneplus/oneplus9/proprietary/vendor/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.esepowermanager@1.1-service \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/hw/vendor.qti.hardware.display.composer-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.display.composer-service \
@@ -927,32 +56,36 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qseecom@1.0-service \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service \
-    vendor/oneplus/oneplus9/proprietary/vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/hw/vendor.qti.hardware.soter@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.soter@1.0-service \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/hw/vendor.qti.hardware.trustedui@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.trustedui@1.0-service-qti \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/hw/vendor.qti.secure_element@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.secure_element@1.2-service \
-    vendor/oneplus/oneplus9/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/imsdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdaemon \
+    vendor/oneplus/oneplus9/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
+    vendor/oneplus/oneplus9/proprietary/vendor/bin/init.oplus_chg.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.oplus_chg.sh \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/init.qcom.sensors.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.sensors.sh \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/init.qti.chg_policy.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.chg_policy.sh \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/init.qti.qcv.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.qcv.sh \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/ipacm-diag:$(TARGET_COPY_OUT_VENDOR)/bin/ipacm-diag \
+    vendor/oneplus/oneplus9/proprietary/vendor/bin/irisConfig:$(TARGET_COPY_OUT_VENDOR)/bin/irisConfig \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/keymasterd:$(TARGET_COPY_OUT_VENDOR)/bin/keymasterd \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/ks:$(TARGET_COPY_OUT_VENDOR)/bin/ks \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/loadalgo:$(TARGET_COPY_OUT_VENDOR)/bin/loadalgo \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher \
+    vendor/oneplus/oneplus9/proprietary/vendor/bin/lowirpcd:$(TARGET_COPY_OUT_VENDOR)/bin/lowirpcd \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/lowi-server:$(TARGET_COPY_OUT_VENDOR)/bin/lowi-server \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/mlid:$(TARGET_COPY_OUT_VENDOR)/bin/mlid \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/mmid:$(TARGET_COPY_OUT_VENDOR)/bin/mmid \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/mutualex:$(TARGET_COPY_OUT_VENDOR)/bin/mutualex \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
+    vendor/oneplus/oneplus9/proprietary/vendor/bin/opf-service:$(TARGET_COPY_OUT_VENDOR)/bin/opf-service \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/pd-mapper:$(TARGET_COPY_OUT_VENDOR)/bin/pd-mapper \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/port-bridge:$(TARGET_COPY_OUT_VENDOR)/bin/port-bridge \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/ppd:$(TARGET_COPY_OUT_VENDOR)/bin/ppd \
+    vendor/oneplus/oneplus9/proprietary/vendor/bin/qcc-trd:$(TARGET_COPY_OUT_VENDOR)/bin/qcc-trd \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/qdcmss:$(TARGET_COPY_OUT_VENDOR)/bin/qdcmss \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/qdss_qmi_helper:$(TARGET_COPY_OUT_VENDOR)/bin/qdss_qmi_helper \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/qmipriod:$(TARGET_COPY_OUT_VENDOR)/bin/qmipriod \
@@ -960,9 +93,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/qrtr-lookup:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-lookup \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/qrtr-ns:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-ns \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
-    vendor/oneplus/oneplus9/proprietary/vendor/bin/qti:$(TARGET_COPY_OUT_VENDOR)/bin/qti \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/qtigetprop:$(TARGET_COPY_OUT_VENDOR)/bin/qtigetprop \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/qtisetprop:$(TARGET_COPY_OUT_VENDOR)/bin/qtisetprop \
+    vendor/oneplus/oneplus9/proprietary/vendor/bin/qti:$(TARGET_COPY_OUT_VENDOR)/bin/qti \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
     vendor/oneplus/oneplus9/proprietary/vendor/bin/shsusrd:$(TARGET_COPY_OUT_VENDOR)/bin/shsusrd \
@@ -991,8 +124,197 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.10.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.10.pmd \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration.xml \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/audio/sku_lahaina/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_effects.xml \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/audio/sku_lahaina/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_io_policy.conf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/audio/sku_lahaina/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_platform_info_intcodec.xml \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/audio/sku_lahaina/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_policy_configuration.xml \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/audio/sku_lahaina/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_policy_volumes.xml \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/audio/sku_lahaina/audio_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_tuning_mixer.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/audio/sku_lahaina/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/default_volume_tables.xml \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/audio/sku_lahaina/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/mixer_paths.xml \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/audio/sku_lahaina/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/sound_trigger_mixer_paths.xml \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/audio/sku_lahaina/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/sound_trigger_platform_info.xml \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/audio/sku_lahaina_qssi/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina_qssi/audio_policy_configuration.xml \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_io_policy.conf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/audio_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio_tuning_mixer.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/bluetooth/nvm/1211althpnv10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/nvm/1211althpnv10.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/bluetooth/nvm/1211althpnv10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/nvm/1211althpnv10.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/bluetooth/nvm/1211hpnv10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/nvm/1211hpnv10.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/bluetooth/nvm/1211hpnv10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/nvm/1211hpnv10.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/bluetooth/nvm/1213althpnv10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/nvm/1213althpnv10.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/bluetooth/nvm/1213althpnv10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/nvm/1213althpnv10.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/bluetooth/nvm/1213hpnv10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/nvm/1213hpnv10.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/bluetooth/nvm/1213hpnv10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/nvm/1213hpnv10.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/bluetooth/nvm/1221hpnv10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/nvm/1221hpnv10.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/bluetooth/nvm/1221hpnv10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/nvm/1221hpnv10.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/bluetooth/nvm/1222hpnv10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/nvm/1222hpnv10.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/bluetooth/nvm/1222hpnv10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/nvm/1222hpnv10.bin \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
-    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/M_FaceAttribute_RGB_age_gender_1.7.1.model.hardcode:$(TARGET_COPY_OUT_VENDOR)/etc/camera/M_FaceAttribute_RGB_age_gender_1.7.1.model.hardcode \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/CameraHWConfiguration.config:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CameraHWConfiguration.config \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/M_Attribute_AG_BMW_1.1.0.model.hardcode:$(TARGET_COPY_OUT_VENDOR)/etc/camera/M_Attribute_AG_BMW_1.1.0.model.hardcode \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/ashdr/ncf_pack.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/ncf_pack.ncf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/ashdr/ncf_pack_imx471.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/ncf_pack_imx471.ncf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/ashdr/ncf_pack_imx686.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/ncf_pack_imx686.ncf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/ashdr/ncf_pack_imx689.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/ncf_pack_imx689.ncf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/ashdr/ncf_pack_imx766.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/ncf_pack_imx766.ncf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/ashdr/ncf_pack_imx789.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/ncf_pack_imx789.ncf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/ashdr/ncf_pack_ov08a10.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/ncf_pack_ov08a10.ncf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/beauty_body_cn.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beauty_body_cn.dlc \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/beauty_body_in.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beauty_body_in.dlc \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/big_face_retouch_indian.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/big_face_retouch_indian.dlc \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/calibrationOutput_uw_lemonadep.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/calibrationOutput_uw_lemonadep.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/calibrationOutput_uw_lemonadep_686.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/calibrationOutput_uw_lemonadep_686.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/calibrationOutput_uw_lemonade.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/calibrationOutput_uw_lemonade.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/calibrationOutput_uw_lemonade_686.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/calibrationOutput_uw_lemonade_686.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/calibrationOutput_wt_lemonadep.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/calibrationOutput_wt_lemonadep.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/darksight/darksight_main.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/darksight/darksight_main.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/darksight/darksight_ultrawide.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/darksight/darksight_ultrawide.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/eis_camera.vcfg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/eis_camera.vcfg \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/face_retouch_chinese.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/face_retouch_chinese.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_china_level1:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_china_level1 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_china_level2:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_china_level2 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_china_level3:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_china_level3 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_default:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_default \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_indian_big_level1:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_indian_big_level1 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_indian_big_level2:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_indian_big_level2 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_indian_big_level3:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_indian_big_level3 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/000.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/000.png \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/000_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/000_pre.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/001.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/001.png \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/001_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/001_pre.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/002.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/002.png \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/002_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/002_pre.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/003.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/003.png \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/003_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/003_pre.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/010.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/010.png \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/010_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/010_pre.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/011.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/011.png \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/011_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/011_pre.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/012.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/012.png \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/012_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/012_pre.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/013.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/013.png \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/100.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/100.png \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/100_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/100_pre.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/101.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/101.png \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/101_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/101_pre.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/102.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/102.png \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/102_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/102_pre.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/103.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/103.png \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/103_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/103_pre.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/110.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/110.png \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/110_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/110_pre.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/111.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/111.png \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/111_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/111_pre.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/112.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/112.png \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/112_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/112_pre.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/113.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/113.png \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/200.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/200.png \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/200_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/200_pre.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/201.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/201.png \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/201_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/201_pre.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/202.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/202.png \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/202_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/202_pre.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/203.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/203.png \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/203_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/203_pre.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/210.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/210.png \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/210_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/210_pre.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/211.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/211.png \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/211_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/211_pre.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/212.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/212.png \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/212_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/212_pre.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/213.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/213.png \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/eyeBright.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/eyeBright.png \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/eyesMask.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/eyesMask.png \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/skinLUTs00.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skinLUTs00.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/skinLUTs01.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skinLUTs01.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/skinLUTs02.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skinLUTs02.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/skinLUTs03.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skinLUTs03.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/skinLUTs10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skinLUTs10.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/skinLUTs11.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skinLUTs11.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/skinLUTs12.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skinLUTs12.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/skinLUTs13.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skinLUTs13.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/skinLUTs_yuv16_00.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skinLUTs_yuv16_00.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/skinLUTs_yuv16_01.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skinLUTs_yuv16_01.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/skinLUTs_yuv16_02.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skinLUTs_yuv16_02.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/skinLUTs_yuv16_03.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skinLUTs_yuv16_03.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/skinLUTs_yuv16_10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skinLUTs_yuv16_10.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/skinLUTs_yuv16_11.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skinLUTs_yuv16_11.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/skinLUTs_yuv16_12.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skinLUTs_yuv16_12.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/skinLUTs_yuv16_13.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skinLUTs_yuv16_13.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/skinmask.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skinmask.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/fb_model/skinmask.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skinmask.png \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/gasryuv.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/gasryuv.model \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/gasryuv_1.2_wp.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/gasryuv_1.2_wp.model \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/BeardSharp.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/BeardSharp.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/BeardSharp.frag:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/BeardSharp.frag \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/BeardSharp.vert:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/BeardSharp.vert \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/PreAddSRBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/PreAddSRBinary.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/PreCalVarBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/PreCalVarBinary.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/PreCalcSRBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/PreCalcSRBinary.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/PreDepouchBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/PreDepouchBinary.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/PreEyeMeanBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/PreEyeMeanBinary.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/PreHighPassBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/PreHighPassBinary.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/PreHighPassPreBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/PreHighPassPreBinary.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/PreHoriFilterBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/PreHoriFilterBinary.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/PreMakeupBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/PreMakeupBinary.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/PreMakeupMultiFaceBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/PreMakeupMultiFaceBinary.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/PreMakeupSingleFaceBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/PreMakeupSingleFaceBinary.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/PreMorphBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/PreMorphBinary.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/PreOnlywhitenBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/PreOnlywhitenBinary.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/PreSkintuneBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/PreSkintuneBinary.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/PreSkintuneMRTBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/PreSkintuneMRTBinary.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/PreSurfaceBlurBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/PreSurfaceBlurBinary.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/PreVertFilterBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/PreVertFilterBinary.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/PreVertSurBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/PreVertSurBinary.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/SkinCalcHue.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/SkinCalcHue.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/SkinCalcHue.frag:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/SkinCalcHue.frag \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/SkinCalcHue.vert:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/SkinCalcHue.vert \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/SkinColorBlur.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/SkinColorBlur.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/SkinColorBlur.frag:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/SkinColorBlur.frag \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/SkinColorBlur.vert:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/SkinColorBlur.vert \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/SkinColorUnify.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/SkinColorUnify.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/SkinColorUnify.frag:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/SkinColorUnify.frag \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/SkinColorUnify.vert:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/SkinColorUnify.vert \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/SkinHueUnify.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/SkinHueUnify.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/SkinHueUnify.frag:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/SkinHueUnify.frag \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/SkinHueUnify.vert:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/SkinHueUnify.vert \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/ThirdPartyPreHoriFilterBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/ThirdPartyPreHoriFilterBinary.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/ThirdPartyPreMorphBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/ThirdPartyPreMorphBinary.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/ThirdPartyPreOnlywhitenBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/ThirdPartyPreOnlywhitenBinary.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/ThirdPartyPreSkintuneBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/ThirdPartyPreSkintuneBinary.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/ThirdPartyPreSkintuneMRTBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/ThirdPartyPreSkintuneMRTBinary.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/ThirdPartyPreVertFilterBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/ThirdPartyPreVertFilterBinary.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/pfb_bin/ThirdPartyPreVertSurBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pfb_bin/ThirdPartyPreVertSurBinary.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/selfbokehParam.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/selfbokehParam.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/selfbokehmodel.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/selfbokehmodel.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/tonemap/curve_lut_0:$(TARGET_COPY_OUT_VENDOR)/etc/camera/tonemap/curve_lut_0 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/tonemap/curve_lut_1:$(TARGET_COPY_OUT_VENDOR)/etc/camera/tonemap/curve_lut_1 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/tonemap/curve_lut_2:$(TARGET_COPY_OUT_VENDOR)/etc/camera/tonemap/curve_lut_2 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/tonemap/curve_lut_3:$(TARGET_COPY_OUT_VENDOR)/etc/camera/tonemap/curve_lut_3 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/tonemap/curve_lut_4:$(TARGET_COPY_OUT_VENDOR)/etc/camera/tonemap/curve_lut_4 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/tonemap/curve_lut_5:$(TARGET_COPY_OUT_VENDOR)/etc/camera/tonemap/curve_lut_5 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/tonemap/curve_lut_6:$(TARGET_COPY_OUT_VENDOR)/etc/camera/tonemap/curve_lut_6 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/tonemap/curve_lut_7:$(TARGET_COPY_OUT_VENDOR)/etc/camera/tonemap/curve_lut_7 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/tonemap/curve_lut_8:$(TARGET_COPY_OUT_VENDOR)/etc/camera/tonemap/curve_lut_8 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/tonemap/curve_lut_9:$(TARGET_COPY_OUT_VENDOR)/etc/camera/tonemap/curve_lut_9 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/tonemap/curve_lut_10:$(TARGET_COPY_OUT_VENDOR)/etc/camera/tonemap/curve_lut_10 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/tonemap/list:$(TARGET_COPY_OUT_VENDOR)/etc/camera/tonemap/list \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/tonemap/s_curve_lut:$(TARGET_COPY_OUT_VENDOR)/etc/camera/tonemap/s_curve_lut \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/tonemap/tonemap_lut_0:$(TARGET_COPY_OUT_VENDOR)/etc/camera/tonemap/tonemap_lut_0 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/tonemap/tonemap_lut_1:$(TARGET_COPY_OUT_VENDOR)/etc/camera/tonemap/tonemap_lut_1 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/tonemap/tonemap_lut_2:$(TARGET_COPY_OUT_VENDOR)/etc/camera/tonemap/tonemap_lut_2 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/tonemap/tonemap_lut_3:$(TARGET_COPY_OUT_VENDOR)/etc/camera/tonemap/tonemap_lut_3 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/tonemap/tonemap_lut_4:$(TARGET_COPY_OUT_VENDOR)/etc/camera/tonemap/tonemap_lut_4 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/tonemap/tonemap_lut_5:$(TARGET_COPY_OUT_VENDOR)/etc/camera/tonemap/tonemap_lut_5 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/tonemap/tonemap_lut_6:$(TARGET_COPY_OUT_VENDOR)/etc/camera/tonemap/tonemap_lut_6 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/tonemap/tonemap_lut_7:$(TARGET_COPY_OUT_VENDOR)/etc/camera/tonemap/tonemap_lut_7 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/tonemap/tonemap_lut_8:$(TARGET_COPY_OUT_VENDOR)/etc/camera/tonemap/tonemap_lut_8 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/tonemap/tonemap_lut_9:$(TARGET_COPY_OUT_VENDOR)/etc/camera/tonemap/tonemap_lut_9 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/camera/tonemap/tonemap_lut_10:$(TARGET_COPY_OUT_VENDOR)/etc/camera/tonemap/tonemap_lut_10 \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/charger_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fstab.qti \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/charger_fw_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fw_fstab.qti \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
@@ -1004,20 +326,20 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile5.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile5.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile6.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile1.xml \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile2.xml \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile3.xml \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile4.xml \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile5.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile5.xml \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile6.xml \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile7.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile7.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile15.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile15.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile16.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile16.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile17.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile17.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile18.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile18.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile19.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile19.xml \
-    vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile2.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile20.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile20.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile21.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile21.xml \
-    vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile3.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile32.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile32.xml \
-    vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile4.xml \
-    vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile5.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile5.xml \
-    vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile6.xml \
-    vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile7.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile7.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile1.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile2.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile3.xml \
@@ -1030,33 +352,42 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/display/DPU7__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU7__.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/display/DPU660.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU660.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/display/DPU670.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU670.xml \
-    vendor/oneplus/oneplus9/proprietary/vendor/etc/display/DPU720.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU720.xml \
-    vendor/oneplus/oneplus9/proprietary/vendor/etc/display/DPU7__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU7__.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/android.hardware.authsecret@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.authsecret@1.0-service-qti.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-service-qti.rc \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/init/calibrationOutput_uw_lemonadep.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/calibrationOutput_uw_lemonadep.rc \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/init/calibrationOutput_uw_lemonadep_686.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/calibrationOutput_uw_lemonadep_686.rc \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/init/calibrationOutput_uw_lemonade.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/calibrationOutput_uw_lemonade.rc \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/init/calibrationOutput_uw_lemonade_686.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/calibrationOutput_uw_lemonade_686.rc \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/init/calibrationOutput_wt_lemonadep.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/calibrationOutput_wt_lemonadep.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/dpmQmiMgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dpmQmiMgr.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/feature_enabler_client.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/feature_enabler_client.rc \
-    vendor/oneplus/oneplus9/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/imsdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdaemon.rc \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/init-qcril-data.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init-qcril-data.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/init.embmssl_server.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.embmssl_server.rc \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/init/init.opf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.opf.rc \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/init/init.qdmastats.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qdmastats.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/init.qti.qcv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.qcv.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/init_thermal-engine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine.rc \
-    vendor/oneplus/oneplus9/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/ipacm-diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipacm-diag.rc \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/keymasterd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/keymasterd.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/mutualex.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mutualex.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
@@ -1071,11 +402,18 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/tloc_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tloc_daemon.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/init/vendor.oneplus.hardware.CameraMDMHIDL@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oneplus.hardware.CameraMDMHIDL@1.0-service.rc \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/init/vendor.oneplus.hardware.camera@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oneplus.hardware.camera@1.0-service.rc \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/init/vendor.oneplus.hardware.charger@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oneplus.hardware.charger@1.0-service.rc \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/init/vendor.oneplus.hardware.display@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oneplus.hardware.display@1.0-service.rc \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/init/vendor.pixelworks.hardware.display.iris-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.pixelworks.hardware.display.iris-service.rc \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/vendor.qti.diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.diag.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.esepowermanager@1.1-service.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/vendor.qti.hardware.eid@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.eid@1.0-service.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.factory@1.0-service.rc \
@@ -1083,7 +421,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
-    vendor/oneplus/oneplus9/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter@1.0-service.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/vendor.qti.hardware.trustedui@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.trustedui@1.0-service-qti.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
@@ -1095,9 +432,65 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm1_center.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm1_center.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm1_down.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm1_down.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm1_up.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm1_up.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm2_center.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm2_center.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm2_down.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm2_down.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm2_up.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm2_up.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm3_center.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm3_center.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm3_down.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm3_down.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm3_up.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm3_up.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm4_center.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm4_center.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm4_down.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm4_down.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm4_up.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm4_up.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm5_center.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm5_center.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm5_down.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm5_down.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm5_up.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm5_up.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm6_center.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm6_center.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm6_down.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm6_down.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm6_up.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm6_up.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm8_a.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm8_a.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm8_b.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm8_b.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm8_c.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm8_c.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm10.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm10.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm11.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm11.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm12.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm12.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm14_a.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm14_a.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm14_b.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm14_b.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm14_c.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm14_c.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm16_center.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm16_center.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm16_down.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm16_down.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm16_up.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm16_up.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm17_center.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm17_center.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm17_down.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm17_down.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm17_up.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm17_up.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm18_center.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm18_center.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm18_down.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm18_down.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm18_up.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm18_up.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/inParm.lst:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm.lst \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/inparm/irissoft/mcfCheck.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/mcfCheck.txt \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/irissoft.fw:$(TARGET_COPY_OUT_VENDOR)/etc/irissoft.fw \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/irissoft_fod.fw:$(TARGET_COPY_OUT_VENDOR)/etc/irissoft_fod.fw \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-mtp-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-mtp-SN100.conf_19825:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf_19825 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-mtp-SN100.conf_19825:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf_19825 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-mtp-SN100.conf_20851:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf_20851 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-mtp-SN100.conf_20851:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf_20851 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-mtp-SN100.conf_20852:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf_20852 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-mtp-SN100.conf_20852:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf_20852 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-mtp-SN100.conf_20853:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf_20853 \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-mtp-SN100.conf_20853:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf_20853 \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100_38_4MHZ.conf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-qrd-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100.conf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-qrd-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100.conf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100_38_4MHZ.conf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100_38_4MHZ.conf \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/ltm_config_samsung_amb655x_fhd_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_amb655x_fhd_cmd_mode_dsc_dsi_panel.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/ltm_config_samsung_amb670yf01_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_amb670yf01_dsc_cmd_mode_panel.xml \
@@ -1108,29 +501,25 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/media_codecs_performance_lahaina.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_lahaina.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/media_codecs_performance_lahaina_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_lahaina_vendor.xml \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/media_lahaina/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_lahaina/video_system_specs.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/media_profiles_lahaina.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_lahaina.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/media_profiles_lahaina_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_lahaina_vendor.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml \
-    vendor/oneplus/oneplus9/proprietary/vendor/etc/oplus_Widevine_licenses.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/oplus_Widevine_licenses.pfm \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/permissions/android.hardware.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.light.xml \
-    vendor/oneplus/oneplus9/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/permissions/vendor.qti.hardware.factory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.qti.hardware.factory.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/qcril_database/qcrilNr.db:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/qcrilNr.db \
-    vendor/oneplus/oneplus9/proprietary/vendor/etc/qcril_database/upgrade/config/10.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/10.0_config.sql \
-    vendor/oneplus/oneplus9/proprietary/vendor/etc/qcril_database/upgrade/config/11.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/11.0_config.sql \
-    vendor/oneplus/oneplus9/proprietary/vendor/etc/qcril_database/upgrade/config/12.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/12.0_config.sql \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/qcril_database/upgrade/config/6.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/6.0_config.sql \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/qcril_database/upgrade/config/7.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/7.0_config.sql \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/qcril_database/upgrade/config/8.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/8.0_config.sql \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/qcril_database/upgrade/config/9.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/9.0_config.sql \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/qcril_database/upgrade/config/10.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/10.0_config.sql \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/qcril_database/upgrade/config/11.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/11.0_config.sql \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/qcril_database/upgrade/other/0_initial_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0_initial_qcrilnr.sql \
-    vendor/oneplus/oneplus9/proprietary/vendor/etc/qcril_database/upgrade/other/10_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/10_version_update_ecc_table.sql \
-    vendor/oneplus/oneplus9/proprietary/vendor/etc/qcril_database/upgrade/other/11_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/11_version_update_ecc_table.sql \
-    vendor/oneplus/oneplus9/proprietary/vendor/etc/qcril_database/upgrade/other/12_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/12_version_update_ecc_table.sql \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/qcril_database/upgrade/other/1_version_intro_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/1_version_intro_qcrilnr.sql \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/qcril_database/upgrade/other/2_version_add_wps_config_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/2_version_add_wps_config_qcrilnr.sql \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/qcril_database/upgrade/other/3_version_update_wps_config_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/3_version_update_wps_config_qcrilnr.sql \
@@ -1140,11 +529,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/qcril_database/upgrade/other/7_version_update_ecc_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/7_version_update_ecc_table_qcrilnr.sql \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/qcril_database/upgrade/other/8_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/8_version_update_ecc_table.sql \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/qcril_database/upgrade/other/9_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/9_version_update_ecc_table.sql \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/qcril_database/upgrade/other/10_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/10_version_update_ecc_table.sql \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/qdcm_calib_data_samsung_amb655x_fhd_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_amb655x_fhd_cmd_mode_dsc_dsi_panel.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/qdcm_calib_data_samsung_amb670yf01_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_amb670yf01_dsc_cmd_mode_panel.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/qmi_fw.conf:$(TARGET_COPY_OUT_VENDOR)/etc/qmi_fw.conf \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
-    vendor/oneplus/oneplus9/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/seccomp_policy/qcrilnr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qcrilnr@2.0.policy \
@@ -1154,10 +543,39 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/seccomp_policy/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/seccomp_policy/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/ak0991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ak0991x_0.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/bmi26x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmi26x_0.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/bmi26x_0_crt.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmi26x_0_crt.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/bmi26x_0_crt_cfg.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmi26x_0_crt_cfg.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/bmp380_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmp380_0.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/icm4x6xx_0.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_ak0991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_ak0991x_0.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_ak0991x_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_ak0991x_1.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_aw9610x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_aw9610x_0.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_aw9610x_down_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_aw9610x_down_0.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_bmi16x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_bmi16x_0.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_bmi16x_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_bmi16x_1.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_bmp380_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_bmp380_0.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_default_sensors.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_dynamic_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_dynamic_sensors.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_icm4x6xx_0.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_icm4x6xx_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_icm4x6xx_1.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_irq.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_irq.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_lps22hb_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_lps22hb_0.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_mmc56x3x_0.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_mmc56x3x_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_mmc56x3x_1.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_power_0.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_stk2232_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_stk2232_0.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_sx932x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_sx932x_0.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_sx9324up_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_sx9324up_0.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_sx9324_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_sx9324_0.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_sx9324_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_sx9324_1.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_tcs3408_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_tcs3408_0.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_tcs3408_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_tcs3408_1.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lahaina_tcs3707.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_tcs3707.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/lps22hb_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lps22hb_0.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/mmc56x3x_0.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/sns_amd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/sns_amd_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_disabled.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/sns_amd_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_enabled.json \
@@ -1172,7 +590,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/sns_dae.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_dae.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/sns_device_orient.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_device_orient.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/sns_diag_filter.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_diag_filter.json \
-    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/sns_direct_channel.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_direct_channel.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/sns_distance_bound.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_distance_bound.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/sns_dpc.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_dpc.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/sns_facing.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_facing.json \
@@ -1193,15 +610,136 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/sns_tilt_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_enabled.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/sns_tilt_to_wake.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_to_wake.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/sns_wrist_pedo.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_wrist_pedo.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/stk2232_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/stk2232_0.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/sx9324up_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sx9324up_0.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/sx9324_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sx9324_0.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/tcs3408.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tcs3408.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/config/tcs3707.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tcs3707.json \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/descriptor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/descriptor.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/nanopb.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/nanopb.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/qti_gravity.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/qti_gravity.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_accel.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_accel.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_accel_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_accel_cal.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_activity_recognition.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_activity_recognition.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_ambient_light.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ambient_light.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_ambient_temperature.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ambient_temperature.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_amd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_amd.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_aont.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_aont.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_async_com_port.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_async_com_port.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_basic_gestures.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_basic_gestures.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_bring_to_ear.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_bring_to_ear.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_cal.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_ccd_ttw.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ccd_ttw.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_ccd_walk.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ccd_walk.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_client.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_client.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_cmc.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_cmc.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_cmd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_cmd.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_dae.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_dae.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_data_acquisition_engine.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_data_acquisition_engine.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_da_test.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_da_test.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_device_mode.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_device_mode.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_device_orient.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_device_orient.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_diag.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_diag.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_diag_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_diag_sensor.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_direct_channel.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_direct_channel.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_distance_bound.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_distance_bound.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_dpc.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_dpc.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_ext_svc.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ext_svc.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_facing.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_facing.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_fmv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_fmv.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_formatter.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_formatter.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_fw.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_fw.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_game_rv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_game_rv.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_geomag_rv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_geomag_rv.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_gravity.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_gravity.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_gyro.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_gyro.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_gyro_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_gyro_cal.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_gyro_rot_matrix.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_gyro_rot_matrix.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_hall.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_hall.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_heart_beat.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_heart_beat.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_heart_rate.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_heart_rate.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_hinge_angle.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_hinge_angle.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_humidity.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_humidity.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_interrupt.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_interrupt.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_mag.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_mag.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_mag_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_mag_cal.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_mcmd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_mcmd.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_motion_detect.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_motion_detect.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_multishake.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_multishake.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_oem1.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_oem1.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_offbody_detect.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_offbody_detect.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_ois_system.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ois_system.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_op_motion_detect.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_op_motion_detect.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_op_sar.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_op_sar.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_pedometer.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pedometer.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_pedometer_wrist.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pedometer_wrist.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_physical_sensor_test.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_physical_sensor_test.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_pocket.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pocket.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_pose_6dof.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pose_6dof.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_ppg.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ppg.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_pressure.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pressure.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_proximity.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_proximity.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_psmd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_psmd.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_registry.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_registry.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_remote_proc_state.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_remote_proc_state.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_resampler.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_resampler.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_rgb.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_rgb.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_rmd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_rmd.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_rotv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_rotv.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_sar.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sar.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_sensor_temperature.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sensor_temperature.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_signal_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_signal_sensor.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_sig_motion.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sig_motion.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_sim.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sim.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_sim_legacy.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sim_legacy.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_std.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_std.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_std_event_gated_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_std_event_gated_sensor.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_std_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_std_sensor.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_std_type.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_std_type.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_step_detect.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_step_detect.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_suid.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_suid.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_thermopile.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_thermopile.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_threshold.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_threshold.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_tilt.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_tilt.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_tilt_to_wake.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_tilt_to_wake.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_timer.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_timer.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_ultra_violet.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ultra_violet.proto \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/proto/sns_wrist_tilt_gesture.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_wrist_tilt_gesture.proto \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
-    vendor/oneplus/oneplus9/proprietary/vendor/etc/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml \
+    vendor/oneplus/oneplus9/proprietary/vendor/etc/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
-    vendor/oneplus/oneplus9/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
-    vendor/oneplus/oneplus9/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/20ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/20ms_RTP.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/40ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/40ms_RTP.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/60ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/60ms_RTP.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/80ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/80ms_RTP.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/100ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/100ms_RTP.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/120ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/120ms_RTP.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/140ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/140ms_RTP.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/160ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/160ms_RTP.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/180ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/180ms_RTP.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/200ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/200ms_RTP.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/220ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/220ms_RTP.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/240ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/240ms_RTP.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/260ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/260ms_RTP.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/280ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/280ms_RTP.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/300ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/300ms_RTP.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/320ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/320ms_RTP.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/340ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/340ms_RTP.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/360ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/360ms_RTP.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/380ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/380ms_RTP.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/400ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/400ms_RTP.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/420ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/420ms_RTP.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/440ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/440ms_RTP.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/460ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/460ms_RTP.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/480ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/480ms_RTP.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/500ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/500ms_RTP.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/AT500ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/AT500ms_RTP.bin \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/a660_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a660_gmu.bin \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/a660_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a660_sqe.fw \
@@ -1210,7 +748,13 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/a660_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a660_zap.b02 \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/a660_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a660_zap.elf \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/a660_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a660_zap.mdt \
-    vendor/oneplus/oneplus9/proprietary/vendor/firmware/evass.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b00 \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/aw8697_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_haptic.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/aw8697_haptic_166.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_haptic_166.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/aw8697_haptic_168.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_haptic_168.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/aw8697_haptic_170.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_haptic_170.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/aw8697_haptic_172.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_haptic_172.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/aw8697_haptic_174.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_haptic_174.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/aw8697_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_rtp.bin \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/evass.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b01 \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/evass.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b02 \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/evass.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b03 \
@@ -1239,7 +783,22 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b04 \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.elf \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.mdt \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/tof8801_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tof8801_firmware.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tp/FW_19811_SY79x.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_19811_SY79x.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tp/FW_19811_SY761.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_19811_SY761.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tp/FW_19815_S3908.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_19815_S3908.img \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tp/FW_19821_S3908.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_19821_S3908.img \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tp/FW_19821_SY761.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_19821_SY761.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tp/FW_19821_SY771.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_19821_SY771.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tp/FW_19825_SY792.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_19825_SY792.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tp/LIMIT_19811_SY79x.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_19811_SY79x.img \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tp/LIMIT_19811_SY761.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_19811_SY761.img \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tp/LIMIT_19815_S3908.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_19815_S3908.img \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tp/LIMIT_19821_S3908.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_19821_S3908.img \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tp/LIMIT_19821_SY761.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_19821_SY761.img \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tp/LIMIT_19821_SY771.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_19821_SY771.img \
+    vendor/oneplus/oneplus9/proprietary/vendor/firmware/tp/LIMIT_19825_SY792.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_19825_SY792.img \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/vpu20_4v.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b01 \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/vpu20_4v.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b02 \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/vpu20_4v.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b03 \
@@ -1262,144 +821,20 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/vpu20_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.mbn \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/vpu20_4v.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.mdt \
     vendor/oneplus/oneplus9/proprietary/vendor/firmware/vpu20_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v_unsigned.mbn \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib/btaudio_offload_if.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/hw/audio.bluetooth_qti.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.bluetooth_qti.default.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/hw/audio.primary.lahaina.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.lahaina.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/hw/com.dsi.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.dsi.ant@1.0-impl.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/hw/sound_trigger.primary.lahaina.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.lahaina.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.fm@1.0-impl.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlacSwDec.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libApeSwDec.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libFileMux_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFileMux_proprietary.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFlacSwDec.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libMpeghSwEnc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMpeghSwEnc.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxAacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAacDec.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxAlacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAlacDec.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxAlacDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAlacDecSw.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxAmrDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAmrDec.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxAmrwbplusDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAmrwbplusDec.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxApeDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxApeDec.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxApeDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxApeDecSw.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxDsdDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxDsdDec.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxEvrcDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxEvrcDec.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxG711Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxG711Dec.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxMpeghDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxMpeghDecSw.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxMpeghEncSw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxMpeghEncSw.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxQcelp13Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxQcelp13Dec.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxVideoDSMode.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxVideoDSMode.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxWmaDec.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/liba2dpoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib/liba2dpoffload.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdb-fts.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbloader.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbrtac.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadiertac.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libadm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadm.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libadpcmdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadpcmdec.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudcal.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libaudio_log_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_log_utils.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioalsa.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libaudioconfigstore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioconfigstore.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioparsers.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_qti.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libbluetooth_audio_session_qti_2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_qti_2_1.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libbt-hidlclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbt-hidlclient.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbtnv.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svacnn.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libcapiv2svarnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svarnn.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2vop.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libdrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrc.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libdsd2pcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsd2pcm.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libextcamera_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libextcamera_client.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libgcs-calwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-calwrapper.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libgcs-ipc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-ipc.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libgcs-osal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-osal.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libgcs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libgui1_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgui1_vendor.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libhdmipassthru.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdmipassthru.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/liblistensoundmodel2.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblistensoundmodel2.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libmiracast.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmiracast.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmosal.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libmmrtpdecoder_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpdecoder_proprietary.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libmmrtpencoder_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpencoder_proprietary.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libmulawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmulawdec.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqc2vppfilter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqc2vppfilter.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcci_legacy.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqconfigclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqconfigclient.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqmi_cci.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_cci.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqmi_client_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_helper.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqmi_client_qmux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_qmux.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqmi_common_so.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_common_so.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csi.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqmi_csvt_srvc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csvt_srvc.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_encdec.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqmi_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_legacy.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmiservices.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqrtr.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqsocket.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libsmemlog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmemlog.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libsmwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmwrapper.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libsn100u_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsn100u_fw.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libssrec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssrec.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libstagefright_soft_qtiflacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_qtiflacdec.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libsurround_3mic_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsurround_3mic_proc.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsystem_health_mon.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdaac_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdaac_vendor.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdcodecv4l2_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcodecv4l2_proprietary.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdcommonutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcommonutils_proprietary.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdconfigutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdconfigutils_proprietary.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfddisplayconfig_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfddisplayconfig_proprietary.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhdcpcp.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdhdcpservice_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhdcpservice_proprietary.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdmminterface_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmminterface_proprietary.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdmmservice_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmmservice_proprietary.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdmmsrc_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmmsrc_proprietary.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdmodulehdcpsession.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmodulehdcpsession.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdrtsp_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdrtsp_proprietary.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdsessionmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdsessionmodule.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdsourcesession_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdsourcesession_proprietary.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdsourcesm_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdsourcesm_proprietary.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfduibcinterface_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcinterface_proprietary.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfduibcsink_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsink_proprietary.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfduibcsinkinterface_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsinkinterface_proprietary.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfduibcsrc_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsrc_proprietary.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfduibcsrcinterface_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsrcinterface_proprietary.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdutils_proprietary.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libapps_mem_heap.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libcvpdsp_2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libcvpdsp_2_1.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libdspCV_skel.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvadsp.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libfastcvdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvdsp_skel.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libsns_device_mode_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_device_mode_skel.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libasphere.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcbassboost.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcreverb.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcvirt.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libshoebox.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/vendor.oplus.hardware.extcamera@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oplus.hardware.extcamera@1.0.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_sar@1.0.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_sar@1.1.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/vendor.qti.hardware.qconfig@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qconfig@1.0.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/vendor.qti.hardware.sigma_miracast@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.sigma_miracast@1.0.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/vendor.qti.hardware.vpp@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@2.0.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.voiceprint@1.0.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/android.hardware.secure_element@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.secure_element@1.0-impl.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib64/btaudio_offload_if.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/arcsoft_calibration_uw.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_calibration_uw.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/arcsoft_calibration_wt.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_calibration_wt.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/arcsoft_dc_calibration_t.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_dc_calibration_t.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/arcsoft_dc_calibration_u.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_dc_calibration_u.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/arcsoft_dc_calibration_w.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_dc_calibration_w.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.arcsoft.node.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.eisv2.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.arcsoft.node.smooth_transition.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.smooth_transition.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.oplus.node.rtb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oplus.node.rtb.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.aec.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.af.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.awb.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.pdlib.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qti.camx.chiiqutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.camx.chiiqutils.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv2.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qti.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv3.so \
@@ -1426,27 +861,58 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qti.node.swmfnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swmfnr.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qti.node.swpreprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swpreprocess.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qti.node.swregistration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swregistration.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qti.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.aec.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qti.stats.aecwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.aecwrapper.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qti.stats.aecxcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.aecxcore.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qti.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.af.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qti.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.aec.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qti.stats.afd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.afd.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qti.stats.afwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.afwrapper.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qti.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.af.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qti.stats.asd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.asd.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qti.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.awb.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qti.stats.awbwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.awbwrapper.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qti.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.awb.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qti.stats.cnndriver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.cnndriver.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qti.stats.haf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.haf.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qti.stats.hafoverride.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.hafoverride.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlib.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qti.stats.haf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.haf.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibsony.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibsony.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibwrapper.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlib.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qti.stats.tracker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.tracker.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.aec.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.af.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.awb.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.pdlib.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/components/libdepthmapwrapper_secure.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/libdepthmapwrapper_secure.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.sensormodule.lemonadep.holitech_gc02m1b.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.lemonadep.holitech_gc02m1b.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.sensormodule.lemonadep.qtech_ov08a10.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.lemonadep.qtech_ov08a10.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.sensormodule.lemonadep.semco_imx789.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.lemonadep.semco_imx789.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.sensormodule.lemonadep.semco_imx789_MP.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.lemonadep.semco_imx789_MP.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.sensormodule.lemonadep.sunny_imx686.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.lemonadep.sunny_imx686.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.sensormodule.lemonadep.sunny_imx766.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.lemonadep.sunny_imx766.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.sensormodule.lemonadep.sunny_imx766_MP.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.lemonadep.sunny_imx766_MP.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.sensormodule.lemonadep.sunny_imx766_ak7375c.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.lemonadep.sunny_imx766_ak7375c.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.sensormodule.lemonadep.truly_imx471.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.lemonadep.truly_imx471.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.sensormodule.lemonade.semco_imx689.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.lemonade.semco_imx689.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.sensormodule.lemonade.shine_gc02m1b.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.lemonade.shine_gc02m1b.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx686.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx686.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766_MP.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766_MP.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766_ak7375c.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766_ak7375c.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.sensormodule.lemonade.truly_imx471.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.lemonade.truly_imx471.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.sensor.gc02m1b.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.gc02m1b.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.sensor.imx471.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx471.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.sensor.imx686.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx686.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.sensor.imx689.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx689.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.sensor.imx766.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx766.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.sensor.imx789.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx789.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.sensor.ov08a10.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.ov08a10.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.tuned.holitech_gc02m1b.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.holitech_gc02m1b.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.tuned.qtech_ov08a10.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.qtech_ov08a10.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.tuned.semco_imx689.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.semco_imx689.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.tuned.semco_imx789.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.semco_imx789.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.tuned.shine_gc02m1b.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.shine_gc02m1b.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.tuned.sunny_imx686.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.sunny_imx686.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.tuned.sunny_imx766.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.sunny_imx766.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/com.qti.tuned.truly_imx471.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.truly_imx471.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreviewlite.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreview.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideo.bin \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qti.chiusecaseselector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.chiusecaseselector.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qti.feature2.anchorsync.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.anchorsync.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qti.feature2.demux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.demux.so \
@@ -1455,6 +921,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qti.feature2.fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.fusion.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qti.feature2.generic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.generic.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qti.feature2.gs.cedros.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.gs.cedros.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qti.feature2.gs.kamorta.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.gs.kamorta.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qti.feature2.gs.mannar.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.gs.mannar.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qti.feature2.gs.sdm865.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.gs.sdm865.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qti.feature2.gs.sm8350.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.gs.sm8350.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qti.feature2.hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.hdr.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qti.feature2.mcreprocrt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.mcreprocrt.so \
@@ -1465,12 +934,15 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qti.feature2.qcfa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.qcfa.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qti.feature2.rawhdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.rawhdr.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qti.feature2.realtimeserializer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.realtimeserializer.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qti.feature2.rt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.rt.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qti.feature2.rtmcx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.rtmcx.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qti.feature2.rt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.rt.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qti.feature2.serializer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.serializer.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qti.feature2.statsregeneration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.statsregeneration.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qti.feature2.stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.stub.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qti.feature2.swmf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.swmf.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qti.settings.kamorta.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.settings.kamorta.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qti.settings.mannar.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.settings.mannar.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qti.settings.sdm865.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.settings.sdm865.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qti.settings.sm8350.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.settings.sm8350.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qti.stats.common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.stats.common.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qualcomm.mcx.distortionmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.mcx.distortionmapper.so \
@@ -1487,12 +959,14 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qualcomm.qti.uceservice@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.uceservice@2.2.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/com.qualcomm.qti.uceservice@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.uceservice@2.3.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/deviceInfoServiceModuleNr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/deviceInfoServiceModuleNr.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/fp_hal_extension.so:$(TARGET_COPY_OUT_VENDOR)/lib64/fp_hal_extension.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/hw/audio.bluetooth_qti.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.bluetooth_qti.default.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/hw/com.dsi.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.dsi.ant@1.0-impl.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/hw/goodix.fod.lahaina.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/goodix.fod.lahaina.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/hw/sound_trigger.primary.lahaina.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.lahaina.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.gnss@4.0-impl.so \
@@ -1507,81 +981,159 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/lib-imscommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imscommon.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/lib-imsdpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsdpl.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/lib-imsqimf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsqimf.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/lib-imsrcsservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsrcsservice.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/lib-imsservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsservice.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/lib-imsvtcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsvtcore.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/lib-imsxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsxml.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/lib-rtpcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-rtpcommon.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/lib-rtpcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-rtpcore.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/lib-rtpsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-rtpsl.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAlacSwDec.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libAlgoProcess.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAlgoProcess.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libApeSwDec.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libCOppLceTonemapAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCOppLceTonemapAPI.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libDeVIS.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDeVIS.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libEIS.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libEIS.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFlacSwDec.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libGPQTEEC_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPQTEEC_vendor.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPTEE_vendor.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libGPreqcancel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libGPreqcancel_svc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel_svc.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libI420colorconvert.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libI420colorconvert.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libMpeghSwEnc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMpeghSwEnc.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libOGLManager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOGLManager.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libOPLUS_SCPortrait.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOPLUS_SCPortrait.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libOmxAacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAacDec.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libOmxAlacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAlacDec.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libOmxAlacDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAlacDecSw.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libOmxAlacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAlacDec.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libOmxAmrDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAmrDec.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libOmxAmrwbplusDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAmrwbplusDec.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libOmxApeDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxApeDec.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libOmxApeDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxApeDecSw.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libOmxApeDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxApeDec.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libOmxEvrcDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxEvrcDec.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libOmxG711Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxG711Dec.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libOmxMpeghEncSw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxMpeghEncSw.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libOmxQcelp13Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxQcelp13Dec.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxWmaDec.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libPerfectlyClearCruxOpt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPerfectlyClearCruxOpt.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libPerfectlyClearCrux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPerfectlyClearCrux.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libPlaneSegmentationWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPlaneSegmentationWrapper.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libPolarrRender.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPolarrRender.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libPreviewAlgo.dummy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPreviewAlgo.dummy.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libPreviewAlgo.edgefilter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPreviewAlgo.edgefilter.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libPreviewAlgo.fad.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPreviewAlgo.fad.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libPreviewAlgo.filter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPreviewAlgo.filter.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libPreviewAlgo.nightvision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPreviewAlgo.nightvision.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libPreviewAlgo.pf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPreviewAlgo.pf.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libPreviewAlgo.prefacebeauty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPreviewAlgo.prefacebeauty.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libPreviewAlgo.starburst.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPreviewAlgo.starburst.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libPreviewAlgo.supereis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPreviewAlgo.supereis.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libQ6MSFR_manager_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQ6MSFR_manager_stub.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQSEEComAPI.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libQTEEConnector_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQTEEConnector_listener.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libQTEEConnector_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQTEEConnector_vendor.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libQnnHtpAltPrepStub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQnnHtpAltPrepStub.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libSEESalt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSEESalt.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libSNPE.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSNPE.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libSensorCalLibNative.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSensorCalLibNative.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libSonyIMX471RmscLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSonyIMX471RmscLibrary.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libSuperSensorFallback.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSuperSensorFallback.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libSuperSensorProcessorCWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSuperSensorProcessorCWrapper.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libSuperSensorProcessor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSuperSensorProcessor.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libSuperSensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSuperSensor.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libTouchInputVM.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTouchInputVM.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libTrustedInput.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTrustedInput.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libTrustedInputTZ.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTrustedInputTZ.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libTrustedUI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTrustedUI.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libTrustedInput.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTrustedInput.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libTrustedUITZ.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTrustedUITZ.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libTrustedUIVM.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTrustedUIVM.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdb-fts.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libTrustedUI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTrustedUI.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libUSTANative.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libUSTANative.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libVDBlurless.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVDBlurless.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libVDDualCameraBlurlessAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVDDualCameraBlurlessAPI.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libVDFusionBlurlessAPI_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVDFusionBlurlessAPI_v2.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbloader.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbrtac.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdb-fts.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadiertac.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsp_default_listener.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsprpc.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsp_default_listener.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libaidenoiser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaidenoiser.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalsc.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalgo.OPXedge.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.OPXedge.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalgo.OPXvivid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.OPXvivid.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalgo.OPXwatermark.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.OPXwatermark.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalgo.algobase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.algobase.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalgo.antibanding.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.antibanding.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalgo.blurless.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.blurless.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalgo.blurless_v4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.blurless_v4.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalgo.bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.bokeh.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalgo.couplehdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.couplehdr.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalgo.deflicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.deflicker.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalgo.facebeauty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.facebeauty.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalgo.faceinfo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.faceinfo.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalgo.filter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.filter.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalgo.hdrv4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.hdrv4.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalgo.hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.hdr.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalgo.irfusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.irfusion.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalgo.mfsrfrt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.mfsrfrt.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalgo.perfectlyClear.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.perfectlyClear.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalgo.rectify.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.rectify.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalgo.rotatemirror.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.rotatemirror.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalgo.scportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.scportrait.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalgo.singleblur.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.singleblur.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalgo.starburst.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.starburst.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalgo.supernight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.supernight.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalgo.superphoto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.superphoto.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalgo.superportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.superportrait.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalgo.supersensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.supersensor.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libalgo.tiltshift.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalgo.tiltshift.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libapsexif.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapsexif.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libapsjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapsjpeg.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libaps.interface.log.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaps.interface.log.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libarcsoft_calibverify_TriCamera.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_calibverify_TriCamera.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libarcsoft_dualcam_bokeh_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_bokeh_api.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_left.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_left.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_preview.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_uw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_uw.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libarcsoft_dual_sat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dual_sat.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libarcsoft_dual_zoomtranslator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dual_zoomtranslator.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libarcsoft_eis_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_eis_wrapper.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libarcsoft_hdr_couple_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_hdr_couple_api.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libarcsoft_hdr_couple_api_v4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_hdr_couple_api_v4.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libarcsoft_hdr_denoise_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_hdr_denoise_api.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libarcsoft_hdr_denoise_api_v4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_hdr_denoise_api_v4.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libarcsoft_high_dynamic_range.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_high_dynamic_range.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libarcsoft_high_dynamic_range_couple.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_high_dynamic_range_couple.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libarcsoft_high_dynamic_range_couple_v4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_high_dynamic_range_couple_v4.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libarcsoft_high_dynamic_range_v4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_high_dynamic_range_v4.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libarcsoft_low_light_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_low_light_hdr.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libarcsoft_mfsr_frt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_mfsr_frt.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libarcsoft_qnnhtp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_qnnhtp.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libarcsoft_smart_denoise.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_smart_denoise.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libarcsoft_smart_denoise_v4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_smart_denoise_v4.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libarcsoft_stripe_removal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_stripe_removal.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libarcsoft_superportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_superportrait.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libarcsoft_super_night_raw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_super_night_raw.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libarcsoft_tricam_calibration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_tricam_calibration.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libarcsoft_tricam_verification.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_tricam_verification.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libarcsoft_triple_sat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_triple_sat.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libarcsoft_triple_zoomtranslator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_triple_zoomtranslator.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libasn1cper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1cper.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libasn1crt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1crt.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libasn1crtx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1crtx.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libasn1crt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1crt.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudcal.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libaudio_log_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_log_utils.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioalsa.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libaudioconfigstore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioconfigstore.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioparsers.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libaudio_log_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_log_utils.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libbase64.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbase64.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libbitmlengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbitmlengine.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libbitmlenginev2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbitmlenginev2.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_qti.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libbluetooth_audio_session_qti_2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_qti_2_1.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libbt-hidlclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbt-hidlclient.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbtnv.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libbt-hidlclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbt-hidlclient.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcacertclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcacertclient.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_nn_stub.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcamerapostproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamerapostproc.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_nn_stub.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcamxexternalformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxexternalformatutils.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcamxfacialfeatures.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfacialfeatures.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcamxfdalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdalgo.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcamxfdengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdengine.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcamxifestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxifestriping.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcamximageformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamximageformatutils.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcamxjson.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxjson.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcamxqsatalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxqsatalgo.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcamxstatscore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxstatscore.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcamxswispiqmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxswispiqmodule.so \
@@ -1592,36 +1144,45 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2vop.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcdfw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdfw.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcdfw_remote_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdfw_remote_api.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsp_default_listener.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsprpc.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsp_default_listener.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libchilog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchilog.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcne.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneapiclient.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcneoplookup.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneoplookup.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcneqmiutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneqmiutils.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcne.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.qti.chinodeutils.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libconfigdb.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcpion.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcvface_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvface_api.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcvp2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvp2_1.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcvpcpuRev_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvpcpuRev_skel.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcvp_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvp_common.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcvp_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvp_util.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcvpcpuRev_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvpcpuRev_skel.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libcwb_sm8350.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcwb_sm8350.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++_shared.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdataitems.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libdehaze.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdehaze.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libdepthcomputation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdepthcomputation.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libdiagjni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiagjni.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisp-aba.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libdisplayconfig.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayconfig.qti.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayqos.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libdisplayskuutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayskuutils.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisp-aba.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libdpmqmihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpmqmihal.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libdpps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpps.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libdpp_manager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpp_manager.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmfs.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmtime.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsi_netctrl.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsutils.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libdualcamirfusion.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcamirfusion.arcsoft.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libdualcam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_optical_zoom_control.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libdualcam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_video_optical_zoom.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libeepromcutter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeepromcutter.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libembmsservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libembmsservice.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvdsp_stub.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libfastov_dsp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastov_dsp.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libgarden.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libgarden_haltests_e2e.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden_haltests_e2e.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libgcs-calwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs-calwrapper.so \
@@ -1629,19 +1190,23 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libgcs-osal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs-osal.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libgcs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libgdtap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgdtap.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libgf_ud_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_ud_hal.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libgnsspps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgnsspps.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libhdcp1prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp1prov.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libhdcp2p2prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp2p2prov.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libhdcpsrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcpsrm.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libhdmipassthru.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdmipassthru.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libhdr_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_stub.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_tm.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libhistogram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhistogram.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libhta.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhta.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libhwconfigurationutil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwconfigurationutil.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libhyperlapse.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhyperlapse.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libipebpsstriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipebpsstriping.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_client_api.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_core.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjnihelper.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libjni_mfnrutil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjni_mfnrutil.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libjpege.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpege.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libkeymasterdeviceutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterdeviceutils.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libkeymasterprovision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterprovision.so \
@@ -1649,30 +1214,34 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/liblbs_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblbs_core.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/liblistensoundmodel2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblistensoundmodel2.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libloadalgo_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloadalgo_stub.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_api_v02.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libloc_socket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_socket.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/liblocationservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocationservice.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/liblocationservice_glue.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocationservice_glue.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_api_v02.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libloc_api_wds.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_api_wds.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libloc_socket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_socket.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/liblowi_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowi_client.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/liblowi_wifihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowi_wifihal.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblqe.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libmctfengine_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmctfengine_stub.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmdetect.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdsprpc.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libmidasserviceintf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmidasserviceintf.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libmfec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmfec.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminkdescriptor.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libminksocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminksocket.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libmiracast.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiracast.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libmm-hdcpmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-hdcpmgr.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libmmcamera_bestats.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_bestats.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libmmcamera_cac3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_cac3.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc2.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libmmcamera_lscv35.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_lscv35.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libmmcamera_mfnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_mfnr.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libmmcamera_mfnr_t4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_mfnr_t4.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libmmcamera_pdpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_pdpc.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-color-convertor.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libmm-hdcpmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-hdcpmgr.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libmorpho_image_refiner_deflicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmorpho_image_refiner_deflicker.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libmulawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmulawdec.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libnanopb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnanopb.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libnative-api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnative-api.so \
@@ -1680,36 +1249,62 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libnetmgr_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_common.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libnetmgr_nr_fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_nr_fusion.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libnetmgr_rmnet_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_rmnet_ext.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libnightvision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnightvision.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libnlnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnlnetmgr.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/liboemaids_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemaids_vendor.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemcrypto.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libofflinedump.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libofflinedump.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libofflinelog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libofflinelog.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/liboneplus_dehaze_module.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboneplus_dehaze_module.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libopencv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopencv.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libopenvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopenvx.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libopestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopestriping.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libopf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopf.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/liboplusblur_capture_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboplusblur_capture_api.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libops.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libops.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/liboptical_zoom_dc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboptical_zoom_dc.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/liboptical_zoom_vs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboptical_zoom_vs.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libop-ai-beauty-body-detection.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libop-ai-beauty-body-detection.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libop-ai-beauty-faceretouch-cn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libop-ai-beauty-faceretouch-cn.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libop-ai-beauty-faceretouch-in.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libop-ai-beauty-faceretouch-in.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libos.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdmapper.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libpdnotifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdnotifier.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libpreview.decision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpreview.decision.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libprotobuf-cpp-full-vendor-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full-vendor-3.9.1.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libpwirisIoctlWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwirisIoctlWrapper.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libpwirisPCS.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwirisPCS.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libpwiriscalibrate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwiriscalibrate.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libpwirisfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwirisfeature.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libpwirishalwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwirishalwrapper.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libpwirispq.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwirispq.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libpwirisservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwirisservice.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libpwirissoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwirissoft.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libpwsoftirisPCS.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwsoftirisPCS.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqc2vppfilter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqc2vppfilter.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqcbor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcbor.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqcc_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcc_file_agent.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcci_legacy.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqcc_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcc_file_agent.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcmaputils.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqconfigclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqconfigclient.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqcrilNr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrilNr.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqcrilNrFramework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrilNrFramework.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqcrilNrLogger.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrilNrLogger.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqcrilNrQtiBus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrilNrQtiBus.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqcrilNrQtiMutex.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrilNrQtiMutex.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqcrilNr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrilNr.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqcrildatactl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrildatactl.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqdcm-mode-parser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdcm-mode-parser.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdi.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqdma_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdma_file_agent.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdp.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqesdk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqesdk.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqesdk_manager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqesdk_manager.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqisl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqisl.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqll10.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqll10.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqllengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqllengine.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqmiextservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmiextservices.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmiservices.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqmi_cci.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_cci.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqmi_client_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_client_helper.so \
@@ -1719,21 +1314,26 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqmi_csvt_srvc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_csvt_srvc.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_encdec.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqmi_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_legacy.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqmiextservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmiextservices.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmiservices.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqrtr.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqrtrclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqrtrclient.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqrtr.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqseed3.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqsocket.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqtbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtbase.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtigef.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqtiidentitycredential.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtiidentitycredential.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqtikeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtikeymaster4.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqtjsonhelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtjsonhelper.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqtnodes.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtnodes.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqttestclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqttestclient.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libqttestservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqttestservice.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/librcc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcc.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/librcmask.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcmask.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libril-db.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-db.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-ltedirectdisc.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libril-qc-radioconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-radioconfig.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/librilqmimiscservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilqmimiscservices.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/librilqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilqmiservices.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libril-db.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-db.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libril-qcril-hook-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qcril-hook-oem.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-ltedirectdisc.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libril-qc-radioconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-radioconfig.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpmb.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveCommon.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libscveCommon_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveCommon_stub.so \
@@ -1742,38 +1342,44 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker_stub.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdedrm.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-color.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsdm-colormgr-algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-colormgr-algo.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsdm-diag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-diag.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsdm-disp-vndapis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-disp-vndapis.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsdmcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmcore.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsdmextension.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmextension.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsdmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmutils.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsdm-colormgr-algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-colormgr-algo.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-color.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsdm-diag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-diag.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsdm-disp-vndapis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-disp-vndapis.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdsprpc.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui_svcsock.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsensorcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorcal.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorslog.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsensor_low_lat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor_low_lat.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsi.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libslimclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libslimclient.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsmemlog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsmemlog.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsnapdragoncolor-manager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnapdragoncolor-manager.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsnapdragoncolor-pxlw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnapdragoncolor-pxlw.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsnapdragoncolor-qdcm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnapdragoncolor-qdcm.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsnpe_dsp_domains_v3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_dsp_domains_v3.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsnpe_htp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_htp.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsnsapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsapi.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsdiaglog.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsns_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_api.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_device_mode_stub.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_fastRPC_util.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_low_lat_stream_stub.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsns_registry_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_registry_skel.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsnsapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsapi.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsdiaglog.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsoc_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsoc_helper.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsoc_helper_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsoc_helper_jni.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libspcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspcom.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libspl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspl.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc_default_listener.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc_default_listener.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libssrec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssrec.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libstagefright_soft_qtiflacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_soft_qtiflacdec.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libstface_fd_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstface_fd_api.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsubsystem_control.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswregistrationalgo.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsynergy_loc_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynergy_loc_api.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libsynx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynx.so \
@@ -1783,22 +1389,48 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libthreadutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthreadutils.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtime_genoff.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2_1.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libtinyxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libtriplecam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_optical_zoom_control.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libtriplecam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_video_optical_zoom.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libtrustedapploader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrustedapploader.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtzdrmgenprov.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libui.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libvdblurless.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvdblurless.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libvdsuperphoto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvdsuperphoto.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libvppclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvppclient.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libvpphcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpphcp.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpphvx.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libvppimmotion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvppimmotion.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpplibrary.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libvpptestutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpptestutils.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libwebrtc_audio_preprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwebrtc_audio_preprocessing.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libwfddisplayconfig_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfddisplayconfig_proprietary.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdhdcpcp.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwms.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwqe.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libxtadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtadapter.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libxtwifi_server_protocol.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtwifi_server_protocol.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libxtwifi_server_protocol_uri_v3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtwifi_server_protocol_uri_v3.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libyuv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libyuv2.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/lib-imsSDP.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsSDP.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/lib-imscommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imscommon.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/lib-imsdpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsdpl.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/lib-imsqimf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsqimf.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/lib-imsrcsservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsrcsservice.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/lib-imsservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsservice.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/lib-imsvtcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsvtcore.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/lib-imsxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsxml.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/lib-rtpcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-rtpcommon.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/lib-rtpcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-rtpcore.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/lib-rtpsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-rtpsl.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/lib_oneplus_vivideffect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_oneplus_vivideffect.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/lib_oneplus_watermark.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_oneplus_watermark.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/lib_oplus_starburst_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_oplus_starburst_capture.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/lib_oplus_starburst_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_oplus_starburst_preview.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/lib_tiltshiftcapture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_tiltshiftcapture.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libwvdrmengine.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/qcrilMarshal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrilMarshal.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/qcrild_libqcrilnrutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrild_libqcrilnrutils.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/qtiril-utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtiril-utils.so \
@@ -1807,10 +1439,14 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libasphere.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/soundfx/libhaptic_effect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libhaptic_effect.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcbassboost.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcreverb.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcvirt.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libshoebox.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/unnhal-acc-common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-common.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/unnhal-acc-gpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-gpu.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/unnhal-acc-htp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-htp.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.0.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.1.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.2.so \
@@ -1818,9 +1454,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.display.color@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.4.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.display.color@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.5.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.postproc@1.0.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.oplus.hardware.cameraextension@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.cameraextension@1.0.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.cammidasservice@1.0.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.oneplus.hardware.camera@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.hardware.camera@1.0.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.oneplus.hardware.charger@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.hardware.charger@1.0.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.pixelworks.hardware.display@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.pixelworks.hardware.display@1.0.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.pixelworks.hardware.display@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.pixelworks.hardware.display@1.1.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.pixelworks.hardware.feature@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.pixelworks.hardware.feature@1.0.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.1.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.data.factory@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.2.so \
@@ -1861,6 +1500,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.hardware.embmssl@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.embmssl@1.1.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.hardware.factory@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.factory@1.0.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.hardware.factory@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.factory@1.1.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fm@1.0.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.hardware.limits@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.limits@1.0.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.mwqemadapter@1.0.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccsyshal@1.0.so \
@@ -1902,7 +1542,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.scve.panorama@1.0.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.sigma_miracast@1.0.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.slmadapter@1.0.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.hardware.soter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.soter@1.0.so \
@@ -1915,6 +1554,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.3.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.hardware.vpp@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@2.0.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@3.0.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.ims.callcapability@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.callcapability@1.0.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.callinfo@1.0.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.ims.factory@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.factory@1.0.so \
@@ -1923,13 +1564,192 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.rcsconfig@1.1.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.rcsconfig@2.0.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.rcsconfig@2.1.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@3.0.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.latency@2.0.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.latency@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.latency@2.1.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.qspmhal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qspmhal@1.0-impl.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qspmhal@1.0.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.voiceprint@1.0.so
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.voiceprint@1.0.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib/btaudio_offload_if.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/hw/audio.bluetooth_qti.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.bluetooth_qti.default.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/hw/com.dsi.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.dsi.ant@1.0-impl.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/hw/sound_trigger.primary.lahaina.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.lahaina.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.fm@1.0-impl.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlacSwDec.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libApeSwDec.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libFileMux_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFileMux_proprietary.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFlacSwDec.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libMpeghSwEnc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMpeghSwEnc.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxAacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAacDec.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxAlacDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAlacDecSw.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxAlacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAlacDec.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxAmrDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAmrDec.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxAmrwbplusDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAmrwbplusDec.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxApeDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxApeDecSw.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxApeDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxApeDec.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxDsdDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxDsdDec.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxEvrcDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxEvrcDec.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxG711Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxG711Dec.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxMpeghDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxMpeghDecSw.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxMpeghEncSw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxMpeghEncSw.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxQcelp13Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxQcelp13Dec.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxVideoDSMode.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxVideoDSMode.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxWmaDec.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbloader.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbrtac.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdb-fts.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadiertac.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libadm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadm.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libadpcmdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadpcmdec.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudcal.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioalsa.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libaudioconfigstore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioconfigstore.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioparsers.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libaudio_log_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_log_utils.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_qti.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libbluetooth_audio_session_qti_2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_qti_2_1.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbtnv.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libbt-hidlclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbt-hidlclient.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libcamxexternalformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxexternalformatutils.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svacnn.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libcapiv2svarnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svarnn.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2vop.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsprpc.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libdrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrc.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libdsd2pcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsd2pcm.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvdsp_stub.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libgcs-calwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-calwrapper.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libgcs-ipc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-ipc.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libgcs-osal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-osal.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libgcs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libhdmipassthru.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdmipassthru.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/liblistensoundmodel2.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblistensoundmodel2.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libmiracast.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmiracast.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmosal.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libmmrtpdecoder_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpdecoder_proprietary.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libmmrtpencoder_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpencoder_proprietary.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libmulawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmulawdec.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libopf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libopf.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqc2vppfilter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqc2vppfilter.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcci_legacy.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqconfigclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqconfigclient.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmiservices.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqmi_cci.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_cci.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqmi_client_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_helper.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqmi_client_qmux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_qmux.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqmi_common_so.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_common_so.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csi.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqmi_csvt_srvc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csvt_srvc.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_encdec.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqmi_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_legacy.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqrtr.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqsocket.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libsmemlog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmemlog.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libsmwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmwrapper.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libsn100u_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsn100u_fw.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libsoc_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsoc_helper.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libsoc_helper_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsoc_helper_jni.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libstagefright_soft_qtiflacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_qtiflacdec.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libsurround_3mic_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsurround_3mic_proc.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsystem_health_mon.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdaac_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdaac_vendor.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdcodecv4l2_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcodecv4l2_proprietary.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdcommonutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcommonutils_proprietary.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdconfigutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdconfigutils_proprietary.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfddisplayconfig_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfddisplayconfig_proprietary.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhdcpcp.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdhdcpservice_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhdcpservice_proprietary.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdmminterface_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmminterface_proprietary.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdmmservice_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmmservice_proprietary.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdmmsrc_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmmsrc_proprietary.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdmodulehdcpsession.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmodulehdcpsession.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdrtsp_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdrtsp_proprietary.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdsessionmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdsessionmodule.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdsourcesession_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdsourcesession_proprietary.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdsourcesm_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdsourcesm_proprietary.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfduibcinterface_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcinterface_proprietary.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfduibcsinkinterface_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsinkinterface_proprietary.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfduibcsink_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsink_proprietary.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfduibcsrcinterface_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsrcinterface_proprietary.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfduibcsrc_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsrc_proprietary.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/libwfdutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdutils_proprietary.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/bm2n06.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/bm2n06.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/bm2n08.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/bm2n08.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/bm2n12.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/bm2n12.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/bm2n13.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/bm2n13.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/bm2n14.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/bm2n14.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/bm2n15.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/bm2n15.bin \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/capi_v2_dap_cpdp.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_dap_cpdp.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libQ6MSFR_manager_skel.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libQnnHtpAltPrepSkel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libQnnHtpAltPrepSkel.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libSuperSensor_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libSuperSensor_skel.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libVppAisQnnHtp.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVppAisQnnHtp.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libVppFrcQnnHtp.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVppFrcQnnHtp.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libVppQnnHtp.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVppQnnHtp.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libadsp_jpege_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libadsp_jpege_skel.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libapps_mem_heap.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libarcnn_hvx_1_1_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libarcnn_hvx_1_1_skel.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libarcsoft_dualcam_refocus_5111_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libarcsoft_dualcam_refocus_5111_skel.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_opx_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_opx_skel.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libbitml_nsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libbitml_nsp_skel.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libbitml_nsp_v2_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libbitml_nsp_v2_skel.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libcamera_nn_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libcamera_nn_skel.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libcvpdsp_2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libcvpdsp_2_1.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libdspCV_skel.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libdsp_streamer_binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libdsp_streamer_binning.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvadsp.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libfastcvdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvdsp_skel.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libhdr_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libhdr_skel.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libmctfengine_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libmctfengine_skel.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libmobilenet_dsp_frc.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libmobilenet_dsp_frc.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libmobilenet_dsp_frc_networks.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libmobilenet_dsp_frc_networks.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveObjectSegmentation_skel.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveT2T_skel.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_domains_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsnpe_dsp_domains_skel.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_v68_domains_v3_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsnpe_dsp_v68_domains_v3_skel.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libsnpe_htp_v65_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsnpe_htp_v65_skel.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libsnpe_htp_v66_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsnpe_htp_v66_skel.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libsnpe_htp_v68_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsnpe_htp_v68_skel.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libsns_device_mode_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_device_mode_skel.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libsuper_res_networks.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsuper_res_networks.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libvdblurless_4.10.0B_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libvdblurless_4.10.0B_skel.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libvdsuperphoto_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libvdsuperphoto_skel.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libvpp_ais_networks.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libvpp_ais_networks.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libvpt_action_recognition.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libvpt_action_recognition.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/rfsa/adsp/libworker_pool.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libworker_pool.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libasphere.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/soundfx/libhaptic_effect.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libhaptic_effect.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcbassboost.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcreverb.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcvirt.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libshoebox.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_sar@1.0.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_sar@1.1.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.dsp@1.0.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.fm@1.0.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/vendor.qti.hardware.qconfig@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qconfig@1.0.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/vendor.qti.hardware.sigma_miracast@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.sigma_miracast@1.0.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/vendor.qti.hardware.vpp@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@2.0.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.voiceprint@1.0.so
 
 PRODUCT_PACKAGES += \
     libfastcvopt \
@@ -1938,11 +1758,15 @@ PRODUCT_PACKAGES += \
     CneApp \
     ConnectionSecurityService \
     IWlanService \
+    QCC-TR-UI \
     TimeService \
+    HotwordEnrollmentOKGoogleHEXAGON \
+    HotwordEnrollmentXGoogleHEXAGON \
+    com.android.hotwordenrollment.common.util \
+    android.hardware.neuralnetworks@1.3-service-qti \
+    manifest_android.hardware.drm@1.3-service.widevine \
+    vendor.pixelworks.hardware.display.iris-service \
+    vendor.pixelworks.hardware.feature.irisfeature-service \
     vendor.qti.diag.hal.service \
     vendor.qti.gnss@4.0-service \
-    vendor.qti.hardware.limits@1.0-service \
-    manifest_android.hardware.drm@1.3-service.widevine \
-    manifest_oplus_fingerprint \
-    vendor.pixelworks.hardware.display.iris-service \
-    vendor.pixelworks.hardware.feature.irisfeature-service
+    vendor.qti.hardware.limits@1.0-service
