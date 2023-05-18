@@ -90,17 +90,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "QCC-TR-UI",
-	owner: "oneplus",
-	apk: "proprietary/vendor/app/QCC-TR-UI/QCC-TR-UI.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
-}
-
-android_app_import {
 	name: "TimeService",
 	owner: "oneplus",
 	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
@@ -143,36 +132,9 @@ dex_import {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.neuralnetworks@1.3-service-qti",
-	owner: "oneplus",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "manifest_android.hardware.drm@1.3-service.widevine",
 	owner: "oneplus",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.pixelworks.hardware.display.iris-service",
-	owner: "oneplus",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.pixelworks.hardware.display.iris-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.pixelworks.hardware.feature.irisfeature-service",
-	owner: "oneplus",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.pixelworks.hardware.feature.irisfeature-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
