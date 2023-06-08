@@ -123,7 +123,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/audio/sku_lahaina/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_effects.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/audio/sku_lahaina/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_io_policy.conf \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/audio/sku_lahaina/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_platform_info_intcodec.xml \
-    vendor/oneplus/oneplus9/proprietary/vendor/etc/audio/sku_lahaina/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_policy_configuration.xml \
     vendor/oneplus/oneplus9/proprietary/vendor/etc/audio/sku_lahaina/audio_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_tuning_mixer.txt \
     vendor/oneplus/oneplus9/proprietary/odm/overlay/prj_11/vendor/etc/audio/sku_lahaina/default_volume_tables.xml:$(TARGET_COPY_OUT_ODM)/overlay/prj_11/vendor/etc/audio/sku_lahaina/default_volume_tables.xml \
     vendor/oneplus/oneplus9/proprietary/odm/overlay/prj_11/vendor/etc/audio/sku_lahaina/mixer_paths.xml:$(TARGET_COPY_OUT_ODM)/overlay/prj_11/vendor/etc/audio/sku_lahaina/mixer_paths.xml \
