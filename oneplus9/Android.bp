@@ -100,46 +100,6 @@ android_app_import {
 	soc_specific: true,
 }
 
-android_app_import {
-	name: "HotwordEnrollmentOKGoogleHEXAGON",
-	owner: "oneplus",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
-	name: "HotwordEnrollmentXGoogleHEXAGON",
-	owner: "oneplus",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-dex_import {
-	name: "com.android.hotwordenrollment.common.util",
-	owner: "oneplus",
-	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
-	system_ext_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "manifest_android.hardware.drm@1.3-service.widevine",
-	owner: "oneplus",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
 prebuilt_etc_xml {
 	name: "vendor.qti.diag.hal.service",
 	owner: "oneplus",
@@ -156,5 +116,23 @@ prebuilt_etc_xml {
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_android.hardware.drm@1.3-service.widevine",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_oplus_fingerprint",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
 }
 
