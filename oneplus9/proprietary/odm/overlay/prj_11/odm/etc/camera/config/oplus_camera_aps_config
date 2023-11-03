@@ -22,6 +22,14 @@
 },
 
 {
+  "VendorTag": "com.oplus.asd.low.memory.params",
+  "Type": "String",
+  "Count": "2",
+  "Value": "120, 2500000000",
+  "Comment": "skipFrameNum, lowMemoryThreshold"
+},
+
+{
   "VendorTag": "com.oplus.sat.hdr.zoom.ratio.range",
   "Type": "Float",
   "Count": "2",
@@ -1698,6 +1706,14 @@
 },
 
 {
+  "VendorTag": "com.oplus.aps.params.gesture",
+  "Type": "Float",
+  "Count": "6",
+  "Value": "2, 0.7, 1, 2, 0, 3",
+  "Comment": "maxHandNum, clsSmoothFactor, narutoGesture, detectionFreq, delayFrameCount, scaling"
+},
+
+{
   "VendorTag": "com.oplus.aps.params.lsd",
   "Type": "Float",
   "Count": "4",
@@ -1764,7 +1780,14 @@
 },
 
 {
-    "VendorTag": "com.oplus.aps.iso.jpegtoraw",
+  "VendorTag": "com.oplus.aps.debug.caliexif.enable",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "0"
+},
+
+{
+    "VendorTag": "com.oplus.aps.professional.exif.iso",
     "Type": "Int32",
     "Count": "1",
     "Value": "1"

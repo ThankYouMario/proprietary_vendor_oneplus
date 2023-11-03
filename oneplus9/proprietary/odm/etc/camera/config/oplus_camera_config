@@ -554,6 +554,13 @@
 },
 
 {
+  "VendorTag": "com.oplus.ultra.wide.high.supported.picturesize",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "8192x6144"
+},
+
+{
   "VendorTag": "com.oplus.feature.video.super.eis.support",
   "Type": "Byte",
   "Count": "1",
@@ -1009,6 +1016,13 @@
 },
 
 {
+  "VendorTag": "com.oplus.gesture.detect.in.aps",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
   "VendorTag": "com.oplus.preview.max.images",
   "Type": "Byte",
   "Count": "1",
@@ -1101,7 +1115,7 @@
 
 {
   "VendorTag": "com.oplus.athena.memory.threshold",
-  "Type": "Byte",
+  "Type": "Float",
   "Count": "1",
   "Value": "3.0"
 },
@@ -1419,6 +1433,13 @@
   "Type": "Float",
   "Count": "3",
   "Value": "2.25,2.25,2.25"
+},
+
+{
+   "VendorTag": "com.oplus.camera.support.custom.hasselblad.watermark",
+   "Type": "Byte",
+   "Count": "1",
+   "Value": "1"
 }
 
 ]

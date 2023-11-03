@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/oneplus9
 
 PRODUCT_COPY_FILES += \
+    vendor/oneplus/oneplus9/proprietary/product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/com.android.hotwordenrollment.common.util.xml \
     vendor/oneplus/oneplus9/proprietary/odm/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_ODM)/bin/hw/android.hardware.drm@1.3-service.widevine \
     vendor/oneplus/oneplus9/proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service \
     vendor/oneplus/oneplus9/proprietary/odm/bin/init.oplus.fingerprints.sh:$(TARGET_COPY_OUT_ODM)/bin/init.oplus.fingerprints.sh \
@@ -714,7 +715,53 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/odm/lib/liblvimfs.so:$(TARGET_COPY_OUT_ODM)/lib/liblvimfs.so \
     vendor/oneplus/oneplus9/proprietary/odm/lib/liblvimfs_wrapper.so:$(TARGET_COPY_OUT_ODM)/lib/liblvimfs_wrapper.so \
     vendor/oneplus/oneplus9/proprietary/odm/lib/libnightvision.so:$(TARGET_COPY_OUT_ODM)/lib/libnightvision.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib/vendor.oplus.hardware.performance@1.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.performance@1.0.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/aiboost/libQnnHtpAltPrepSkel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/aiboost/libQnnHtpAltPrepSkel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/aiboost/libQnnHtpSkel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/aiboost/libQnnHtpSkel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/aiboost/libaiboostubwc_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/aiboost/libaiboostubwc_skel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libQnnHtp.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libQnnHtp.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libQnnHtpAltPrepSkel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libQnnHtpAltPrepSkel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libQnnHtpSkel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libQnnHtpSkel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libSuperRawPost_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libSuperRawPost_skel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libaiboost_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libaiboost_skel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libaiboost_skel_v65.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libaiboost_skel_v65.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libaiboost_skel_v66.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libaiboost_skel_v66.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libarc_gk_pt_hvx_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libarc_gk_pt_hvx_skel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libarcsoft_dualcam_refocus_5111_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libarcsoft_dualcam_refocus_5111_skel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel_lemonade.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel_lemonade.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libarcsoft_portraitSN_hvx_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libarcsoft_portraitSN_hvx_skel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libarcsoft_portraitsn_hvx_skel_20031.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libarcsoft_portraitsn_hvx_skel_20031.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libc++.so.1:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libc++.so.1 \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libc++abi.so.1:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libc++abi.so.1 \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libcalculator_domains_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libcalculator_domains_skel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libcalculator_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libcalculator_skel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libdehaze_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libdehaze_skel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libhdr_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libhdr_skel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libhvxFaceBeautyPre_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libhvxFaceBeautyPre_skel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libinterstellar_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libinterstellar_skel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libktvdrc.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libktvdrc.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libktveffect.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libktveffect.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libktveq.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libktveq.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libktvns.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libktvns.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libktvpitchshift.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libktvpitchshift.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libktvreverb.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libktvreverb.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libktvvolume.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libktvvolume.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libmultiframe_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libmultiframe_skel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libsnpe_dsp_domains_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libsnpe_dsp_domains_skel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libsnpe_dsp_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libsnpe_dsp_skel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libsnpe_dsp_v68_domains_v3_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libsnpe_dsp_v68_domains_v3_skel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libsnpe_htp_v65_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libsnpe_htp_v65_skel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libsnpe_htp_v66_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libsnpe_htp_v66_skel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libsnpe_htp_v68_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libsnpe_htp_v68_skel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libvdblurless_4.6.10L_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libvdblurless_4.6.10L_skel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libvdblurless_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libvdblurless_skel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libvdsuperphoto_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libvdsuperphoto_skel.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/rfsa/adsp/libworker_pool.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libworker_pool.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib/vendor.oplus.hardware.performance-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.performance-V1-ndk_platform.so \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/anc.hal.so:$(TARGET_COPY_OUT_ODM)/lib64/anc.hal.so \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/arcsoft_calibration_uw.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/arcsoft_calibration_uw.bin \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/camera/arcsoft_calibration_wt.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/arcsoft_calibration_wt.bin \
@@ -767,6 +814,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/libFaceBeautyPICap.so:$(TARGET_COPY_OUT_ODM)/lib64/libFaceBeautyPICap.so \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/libFaceBeautyPre.so:$(TARGET_COPY_OUT_ODM)/lib64/libFaceBeautyPre.so \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/libFaceDistortionCorrection.so:$(TARGET_COPY_OUT_ODM)/lib64/libFaceDistortionCorrection.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib64/libImageWarpMask.so:$(TARGET_COPY_OUT_ODM)/lib64/libImageWarpMask.so \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/libOGLManager.so:$(TARGET_COPY_OUT_ODM)/lib64/libOGLManager.so \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/libOPLUS_SCPortrait.so:$(TARGET_COPY_OUT_ODM)/lib64/libOPLUS_SCPortrait.so \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/libPerfectlyClearCrux.so:$(TARGET_COPY_OUT_ODM)/lib64/libPerfectlyClearCrux.so \
@@ -840,6 +888,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/libml_util.so:$(TARGET_COPY_OUT_ODM)/lib64/libml_util.so \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/libmpbase.so:$(TARGET_COPY_OUT_ODM)/lib64/libmpbase.so \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_ODM)/lib64/liboemcrypto.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib64/libolc_vnd.so:$(TARGET_COPY_OUT_ODM)/lib64/libolc_vnd.so \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/libop-ai-beauty-body-detection.so:$(TARGET_COPY_OUT_ODM)/lib64/libop-ai-beauty-body-detection.so \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/libop-ai-beauty-faceretouch-cn.so:$(TARGET_COPY_OUT_ODM)/lib64/libop-ai-beauty-faceretouch-cn.so \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/liboplus_dehaze_module.so:$(TARGET_COPY_OUT_ODM)/lib64/liboplus_dehaze_module.so \
@@ -847,6 +896,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/liboptical_zoom_dc.so:$(TARGET_COPY_OUT_ODM)/lib64/liboptical_zoom_dc.so \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/liboptical_zoom_vs.so:$(TARGET_COPY_OUT_ODM)/lib64/liboptical_zoom_vs.so \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/libormshalclient.so:$(TARGET_COPY_OUT_ODM)/lib64/libormshalclient.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib64/libosenseaidlhalclient.so:$(TARGET_COPY_OUT_ODM)/lib64/libosenseaidlhalclient.so \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/libosensehalclient.so:$(TARGET_COPY_OUT_ODM)/lib64/libosensehalclient.so \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/libsnpe_dsp_domains_v2.so:$(TARGET_COPY_OUT_ODM)/lib64/libsnpe_dsp_domains_v2.so \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/libsnpe_dsp_domains_v3.so:$(TARGET_COPY_OUT_ODM)/lib64/libsnpe_dsp_domains_v3.so \
@@ -863,12 +913,14 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/libwatermark_photo.so:$(TARGET_COPY_OUT_ODM)/lib64/libwatermark_photo.so \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/libwvhidl.so:$(TARGET_COPY_OUT_ODM)/lib64/libwvhidl.so \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_ODM)/lib64/mediadrm/libwvdrmengine.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.oplus.hardware.cameraextension@1.0-service-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.cameraextension@1.0-service-impl.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.oplus.hardware.cammidasservice@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.cammidasservice@1.0.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.oplus.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.commondcs@1.0.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.oplus.hardware.cameraextension-V1-service-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.cameraextension-V1-service-impl.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk_platform.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.oplus.hardware.olc2-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.olc2-V1-ndk_platform.so \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.oplus.hardware.orms@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.orms@1.0.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so \
     vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.oplus.hardware.osense.client@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.osense.client@1.0.so \
-    vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.oplus.hardware.performance@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.performance@1.0.so \
+    vendor/oneplus/oneplus9/proprietary/odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so \
     vendor/oneplus/oneplus9/proprietary/odm/vendor/firmware/goodixfp.b00:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b00 \
     vendor/oneplus/oneplus9/proprietary/odm/vendor/firmware/goodixfp.b01:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b01 \
     vendor/oneplus/oneplus9/proprietary/odm/vendor/firmware/goodixfp.b02:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b02 \
@@ -1561,6 +1613,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmdetect.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdsprpc.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libmidasserviceintf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmidasserviceintf.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/libmidasserviceintf_aidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmidasserviceintf_aidl.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminkdescriptor.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libmiracast.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiracast.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/libmmcamera_bestats.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_bestats.so \
@@ -1685,8 +1738,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcreverb.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcvirt.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libshoebox.so \
-    vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.oplus.hardware.cameraextension@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.cameraextension@1.0.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.oplus.hardware.cameraextension-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.cameraextension-V1-ndk_platform.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.cammidasservice@1.0.so \
+    vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.1.so \
     vendor/oneplus/oneplus9/proprietary/vendor/lib64/vendor.qti.data.factory@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.2.so \
@@ -1805,7 +1859,11 @@ PRODUCT_PACKAGES += \
     ConnectionSecurityService \
     IWlanService \
     TimeService \
+    HotwordEnrollmentOKGoogle \
+    HotwordEnrollmentXGoogle \
+    com.android.hotwordenrollment.common.util \
     vendor.qti.diag.hal.service \
     vendor.qti.hardware.limits@1.0-service \
     manifest_android.hardware.drm@1.3-service.widevine \
+    manifest_oplus_cameraextension_aidl \
     manifest_oplus_fingerprint
