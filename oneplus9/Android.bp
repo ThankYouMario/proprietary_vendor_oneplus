@@ -159,6 +159,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+	name: "manifest_dax_dolby_v3_6",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_dax_dolby_v3_6.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
 	name: "manifest_oplus_cameraextension_aidl",
 	owner: "oneplus",
 	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_cameraextension_aidl.xml",
