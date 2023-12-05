@@ -104,9 +104,9 @@
   "VendorTag": "com.oplus.aps.params.bokeh",
   "Type": "Int32",
   "Count": "81",
-  "Value": "  180,      2,    0,             0,            0,                     8,                   1000,            4000,3008,4000,3008,4000,3008,4000,3008,0,0,        4096,3072,3200,2400,3200,2400,3200,2400,0,0,
-              0,        2,    0,             0,            0,                     8,                   1000,            4096,3072,4096,3072,4096,3072,4096,3072,1,0,        1440,1080,1440,1080,1440,1080,1440,1080,1,0,
-              180,      1,    0,             0,            0,                     8,                   1000,            4000,3008,2000,1504,4000,3008,4000,3008,0,0,        4096,3072,1600,1200,3200,2400,3200,2400,0,0",
+  "Value": "  180,      2,    0,             0,            0,                     8,                   800,            4000,3000,4000,3000,4000,3000,4000,3000,0,0,        4096,3072,3200,2400,3200,2400,3200,2400,0,0,
+              0,        2,    0,             0,            0,                     8,                   800,            4096,3072,4096,3072,4096,3072,4096,3072,1,0,        1440,1080,1440,1080,1440,1080,1440,1080,1,0,
+              180,      1,    0,             0,            0,                     8,                   800,            4000,3000,2000,1500,4000,3000,4000,3000,0,0,        4096,3072,1600,1200,3200,2400,3200,2400,0,0",
   "Comment": "rotation, mode, dualCalitype,  isTeleMaster, isAppSetBlurintensity, foregroundBlurScale, runTimeMemSize, masterImageInfo /*struct cameraImageSize_t*/,       slaveImageInfo /*struct cameraImageSize_t*/"
 },
 
@@ -130,21 +130,21 @@
   "VendorTag": "com.oplus.aps.params.rtb",
   "Type": "Int32",
   "Count": "100",
-  "Value": "  180 /*rotation*/, 1 /*focusRectValid*/, 1 /*refocusOn*/, 2 /*refocus_mode*/, 6 /*foregroundBlurScale*/, 12 /*curveVal*/, 200 /*farDistanceThres*/, 10 /*nearDistanceThres*/, 6000 /*lowLightTriggerIsoHigh*/, 5600 /*lowLightTriggerIsoLow*/,
-                   4000 /*ispOutWidth*/, 3008 /*ispOutHeight*/, 0 /*c2sReSizeTypeMaster*/, 0 /*s2iReSizeTypeMaster*/, 0 /*c2sReSizeTypeSlave*/, 0 /*s2iReSizeTypeSlave*/,
-                   4000 /*masterPictureWidth*/,3008 /*masterPictureHeight*/, 4096 /*slavePictureWidth*/, 3072 /*slavePictureHeight*/, 0 /*isTeleMaster*/,
+  "Value": "  180 /*rotation*/, 1 /*focusRectValid*/, 1 /*refocusOn*/, 2 /*refocus_mode*/, 6 /*foregroundBlurScale*/, 12 /*curveVal*/, 200  /*farDistanceThres*/, 10 /*nearDistanceThres*/, 6000 /*lowLightTriggerIsoHigh*/, 5600 /*lowLightTriggerIsoLow*/,
+                   4000 /*ispOutWidth*/, 3000 /*ispOutHeight*/, 0 /*c2sReSizeTypeMaster*/, 0 /*s2iReSizeTypeMaster*/, 0 /*c2sReSizeTypeSlave*/, 0 /*s2iReSizeTypeSlave*/,
+                   4000 /*masterPictureWidth*/,3000 /*masterPictureHeight*/, 4096 /*slavePictureWidth*/, 3072 /*slavePictureHeight*/, 0 /*isTeleMaster*/,
               0 /*rotation*/, 1 /*focusRectValid*/, 1 /*refocusOn*/, 2 /*refocus_mode*/, 6 /*foregroundBlurScale*/, 12 /*curveVal*/, 200 /*farDistanceThres*/, 10 /*nearDistanceThres*/, 6000 /*lowLightTriggerIsoHigh*/, 5600 /*lowLightTriggerIsoLow*/,
                    1440 /*ispOutWidth*/, 1080 /*ispOutHeight*/, 0 /*c2sReSizeTypeMaster*/, 2 /*s2iReSizeTypeMaster*/, 1 /*c2sReSizeTypeSlave*/, 2 /*s2iReSizeTypeSlave*/,
                    4000 /*masterPictureWidth*/,3000 /*masterPictureHeight*/, 2816 /*slavePictureWidth*/, 2112 /*slavePictureHeight*/, 0 /*isTeleMaster*/,
               180 /*rotation*/, 1 /*focusRectValid*/, 1 /*refocusOn*/, 2 /*refocus_mode*/, 6 /*foregroundBlurScale*/, 12 /*curveVal*/, 400 /*farDistanceThres*/, 30 /*nearDistanceThres*/, 6000 /*lowLightTriggerIsoHigh*/, 5600 /*lowLightTriggerIsoLow*/,
-                   4000 /*ispOutWidth*/, 3008 /*ispOutHeight*/, 0 /*c2sReSizeTypeMaster*/, 0 /*s2iReSizeTypeMaster*/, 0 /*c2sReSizeTypeSlave*/, 0 /*s2iReSizeTypeSlave*/,
-                   4000 /*masterPictureWidth*/,3008 /*masterPictureHeight*/, 4096 /*slavePictureWidth*/, 3072 /*slavePictureHeight*/, 0 /*isTeleMaster*/,
+                   4000 /*ispOutWidth*/, 3000 /*ispOutHeight*/, 0 /*c2sReSizeTypeMaster*/, 0 /*s2iReSizeTypeMaster*/, 0 /*c2sReSizeTypeSlave*/, 0 /*s2iReSizeTypeSlave*/,
+                   4000 /*masterPictureWidth*/,3000 /*masterPictureHeight*/, 4096 /*slavePictureWidth*/, 3072 /*slavePictureHeight*/, 0 /*isTeleMaster*/,
               150 /*luxThreshold*/, 0 /*dualCaliType*/, 76/*focusDistanceThresholdFallingFace*/, 80/*focusDistanceThresholdRisingFace*/, 100 /*blurSlope*/, 0 /*blurIntercept*/,
-              1/*isValid*/,4000/*sensorOutWidthMaster*/,3008/*sensorOutHeightMaster*/,4000/*sensorCropWidthMaster*/,3008/*sensorCropHeightMaster*     /,3200/*sensorOutWidthSlave*/,2400/*sensorOutHeightSlave*/,3200/*sensorCropWidthSlave*/,2400/*sensorCropHeightSlave*/,
+              1/*isValid*/,4000/*sensorOutWidthMaster*/,3000/*sensorOutHeightMaster*/,4000/*sensorCropWidthMaster*/,3000/*sensorCropHeightMaster*     /,3200/*sensorOutWidthSlave*/,2400/*sensorOutHeightSlave*/,3200/*sensorCropWidthSlave*/,2400/*sensorCropHeightSlave*/,
                    3200/*ispOutWidthSlave*/,2400/*ispOutHeightSlave*/,
               1/*isValid*/,4000/*sensorOutWidthMaster*/,3000/*sensorOutHeightMaster*/,4000/*sensorCropWidthMaster*/,3000/*sensorCropHeightMaster*/     ,3200/*sensorOutWidthSlave*/,2400/*sensorOutHeightSlave*/,3200/*sensorCropWidthSlave*/,2400/*sensorCropHeightSlave*/,
                    3200/*ispOutWidthSlave*/,2400/*ispOutHeightSlave*/,
-              1/*isValid*/,4000/*sensorOutWidthMaster*/,3008/*sensorOutHeightMaster*/,2000/*sensorCropWidthMaster*/,1504/*sensorCropHeightMaster*
+              1/*isValid*/,4000/*sensorOutWidthMaster*/,3000/*sensorOutHeightMaster*/,2000/*sensorCropWidthMaster*/,1500/*sensorCropHeightMaster*
                    /,3200/*sensorOutWidthSlave*/,2400/*sensorOutHeightSlave*/,1600/*sensorCropWidthSlave*/,1200/*sensorCropHeightSlave*/,
                    3200/*ispOutWidthSlave*/,2400/*ispOutHeightSlave*/",
   "Comment": "JsonParamsRtb: include rear and front"
@@ -178,16 +178,8 @@
   "VendorTag": "com.oplus.aps.params.upscale",
   "Type": "Int32",
   "Count": "7",
-  "Value": "  250,          50,             4,                          1600,            16777216,      8000,            6016",
+  "Value": "  250,          50,             4,                          1600,            16777216,      8000,            6000",
   "Comment": "estimateTime, runTimeMemSize, numberOfProcessingThreads, ultraHighSharpen, bufferSize16M, outputWidth8000, outputWidth6000"
-},
-
-{
-  "VendorTag": "com.oplus.aps.params.ultrawide.upscale",
-  "Type": "Int32",
-  "Count": "8",
-  "Value": "  2,             250,          50,             4,                         400,              16777216,      8192,            6144",
-  "Comment": "logicCameraId, estimateTime, runTimeMemSize, numberOfProcessingThreads, ultraHighSharpen, bufferSize16M, outputWidth8000, outputWidth6000"
 },
 
 {

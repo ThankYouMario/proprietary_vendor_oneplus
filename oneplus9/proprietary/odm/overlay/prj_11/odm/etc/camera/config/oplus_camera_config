@@ -1,13 +1,6 @@
 [
 
 {
-  "VendorTag": "com.oplus.back.pure.3rd.bokeh.preview.support",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "0"
-},
-
-{
   "VendorTag": "com.oplus.feature.hw.manufacturer.qualcomm",
   "Type": "Byte",
   "Count": "1",
@@ -47,27 +40,6 @@
   "Type": "Byte",
   "Count": "1",
   "Value": "1"
-},
-
-{
-  "VendorTag": "com.oplus.feature.xpan.mode.support",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "1"
-},
-
-{
-  "VendorTag": "com.oplus.xpan.main.picturesize",
-  "Type": "Int32",
-  "Count": "2",
-  "Value": "8000x3636"
-},
-
-{
-  "VendorTag": "com.oplus.xpan.wide.picturesize",
-  "Type": "Int32",
-  "Count": "2",
-  "Value": "8192x3724"
 },
 
 {
@@ -113,13 +85,6 @@
 },
 
 {
-  "VendorTag": "com.oplus.high.fps.video.preview.process.by.aps",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "0"
-},
-
-{
   "VendorTag": "com.oplus.feature.qr.code.enable.support",
   "Type": "Byte",
   "Count": "1",
@@ -148,14 +113,14 @@
 },
 
 {
-  "VendorTag": "com.oplus.feature.video.live.hdr.except.8k.support",
+  "VendorTag": "com.oplus.high.fps.video.preview.process.by.aps",
   "Type": "Byte",
   "Count": "1",
-  "Value": "1"
+  "Value": "0"
 },
 
 {
-  "VendorTag": "com.oplus.feature.video.live.hdr.sat.support",
+  "VendorTag": "com.oplus.feature.video.live.hdr.except.8k.support",
   "Type": "Byte",
   "Count": "1",
   "Value": "1"
@@ -179,7 +144,7 @@
   "VendorTag": "com.oplus.tunning.back.portrait.normal.picturesize",
   "Type": "Int32",
   "Count": "2",
-  "Value": "4000x3008"
+  "Value": "4000x3000"
 },
 
 {
@@ -214,7 +179,7 @@
   "VendorTag": "com.oplus.high.picturesize",
   "Type": "Int32",
   "Count": "2",
-  "Value": "8000x6016"
+  "Value": "8000x6000"
 },
 
 {
@@ -225,10 +190,24 @@
 },
 
 {
-  "VendorTag": "com.oplus.sat.tele.support",
+  "VendorTag": "com.oplus.movie.ultra.wide.angle.support",
   "Type": "Byte",
   "Count": "1",
   "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.movie.tele.angle.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "0"
+},
+
+{
+  "VendorTag": "com.oplus.sat.tele.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "0"
 },
 
 {
@@ -249,14 +228,7 @@
   "VendorTag": "com.oplus.sat.wide.support.imagesizes",
   "Type": "Int32",
   "Count": "8",
-  "Value": "4000x3008x4000x2250x4000x1800x3008x3008"
-},
-
-{
-  "VendorTag": "com.oplus.sat.tele.support.imagesizes",
-  "Type": "Int32",
-  "Count": "8",
-  "Value": "3264x2448x3264x1836x3264x1472x2448x2448"
+  "Value": "4000x3000x4000x2250x4000x1800x3000x3000"
 },
 
 {
@@ -372,17 +344,17 @@
 },
 
 {
-  "VendorTag": "com.oplus.feature.media.recorder.custom.focus.sector.width.support",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "1"
-},
-
-{
   "VendorTag": "com.oplus.tunning.1080p.hfr.fps",
   "Type": "Int32",
   "Count": "1",
   "Value": "240"
+},
+
+{
+  "VendorTag": "com.oplus.feature.media.recorder.custom.focus.sector.width.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
 },
 
 {
@@ -470,13 +442,6 @@
 },
 
 {
-  "VendorTag": "com.oplus.feature.video.4k.120fps.support",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "1"
-},
-
-{
   "VendorTag": "com.oplus.feature.video.8k.support",
   "Type": "Byte",
   "Count": "1",
@@ -488,13 +453,6 @@
   "Type": "Byte",
   "Count": "1",
   "Value": "1"
-},
-
-{
-  "VendorTag": "com.oplus.second.zoom.point.specific.value",
-  "Type": "Float",
-  "Count": "1",
-  "Value": "3.3"
 },
 
 {
@@ -666,17 +624,38 @@
 },
 
 {
+  "VendorTag": "com.oplus.feature.xpan.mode.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.xpan.main.picturesize",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "8000x3636"
+},
+
+{
+  "VendorTag": "com.oplus.xpan.wide.picturesize",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "8192x3724"
+},
+
+{
   "VendorTag": "com.oplus.sat.main.zoom.range",
   "Type": "Float",
   "Count": "2",
-  "Value": "1.0,3.3"
+  "Value": "1.0,10.0"
 },
 
 {
   "VendorTag": "com.oplus.sat.tele.zoom.range",
   "Type": "Float",
   "Count": "2",
-  "Value": "3.3,30.0"
+  "Value": "2.0,20.0"
 },
 
 {
@@ -809,7 +788,7 @@
   "VendorTag": "com.oplus.professional.switch.camera.type",
   "Type": "Int32",
   "Count": "1",
-  "Value": "7"
+  "Value": "3"
 },
 
 {
@@ -897,13 +876,6 @@
 },
 
 {
-  "VendorTag": "com.oplus.portrait.mode.physical.cameraid.2x",
-  "Type": "Int32",
-  "Count": "2",
-  "Value": "0,2"
-},
-
-{
   "VendorTag": "com.oplus.portrait.zoom.value.default",
   "Type": "Float",
   "Count": "1",
@@ -914,14 +886,14 @@
   "VendorTag": "com.oplus.portrait.mode.picture.size.1x",
   "Type": "Int32",
   "Count": "4",
-  "Value": "4000x3008x3200x2400"
+  "Value": "4000x3000x3200x2400"
 },
 
 {
   "VendorTag": "com.oplus.portrait.mode.picture.size.2x",
   "Type": "Int32",
   "Count": "4",
-  "Value": "4000x3008x3200x2400"
+  "Value": "4000x3000x3200x2400"
 },
 
 {
@@ -1093,6 +1065,13 @@
 },
 
 {
+  "VendorTag": "com.oplus.front.portrait.previewsize",
+  "Type": "Int32",
+  "Count": "2",
+  "Value": "1440x1080"
+},
+
+{
   "VendorTag": "com.oplus.feature.video.super.eis.wide.open.default",
   "Type": "Byte",
   "Count": "1",
@@ -1198,6 +1177,13 @@
 },
 
 {
+  "VendorTag": "com.oplus.feature.none.sat.rear.mode",
+  "Type": "String",
+  "Count": "1",
+  "Value": "night"
+},
+
+{
   "VendorTag": "com.oplus.feature.breeno.scan",
   "Type": "Byte",
   "Count": "1",
@@ -1209,20 +1195,6 @@
   "Type": "Byte",
   "Count": "1",
   "Value": "0"
-},
-
-{
-  "VendorTag": "com.oplus.long.exposure.support",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "1"
-},
-
-{
-  "VendorTag": "com.oplus.long.exposure.no.wide",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "1"
 },
 
 {
@@ -1298,8 +1270,8 @@
 {
   "VendorTag": "com.oplus.video.max.duration.value",
   "Type": "String",
-  "Count": "6",
-  "Value": "video_size_8k,30,300,video_size_4kuhd,120,300"
+  "Count": "3",
+  "Value": "video_size_8k,30,300"
 },
 
 {
@@ -1345,6 +1317,13 @@
 },
 
 {
+  "VendorTag": "com.oplus.disable.shutter.button.up.vibrate",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
   "VendorTag": "com.oplus.disable.shutter.button.down.vibrate",
   "Type": "Byte",
   "Count": "1",
@@ -1380,13 +1359,6 @@
 },
 
 {
-  "VendorTag": "com.oplus.filter.keep.without.normalization",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "1"
-},
-
-{
   "VendorTag": "com.oplus.photo.master.filter.type.list",
   "Type": "String",
   "Count": "3",
@@ -1398,6 +1370,34 @@
   "Type": "String",
   "Count": "1",
   "Value": "Serenity.cube.rgb.bin"
+},
+
+{
+  "VendorTag": "com.oplus.long.exposure.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.long.exposure.no.wide",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.filter.keep.without.normalization",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.feature.sat.tele.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "0"
 },
 
 {

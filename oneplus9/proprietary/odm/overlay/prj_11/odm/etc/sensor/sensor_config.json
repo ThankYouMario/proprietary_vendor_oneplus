@@ -1,5 +1,5 @@
 {
-    "20857":{
+    "20853":{
         "platform_config":{
             "sensor_arch":"qcom_sensor_see"
         },
@@ -7,8 +7,8 @@
             "android.sensor.accelerometer":{
                 "type":1,
                 "support":"true",
-                "module":"bmi26x|icm4x6xx",
-                "bmi26x":{
+                "module":"bmi160|icm4x6xx",
+                "bmi160":{
                     "mode":"batch_cali|factory_cali",
                     "offset_x": 0.0,
                     "offset_y": 0.0,
@@ -35,8 +35,8 @@
             "android.sensor.gyroscope":{
                 "type":4,
                 "support":"true",
-                "module":"bmi26x|icm4x6xx",
-                "bmi26x":{
+                "module":"bmi160|icm4x6xx",
+                "bmi160":{
                     "mode":"batch_cali|factory_cali",
                     "radian_threshold":0.05,
                     "offset_x": 0.0,
@@ -58,6 +58,25 @@
                 "tcs3701":{
                     "mode":"factory_cali",
                     "cali_para":1000
+                }
+            },
+            "android.sensor.pressure":{
+                "type":6,
+                "support":"true",
+                "module":"lps22hb|bosch_bmp380",
+                "lps22hb":{
+                    "mode":"factory_cali",
+                    "offset_standard":10000,
+                    "delta_standard":1000,
+                    "sample_amount":20,
+                    "cali_offset":0
+                },
+                "bosch_bmp380":{
+                    "mode":"factory_cali",
+                    "offset_standard":10000,
+                    "delta_standard":1000,
+                    "sample_amount":20,
+                    "cali_offset":0
                 }
             },
             "android.sensor.proximity":{
@@ -119,10 +138,10 @@
                 "support":"true",
                 "module":"sx932x|AW9610X",
                 "sx932x":{
-                  "mode":"single_channel"
+                  "mode":"dual_channel"
                 },
                 "AW9610X":{
-                  "mode":"single_channel"
+                  "mode":"dual_channel"
                 }
             },
             "qti.sensor.sars":{
@@ -130,10 +149,10 @@
                 "support":"true",
                 "module":"sx932x_down|AW9610X_DOWN",
                 "sx932x_down":{
-                  "mode":"dual_channel"
+                  "mode":"single_channel"
                 },
-		        "AW9610X_DOWN":{
-                  "mode":"dual_channel"
+				"AW9610X_DOWN":{
+                  "mode":"single_channel"
                 }
             }
         }

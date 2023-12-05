@@ -682,5 +682,17 @@
 		"Type": "Byte",
 		"Count": "1",
 		"Value": "0"
+	},
+	{
+		"VendorTag": "com.oplus.engineercamera.configure.full.size.test.support",
+		"Type": "Byte",
+		"Count": "1",
+		"Value": "1"
+	},
+	{
+		"VendorTag": "com.oplus.engineercamera.configure.portrait.bokeh.test.support",
+		"Type": "Byte",
+		"Count": "1",
+		"Value": "1"
 	}
 ]

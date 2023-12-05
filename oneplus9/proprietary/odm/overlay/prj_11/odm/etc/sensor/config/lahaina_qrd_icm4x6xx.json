@@ -153,10 +153,10 @@
     ".orient":{
       "owner": "sns_icm4x6xx",
       "x":{ "type": "str", "ver": "0",
-        "data": "y"
+        "data": "+x"
       },
       "y":{ "type": "str", "ver": "0",
-        "data": "-x"
+        "data": "+y"
       },
       "z":{ "type": "str", "ver": "0",
         "data": "+z"

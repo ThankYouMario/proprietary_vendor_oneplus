@@ -36,7 +36,7 @@
         "data": "5"
       },
       "slave_config":{ "type": "int", "ver": "0",
-        "data": "44"
+        "data": "40"
       },
       "min_bus_speed_khz":{ "type": "int", "ver": "0",
         "data": "400"
