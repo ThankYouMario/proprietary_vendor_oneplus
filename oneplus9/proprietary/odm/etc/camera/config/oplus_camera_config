@@ -1184,13 +1184,6 @@
 },
 
 {
-  "VendorTag": "com.oplus.feature.breeno.scan",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "1"
-},
-
-{
   "VendorTag": "com.oplus.feature.front.panorama.support",
   "Type": "Byte",
   "Count": "1",
@@ -1440,6 +1433,41 @@
    "Type": "Byte",
    "Count": "1",
    "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.camera.support.activity.rotate",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.feature.ai.scene.hint.show.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.feature.face.beauty.custom.menu.refinement.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "0"
+},
+
+{
+  "VendorTag": "com.oplus.camera.support.early.start.gallery",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "0"
+},
+
+{
+  "VendorTag": "com.oplus.support.professional.mode.in.headline",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "0"
 }
 
 ]

@@ -1,5 +1,39 @@
 {
     "default": {
+        "orms_need_observe_third_package_list": [
+            "com.tencent.mm",
+            "com.tencent.mobileqq",
+            "com.ss.android.ugc.aweme",
+            "com.smile.gifmaker",
+            "com.meitu.meiyancamera",
+            "com.gorgeous.lite",
+            "com.mt.mtxx.mtxx",
+            "com.kwai.m2u",
+            "com.campmobile.snowcamera",
+            "com.lemon.faceu",
+            "com.kwai.videoeditor",
+            "com.lemon.lv"
+        ],
+        "orms_need_observe_third_activity_list": [
+            "com.tencent.mm.plugin.voip.ui.VideoActivity",
+            "com.tencent.av.ui.AVActivity"
+        ],
+        "need_observe_third_activity_list": [
+            "com.ss.android.ugc.aweme.shortvideo.ui.VideoRecordNewActivity",
+            "com.yxcorp.gifshow.camera.record.CameraActivity",
+            "com.meitu.myxj.selfie.merge.activity.SelfieCameraActivity",
+            "com.light.beauty.mainpage.MainActivity",
+            "com.mt.mtxx.camera.view.CameraActivity",
+            "com.kwai.m2u.main.CameraActivity",
+            "com.linecorp.b612.android.activity.ActivityCamera",
+            "com.lemon.faceu.business.mainpage.MainActivity",
+            "com.kwai.videoeditor.activity.StartCreateActivity",
+            "com.vega.recorder.LvRecordActivity"
+        ],
+        "need_observe_oplus_float_window_show_package": [
+            "com.tencent.mm",
+            "com.tencent.mobileqq"
+        ],
         "feature_enable_fwk_timer": false,
         "skip_rus_check_list": [
             "android.camera.cts",

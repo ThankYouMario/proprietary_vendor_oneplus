@@ -90,8 +90,8 @@
 <SensorInfo>4656,3496,3.74,1</SensorInfo>
 </FrontCameraVar>
 <RearCameraVar>
-<ImageInfo>4:3,4000,3000,4:3,8000,6000,1:1,3000,3000,full,4000,1800,16:9,4000,2250</ImageInfo>
-<SensorInfo>8000,6000,6.06,1.12</SensorInfo>
+<ImageInfo>4:3,4000,3008,4:3,8000,6016,1:1,3008,3008,full,4000,1800,16:9,4000,2250</ImageInfo>
+<SensorInfo>8000,6016,6.06,1.12</SensorInfo>
 </RearCameraVar>
 <WideCameraVar>
 <ImageInfo>4:3,8192,6144,4:3,4096,3072,1:1,3072,3072,full,4096,1840,16:9,4096,2304</ImageInfo>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*************************************************************
+ ** Copyright (C), 2008-2020, OPPO Mobile Comm Corp., Ltd
+ **
+ ** Description : 1.0
+ **           This is a common file
+ **
+ ** Version: 1.0
+ ** Date created: 12:00, 2022/03/22
+ ** Author: maohong@camera.drv
+ **
+ *************************************************************/
+-->
+<manifest version="1.0" type="device">
+    <hal format="aidl">
+        <name>vendor.oplus.hardware.sendextcamcmd</name>
+        <version>1</version>
+        <fqname>ISendExtCamCmdService/default</fqname>
+    </hal>
+</manifest>

@@ -242,7 +242,8 @@
     "com.oplus.night.starburst":["starburst", "String", "1"]
   },
 
-  "vendor_tag_type_values":{
+  "vendor_tag_type_values": {
+    "com.oplus.authed.white.list":"com.ss.android.ugc.aweme, com.finshell.wallet",
     "com.oplus.sat.wide.support.imagesizes":"4000x3000x4000x2250x4000x1800x3000x3000",
     "com.oplus.sat.ultra.support.imagesizes":"4096x3072x4096x2304x4096x1840x3072x3072",
     "com.oplus.rear.portrait.sat.fullbodysize":"4000x3000x3200x2400",

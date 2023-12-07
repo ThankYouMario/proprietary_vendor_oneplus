@@ -1,5 +1,5 @@
 {
-    "20853":{
+    "20851":{
         "platform_config":{
             "sensor_arch":"qcom_sensor_see"
         },
@@ -58,25 +58,6 @@
                 "tcs3701":{
                     "mode":"factory_cali",
                     "cali_para":1000
-                }
-            },
-            "android.sensor.pressure":{
-                "type":6,
-                "support":"true",
-                "module":"lps22hb|bosch_bmp380",
-                "lps22hb":{
-                    "mode":"factory_cali",
-                    "offset_standard":10000,
-                    "delta_standard":1000,
-                    "sample_amount":20,
-                    "cali_offset":0
-                },
-                "bosch_bmp380":{
-                    "mode":"factory_cali",
-                    "offset_standard":10000,
-                    "delta_standard":1000,
-                    "sample_amount":20,
-                    "cali_offset":0
                 }
             },
             "android.sensor.proximity":{

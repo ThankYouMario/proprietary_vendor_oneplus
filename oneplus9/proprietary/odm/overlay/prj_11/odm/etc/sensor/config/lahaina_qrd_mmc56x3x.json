@@ -41,7 +41,7 @@
         "data": "20"
       },
       "min_bus_speed_khz":{ "type": "int", "ver": "0",
-        "data": "400"
+        "data": "100"
       },
       "max_bus_speed_khz":{ "type": "int", "ver": "0",
         "data": "400"
@@ -66,10 +66,10 @@
     ".orient":{
       "owner": "sns_mmc56x3x",
       "x":{ "type": "str", "ver": "0",
-        "data": "-x"
+        "data": "+x"
       },
       "y":{ "type": "str", "ver": "0",
-        "data": "-y"
+        "data": "+y"
       },
       "z":{ "type": "str", "ver": "0",
         "data": "+z"
