@@ -6,26 +6,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-	name: "libfastcvopt",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libfastcvopt.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libfastcvopt.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libthermalclient",
 	owner: "oneplus",
 	strip: {
@@ -101,17 +81,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "PowerOffAlarm",
-	owner: "oneplus",
-	apk: "proprietary/product/app/PowerOffAlarm/PowerOffAlarm.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	product_specific: true,
-}
-
-android_app_import {
 	name: "HotwordEnrollmentOKGoogleHEXAGON",
 	owner: "oneplus",
 	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk",
@@ -142,13 +111,6 @@ dex_import {
 	product_specific: true,
 }
 
-dex_import {
-	name: "vendor.qti.hardware.alarm-V1.0-java",
-	owner: "oneplus",
-	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar"],
-	system_ext_specific: true,
-}
-
 prebuilt_etc_xml {
 	name: "android.hardware.neuralnetworks@1.3-service-qti-hta",
 	owner: "oneplus",
@@ -162,15 +124,6 @@ prebuilt_etc_xml {
 	name: "android.hardware.neuralnetworks@1.3-service-qti",
 	owner: "oneplus",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.qti.gnss@4.0-service",
-	owner: "oneplus",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
