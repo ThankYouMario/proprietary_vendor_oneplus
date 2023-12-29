@@ -228,7 +228,14 @@
             <Limit name="block-count" range="36-8160" />
             <Limit name="blocks-per-second" min="36" max="244800" />
             <Limit name="bitrate" range="1-40000000" />
+            <!-- #ifndef OPLUS_BUG_COMPATIBILITY -->
+            <!-- ziran.deng@MM.MediaServer, 2023/8/18, -->
+            <!--
             <Limit name="frame-rate" range="1-30" />
+            -->
+            <!-- #else  //OPLUS_BUG_COMPATIBILITY -->
+            <Limit name="frame-rate" range="1-60" />
+            <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
             <Feature name="adaptive-playback" />
             <Limit name="concurrent-instances" max="16" />
             <Limit name="performance-point-1920x1080" value="30" />
