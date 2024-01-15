@@ -3080,6 +3080,11 @@
      </list>
      <!-- Number of above reverse data ports inited on bootup -->
      <data name="static_rev_links" type="int"> 4 </data>
+
+     <!-- #ifdef OPLUS_BUG_STABILITY -->
+     <!-- Liwei@Connectivity.NETWORK, 2021/04/25, for set default tcp_mtu_probing-->
+     <data name="tcp_mtu_probing" type="int"> 1 </data>
+     <!-- #endif /* OPLUS_BUG_STABILITY */ -->
    </listitem>
 
    <!-- lahaina parameters -->
@@ -3223,6 +3228,11 @@
       </list>
       <!-- Number of above reverse data ports inited on bootup -->
       <data name="static_rev_links" type="int"> 4 </data>
+
+     <!-- #ifdef OPLUS_BUG_STABILITY -->
+     <!-- Liwei@Connectivity.NETWORK, 2021/04/25, for set default tcp_mtu_probing-->
+     <data name="tcp_mtu_probing" type="int"> 1 </data>
+     <!-- #endif /* OPLUS_BUG_STABILITY */ -->
    </listitem>
 
    <!-- lahaina_pt parameters -->

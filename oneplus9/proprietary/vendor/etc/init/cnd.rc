@@ -2,3 +2,7 @@ service vendor.cnd /system/vendor/bin/cnd
     class main
     user system
     group system wifi inet radio wakelock net_admin
+    #ifdef OPLUS_BUG_DEBUG
+    #DuYuanhua@NETWORK.DATA.3652452, 2022/06/09, add capabilities as a workaround
+    capabilities NET_ADMIN BLOCK_SUSPEND NET_BIND_SERVICE
+    #endif
