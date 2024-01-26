@@ -418,6 +418,7 @@
                 "APS_SCENE_YUVSR",
                 "APS_SCENE_FASTSHOT",
                 "APS_SCENE_ZOOM_HDR",
+                "APS_SCENE_TURBO_MOON",
                 "APS_SCENE_MAX"
             ],
             "valueType": "int",
@@ -495,6 +496,9 @@
                 "APS_FEATURE_TURBO_RAW_IZOOM_QBC",
                 "APS_FEATURE_TURBO_RAW_IZOOM_2DOL",
                 "APS_FEATURE_SUPER_RAW",
+                "APS_FEATURE_AHEAD_HDRV4",
+                "APS_FEATURE_AINR_AIS_COUPLEHDR",
+                "APS_FEATURE_TURBO_MOON",
                 "APS_FEATURE_MAX"
             ],
             "valueType": "int",
@@ -615,7 +619,10 @@
                 "APS_FEATURE_HYBRIDRAW_HDR_SR_IZOOM_QUADBAYER",
                 "APS_FEATURE_TURBO_RAW_IZOOM_QBC",
                 "APS_FEATURE_TURBO_RAW_IZOOM_2DOL",
-                "APS_FEATURE_SUPER_RAW"
+                "APS_FEATURE_SUPER_RAW",
+                "APS_FEATURE_AHEAD_HDRV4",
+                "APS_FEATURE_AINR_AIS_COUPLEHDR",
+                "APS_FEATURE_TURBO_MOON"
             ],
             "valueType": "int",
             "dataType": "value"
@@ -690,7 +697,10 @@
                 "APS_FEATURE_HYBRIDRAW_HDR_SR_IZOOM_QUADBAYER",
                 "APS_FEATURE_TURBO_RAW_IZOOM_QBC",
                 "APS_FEATURE_TURBO_RAW_IZOOM_2DOL",
-                "APS_FEATURE_SUPER_RAW"
+                "APS_FEATURE_SUPER_RAW",
+                "APS_FEATURE_AHEAD_HDRV4",
+                "APS_FEATURE_AINR_AIS_COUPLEHDR",
+                "APS_FEATURE_TURBO_MOON"
             ],
             "valueType": "int",
             "dataType": "value"
@@ -845,6 +855,7 @@
                 "APS_ALGO_REMOSAIC",
                 "APS_ALGO_OMOJI",
                 "APS_ALGO_BASIC_TONE",
+                "APS_ALGO_TURBO_MOON",
                 "APS_ALGO_MAX"
             ]
         }
@@ -1143,6 +1154,7 @@
                 "APS_ALGO_REMOSAIC",
                 "APS_ALGO_OMOJI",
                 "APS_ALGO_BASIC_TONE",
+                "APS_ALGO_TURBO_MOON",
                 "APS_ALGO_MAX"
             ]
         }
