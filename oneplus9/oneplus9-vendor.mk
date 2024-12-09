@@ -1078,7 +1078,6 @@ PRODUCT_PACKAGES += \
     audio.primary.lahaina_oneplus9 \
     libFileMux_proprietary \
     libOmxVideoDSMode \
-    liba2dpoffload_oneplus9 \
     libadm \
     libadpcmdec \
     libdrc \
@@ -1088,7 +1087,6 @@ PRODUCT_PACKAGES += \
     libmmrtpencoder_proprietary \
     libsmwrapper \
     libsn100u_fw \
-    libssrec_oneplus9 \
     libsurround_3mic_proc \
     libwfdaac_vendor \
     libwfdcodecv4l2_proprietary \
@@ -1502,10 +1500,12 @@ PRODUCT_PACKAGES += \
     libfastov_dsp \
     vendor.oplus.hardware.bluetooth_audio_extend@2.1 \
     vendor.oplus.hardware.performance-V1-ndk_platform \
+    liba2dpoffload_oneplus9 \
     libaudioEngineerTest \
     liblvimfs \
     liblvimfs_wrapper \
     libnightvision \
+    libssrec_oneplus9 \
     anc.hal \
     com.qti.sensor.gc02m1b.lemonade \
     com.qti.sensor.imx471.lemonade \

@@ -1663,24 +1663,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "liba2dpoffload_oneplus9",
-	stem: "liba2dpoffload",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/liba2dpoffload.so"],
-			shared_libs: ["libaudioutils", "libcutils", "liblog", "libtinyalsa", "libtinycompress", "libaudioroute", "libexpat", "libaudio_log_utils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libadm",
 	owner: "oneplus",
 	strip: {
@@ -1827,24 +1809,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib/libsn100u_fw.so"],
 			shared_libs: [ ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libssrec_oneplus9",
-	stem: "libssrec",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libssrec.so"],
-			shared_libs: ["libaudioutils", "libcutils", "liblog", "libtinyalsa", "libtinycompress", "libaudioroute", "libexpat", "libprocessgroup", "libaudio_log_utils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -8976,6 +8940,24 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "liba2dpoffload_oneplus9",
+	stem: "liba2dpoffload",
+	owner: "oneplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/odm/lib/liba2dpoffload.so"],
+			shared_libs: ["libaudioutils", "libcutils", "liblog", "libtinyalsa", "libtinycompress", "libaudioroute", "libexpat", "libaudio_log_utils", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libaudioEngineerTest",
 	owner: "oneplus",
 	strip: {
@@ -9036,6 +9018,24 @@ cc_prebuilt_library_shared {
 		android_arm: {
 			srcs: ["proprietary/odm/lib/libnightvision.so"],
 			shared_libs: ["liblog", "libcdsprpc", "libfastov_dsp", "libm", "libdl", "libc", ],
+		},
+	},
+	compile_multilib: "32",
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libssrec_oneplus9",
+	stem: "libssrec",
+	owner: "oneplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/odm/lib/libssrec.so"],
+			shared_libs: ["libaudioutils", "libcutils", "liblog", "libtinyalsa", "libtinycompress", "libaudioroute", "libexpat", "libprocessgroup", "libaudio_log_utils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
