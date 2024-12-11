@@ -1530,6 +1530,7 @@ PRODUCT_PACKAGES += \
     libImageWarpMask \
     libOGLManager \
     libOPLUS_SCPortrait \
+    libPerfectColor \
     libPerfectlyClearCrux \
     libPerfectlyClearCruxOpt \
     libPolarrRender \
@@ -1551,6 +1552,7 @@ PRODUCT_PACKAGES += \
     lib_oplus_starburst_preview \
     lib_rectify \
     libaisal \
+    libaisd \
     libancbase_segment \
     libaps_frame_registration \
     libapsdarksight \

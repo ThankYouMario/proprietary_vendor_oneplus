@@ -9464,6 +9464,23 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libPerfectColor",
+	owner: "oneplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/libPerfectColor.so"],
+			shared_libs: ["libOpenCL", "liblog", "libGLESv3", "libEGL", "libdl", "libc", "libm", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libPerfectlyClearCrux",
 	owner: "oneplus",
 	strip: {
@@ -9812,6 +9829,23 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/odm/lib64/libaisal.so"],
+			shared_libs: ["libSNPE", "libc++_shared", "liblog", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libaisd",
+	owner: "oneplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/libaisd.so"],
 			shared_libs: ["libSNPE", "libc++_shared", "liblog", "libc", "libm", "libdl", ],
 		},
 	},
